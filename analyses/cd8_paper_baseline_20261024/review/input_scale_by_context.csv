@@ -1,0 +1,10 @@
+﻿split,context,image_dtype,image_files,mask_dtype,model_preprocessing,raw_array_converted
+external_val_TMA_cores,TMA1_CD8,float32,12,uint32,pending official paper implementation,False
+external_val_TMA_cores,TMA2_CD8,float32,12,uint32,pending official paper implementation,False
+external_val_TMA_cores,TMA3_CD8,uint8,18,uint32,pending official paper implementation,False
+internal_val_WSIs,WSI1,float32,40,uint32,pending official paper implementation,False
+internal_val_WSIs,WSI2,float32,42,uint32,pending official paper implementation,False
+internal_val_WSIs,WSI3,float32,49,uint32,pending official paper implementation,False
+training_WSIs,WSI1,float32,1,uint32,pending official paper implementation,False
+training_WSIs,WSI2,float32,1,uint32,pending official paper implementation,False
+training_WSIs,WSI3,float32,1,uint32,pending official paper implementation,False

@@ -1,0 +1,10 @@
+fold,group_id,role
+0,PhenoBIC-Data/slide/training_WSIs/WSI1,validation
+0,PhenoBIC-Data/slide/training_WSIs/WSI2,training
+0,PhenoBIC-Data/slide/training_WSIs/WSI3,training
+1,PhenoBIC-Data/slide/training_WSIs/WSI1,training
+1,PhenoBIC-Data/slide/training_WSIs/WSI2,validation
+1,PhenoBIC-Data/slide/training_WSIs/WSI3,training
+2,PhenoBIC-Data/slide/training_WSIs/WSI1,training
+2,PhenoBIC-Data/slide/training_WSIs/WSI2,training
+2,PhenoBIC-Data/slide/training_WSIs/WSI3,validation

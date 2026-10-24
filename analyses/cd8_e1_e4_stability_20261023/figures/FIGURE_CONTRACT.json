@@ -1,0 +1,20 @@
+{
+  "conclusion": "共同校准、固定定位特征及 GMM 分数的实际配对收益与敏感性，结论不预设 E4 最优",
+  "evidence": "正式完整有标签集合；稳定性独立固定抽样；所有图从 CSV 绘制",
+  "exports": [
+    "Chinese PNG",
+    "Chinese editable SVG",
+    "English PNG",
+    "English editable SVG",
+    "source CSV"
+  ],
+  "risks": [
+    "不把细胞视作独立患者",
+    "不把 OOF 门限开发拟合值称泛化",
+    "稳定性失效同时呈现",
+    "不隐藏低成绩或缺失"
+  ],
+  "backend": "Python matplotlib",
+  "font": "Microsoft YaHei for Chinese; DejaVu Sans for English",
+  "uncertainty": "Descriptive paired results; no cell-level bootstrap or p-values"
+}

@@ -1,0 +1,278 @@
+{
+  "image_id": "external_val_TMA_cores/TMA3_CD8/core_1_1_5",
+  "signature": "a44842db9e80560f19bec0886ee2aebd47c517f8ddf0e89b74caff25aace3327",
+  "states": {
+    "bias_0.05": {
+      "clip_high": 130.65617920353162,
+      "clip_low": 12.75,
+      "clipping_percentiles": [
+        0.01,
+        99.99
+      ],
+      "fixed_mapping_extrapolation": "Actual sklearn MinMaxScaler clip=False; no extra clamp",
+      "gate_log1p": 2.9659143327068174,
+      "gmm_info": {
+        "configuration": {
+          "covariance_type": "full",
+          "init_params": "kmeans",
+          "max_iter": 100,
+          "means_init": null,
+          "n_components": 3,
+          "n_init": 1,
+          "precisions_init": null,
+          "random_state": 0,
+          "reg_covar": 1e-06,
+          "tol": 0.001,
+          "verbose": 0,
+          "verbose_interval": 10,
+          "warm_start": false,
+          "weights_init": null
+        },
+        "converged": true,
+        "covariances": [
+          2.28342446997846e-05,
+          0.32346343978020126,
+          0.00031328879822056126
+        ],
+        "iterations": 28,
+        "lower_bound": 2.6049665279958414,
+        "means": [
+          2.6283137435061046,
+          3.280328106755816,
+          2.651500558657819
+        ],
+        "precisions_cholesky": [
+          209.26985558244667,
+          1.758277423292403,
+          56.49728350304633
+        ],
+        "weights": [
+          0.7051259113328056,
+          0.10045037844161427,
+          0.19442371022558025
+        ]
+      },
+      "high": {
+        "maximum": 4.929063640402444,
+        "minimum": 2.9658829701838814,
+        "offset": -0.2553769796066927,
+        "scale": 0.2546887342489647
+      },
+      "log": true,
+      "low": {
+        "maximum": 2.9658829701838814,
+        "minimum": 2.6210388241125804,
+        "offset": -3.800323789707955,
+        "scale": 1.4499303691141057
+      },
+      "n_fit": 8122,
+      "nearest_observed_log1p": 2.9658829701838814,
+      "raw_max": 137.25,
+      "raw_min": 12.75
+    },
+    "bias_0.10": {
+      "clip_high": 143.40617920353162,
+      "clip_low": 25.5,
+      "clipping_percentiles": [
+        0.01,
+        99.99
+      ],
+      "fixed_mapping_extrapolation": "Actual sklearn MinMaxScaler clip=False; no extra clamp",
+      "gate_log1p": 3.5127069681142817,
+      "gmm_info": {
+        "configuration": {
+          "covariance_type": "full",
+          "init_params": "kmeans",
+          "max_iter": 100,
+          "means_init": null,
+          "n_components": 3,
+          "n_init": 1,
+          "precisions_init": null,
+          "random_state": 0,
+          "reg_covar": 1e-06,
+          "tol": 0.001,
+          "verbose": 0,
+          "verbose_interval": 10,
+          "warm_start": false,
+          "weights_init": null
+        },
+        "converged": true,
+        "covariances": [
+          8.2664980990068e-06,
+          0.1676578589564923,
+          0.00012153878301506408
+        ],
+        "iterations": 29,
+        "lower_bound": 3.2095828264451427,
+        "means": [
+          3.2811650528638476,
+          3.729929512292738,
+          3.2954844239358256
+        ],
+        "precisions_cholesky": [
+          347.80771795512516,
+          2.4422383247334327,
+          90.70736650441413
+        ],
+        "weights": [
+          0.7376188794318563,
+          0.09431628271271857,
+          0.16806483785542523
+        ]
+      },
+      "high": {
+        "maximum": 5.017279836814924,
+        "minimum": 3.5127548725603828,
+        "offset": -0.6673966720455429,
+        "scale": 0.3323308099761168
+      },
+      "log": true,
+      "low": {
+        "maximum": 3.5127548725603828,
+        "minimum": 3.2771447329921766,
+        "offset": -6.9545918927726875,
+        "scale": 2.1221497551689885
+      },
+      "n_fit": 8122,
+      "nearest_observed_log1p": 3.5127548725603828,
+      "raw_max": 150.0,
+      "raw_min": 25.5
+    },
+    "gain_0.5": {
+      "clip_high": 58.95308960176581,
+      "clip_low": 0.0,
+      "clipping_percentiles": [
+        0.01,
+        99.99
+      ],
+      "fixed_mapping_extrapolation": "Actual sklearn MinMaxScaler clip=False; no extra clamp",
+      "gate_log1p": 0.8982150203082664,
+      "gmm_info": {
+        "configuration": {
+          "covariance_type": "full",
+          "init_params": "kmeans",
+          "max_iter": 100,
+          "means_init": null,
+          "n_components": 3,
+          "n_init": 1,
+          "precisions_init": null,
+          "random_state": 0,
+          "reg_covar": 1e-06,
+          "tol": 0.001,
+          "verbose": 0,
+          "verbose_interval": 10,
+          "warm_start": false,
+          "weights_init": null
+        },
+        "converged": true,
+        "covariances": [
+          0.0007790738494383731,
+          1.1449921464952462,
+          0.007273884651418271
+        ],
+        "iterations": 26,
+        "lower_bound": 0.8943179221786239,
+        "means": [
+          0.045756150610271364,
+          1.6305798893996366,
+          0.1658501512168962
+        ],
+        "precisions_cholesky": [
+          35.82702002901575,
+          0.934541832028199,
+          11.725106472472312
+        ],
+        "weights": [
+          0.6693455818168474,
+          0.11135567705200314,
+          0.21929874113114942
+        ]
+      },
+      "high": {
+        "maximum": 4.1470951276076295,
+        "minimum": 0.9001613499442713,
+        "offset": 0.3613828597095583,
+        "scale": 0.15399143753397485
+      },
+      "log": true,
+      "low": {
+        "maximum": 0.9001613499442713,
+        "minimum": 0.0,
+        "offset": 0.0,
+        "scale": 0.5554559746771563
+      },
+      "n_fit": 8122,
+      "nearest_observed_log1p": 0.9001613499442713,
+      "raw_max": 62.25,
+      "raw_min": 0.0
+    },
+    "gain_2": {
+      "clip_high": 235.81235840706324,
+      "clip_low": 0.0,
+      "clipping_percentiles": [
+        0.01,
+        99.99
+      ],
+      "fixed_mapping_extrapolation": "Actual sklearn MinMaxScaler clip=False; no extra clamp",
+      "gate_log1p": 1.6225194767484865,
+      "gmm_info": {
+        "configuration": {
+          "covariance_type": "full",
+          "init_params": "kmeans",
+          "max_iter": 100,
+          "means_init": null,
+          "n_components": 3,
+          "n_init": 1,
+          "precisions_init": null,
+          "random_state": 0,
+          "reg_covar": 1e-06,
+          "tol": 0.001,
+          "verbose": 0,
+          "verbose_interval": 10,
+          "warm_start": false,
+          "weights_init": null
+        },
+        "converged": true,
+        "covariances": [
+          0.009559549629478114,
+          1.7670735845749475,
+          0.05796969301605558
+        ],
+        "iterations": 24,
+        "lower_bound": -0.17657556146403047,
+        "means": [
+          0.16814148557299546,
+          2.7162723253636956,
+          0.5287666281332777
+        ],
+        "precisions_cholesky": [
+          10.227777789181873,
+          0.7522681635530293,
+          4.1533592706234606
+        ],
+        "weights": [
+          0.6658172677996789,
+          0.11081918995706204,
+          0.22336354224325916
+        ]
+      },
+      "high": {
+        "maximum": 5.521460917862246,
+        "minimum": 1.619007363450251,
+        "offset": 0.2925654539027312,
+        "scale": 0.128124522951648
+      },
+      "log": true,
+      "low": {
+        "maximum": 1.619007363450251,
+        "minimum": 0.0,
+        "offset": 0.0,
+        "scale": 0.30883120811412174
+      },
+      "n_fit": 8122,
+      "nearest_observed_log1p": 1.619007363450251,
+      "raw_max": 249.0,
+      "raw_min": 0.0
+    }
+  }
+}

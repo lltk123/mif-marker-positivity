@@ -1,0 +1,30 @@
+[
+  {
+    "level": "all",
+    "group": "phenobic",
+    "file": "91db85ec42ae_curves.npz",
+    "prevalence": 0.05334476541498363,
+    "n": 1077669
+  },
+  {
+    "level": "split",
+    "group": "training_WSIs",
+    "file": "3568804a21fb_curves.npz",
+    "prevalence": 0.16027588390710193,
+    "n": 101057
+  },
+  {
+    "level": "split",
+    "group": "internal_val_WSIs",
+    "file": "2e0f21e65080_curves.npz",
+    "prevalence": 0.03516763983588435,
+    "n": 539132
+  },
+  {
+    "level": "split",
+    "group": "external_val_TMA_cores",
+    "file": "3ada55bd15f8_curves.npz",
+    "prevalence": 0.051044619182591205,
+    "n": 437480
+  }
+]

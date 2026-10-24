@@ -1,0 +1,14 @@
+test,model,threshold_mode,n,max_score_error,passed
+real_cell_inference,E1,fixed_0.5,32.0,0.0,True
+real_cell_inference,E2,fixed_0.5,32.0,0.0,True
+real_cell_inference,E3,fixed_0.5,32.0,0.0,True
+real_cell_inference,E4,fixed_0.5,32.0,0.0,True
+real_cell_inference,E1,OOF_threshold,32.0,0.0,True
+real_cell_inference,E2,OOF_threshold,32.0,0.0,True
+real_cell_inference,E3,OOF_threshold,32.0,0.0,True
+real_cell_inference,E4,OOF_threshold,32.0,0.0,True
+invalid_input_is_separate_from_finite_output,E1,,,,True
+invalid_input_is_separate_from_finite_output,E2,,,,True
+invalid_input_is_separate_from_finite_output,E3,,,,True
+invalid_input_is_separate_from_finite_output,E4,,,,True
+common_calibration_formula_empty_and_degenerate,,,,,True

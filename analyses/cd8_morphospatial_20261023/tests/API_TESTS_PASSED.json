@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "crop_and_padding_invariance",
+    "nonfinite_target_QC",
+    "tissue_exclusion",
+    "optional_physical_units",
+    "disconnected_QC",
+    "invalid_dtype_and_shape_rejection",
+    "outcome_metadata_rejection",
+    "empty_Parquet_schema"
+  ]
+}

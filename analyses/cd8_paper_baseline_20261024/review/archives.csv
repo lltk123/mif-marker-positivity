@@ -1,0 +1,4 @@
+file,bytes,expected_bytes,size_matches,zip_signature_ok,central_directory_readable,members,full_crc_retested
+/mnt/disk3/mIHC/mif_marker_positivity_20261022/datasets/PhenoBIC-Data/raw/training_WSIs.zip,5053559948,5053559948,True,True,True,8,False
+/mnt/disk3/mIHC/mif_marker_positivity_20261022/datasets/PhenoBIC-Data/raw/internal_val_WSIs.zip,5064769108,5064769108,True,True,True,403,False
+/mnt/disk3/mIHC/mif_marker_positivity_20261022/datasets/PhenoBIC-Data/raw/external_val_TMA_cores.zip,294851987,294851987,True,True,True,433,False

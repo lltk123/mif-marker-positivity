@@ -1,0 +1,27 @@
+{
+  "backend": "Python matplotlib",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "formats": [
+    "PNG",
+    "SVG editable text",
+    "PDF"
+  ],
+  "statistics": "paired descriptive; no cell-level bootstrap or significance tests",
+  "patient_identity": "TMA cores not independent patients",
+  "needs_visual_inspection": false,
+  "visual_inspection_complete": true,
+  "inspection_scope": "all 31 development case panels reviewed with raw crops and paired model table; final layouts spot checked in 7 representative bilingual figures; all16 PNG/SVG/PDF triples automatically checked",
+  "reviewer": "assistant visual inspection; not pathologist adjudication",
+  "n_figures": 16,
+  "n_case_panels": 31,
+  "final_layout_notes": "Replaced automatic image-panel spacing by explicit physical spacing; row2 title overlap resolved in representative zh/en two-row figures. No numerical results or image contrast choices changed.",
+  "evidence": [
+    "figures/FIGURE_QA.csv",
+    "development_review/VISUAL_REVIEW.md",
+    "development_review/visual_review_notes.csv"
+  ],
+  "completed": "2026-10-24T14:09:41.171019"
+}

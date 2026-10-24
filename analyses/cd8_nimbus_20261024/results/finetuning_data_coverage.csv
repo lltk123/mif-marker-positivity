@@ -1,0 +1,7 @@
+image_id,split,eligible_tiles,used_tiles,labelled_instances,instances_absent_from_downsampled_support
+training_WSIs/WSI1,training_WSIs,248,248,40885,0
+training_WSIs/WSI2,training_WSIs,197,197,42891,0
+training_WSIs/WSI3,training_WSIs,115,115,17281,0
+internal_val_WSIs/WSI1,internal_val_WSIs,1161,128,59210,0
+internal_val_WSIs/WSI2,internal_val_WSIs,1608,128,207925,0
+internal_val_WSIs/WSI3,internal_val_WSIs,1952,128,271997,0

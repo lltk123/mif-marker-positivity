@@ -1,0 +1,37 @@
+{
+  "cells": 44,
+  "status": "passed",
+  "tests": [
+    {
+      "cells": 20,
+      "image_id": "training_WSIs/WSI3",
+      "legacy_formulas_match": true,
+      "rotation_invariance": true
+    },
+    {
+      "cells": 20,
+      "image_id": "internal_val_WSIs/WSI1",
+      "legacy_formulas_match": true,
+      "rotation_invariance": true
+    },
+    {
+      "cells": 1,
+      "image_id": "external_val_TMA_cores/TMA1_CD8/core_2_9",
+      "legacy_formulas_match": true,
+      "rotation_invariance": true
+    },
+    {
+      "cells": 1,
+      "image_id": "external_val_TMA_cores/TMA2_CD8/core_7_1",
+      "legacy_formulas_match": true,
+      "rotation_invariance": true
+    },
+    {
+      "cells": 2,
+      "image_id": "external_val_TMA_cores/TMA3_CD8/core_1_6_2",
+      "legacy_formulas_match": true,
+      "rotation_invariance": true
+    }
+  ],
+  "units": 5
+}

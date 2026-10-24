@@ -1,0 +1,58 @@
+{
+  "CD8_GMM_ANALYSIS_REPORT.html": {
+    "bytes": 15165,
+    "sha256": "052ce5402174369f7dbb8e6bc91c6ff5e988ba697b222548eebe4b167d20accc"
+  },
+  "README_ANALYSIS.txt": {
+    "bytes": 1380,
+    "sha256": "2742b47952aeac47945987aeadd51f3284ebb0f48de768df771bac422e96527d"
+  },
+  "scripts/make_report.py": {
+    "bytes": 19178,
+    "sha256": "3650d4c9857d7aaae2e9c9be87659f3f626f90f98f3756c7f69af4074f8b7643"
+  },
+  "figures/CD8_GMM_summary_en.pdf": {
+    "bytes": 59707,
+    "sha256": "2404806af9c59705f78ff95be458dd14461603248b791905c339519933255128"
+  },
+  "figures/CD8_GMM_summary_en.png": {
+    "bytes": 288011,
+    "sha256": "ad87b8fc96cd693b08a634e47994fd873f8a8c82e393baec5d8d04f7cdea0191"
+  },
+  "figures/CD8_GMM_summary_en.svg": {
+    "bytes": 51571,
+    "sha256": "53e52265f802a401bc33cb9757b1cd183c260dd17aa9502b6d83b3b5b7807027"
+  },
+  "figures/CD8_GMM_summary_en.tiff": {
+    "bytes": 1672712,
+    "sha256": "868f96509b046fd3e415481d710f4a6facd9895ded44d22aa226dd5e847f7c26"
+  },
+  "figures/CD8_GMM_summary_zh.pdf": {
+    "bytes": 61836,
+    "sha256": "17741239703d61fde688b558a6beaae8e76ce3f2cec1ff4e0c6b4aef9ab26bc6"
+  },
+  "figures/CD8_GMM_summary_zh.png": {
+    "bytes": 292036,
+    "sha256": "11a5bfdc7fa7f73491b11058e73d694f584afc937a28692a68f3c1738c1c3181"
+  },
+  "figures/CD8_GMM_summary_zh.svg": {
+    "bytes": 52385,
+    "sha256": "c0b52f41a1430e15e57daa707bfffaa882950703e9a1ef35dab01acdab5e7552"
+  },
+  "figures/CD8_GMM_summary_zh.tiff": {
+    "bytes": 1700776,
+    "sha256": "ce992208cd21a08c1cc6208d3e35532976158a695e8269d0effc83d37fdc85b5"
+  },
+  "provenance/figure_contract.json": {
+    "bytes": 1479,
+    "sha256": "90b993c1da1385a1043d980bce395081e51ea1687b5ad8e15d312d0d59e3d31a"
+  },
+  "provenance/figure_qa.json": {
+    "bytes": 580,
+    "sha256": "960ea7e7978bd64a9a8d2706671a01834b12b864a38e105f990c88e6191bce80"
+  },
+  "provenance/plot_runtime.json": {
+    "bytes": 280,
+    "sha256": "3b8567f5f133423a6da261d0b558912a3b6ea8b07b2b869be5a5e6c46d72dea6"
+  }
+}

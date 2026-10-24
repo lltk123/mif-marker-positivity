@@ -1,0 +1,3 @@
+model,inference_seconds,cells,peak_gpu_allocated_gib,peak_gpu_reserved_gib,process_peak_rss_gib,fit_seconds,fit_peak_gpu_allocated_gib,fit_peak_gpu_reserved_gib,fit_peak_rss_gib
+Nimbus_finetuned,2535.961228542961,1817783,0.9810376167297363,1.6640625,17.52829360961914,480.7503051077947,5.8368072509765625,6.04296875,9.367019653320312
+Nimbus_pretrained,2566.03195630759,1817783,0.9810376167297363,1.423828125,17.562583923339844,0.0,0.0,0.0,0.0

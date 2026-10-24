@@ -1,0 +1,2 @@
+model,completed_epochs,selected_epoch,checkpoint_tile_F1,fit_seconds,peak_gpu_allocated_gib,peak_gpu_reserved_gib,peak_rss_gib,weight_sha256
+Nimbus_finetuned,8,3,0.7603036876355748,480.7503051077947,5.8368072509765625,6.04296875,9.367019653320312,b6024bf6395483340b47334176c41c3db03bcb64c42d20682518d5b82382464f

@@ -1,0 +1,1406 @@
+[
+  {
+    "unit_id": "PhenoBIC-Data/training_WSIs/WSI1/WSI1",
+    "split": "training_WSIs",
+    "context": "WSI1",
+    "unit": "WSI1",
+    "n_fit": 151245,
+    "gate_log1p": 1.102831355861176,
+    "gate_raw": 2.012683939961621,
+    "nearest_observed_gate_raw": 2.012649386890986,
+    "component_means_log1p": [
+      0.1978894078201309,
+      1.6637932457284994,
+      0.5418694659938524
+    ],
+    "component_weights": [
+      0.6599419879645022,
+      0.1037672558961628,
+      0.23629075613933498
+    ],
+    "component_variances": [
+      0.0069809090776192986,
+      0.3757147471270457,
+      0.055735102227153575
+    ],
+    "converged": true,
+    "iterations": 17,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/training_WSIs/WSI2/WSI2",
+    "split": "training_WSIs",
+    "context": "WSI2",
+    "unit": "WSI2",
+    "n_fit": 438548,
+    "gate_log1p": 1.0968222277331308,
+    "gate_raw": 1.9946346208056103,
+    "nearest_observed_gate_raw": 1.99467865577949,
+    "component_means_log1p": [
+      0.17273179939097252,
+      1.6541671662413568,
+      0.5394772892249047
+    ],
+    "component_weights": [
+      0.5780566171496115,
+      0.16749371630027923,
+      0.25444966655010925
+    ],
+    "component_variances": [
+      0.009796677122021612,
+      0.281862849517228,
+      0.055668622667233415
+    ],
+    "converged": true,
+    "iterations": 19,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/training_WSIs/WSI3/WSI3",
+    "split": "training_WSIs",
+    "context": "WSI3",
+    "unit": "WSI3",
+    "n_fit": 122629,
+    "gate_log1p": 0.9407157319686108,
+    "gate_raw": 1.5618143347296052,
+    "nearest_observed_gate_raw": 1.5617860808892323,
+    "component_means_log1p": [
+      0.18649035538817457,
+      0.47081654553888946,
+      1.410614918398332
+    ],
+    "component_weights": [
+      0.36777205765418164,
+      0.35586367003210617,
+      0.2763642723137122
+    ],
+    "component_variances": [
+      0.003154992401123955,
+      0.03349896444781391,
+      0.3260204713947787
+    ],
+    "converged": true,
+    "iterations": 35,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/internal_val_WSIs/WSI1/WSI1",
+    "split": "internal_val_WSIs",
+    "context": "WSI1",
+    "unit": "WSI1",
+    "n_fit": 65892,
+    "gate_log1p": 1.3181771012588155,
+    "gate_raw": 2.736603714986421,
+    "nearest_observed_gate_raw": 2.736389042859409,
+    "component_means_log1p": [
+      0.6232702403994191,
+      0.3203832150179014,
+      2.0130839621182117
+    ],
+    "component_weights": [
+      0.21535986418258213,
+      0.7408811466192835,
+      0.04375898919813424
+    ],
+    "component_variances": [
+      0.04063460162077663,
+      0.013197700597046691,
+      0.44574858123288724
+    ],
+    "converged": true,
+    "iterations": 5,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1,
+    "duplicated_cell_ids": 0,
+    "max_centroid_span_x": 0.0,
+    "max_centroid_span_y": 0.0,
+    "ids_with_centroid_span_over_500": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/internal_val_WSIs/WSI2/WSI2",
+    "split": "internal_val_WSIs",
+    "context": "WSI2",
+    "unit": "WSI2",
+    "n_fit": 292406,
+    "gate_log1p": 1.1765253084337974,
+    "gate_raw": 2.243085879372329,
+    "nearest_observed_gate_raw": 2.243092901627678,
+    "component_means_log1p": [
+      0.21858143222090298,
+      1.7902442009940933,
+      0.5628064158735016
+    ],
+    "component_weights": [
+      0.8267503846493267,
+      0.06127919893070257,
+      0.11197041641997085
+    ],
+    "component_variances": [
+      0.008078564588754507,
+      0.23626698649239022,
+      0.05248562890062366
+    ],
+    "converged": true,
+    "iterations": 10,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1,
+    "duplicated_cell_ids": 0,
+    "max_centroid_span_x": 0.0,
+    "max_centroid_span_y": 0.0,
+    "ids_with_centroid_span_over_500": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/internal_val_WSIs/WSI3/WSI3",
+    "split": "internal_val_WSIs",
+    "context": "WSI3",
+    "unit": "WSI3",
+    "n_fit": 308827,
+    "gate_log1p": 0.9547838834068265,
+    "gate_raw": 1.5981090277692396,
+    "nearest_observed_gate_raw": 1.5980941128086648,
+    "component_means_log1p": [
+      0.20705618486398145,
+      1.4921849328976278,
+      0.4173828339160254
+    ],
+    "component_weights": [
+      0.791994137306938,
+      0.043587826587619304,
+      0.16441803610544276
+    ],
+    "component_variances": [
+      0.005455610061141823,
+      0.48527953658640166,
+      0.018017026522717344
+    ],
+    "converged": true,
+    "iterations": 9,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1,
+    "duplicated_cell_ids": 0,
+    "max_centroid_span_x": 0.0,
+    "max_centroid_span_y": 0.0,
+    "ids_with_centroid_span_over_500": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_2_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_2_1",
+    "n_fit": 11148,
+    "gate_log1p": 0.07623749521519281,
+    "gate_raw": 0.07921885303731765,
+    "nearest_observed_gate_raw": 0.07921639269417417,
+    "component_means_log1p": [
+      0.00010133864599103261,
+      0.13516220682138663,
+      0.017312783608999
+    ],
+    "component_weights": [
+      0.8229713908487186,
+      0.09535006432272716,
+      0.08167854482855412
+    ],
+    "component_variances": [
+      1.1985852899995465e-06,
+      0.007135769077337105,
+      0.00016715900663097884
+    ],
+    "converged": true,
+    "iterations": 24,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_2_3",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_2_3",
+    "n_fit": 9480,
+    "gate_log1p": 0.07672282216342902,
+    "gate_raw": 0.0797427541511222,
+    "nearest_observed_gate_raw": 0.07989763408007784,
+    "component_means_log1p": [
+      7.112556923876234e-05,
+      0.13342021291666245,
+      0.020025431410195575
+    ],
+    "component_weights": [
+      0.8634065068650925,
+      0.06491329560673362,
+      0.07168019752817398
+    ],
+    "component_variances": [
+      1.1383117992130407e-06,
+      0.0063924191439553085,
+      0.0002498889195230383
+    ],
+    "converged": true,
+    "iterations": 16,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_2_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_2_5",
+    "n_fit": 18312,
+    "gate_log1p": 0.11295337930116475,
+    "gate_raw": 0.11957973614216892,
+    "nearest_observed_gate_raw": 0.11958237994824433,
+    "component_means_log1p": [
+      8.828944898003498e-05,
+      0.20235452924036754,
+      0.023552229361961965
+    ],
+    "component_weights": [
+      0.8835137667286183,
+      0.04652546355920622,
+      0.06996076971217556
+    ],
+    "component_variances": [
+      1.1585225533227886e-06,
+      0.017199380908918923,
+      0.00035295582142450953
+    ],
+    "converged": true,
+    "iterations": 16,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_2_9",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_2_9",
+    "n_fit": 4510,
+    "gate_log1p": 0.17735634900176878,
+    "gate_raw": 0.19405651817104785,
+    "nearest_observed_gate_raw": 0.19116468194194816,
+    "component_means_log1p": [
+      2.712977622376326e-05,
+      0.32288981481143764,
+      0.03182288319209994
+    ],
+    "component_weights": [
+      0.9640540704363649,
+      0.013657926971790623,
+      0.022288002591844356
+    ],
+    "component_variances": [
+      1.0438754762352838e-06,
+      0.023750358161727984,
+      0.0007594683459663078
+    ],
+    "converged": true,
+    "iterations": 9,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_4_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_4_4",
+    "n_fit": 15877,
+    "gate_log1p": 0.09894525164688249,
+    "gate_raw": 0.10400585540187264,
+    "nearest_observed_gate_raw": 0.10395830204594607,
+    "component_means_log1p": [
+      0.00020796070296154806,
+      0.015822280986677182,
+      0.1820682223070878
+    ],
+    "component_weights": [
+      0.9076594436158506,
+      0.04982731233577832,
+      0.04251324404837112
+    ],
+    "component_variances": [
+      1.2623112487718218e-06,
+      0.0001685185016800153,
+      0.01560594885017991
+    ],
+    "converged": true,
+    "iterations": 19,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_5_3",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_5_3",
+    "n_fit": 7947,
+    "gate_log1p": 0.11585807378476236,
+    "gate_raw": 0.12283650088914164,
+    "nearest_observed_gate_raw": 0.12245736573822796,
+    "component_means_log1p": [
+      0.00028152527663134476,
+      0.02750250293205648,
+      0.20421364463746824
+    ],
+    "component_weights": [
+      0.8930404427386365,
+      0.058994192671760634,
+      0.04796536458960281
+    ],
+    "component_variances": [
+      1.3406022412583716e-06,
+      0.0006081176133437027,
+      0.015822200880455935
+    ],
+    "converged": true,
+    "iterations": 19,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_5_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_5_5",
+    "n_fit": 13267,
+    "gate_log1p": 0.11808121927692893,
+    "gate_raw": 0.1253355065919129,
+    "nearest_observed_gate_raw": 0.12547414668632628,
+    "component_means_log1p": [
+      0.00042380061705195744,
+      0.21851325523675824,
+      0.017649183317099616
+    ],
+    "component_weights": [
+      0.8999278300421238,
+      0.03608117274814708,
+      0.0639909972097291
+    ],
+    "component_variances": [
+      1.5774710066868878e-06,
+      0.024024039129893014,
+      0.00024241617299385778
+    ],
+    "converged": true,
+    "iterations": 16,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_5_7",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_5_7",
+    "n_fit": 9423,
+    "gate_log1p": 0.07144732716762757,
+    "gate_raw": 0.07406157534601898,
+    "nearest_observed_gate_raw": 0.07416794788587856,
+    "component_means_log1p": [
+      0.00011579006618977335,
+      0.016711408359792543,
+      0.1261832459754626
+    ],
+    "component_weights": [
+      0.8701013973581638,
+      0.0682747922941468,
+      0.0616238103476893
+    ],
+    "component_variances": [
+      1.1813905756857418e-06,
+      0.0001431104967729101,
+      0.0070416394334428265
+    ],
+    "converged": true,
+    "iterations": 22,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_6_2",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_6_2",
+    "n_fit": 11212,
+    "gate_log1p": 0.11066516884757163,
+    "gate_raw": 0.11702083085972166,
+    "nearest_observed_gate_raw": 0.1166747093878009,
+    "component_means_log1p": [
+      0.0002199171977877457,
+      0.19669264943428186,
+      0.024637688260861393
+    ],
+    "component_weights": [
+      0.9150097921184779,
+      0.033617334414248426,
+      0.051372873467273684
+    ],
+    "component_variances": [
+      1.2801782112547611e-06,
+      0.014811704871489643,
+      0.0004525037712639374
+    ],
+    "converged": true,
+    "iterations": 16,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_6_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_6_4",
+    "n_fit": 14692,
+    "gate_log1p": 0.10678029583156953,
+    "gate_raw": 0.11268976504308503,
+    "nearest_observed_gate_raw": 0.1135105246033233,
+    "component_means_log1p": [
+      4.447508932713412e-05,
+      0.020603037236989696,
+      0.19295755442614937
+    ],
+    "component_weights": [
+      0.9553417417629939,
+      0.025961354517480714,
+      0.018696903719525284
+    ],
+    "component_variances": [
+      1.0621463457064954e-06,
+      0.00027928214935969047,
+      0.015369433837036085
+    ],
+    "converged": true,
+    "iterations": 16,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_8_3",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_8_3",
+    "n_fit": 17268,
+    "gate_log1p": 0.08178677212352413,
+    "gate_raw": 0.08522438506619297,
+    "nearest_observed_gate_raw": 0.08525662076744166,
+    "component_means_log1p": [
+      0.00040481940185429946,
+      0.01824889977368684,
+      0.1453246444733614
+    ],
+    "component_weights": [
+      0.5624048969955512,
+      0.22199744731467153,
+      0.21559765568977723
+    ],
+    "component_variances": [
+      1.781664850392368e-06,
+      0.0001759934251453829,
+      0.009526369838604666
+    ],
+    "converged": true,
+    "iterations": 29,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA1_CD8/core_9_8",
+    "split": "external_val_TMA_cores",
+    "context": "TMA1_CD8",
+    "unit": "core_9_8",
+    "n_fit": 12608,
+    "gate_log1p": 0.11049463995015886,
+    "gate_raw": 0.11683036276966632,
+    "nearest_observed_gate_raw": 0.11752495993896732,
+    "component_means_log1p": [
+      3.1482273560188595e-05,
+      0.19346498193687092,
+      0.027524297963446808
+    ],
+    "component_weights": [
+      0.9402358482786445,
+      0.023731473640225396,
+      0.036032678081130066
+    ],
+    "component_variances": [
+      1.0645625067237222e-06,
+      0.011982376844016117,
+      0.0004706136523122351
+    ],
+    "converged": true,
+    "iterations": 13,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_1_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_1_1",
+    "n_fit": 13698,
+    "gate_log1p": 0.19490246856971777,
+    "gate_raw": 0.2151924612510427,
+    "nearest_observed_gate_raw": 0.215128400903796,
+    "component_means_log1p": [
+      0.0005869939813046174,
+      0.37237875514559404,
+      0.017426181993841484
+    ],
+    "component_weights": [
+      0.6552835155347789,
+      0.20149545063166194,
+      0.1432210338335591
+    ],
+    "component_variances": [
+      2.150205335942306e-06,
+      0.0904370575447519,
+      0.00019310455176540055
+    ],
+    "converged": true,
+    "iterations": 40,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_3_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_3_1",
+    "n_fit": 15160,
+    "gate_log1p": 0.25712574985991515,
+    "gate_raw": 0.29320773722681504,
+    "nearest_observed_gate_raw": 0.29317420476622186,
+    "component_means_log1p": [
+      0.028994588284756137,
+      0.0005179120771255321,
+      0.4852569114350742
+    ],
+    "component_weights": [
+      0.1101122118651608,
+      0.7641754457830078,
+      0.1257123423518314
+    ],
+    "component_variances": [
+      0.0007011198798408757,
+      1.9363336855738166e-06,
+      0.12092975482195936
+    ],
+    "converged": true,
+    "iterations": 28,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_4_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_4_1",
+    "n_fit": 13857,
+    "gate_log1p": 0.21681987983342774,
+    "gate_raw": 0.24212035106279228,
+    "nearest_observed_gate_raw": 0.2427226018022608,
+    "component_means_log1p": [
+      0.0003929911987098311,
+      0.4128138200891735,
+      0.02082593957768197
+    ],
+    "component_weights": [
+      0.8814130003216355,
+      0.060677269025807105,
+      0.05790973065255728
+    ],
+    "component_variances": [
+      1.608502545803717e-06,
+      0.10526562517633876,
+      0.0003571640998764801
+    ],
+    "converged": true,
+    "iterations": 26,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_4_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_4_4",
+    "n_fit": 15910,
+    "gate_log1p": 0.2864217901401764,
+    "gate_raw": 0.3316540153475105,
+    "nearest_observed_gate_raw": 0.33289187633328965,
+    "component_means_log1p": [
+      0.00039485075874566436,
+      0.014000064371338012,
+      0.5588435159090147
+    ],
+    "component_weights": [
+      0.8750259218189075,
+      0.0655304697730801,
+      0.05944360840801248
+    ],
+    "component_variances": [
+      1.7125385446975543e-06,
+      0.00013416617568827804,
+      0.26386230219089185
+    ],
+    "converged": true,
+    "iterations": 30,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_5_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_5_4",
+    "n_fit": 17625,
+    "gate_log1p": 0.2675338007402879,
+    "gate_raw": 0.3067377977945566,
+    "nearest_observed_gate_raw": 0.30326764045659105,
+    "component_means_log1p": [
+      0.00042325406796766635,
+      0.5219808809911998,
+      0.013086720489375925
+    ],
+    "component_weights": [
+      0.9242037824589459,
+      0.030586399069241026,
+      0.04520981847181316
+    ],
+    "component_variances": [
+      1.7447777307720893e-06,
+      0.251899032607721,
+      0.00012270775446292438
+    ],
+    "converged": true,
+    "iterations": 24,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_5_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_5_5",
+    "n_fit": 13403,
+    "gate_log1p": 0.21888151008414292,
+    "gate_raw": 0.2446837854725836,
+    "nearest_observed_gate_raw": 0.24657398444813147,
+    "component_means_log1p": [
+      0.0005667793465900787,
+      0.42623271155087306,
+      0.011530308617412768
+    ],
+    "component_weights": [
+      0.8835079654167579,
+      0.04996528973030572,
+      0.06652674485293643
+    ],
+    "component_variances": [
+      1.8735914551557558e-06,
+      0.17083016466572135,
+      8.315671748526803e-05
+    ],
+    "converged": true,
+    "iterations": 28,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_6_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_6_4",
+    "n_fit": 15623,
+    "gate_log1p": 0.3670520824218908,
+    "gate_raw": 0.4434730967322567,
+    "nearest_observed_gate_raw": 0.44229967860009173,
+    "component_means_log1p": [
+      0.0003419344370914508,
+      0.7025349339411955,
+      0.031569230902586135
+    ],
+    "component_weights": [
+      0.9349960452650623,
+      0.028978602011427736,
+      0.03602535272350987
+    ],
+    "component_variances": [
+      1.561282770568028e-06,
+      0.23596491206406353,
+      0.0011523603270469287
+    ],
+    "converged": true,
+    "iterations": 18,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_7_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_7_1",
+    "n_fit": 4095,
+    "gate_log1p": 0.2688340209767301,
+    "gate_raw": 0.30843794976945527,
+    "nearest_observed_gate_raw": 0.31044928293438656,
+    "component_means_log1p": [
+      0.0004165895295634375,
+      0.00919868756125903,
+      0.5284693543922011
+    ],
+    "component_weights": [
+      0.8532208720983108,
+      0.06351411751628583,
+      0.08326501038540342
+    ],
+    "component_variances": [
+      1.703953442708217e-06,
+      4.9006341177494606e-05,
+      0.19607717346745032
+    ],
+    "converged": true,
+    "iterations": 37,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_7_3",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_7_3",
+    "n_fit": 17908,
+    "gate_log1p": 0.2286636558350049,
+    "gate_raw": 0.2569192104635584,
+    "nearest_observed_gate_raw": 0.2572446658765936,
+    "component_means_log1p": [
+      0.0011808379395118968,
+      0.41948298119653266,
+      0.037844330473477135
+    ],
+    "component_weights": [
+      0.5685991053690705,
+      0.21254341972099414,
+      0.21885747490993535
+    ],
+    "component_variances": [
+      3.531591485636235e-06,
+      0.08804572140843402,
+      0.001003170526666684
+    ],
+    "converged": true,
+    "iterations": 29,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_7_8",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_7_8",
+    "n_fit": 10665,
+    "gate_log1p": 0.21907945062281808,
+    "gate_raw": 0.24493018323680887,
+    "nearest_observed_gate_raw": 0.244570488462577,
+    "component_means_log1p": [
+      0.0007573968045968022,
+      0.42786032440021693,
+      0.01029857684541925
+    ],
+    "component_weights": [
+      0.8768150726579202,
+      0.044525333586107343,
+      0.07865959375597233
+    ],
+    "component_variances": [
+      2.1988354064626417e-06,
+      0.1855894061610841,
+      5.3759467267979536e-05
+    ],
+    "converged": true,
+    "iterations": 24,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_8_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_8_1",
+    "n_fit": 10369,
+    "gate_log1p": 0.32427946853377126,
+    "gate_raw": 0.38303376753437046,
+    "nearest_observed_gate_raw": 0.3915135223290016,
+    "component_means_log1p": [
+      0.00019636989132230015,
+      0.6359898121311014,
+      0.012569124936441151
+    ],
+    "component_weights": [
+      0.9454928000712366,
+      0.027408732306362513,
+      0.02709846762240088
+    ],
+    "component_variances": [
+      1.3355886778710426e-06,
+      0.26783815509507897,
+      0.00012556513390531203
+    ],
+    "converged": true,
+    "iterations": 24,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA2_CD8/core_8_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA2_CD8",
+    "unit": "core_8_5",
+    "n_fit": 10473,
+    "gate_log1p": 0.1878713181366692,
+    "gate_raw": 0.20667822775568284,
+    "nearest_observed_gate_raw": 0.20517264499708457,
+    "component_means_log1p": [
+      0.0005078345739759813,
+      0.01622721639418249,
+      0.3595154198791559
+    ],
+    "component_weights": [
+      0.8751080177300123,
+      0.07544116104487662,
+      0.049450821225111116
+    ],
+    "component_variances": [
+      1.8659365129148634e-06,
+      0.00018789333206850362,
+      0.11154989769748033
+    ],
+    "converged": true,
+    "iterations": 23,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_1_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_1_5",
+    "n_fit": 8122,
+    "gate_log1p": 1.213765707356336,
+    "gate_raw": 2.3661367013800825,
+    "nearest_observed_gate_raw": 2.3794871794871795,
+    "component_means_log1p": [
+      0.08848951197902682,
+      2.1256309243108475,
+      0.3019004904018244
+    ],
+    "component_weights": [
+      0.6658493947166407,
+      0.11248730072603162,
+      0.22166330455732766
+    ],
+    "component_variances": [
+      0.0028035199059167383,
+      1.485085476157766,
+      0.021630143955345123
+    ],
+    "converged": true,
+    "iterations": 25,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_2_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_2_4",
+    "n_fit": 7246,
+    "gate_log1p": 0.9565283565338214,
+    "gate_raw": 1.6026453147141244,
+    "nearest_observed_gate_raw": 1.6015625,
+    "component_means_log1p": [
+      0.012923168958554634,
+      1.8213674580197419,
+      0.09168925504790082
+    ],
+    "component_weights": [
+      0.49834487876614436,
+      0.18693693511376192,
+      0.3147181861200938
+    ],
+    "component_variances": [
+      0.00017983709851838032,
+      1.7227556787196585,
+      0.0035232188681337618
+    ],
+    "converged": true,
+    "iterations": 44,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_4_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_4_1",
+    "n_fit": 9612,
+    "gate_log1p": 0.9091612135019685,
+    "gate_raw": 1.4822395908812056,
+    "nearest_observed_gate_raw": 1.4806763285024154,
+    "component_means_log1p": [
+      0.02257063209602125,
+      1.721606012325607,
+      0.09671641467833005
+    ],
+    "component_weights": [
+      0.6304101591320704,
+      0.17478882493032852,
+      0.19480101593760102
+    ],
+    "component_variances": [
+      0.00033117182690194465,
+      1.5125957979907634,
+      0.0029117487115007355
+    ],
+    "converged": true,
+    "iterations": 44,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_4_4",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_4_4",
+    "n_fit": 5353,
+    "gate_log1p": 1.0379202889123809,
+    "gate_raw": 1.823339174580372,
+    "nearest_observed_gate_raw": 1.8213058419243986,
+    "component_means_log1p": [
+      0.05068107067827407,
+      1.847549659754038,
+      0.2282909180707239
+    ],
+    "component_weights": [
+      0.5829218504603231,
+      0.08801386830525969,
+      0.3290642812344173
+    ],
+    "component_variances": [
+      0.0013537047867685796,
+      1.1720414517397675,
+      0.015913219196742115
+    ],
+    "converged": true,
+    "iterations": 27,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_4_6",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_4_6",
+    "n_fit": 5731,
+    "gate_log1p": 0.8991771863142192,
+    "gate_raw": 1.457580148430342,
+    "nearest_observed_gate_raw": 1.456043956043956,
+    "component_means_log1p": [
+      0.005611643894445568,
+      1.7568382412350267,
+      0.04151613139341166
+    ],
+    "component_weights": [
+      0.6069499301266618,
+      0.21525413201323593,
+      0.17779593786010245
+    ],
+    "component_variances": [
+      3.73664501167861e-05,
+      1.516201802925501,
+      0.000774541052468954
+    ],
+    "converged": true,
+    "iterations": 46,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_5_2",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_5_2",
+    "n_fit": 7381,
+    "gate_log1p": 2.0810766696844945,
+    "gate_raw": 7.013091724443018,
+    "nearest_observed_gate_raw": 7.017964071856287,
+    "component_means_log1p": [
+      0.039574038400996284,
+      3.3088655206207926,
+      0.8532878187481961
+    ],
+    "component_weights": [
+      0.6863652959493505,
+      0.10485770662099644,
+      0.20877699742965306
+    ],
+    "component_variances": [
+      0.0013152146864141324,
+      0.2570402741444193,
+      0.44704378223002006
+    ],
+    "converged": true,
+    "iterations": 10,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_6_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_6_1",
+    "n_fit": 8177,
+    "gate_log1p": 2.3098411869947117,
+    "gate_raw": 9.072824832397254,
+    "nearest_observed_gate_raw": 9.06,
+    "component_means_log1p": [
+      0.35712681414608144,
+      3.211890395569144,
+      1.4077919784202797
+    ],
+    "component_weights": [
+      0.8747308861743385,
+      0.04835519428640715,
+      0.07691391953925428
+    ],
+    "component_variances": [
+      0.0461280771686649,
+      0.30951701764721573,
+      0.31466073710326414
+    ],
+    "converged": true,
+    "iterations": 4,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_6_2",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_6_2",
+    "n_fit": 3213,
+    "gate_log1p": 0.6788860400543437,
+    "gate_raw": 0.9716801357436026,
+    "nearest_observed_gate_raw": 0.9689119170984456,
+    "component_means_log1p": [
+      0.0008890374220885145,
+      1.3472069718639637,
+      0.010565108244723807
+    ],
+    "component_weights": [
+      0.6005609537702826,
+      0.16363611286893073,
+      0.23580293336078662
+    ],
+    "component_variances": [
+      3.608678506958324e-06,
+      1.363505764599252,
+      5.5942285217131225e-05
+    ],
+    "converged": true,
+    "iterations": 58,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_1_6_7",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_1_6_7",
+    "n_fit": 4536,
+    "gate_log1p": 0.8086328290377804,
+    "gate_raw": 1.2448368120401128,
+    "nearest_observed_gate_raw": 1.2459016393442623,
+    "component_means_log1p": [
+      0.005293807583204228,
+      1.5865359076813472,
+      0.030729750394213603
+    ],
+    "component_weights": [
+      0.6588535662324446,
+      0.0934709220873147,
+      0.24767551168024082
+    ],
+    "component_variances": [
+      3.166953840815559e-05,
+      1.7994576894374321,
+      0.0003626639695207166
+    ],
+    "converged": true,
+    "iterations": 35,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_1_2",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_1_2",
+    "n_fit": 8486,
+    "gate_log1p": 0.9116977580554945,
+    "gate_raw": 1.4885438943891776,
+    "nearest_observed_gate_raw": 1.4885496183206106,
+    "component_means_log1p": [
+      1.8134435633072026,
+      0.00031312158099643556,
+      0.009951952803786386
+    ],
+    "component_weights": [
+      0.32160372449654817,
+      0.5860161664409315,
+      0.09238010906252035
+    ],
+    "component_variances": [
+      1.7240025736309326,
+      1.774382731768901e-06,
+      6.439542112464207e-05
+    ],
+    "converged": true,
+    "iterations": 97,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_2_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_2_1",
+    "n_fit": 8418,
+    "gate_log1p": 1.0547933354108834,
+    "gate_raw": 1.871381679663379,
+    "nearest_observed_gate_raw": 1.8764044943820224,
+    "component_means_log1p": [
+      2.0348450456370717,
+      0.0049440059598817795,
+      0.07474162518469518
+    ],
+    "component_weights": [
+      0.4778238371431131,
+      0.3095514091015623,
+      0.21262475375532458
+    ],
+    "component_variances": [
+      1.4117800009055654,
+      3.808045517987071e-05,
+      0.0031668171788364952
+    ],
+    "converged": true,
+    "iterations": 63,
+    "score_equal_0_5": 0,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_2_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_2_5",
+    "n_fit": 6812,
+    "gate_log1p": 0.855443626334763,
+    "gate_raw": 1.352417743587555,
+    "nearest_observed_gate_raw": 1.3515981735159817,
+    "component_means_log1p": [
+      0.014177600140532908,
+      1.696709652528993,
+      8.083062750087666e-05
+    ],
+    "component_weights": [
+      0.19013848112356066,
+      0.4496061210323833,
+      0.36025539784405597
+    ],
+    "component_variances": [
+      0.00014581370108251795,
+      1.2465860433269578,
+      1.2271727655030968e-06
+    ],
+    "converged": true,
+    "iterations": 72,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_2_7",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_2_7",
+    "n_fit": 6312,
+    "gate_log1p": 0.7791112962006363,
+    "gate_raw": 1.179534444009846,
+    "nearest_observed_gate_raw": 1.176056338028169,
+    "component_means_log1p": [
+      0.01907424513318486,
+      1.4849578828111225,
+      0.0732647095901502
+    ],
+    "component_weights": [
+      0.771750553092203,
+      0.033669811562783446,
+      0.19457963534501352
+    ],
+    "component_variances": [
+      0.0001973260328080806,
+      2.0816832387549384,
+      0.0014859214226822077
+    ],
+    "converged": true,
+    "iterations": 25,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_3_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_3_5",
+    "n_fit": 12772,
+    "gate_log1p": 0.32569492514845866,
+    "gate_raw": 0.3849927779490119,
+    "nearest_observed_gate_raw": 0.38493723849372385,
+    "component_means_log1p": [
+      0.001118754436781859,
+      0.632185151942946,
+      0.019204698353971292
+    ],
+    "component_weights": [
+      0.519099358179615,
+      0.04445562697762409,
+      0.4364450148427609
+    ],
+    "component_variances": [
+      5.330856845531938e-06,
+      0.8533866334802066,
+      0.00022056420103170474
+    ],
+    "converged": true,
+    "iterations": 56,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 0
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_5_1",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_5_1",
+    "n_fit": 8628,
+    "gate_log1p": 1.2445481873488187,
+    "gate_raw": 2.471366037877581,
+    "nearest_observed_gate_raw": 2.4798206278026904,
+    "component_means_log1p": [
+      2.2335158590945428,
+      5.4855985583912215e-05,
+      0.25558051560309436
+    ],
+    "component_weights": [
+      0.2597660246276441,
+      0.615579627670126,
+      0.12465434770222995
+    ],
+    "component_variances": [
+      0.7627003761319876,
+      1.1772695154698517e-06,
+      0.07097059165726274
+    ],
+    "converged": true,
+    "iterations": 37,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_5_2",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_5_2",
+    "n_fit": 9068,
+    "gate_log1p": 0.8030158924941815,
+    "gate_raw": 1.23226305218024,
+    "nearest_observed_gate_raw": 1.2365591397849462,
+    "component_means_log1p": [
+      0.025196568628971724,
+      1.5027810264712933,
+      0.10325075851706961
+    ],
+    "component_weights": [
+      0.7859472785921626,
+      0.038497724907496964,
+      0.17555499650034032
+    ],
+    "component_variances": [
+      0.0003715791605211723,
+      1.4706788575536154,
+      0.003453812152837299
+    ],
+    "converged": true,
+    "iterations": 21,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_5_5",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_5_5",
+    "n_fit": 7633,
+    "gate_log1p": 0.8071725372381477,
+    "gate_raw": 1.241561087590863,
+    "nearest_observed_gate_raw": 1.244956772334294,
+    "component_means_log1p": [
+      0.0002492074689855174,
+      1.604543360493926,
+      0.00980171398236945
+    ],
+    "component_weights": [
+      0.7459920868724997,
+      0.1717496129122802,
+      0.08225830021522007
+    ],
+    "component_variances": [
+      1.5871200687240522e-06,
+      1.5446828979162208,
+      6.428566934629509e-05
+    ],
+    "converged": true,
+    "iterations": 56,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  },
+  {
+    "unit_id": "PhenoBIC-Data/external_val_TMA_cores/TMA3_CD8/core_2_6_3",
+    "split": "external_val_TMA_cores",
+    "context": "TMA3_CD8",
+    "unit": "core_2_6_3",
+    "n_fit": 6206,
+    "gate_log1p": 2.066816229412274,
+    "gate_raw": 6.899632421072256,
+    "nearest_observed_gate_raw": 6.9258474576271185,
+    "component_means_log1p": [
+      0.024208483444380875,
+      0.8682684605999117,
+      3.2653639982246356
+    ],
+    "component_weights": [
+      0.817304192206519,
+      0.12904811153650245,
+      0.05364769625697863
+    ],
+    "component_variances": [
+      0.0006023107964208215,
+      0.6257650631581263,
+      0.374776837624704
+    ],
+    "converged": true,
+    "iterations": 9,
+    "score_equal_0_5": 1,
+    "direct_threshold_vs_score_disagreements": 1
+  }
+]

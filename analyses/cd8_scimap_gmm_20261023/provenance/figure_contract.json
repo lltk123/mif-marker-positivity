@@ -1,0 +1,33 @@
+{
+  "question": "Quantify ranking quality and fixed automatic-gate errors for CD8 in the original PhenoBIC partitions.",
+  "conclusion": "Strong discrimination coexists with excess positive calls; external TMA3 shows the largest precision shortfall.",
+  "archetype": "quantitative grid",
+  "backend": "Python / matplotlib only",
+  "panels": {
+    "a": "ROC curves: ranking across original splits",
+    "b": "PR curves with prevalence reference: performance under class imbalance",
+    "c": "F1 per independent gating unit, equal-unit mean and cell-pooled F1",
+    "d-f": "Confusion matrices: false-positive and false-negative counts and within-truth-class percentages"
+  },
+  "size_mm": [
+    183,
+    140
+  ],
+  "score": "SCIMAP rescaled continuous score, not probability",
+  "threshold": "score > 0.5",
+  "n_definition": "Cells for pooled metrics; WSI/core for unit scatter. Cores are not asserted to be independent patients.",
+  "error_bars": "None. Each dot is one gating unit; diamond is arithmetic unit mean.",
+  "inferential_statistics": "No p-values or confidence intervals; descriptive comparison only.",
+  "source_data": [
+    "results/phenobic/metrics_summary.csv",
+    "results/phenobic/metrics_per_unit.csv",
+    "results/phenobic/*_curves.npz"
+  ],
+  "image_integrity": "No raw image pixels displayed or modified.",
+  "formats": [
+    "SVG editable text",
+    "PDF embedded TrueType text",
+    "PNG 300 dpi",
+    "TIFF 600 dpi"
+  ]
+}

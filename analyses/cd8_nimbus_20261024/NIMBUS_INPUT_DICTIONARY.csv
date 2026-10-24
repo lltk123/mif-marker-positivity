@@ -1,0 +1,10 @@
+﻿field,role,definition,unit,missing_behavior
+CD8_normalized,network_input_channel_0,"clip(float32(CD8)/training_marker_factor,0,1)",dimensionless,valid support saved separately
+binary_instance_interior,network_input_channel_1,instance_id>0 AND NOT find_boundaries(mode=inner),binary,no DAPI required
+score,cell_output,mean over all original instance pixels after official nearest upsampling,0..1 uncalibrated score,retain NaN row if any original pixel unpredicted
+cell_id,key,"original integer ID, never row number",ID,missing/duplicate are errors
+ground_truth_binary,target,"pos=1, neg=0; missing unlabelled",label,unlabelled instance activity=2
+prediction_official_default,output,score > 0.5,0/1,nullable
+prediction_validation_selected,output,score > frozen validation threshold,0/1,nullable
+context,metadata,original WSI/TMA slide,identifier,not input
+mask_type,metadata,expanded_nucleus,category,"approximate edge, not true membrane"

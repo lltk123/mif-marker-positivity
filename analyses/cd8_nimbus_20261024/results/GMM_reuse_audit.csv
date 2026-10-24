@@ -1,0 +1,2 @@
+n,max_score_difference,default_prediction_mismatches,source,source_sha256,refitted
+1817783,0.0,0,/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/audit/cells.parquet,ca5e4c6d77d22fc1d2c0f24f80eb26df8cd79e390625ea96031f74992be45d21,False

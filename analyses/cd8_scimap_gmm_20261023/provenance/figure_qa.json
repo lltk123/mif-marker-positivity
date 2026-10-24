@@ -1,0 +1,22 @@
+{
+  "zh": {
+    "pdf_pages": 1,
+    "pdf_text_extractable": true,
+    "svg_editable_text_nodes": 86,
+    "pdf_fonts": [
+      "/DFIMHP+MicrosoftYaHei",
+      "/HBGWOI+MicrosoftYaHei-Bold"
+    ]
+  },
+  "en": {
+    "pdf_pages": 1,
+    "pdf_text_extractable": true,
+    "svg_editable_text_nodes": 87,
+    "pdf_fonts": [
+      "/GZROMK+ArialMT",
+      "/GZROMK+Arial-BoldMT"
+    ]
+  },
+  "report_relative_links_valid": 16,
+  "visual_review": "Chinese and English PNGs inspected; missing English glyph repaired and PR legend moved away from reference baselines."
+}

@@ -1,0 +1,15 @@
+path,expected_ignored,actual_ignored,passed
+datasets/PhenoBIC-Data/training.tiff,True,True,True
+datasets/Pan-M-Gold/labels.csv,True,True,True
+analyses/cd8_nimbus_20261024/weights/V1.pt,True,True,True
+analyses/cd8_nimbus_20261024/predictions/all_cells.csv,True,True,True
+analyses/run/cache/features.parquet,True,True,True
+.venv/lib/site.py,True,True,True
+docs/local_password.txt,True,True,True
+docs/private.pem,True,True,True
+.ssh/id_ed25519,True,True,True
+analyses/run/keys/cell_keys.csv,True,True,True
+README.md,False,False,True
+analyses/cd8_nimbus_20261024/scripts/inference.py,False,False,True
+analyses/cd8_nimbus_20261024/results/overall_metrics.csv,False,False,True
+analyses/cd8_e1_e4_stability_20261023/figures/01_performance_fixed_zh.svg,False,False,True

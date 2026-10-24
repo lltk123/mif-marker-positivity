@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce",
+  "code_hash_at_start": "52f648b8f74cfc91c864dc21d398d01137134babb6806277649c5da43af58d95",
+  "server_root": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024",
+  "cuda_visible_devices": "0",
+  "thread_limits": 4
+}

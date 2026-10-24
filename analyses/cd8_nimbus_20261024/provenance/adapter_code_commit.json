@@ -1,0 +1,7 @@
+{
+  "commit": "7447f5315fb12188970b8ddbf4d04df842486291",
+  "source_snapshot": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/provenance/adapter_source",
+  "bundle": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/provenance/adapter-source.bundle",
+  "scope": "new adapter code, static documentation, fixed protocol and dependency lock; excludes raw data, cached arrays, weights and predictions",
+  "manifest_sha256": "71a7cff61bfd2d6d1ddc31f12ce00084617e8fd268f2f496e93a9927ed24235d"
+}

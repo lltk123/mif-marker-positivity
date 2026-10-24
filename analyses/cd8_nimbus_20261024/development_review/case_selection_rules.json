@@ -1,0 +1,10 @@
+{
+  "training_derived_cutoffs": {
+    "weak_mean": 3.4354596317547266,
+    "neighbor_diff": 1.0864674736541522,
+    "reference": 0.481655053794384,
+    "sector_cv": 1.4022111989054538
+  },
+  "n_per_model_category_error": 2,
+  "selection": "seed0 uniform among eligible development errors; categories are image-property proxies, not proven failure mechanisms"
+}

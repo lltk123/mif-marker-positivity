@@ -1,0 +1,9 @@
+{
+  "python": "3.11.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.3",
+  "matplotlib": "3.7.1",
+  "Chinese_font": "C:/Windows/Fonts/msyh.ttc",
+  "SVG_text_editable": true
+}

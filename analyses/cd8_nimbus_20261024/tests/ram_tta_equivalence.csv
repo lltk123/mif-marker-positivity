@@ -1,0 +1,2 @@
+inference_code_sha256,max_abs_error,actual_real_crop,preserves_frozen_preprocessing
+f1e8348b84ca5ef00b2042f21ef92890913f581d257b60a23b35bca04369b25f,0.0,training WSI1 same pilot pixels,True

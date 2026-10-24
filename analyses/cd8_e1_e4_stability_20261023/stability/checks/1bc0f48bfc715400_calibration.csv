@@ -1,0 +1,5 @@
+image_id,perturbation,L,U,n_full_GMM,n_calibration_eligible,gate_log1p,L_U_reestimated,GMM_action,method
+external_val_TMA_cores/TMA1_CD8/core_9_8,gain_0.5,0.0,0.6670676827430725,12608,12608,0.07250244862596185,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+external_val_TMA_cores/TMA1_CD8/core_9_8,gain_2,0.0,2.66827073097229,12608,12608,0.1898840827232558,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+external_val_TMA_cores/TMA1_CD8/core_9_8,bias_0.05,0.06670676827430726,1.4008421337604522,12608,12608,0.16944308360217394,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+external_val_TMA_cores/TMA1_CD8/core_9_8,bias_0.10,0.13341353654861451,1.4675489020347594,12608,12608,0.2260475679742862,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"

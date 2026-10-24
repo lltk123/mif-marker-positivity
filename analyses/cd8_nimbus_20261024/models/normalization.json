@@ -1,0 +1,18 @@
+{
+  "CD8": 17.2643260510762,
+  "fit_split": "training_WSIs",
+  "quantile": 0.999,
+  "aggregation": "mean of per-WSI positive-pixel quantiles",
+  "actual_clip": [
+    0,
+    1
+  ],
+  "notebook_clip_argument": [
+    0,
+    2
+  ],
+  "input_provenance": {
+    "prior_source_manifest_sha256": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78",
+    "prior_cells_sha256": "01aa881ca69f1a730804998b4f62a36032b8753a349058e7ad8a8c5ea9c82fb7"
+  }
+}

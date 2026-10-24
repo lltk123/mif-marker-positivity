@@ -1,0 +1,7 @@
+{
+  "validation_call": 3,
+  "selection_metric": "official tile/interior mean_f1",
+  "best_f1": 0.7603036876355748,
+  "weight_sha256": "b6024bf6395483340b47334176c41c3db03bcb64c42d20682518d5b82382464f",
+  "pretrained_sha256": "0651a3852fbafc03be415a1ec80ef947cc1913a081cf0bc649301ade887a82a9"
+}

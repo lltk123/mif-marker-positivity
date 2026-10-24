@@ -1,0 +1,4 @@
+n_total,n_scored,n_failed,prediction_coverage,complete_population_metrics,n_true_positive,no_true_positives,TP,FP,FN,TN,precision,recall,F1,specificity,ROC_AUC,AP,true_prevalence,predicted_prevalence,prevalence_absolute_error,no_positive_predictions,split,level,group,model_version,threshold,threshold_operator
+3,3,0,1.0,True,1,False,1,0,0,2,1.0,1.0,1.0,1.0,1.0,1.0,0.3333333333333333,0.3333333333333333,0.0,False,development_fixture,split,development_fixture,fixture_v1,0.5,gt
+3,3,0,1.0,True,1,False,1,0,0,2,1.0,1.0,1.0,1.0,1.0,1.0,0.3333333333333333,0.3333333333333333,0.0,False,development_fixture,slide,slide_fixture,fixture_v1,0.5,gt
+3,3,0,1.0,True,1,False,1,0,0,2,1.0,1.0,1.0,1.0,1.0,1.0,0.3333333333333333,0.3333333333333333,0.0,False,development_fixture,image,WSI_fixture,fixture_v1,0.5,gt

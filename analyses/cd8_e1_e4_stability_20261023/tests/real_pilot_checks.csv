@@ -1,0 +1,6 @@
+image_id,cells,legacy_formulas_match,rotation_invariance
+training_WSIs/WSI3,20,True,True
+internal_val_WSIs/WSI1,20,True,True
+external_val_TMA_cores/TMA1_CD8/core_2_9,1,True,True
+external_val_TMA_cores/TMA2_CD8/core_7_1,1,True,True
+external_val_TMA_cores/TMA3_CD8/core_1_6_2,2,True,True

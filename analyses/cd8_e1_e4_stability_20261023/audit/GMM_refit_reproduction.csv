@@ -1,0 +1,6 @@
+image_id,n_full_unit,max_score_difference,gate_difference
+training_WSIs/WSI3,122629,0.0,0.0
+internal_val_WSIs/WSI1,65892,0.0,0.0
+external_val_TMA_cores/TMA1_CD8/core_2_9,4510,0.0,0.0
+external_val_TMA_cores/TMA2_CD8/core_7_1,4095,0.0,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_2,3213,0.0,0.0

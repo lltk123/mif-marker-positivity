@@ -1,0 +1,23 @@
+{
+  "model_spec": {
+    "status": "frozen",
+    "model_name": "SYNTHETIC_IO_TEST_NOT_MODEL",
+    "model_version": "fixture_v1",
+    "paper_reference": "SYNTHETIC_TEST_NOT_A_PAPER",
+    "official_repository": "synthetic_fixture",
+    "code_revision": "synthetic_fixture",
+    "weights_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "threshold": 0.5,
+    "threshold_operator": "gt",
+    "threshold_source": "official_fixed",
+    "frozen_at": "synthetic_test_only"
+  },
+  "model_spec_sha256": "fc3049a38d6f58bd85266bf6f3a80c1a5c272cd009007292489d6a3c715a3cfc",
+  "evaluation_key_sha256": "675a89ce2ef8997485a5bbf57e2771505130bcc71661c20cae56f666f510ce74",
+  "splits": [
+    "development_fixture"
+  ],
+  "no_positive_policy": "Precision/recall/F1 use zero_division=0; AP and ROC-AUC are NaN without positives; ROC-AUC also NaN without negatives",
+  "failed_scores_policy": "Retain row, report coverage; full-population performance undefined if any labelled row cannot score",
+  "scope": "Overall within each official split, per slide and per image; unknown labels retained but excluded from metrics"
+}

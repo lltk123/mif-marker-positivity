@@ -1,0 +1,7 @@
+test,passed,details
+tile_shape_and_exact_large_IDs,True,
+unlabelled_instance_ignore,True,
+official_ignore_label_zero_loss_gradient,True,
+aggregation_includes_original_boundary,True,
+upsampling_equals_cv2_nearest,True,
+global_normalization_clip,True,

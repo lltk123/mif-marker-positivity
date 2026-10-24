@@ -1,0 +1,8 @@
+image_id,model,n,max_original_score_reproduction_error
+training_WSIs/WSI1,GMM,200,0.0
+training_WSIs/WSI1,intensity_8,200,0.0
+training_WSIs/WSI1,morphospatial_90,200,0.0
+training_WSIs/WSI1,E1,200,0.0
+training_WSIs/WSI1,E2,200,0.0
+training_WSIs/WSI1,E3,200,0.0
+training_WSIs/WSI1,E4,200,0.0

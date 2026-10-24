@@ -1,0 +1,7 @@
+[
+  "training_WSIs/WSI3",
+  "internal_val_WSIs/WSI1",
+  "external_val_TMA_cores/TMA1_CD8/core_2_9",
+  "external_val_TMA_cores/TMA2_CD8/core_7_1",
+  "external_val_TMA_cores/TMA3_CD8/core_1_6_2"
+]

@@ -1,0 +1,1 @@
+User decision: all Pan-Multiplex Gold-Standard remains sealed for a future blind evaluation. Current analysis is PhenoBIC only. Do not read, evaluate, tune on, or expose Pan-M images, labels, or statistics in this analysis. No filesystem permission changes or encryption were applied.

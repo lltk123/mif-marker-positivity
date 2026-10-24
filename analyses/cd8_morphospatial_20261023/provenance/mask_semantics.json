@@ -1,0 +1,10 @@
+{
+  "mask_type": "expanded_nucleus",
+  "applies_to": "PhenoBIC in-house training/internal WSI and external TMA",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13308180/",
+  "section": "Cell segmentation; Figure 2",
+  "summary": "Authors approximate cells by expanding convex hulls of predicted nuclei, resolving overlaps by Voronoi partitioning. The released mask edge is an approximation, not a measured membrane. Original nuclear masks and tissue masks are not supplied for this run.",
+  "pixel_units": "px; physical spacing not confirmed",
+  "DAPI_requirement": "Not required with existing corresponding instance masks",
+  "fallback": "HistomicsTK 1.4 requires Python>=3.9; existing validated server environment is Python3.8. scikit-image0.21 implementation validated against the released standalone function on nondegenerate masks; degenerate/truncated NaN behavior intentionally differs."
+}

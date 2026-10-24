@@ -1,0 +1,10 @@
+{
+  "stage": "data_preflight_only",
+  "elapsed_seconds": 48.90039319451898,
+  "peak_process_rss_MiB": 3215.94921875,
+  "training_seconds": null,
+  "inference_seconds": null,
+  "peak_model_gpu_MiB": null,
+  "model_not_selected": true,
+  "benchmark_scope": "No model training/inference benchmark has been performed"
+}

@@ -1,0 +1,17 @@
+{
+  "independent_direct_pixel_checks": 96,
+  "all_sample_counts_exact": true,
+  "all_sample_means_agree_rtol_atol_1e_10": true,
+  "metric_count_identities_passed": true,
+  "annotation_accounting_passed": true,
+  "analysis_scripts_sha256": {
+    "extract_cd8_v2.py": "47bf0a3a583df4ec5fc5574eec988bee10eb676b153612a5ddc9c3d687c1da12",
+    "analyze_cd8_v2.py": "bc3a3169ebc38d1bc79d810f8356ca7afcbdce933ea4806b668a9946495e4e5a",
+    "verify_results.py": "c05a2b0a2b58cfea9f749ab3b015b07d8e51ba2c62b5b147a93edfefcf4ad3ed",
+    "verify_scimap.py": "6f12a24af777be3612f540e06517141ff521d627cc4a3bd7a74f058ec0432045",
+    "audit_overlap.py": "34dcb275155bd638d27ca05cb64f4fe5aead7cca0e455e26d8be7af72472b3f5",
+    "analyze_cd8.py": "95bca54721af5ba8c7234eed9cdeaa2e6974a18478bf79e69c1149937357140d",
+    "extract_cd8.py": "1ef29d9fb6279587ab42e25ecdcd29e302e9c898bdcc4f51d1c73c83e30a7f11",
+    "scimap_rescale_upstream.py": "b054ad3c4c55c91de9f8c1d0d719befe78525ffebaa14c99bd09fc0bc19bc4c8"
+  }
+}

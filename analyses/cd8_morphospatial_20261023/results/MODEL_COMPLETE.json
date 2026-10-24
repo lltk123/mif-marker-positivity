@@ -1,0 +1,25 @@
+{
+  "feature_rows": 1817783,
+  "unique_keys": true,
+  "all_GMM_pixel_counts_match": true,
+  "all_GMM_raw_means_match": true,
+  "training_cells": 101057,
+  "evaluation_labelled_cells": 1077669,
+  "GMM_baseline_reproduced": true,
+  "metadata_and_outcomes_excluded_from_features": true,
+  "models": [
+    "intensity_8",
+    "morphospatial_90"
+  ],
+  "supervised_positive_threshold": 0.5,
+  "model_parameters": {
+    "learning_rate": 0.06,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 80,
+    "l2_regularization": 2.0,
+    "early_stopping": false,
+    "random_state": 0
+  },
+  "pan_gold_accessed": false
+}

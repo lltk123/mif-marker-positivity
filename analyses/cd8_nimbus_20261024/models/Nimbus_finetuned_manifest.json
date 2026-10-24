@@ -1,0 +1,44 @@
+{
+  "model": "Nimbus_finetuned",
+  "weight_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/models/Nimbus_finetuned.pt",
+  "weight_sha256": "b6024bf6395483340b47334176c41c3db03bcb64c42d20682518d5b82382464f",
+  "official_code_commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+  "initial_weight_download_revision": "3affc9e774d68408701e44ed6136b1e13503c639",
+  "original_training_code_commit": "6942b10cc106654c154bc057af36bcf0f0b3604d",
+  "adapter_code_commit": "7447f5315fb12188970b8ddbf4d04df842486291",
+  "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce",
+  "normalization_sha256": "edc9a074004fd4f9c8dba136cb5d16638c32aaf11d8fe2d0f10c932472632335",
+  "input_channels": [
+    "CD8 normalized image",
+    "official instance interior binary mask"
+  ],
+  "input_scale": "official default assumed20x to10x (0.5), physical spacing unknown",
+  "mask_type": "expanded_nucleus",
+  "seed": 0,
+  "source_dataset": "PhenoBIC-Data",
+  "training_source": "author V1 plus original3 PhenoBIC training WSIs; explicit pos/neg labels only",
+  "validation_source": "3 original internal validation WSIs",
+  "test_source": "42 original external CD8 TMA cores",
+  "thresholds": {
+    "model": "Nimbus_finetuned",
+    "default": 0.5,
+    "operator": ">",
+    "validation_selected": 0.61,
+    "selection": "equal WSI mean F1 on full labelled internal validation",
+    "validation_development_fitted_macro_F1": 0.821485813498616,
+    "not_unbiased_validation": true,
+    "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce"
+  },
+  "training_complete": {
+    "seconds": 480.7503051077947,
+    "weight_sha256": "b6024bf6395483340b47334176c41c3db03bcb64c42d20682518d5b82382464f",
+    "peak_gpu_allocated_gib": 5.8368072509765625,
+    "peak_gpu_reserved_gib": 6.04296875,
+    "peak_rss_gib": 9.367019653320312,
+    "training_tiles": 560,
+    "validation_tiles": 384,
+    "validation_calls": 9,
+    "code_sha256": "16850e7035321fa5a76f6853fefe6008d23a6456f329c45c685a150610c9bee4",
+    "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce"
+  }
+}

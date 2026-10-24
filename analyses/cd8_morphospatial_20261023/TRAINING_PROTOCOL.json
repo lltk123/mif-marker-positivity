@@ -1,0 +1,39 @@
+{
+  "fixed_before_validation_results": true,
+  "dataset": "PhenoBIC only",
+  "holdout": "Entire Pan-M Gold sealed; no access",
+  "fit_split": "training_WSIs only, 101057 labelled cells",
+  "evaluation_splits": [
+    "internal_val_WSIs",
+    "external_val_TMA_cores"
+  ],
+  "models": {
+    "intensity_8": "8 raw whole-region intensity features",
+    "morphospatial_90": "19 morphology plus raw intensity, edge/inner, local-reference, 12-sector, displacement and neighbor-side features"
+  },
+  "estimator": "sklearn.ensemble.HistGradientBoostingClassifier",
+  "parameters": {
+    "learning_rate": 0.06,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 80,
+    "l2_regularization": 2.0,
+    "early_stopping": false,
+    "random_state": 0
+  },
+  "classification_threshold": 0.5,
+  "hyperparameter_search": false,
+  "threshold_tuning": false,
+  "missing_data": "Native NaN handling; no rows dropped for QC",
+  "feature_scaling": "No cell-level normalization; tree model uses saved raw features",
+  "metadata_excluded": [
+    "all image/patient/batch/cell identifiers",
+    "coordinates",
+    "QC fields",
+    "human labels",
+    "GMM score/prediction"
+  ],
+  "training_validation": "Three leave-one-original-training-WSI-out folds for descriptive out-of-fold metrics; not used for parameter or threshold selection",
+  "baseline": "Previously frozen SCIMAP GMM outputs joined after extraction; exact same labelled cells evaluated",
+  "stats": "Per original split and per WSI/core; pooled metrics plus unit-level distributions; descriptive, not independent-cell hypothesis tests"
+}

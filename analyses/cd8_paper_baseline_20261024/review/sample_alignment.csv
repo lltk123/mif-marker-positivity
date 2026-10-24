@@ -1,0 +1,16 @@
+dataset_id,image_id,cell_id,marker,split,source_image_id,ground_truth_original,ground_truth_binary,image_dtype,mask_dtype,observed_pixels,expected_pixels,pixel_count_matches,raw_min,raw_max,raw_mean,existing_raw_mean,raw_mean_matches,label_join_verified,mask_id_present,valid_context_fraction
+PhenoBIC-Data,training_WSIs/WSI1,22856,CD8,training_WSIs,WSI1,neg,0.0,float32,uint32,354,354,True,0.0,3.952423095703125,0.6674071651130999,0.6674071651130999,True,True,True,1.0
+PhenoBIC-Data,training_WSIs/WSI1,88485,CD8,training_WSIs,WSI1,neg,0.0,float32,uint32,126,126,True,0.0,0.5841639637947083,0.208474369217006,0.208474369217006,True,True,True,1.0
+PhenoBIC-Data,training_WSIs/WSI1,134870,CD8,training_WSIs,WSI1,neg,0.0,float32,uint32,129,129,True,0.18018075823783875,1.7801296710968018,0.7050211885871813,0.7050211885871813,True,True,True,1.0
+PhenoBIC-Data,internal_val_WSIs/WSI1,20232,CD8,internal_val_WSIs,00361G_y_0_x_0,neg,0.0,float32,uint32,266,266,True,0.023563267663121223,2.3256044387817383,0.9573185747013169,0.9573185747013169,True,True,True,1.0
+PhenoBIC-Data,internal_val_WSIs/WSI1,23966,CD8,internal_val_WSIs,00361G_y_0_x_0,neg,0.0,float32,uint32,337,337,True,0.0,1.3502800464630127,0.23857525012332212,0.23857525012332212,True,True,True,1.0
+PhenoBIC-Data,internal_val_WSIs/WSI1,24818,CD8,internal_val_WSIs,00361G_y_0_x_0,neg,0.0,float32,uint32,156,156,True,0.0,1.9199100732803345,0.679211918813869,0.679211918813869,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA1_CD8/core_2_1,5173,CD8,external_val_TMA_cores,core_2_1,neg,0.0,float32,uint32,535,535,True,0.0,0.0,0.0,0.0,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA1_CD8/core_2_1,6511,CD8,external_val_TMA_cores,core_2_1,neg,0.0,float32,uint32,158,158,True,0.0,0.2297993004322052,0.045066924317728116,0.045066924317728116,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA1_CD8/core_2_1,10330,CD8,external_val_TMA_cores,core_2_1,neg,0.0,float32,uint32,882,882,True,0.0,0.0,0.0,0.0,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA2_CD8/core_1_1,10970,CD8,external_val_TMA_cores,core_1_1,neg,0.0,float32,uint32,110,110,True,0.0,0.0,0.0,0.0,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA2_CD8/core_1_1,12118,CD8,external_val_TMA_cores,core_1_1,pos,1.0,float32,uint32,98,98,True,0.0,1.7004296779632568,0.3851066690926649,0.3851066690926649,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA2_CD8/core_1_1,13150,CD8,external_val_TMA_cores,core_1_1,neg,0.0,float32,uint32,102,102,True,0.0,0.0,0.0,0.0,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA3_CD8/core_1_1_5,2238,CD8,external_val_TMA_cores,core_1_1_5,neg,0.0,uint8,uint32,476,476,True,0.0,4.0,0.19747899159663865,0.19747899159663865,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA3_CD8/core_1_1_5,5456,CD8,external_val_TMA_cores,core_1_1_5,neg,0.0,uint8,uint32,433,433,True,0.0,4.0,0.18013856812933027,0.18013856812933027,True,True,True,1.0
+PhenoBIC-Data,external_val_TMA_cores/TMA3_CD8/core_1_1_5,7959,CD8,external_val_TMA_cores,core_1_1_5,pos,1.0,uint8,uint32,200,200,True,0.0,60.0,18.855,18.855,True,True,True,1.0

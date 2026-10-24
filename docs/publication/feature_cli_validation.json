@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "test": "published feature CLI: explicit large IDs, raw whole-mean agreement, preserved input dtype and masks, overwrite refusal",
+  "python": "3.8.20",
+  "cells": 3,
+  "n_columns": 163,
+  "original_research_files_modified": false
+}

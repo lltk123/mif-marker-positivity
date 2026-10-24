@@ -1,0 +1,15 @@
+﻿test,status,evidence,scope
+test_reordered_ids,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_duplicate_rejected,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_missing_key_rejected,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_missing_cell_rejected,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_unknown_cell_rejected,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_null_or_background_id_rejected,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_key_hash_order_invariant,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_missing_score_not_dropped,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_strict_and_inclusive_threshold,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_no_positive_slice,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_ambiguous_label_not_negative,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_known_metrics,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_metadata_and_gmm_forbidden,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance
+test_model_spec_required,passed,server execution of test_contract.py: Ran 14 tests; OK,synthetic contract test; not paper performance

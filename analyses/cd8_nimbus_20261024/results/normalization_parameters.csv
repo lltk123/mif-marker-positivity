@@ -1,0 +1,4 @@
+image_id,quantile,value,foreground_definition,n_positive_pixels,shape_y,shape_x
+training_WSIs/WSI1,0.999,17.322667980194126,raw_intensity>0,257382351,31753,22114
+training_WSIs/WSI2,0.999,16.965288162231445,raw_intensity>0,751112898,44168,38672
+training_WSIs/WSI3,0.999,17.50502201080303,raw_intensity>0,260215269,27616,23838

@@ -1,0 +1,1632 @@
+[
+  {
+    "name": "dataset_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "image_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "source_image_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "cell_id_source",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "split",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "context",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "patient_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "batch_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "mask_type",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "morphometry_backend",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_flags",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "cell_id",
+    "role": "metadata",
+    "definition": "Explicit identifier or metadata; cell_id is original integer mask value, never a table row index",
+    "unit": "identifier",
+    "applicable_when": "All rows",
+    "nan_reason": "Empty string indicates unavailable patient metadata",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "Orientation",
+    "role": "numeric_feature",
+    "definition": "Major-axis orientation from row (vertical) axis, [-pi/2, pi/2]; actual skimage implementation, not the horizontal-axis wording in HTK docstring",
+    "unit": "radian",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Orientation.Orientation",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Area",
+    "role": "numeric_feature",
+    "definition": "Number of instance pixels",
+    "unit": "px^2",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Size.Area",
+    "used_by_full_model": true
+  },
+  {
+    "name": "ConvexHullArea",
+    "role": "numeric_feature",
+    "definition": "Number of pixels in binary convex hull",
+    "unit": "px^2",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Size.ConvexHullArea",
+    "used_by_full_model": true
+  },
+  {
+    "name": "MajorAxisLength",
+    "role": "numeric_feature",
+    "definition": "Major-axis length of equal-second-moment ellipse",
+    "unit": "px",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Size.MajorAxisLength",
+    "used_by_full_model": true
+  },
+  {
+    "name": "MinorAxisLength",
+    "role": "numeric_feature",
+    "definition": "Minor-axis length of equal-second-moment ellipse",
+    "unit": "px",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Size.MinorAxisLength",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Perimeter",
+    "role": "numeric_feature",
+    "definition": "4-neighborhood border-pixel-center perimeter estimator",
+    "unit": "px",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Size.Perimeter",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Circularity",
+    "role": "numeric_feature",
+    "definition": "4*pi*Area/Perimeter^2; not clipped to [0,1] because digital perimeter can yield >1",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.Circularity",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Eccentricity",
+    "role": "numeric_feature",
+    "definition": "Eccentricity of equal-second-moment ellipse",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.Eccentricity",
+    "used_by_full_model": true
+  },
+  {
+    "name": "EquivalentDiameter",
+    "role": "numeric_feature",
+    "definition": "sqrt(4*Area/pi)",
+    "unit": "px",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.EquivalentDiameter",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Extent",
+    "role": "numeric_feature",
+    "definition": "Area / area of axis-aligned bounding box",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.Extent",
+    "used_by_full_model": true
+  },
+  {
+    "name": "MinorMajorAxisRatio",
+    "role": "numeric_feature",
+    "definition": "MinorAxisLength / MajorAxisLength",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.MinorMajorAxisRatio",
+    "used_by_full_model": true
+  },
+  {
+    "name": "Solidity",
+    "role": "numeric_feature",
+    "definition": "Area / ConvexHullArea",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.Solidity",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments1",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 1 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments1",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments2",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 2 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments2",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments3",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 3 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments3",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments4",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 4 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments4",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments5",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 5 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments5",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments6",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 6 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments6",
+    "used_by_full_model": true
+  },
+  {
+    "name": "HuMoments7",
+    "role": "numeric_feature",
+    "definition": "Unweighted binary-mask Hu moment 7 from normalized central moments; raw signed value, not log transformed",
+    "unit": "dimensionless",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "scikit-image 0.21.0 regionprops; HTK 1.4.0 column Shape.HuMoments7",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_mean",
+    "role": "numeric_feature",
+    "definition": "Arithmetic mean of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_median",
+    "role": "numeric_feature",
+    "definition": "Median of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_std",
+    "role": "numeric_feature",
+    "definition": "Population standard deviation (ddof=0) of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_p10",
+    "role": "numeric_feature",
+    "definition": "10th percentile of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_p90",
+    "role": "numeric_feature",
+    "definition": "90th percentile of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_p95",
+    "role": "numeric_feature",
+    "definition": "95th percentile of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_IQR",
+    "role": "numeric_feature",
+    "definition": "75th minus 25th percentile of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "original intensity unit",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "integrated_intensity",
+    "role": "numeric_feature",
+    "definition": "Sum in float64 of original CD8 pixels belonging to target instance only. Percentiles: numpy linear interpolation.",
+    "unit": "intensity*px",
+    "applicable_when": "Valid, complete connected instance with >=5 finite pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_mean",
+    "role": "numeric_feature",
+    "definition": "mean of original CD8 in edge; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_median",
+    "role": "numeric_feature",
+    "definition": "median of original CD8 in edge; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_p90",
+    "role": "numeric_feature",
+    "definition": "p90 of original CD8 in edge; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "inner_mean",
+    "role": "numeric_feature",
+    "definition": "mean of original CD8 in inner; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "inner_median",
+    "role": "numeric_feature",
+    "definition": "median of original CD8 in inner; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "inner_p90",
+    "role": "numeric_feature",
+    "definition": "p90 of original CD8 in inner; edge: EDT(M)<=w, inner: EDT(M)>w",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; region >=5 valid pixels",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_inner_mean_diff",
+    "role": "numeric_feature",
+    "definition": "edge_mean - inner_mean",
+    "unit": "original intensity unit",
+    "applicable_when": "Both regions valid",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_inner_normalized_diff",
+    "role": "numeric_feature",
+    "definition": "(edge_mean-inner_mean)/(abs(edge_mean)+abs(inner_mean)+epsilon)",
+    "unit": "dimensionless",
+    "applicable_when": "Both regions valid; abs(edge_mean)+abs(inner_mean)>epsilon",
+    "nan_reason": "Invalid region or both means effectively zero",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "local_reference_median",
+    "role": "numeric_feature",
+    "definition": "Median of valid original CD8 in Euclidean annulus r_inner<distance_to_M<=r_outer; exclude ALL segmented IDs and supplied tissue-mask exterior",
+    "unit": "original intensity unit",
+    "applicable_when": "At least 20 finite, observed, nonsegmented reference pixels",
+    "nan_reason": "Insufficient reference pixels; missing tissue mask is flagged, not inferred",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "local_reference_MAD",
+    "role": "numeric_feature",
+    "definition": "Median(abs(reference_pixels-local_reference_median)); unscaled MAD",
+    "unit": "original intensity unit",
+    "applicable_when": "Reference valid",
+    "nan_reason": "Reference insufficient; a true MAD of zero is retained and flagged",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "whole_mean_minus_reference",
+    "role": "numeric_feature",
+    "definition": "whole_mean - local_reference_median",
+    "unit": "original intensity unit",
+    "applicable_when": "whole and local reference valid",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_mean_minus_reference",
+    "role": "numeric_feature",
+    "definition": "edge_mean - local_reference_median",
+    "unit": "original intensity unit",
+    "applicable_when": "edge and local reference valid",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "inner_mean_minus_reference",
+    "role": "numeric_feature",
+    "definition": "inner_mean - local_reference_median",
+    "unit": "original intensity unit",
+    "applicable_when": "inner and local reference valid",
+    "nan_reason": "Truncated/disconnected instance, insufficient pixels, or invalid target pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_inner_log2_ratio",
+    "role": "numeric_feature",
+    "definition": "log2((mean(S_edge)+epsilon)/(mean(S_inner)+epsilon)); S=max(CD8-reference_median,0)",
+    "unit": "dimensionless",
+    "applicable_when": "Both regions and reference valid; total S > epsilon*whole_area",
+    "nan_reason": "Low total signal or invalid regions/reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_signal_enrichment",
+    "role": "numeric_feature",
+    "definition": "[sum(S_edge)/sum(S_whole)]/[edge_area/whole_area]; uniform S yields 1",
+    "unit": "dimensionless",
+    "applicable_when": "Both regions and reference valid; total S > epsilon*whole_area",
+    "nan_reason": "Low total signal or invalid regions/reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_00_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 0: [0,30) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_00_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 0: [0,30) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_00_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 0: [0,30) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_01_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 1: [30,60) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_01_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 1: [30,60) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_01_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 1: [30,60) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_02_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 2: [60,90) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_02_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 2: [60,90) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_02_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 2: [60,90) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_03_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 3: [90,120) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_03_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 3: [90,120) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_03_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 3: [90,120) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_04_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 4: [120,150) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_04_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 4: [120,150) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_04_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 4: [120,150) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_05_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 5: [150,180) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_05_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 5: [150,180) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_05_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 5: [150,180) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_06_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 6: [180,210) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_06_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 6: [180,210) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_06_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 6: [180,210) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_07_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 7: [210,240) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_07_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 7: [210,240) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_07_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 7: [210,240) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_08_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 8: [240,270) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_08_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 8: [240,270) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_08_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 8: [240,270) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_09_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 9: [270,300) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_09_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 9: [270,300) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_09_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 9: [270,300) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_10_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 10: [300,330) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_10_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 10: [300,330) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_10_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 10: [300,330) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_11_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 11: [330,360) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean original CD8.",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance and >=2 valid edge pixels in sector",
+    "nan_reason": "Invalid instance or sector has <2 valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_11_signal_mean",
+    "role": "numeric_feature",
+    "definition": "Sector 11: [330,360) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Mean S=max(CD8-reference_median,0).",
+    "unit": "original intensity unit",
+    "applicable_when": "Sector valid and reference valid",
+    "nan_reason": "Invalid/insufficient sector or reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_11_high_fraction",
+    "role": "numeric_feature",
+    "definition": "Sector 11: [330,360) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Fraction of valid edge pixels with CD8>T. T=reference_median+k*1.4826*MAD.",
+    "unit": "fraction",
+    "applicable_when": "Sector and reference valid; MAD>epsilon",
+    "nan_reason": "MAD zero, insufficient reference or sector; NOT a cell positivity threshold",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_cv",
+    "role": "numeric_feature",
+    "definition": "Population std / mean(abs(values)) across valid original per-sector CD8 means",
+    "unit": "dimensionless",
+    "applicable_when": ">=6 valid sectors and mean absolute sector signal>epsilon",
+    "nan_reason": "Too few sectors or effectively zero signal",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "edge_sector_max_minus_median",
+    "role": "numeric_feature",
+    "definition": "max(values)-median(values) across valid original per-sector CD8 means",
+    "unit": "original intensity unit",
+    "applicable_when": ">=6 valid sectors and nonzero denominator as for CV",
+    "nan_reason": "Too few sectors or effectively zero signal",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "sector_signal_cv",
+    "role": "numeric_feature",
+    "definition": "Population std / mean(abs(values)) across valid reference-subtracted per-sector S means",
+    "unit": "dimensionless",
+    "applicable_when": ">=6 valid sectors and mean absolute sector signal>epsilon",
+    "nan_reason": "Too few sectors or effectively zero signal",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "sector_signal_max_minus_median",
+    "role": "numeric_feature",
+    "definition": "max(values)-median(values) across valid reference-subtracted per-sector S means",
+    "unit": "original intensity unit",
+    "applicable_when": ">=6 valid sectors and nonzero denominator as for CV",
+    "nan_reason": "Too few sectors or effectively zero signal",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "high_signal_edge_coverage",
+    "role": "numeric_feature",
+    "definition": "Fraction of all valid edge pixels with original CD8>T; T=reference_median+3*1.4826*MAD by default",
+    "unit": "fraction",
+    "applicable_when": "Complete instance, >=5 edge pixels, valid reference and MAD>epsilon",
+    "nan_reason": "Reference insufficient, MAD zero, or invalid edge. k=3 is an engineering starting value only.",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "signal_centroid_offset_px",
+    "role": "numeric_feature",
+    "definition": "Euclidean distance between geometric centroid and S-weighted centroid",
+    "unit": "px",
+    "applicable_when": "Valid instance/reference; sum(S)>epsilon*area",
+    "nan_reason": "Insufficient positive reference-subtracted signal or invalid instance/reference",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "signal_centroid_offset_normalized",
+    "role": "numeric_feature",
+    "definition": "signal_centroid_offset_px / sqrt(Area/pi)",
+    "unit": "dimensionless",
+    "applicable_when": "Same as signal_centroid_offset_px",
+    "nan_reason": "Same as signal_centroid_offset_px",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "neighbor_edge_mean",
+    "role": "numeric_feature",
+    "definition": "Mean original CD8 on edge within configured distance to any OTHER positive mask ID",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; side has >=5 pixels",
+    "nan_reason": "Side absent/too small or invalid target",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "nonneighbor_edge_mean",
+    "role": "numeric_feature",
+    "definition": "Mean original CD8 on edge outside configured distance to any OTHER positive mask ID",
+    "unit": "original intensity unit",
+    "applicable_when": "Complete finite instance; side has >=5 pixels",
+    "nan_reason": "Side absent/too small or invalid target",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "neighbor_edge_mean_diff",
+    "role": "numeric_feature",
+    "definition": "neighbor_edge_mean - nonneighbor_edge_mean",
+    "unit": "original intensity unit",
+    "applicable_when": "Both side regions valid",
+    "nan_reason": "Missing/too-small side; not proof of contamination",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "neighbor_edge_area_fraction",
+    "role": "numeric_feature",
+    "definition": "area(edge within neighbor distance) / area(edge)",
+    "unit": "fraction",
+    "applicable_when": "Complete finite instance with nonempty edge",
+    "nan_reason": "Invalid target; 0 is valid when no local neighbor contact",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "nonneighbor_edge_area_fraction",
+    "role": "numeric_feature",
+    "definition": "1 - neighbor_edge_area_fraction",
+    "unit": "fraction",
+    "applicable_when": "Same as neighbor_edge_area_fraction",
+    "nan_reason": "Same as neighbor_edge_area_fraction",
+    "implementation": "custom",
+    "used_by_full_model": true
+  },
+  {
+    "name": "observed_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for observed pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "whole_valid_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for whole valid pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for edge pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_valid_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for edge valid pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "inner_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for inner pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "inner_valid_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for inner valid pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "local_reference_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for local reference pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_valid_sector_count",
+    "role": "quality_count",
+    "definition": "Count for edge valid sector count",
+    "unit": "count",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "signal_valid_sector_count",
+    "role": "quality_count",
+    "definition": "Count for signal valid sector count",
+    "unit": "count",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "neighbor_edge_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for neighbor edge pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "nonneighbor_edge_pixel_count",
+    "role": "quality_count",
+    "definition": "Count for nonneighbor edge pixel count",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "No NaN; zero is an explicit count",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_00_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 0: [0,30) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_01_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 1: [30,60) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_02_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 2: [60,90) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_03_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 3: [90,120) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_04_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 4: [120,150) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_05_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 5: [150,180) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_06_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 6: [180,210) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_07_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 7: [210,240) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_08_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 8: [240,270) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_09_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 9: [270,300) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_10_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 10: [300,330) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_sector_11_pixel_count",
+    "role": "quality_count",
+    "definition": "Sector 11: [330,360) degrees; 0 right, counter-clockwise in x-right/y-up coordinates about geometric centroid. Number of finite observed edge pixels.",
+    "unit": "pixels",
+    "applicable_when": "Always recorded",
+    "nan_reason": "Not NaN; zero means no valid pixels",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "centroid_x_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: centroid_x_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "centroid_y_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: centroid_y_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "observed_mean_CD8",
+    "role": "metadata",
+    "definition": "Mean of finite observed target pixels, retained only for input/GMM intensity correspondence audit even if shape is truncated. NOT a classifier input.",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "edge_width_px",
+    "role": "metadata",
+    "definition": "Actual w=max(1,edge_fraction*max(EDT(M))) unless explicit override; default fraction 0.2",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "distance_max_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: distance_max_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "reference_r_inner_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: reference_r_inner_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "reference_r_outer_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: reference_r_outer_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "neighbor_distance_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: neighbor_distance_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "epsilon_intensity",
+    "role": "metadata",
+    "definition": "Configured absolute epsilon=1e-8 in original intensity units; low total S threshold is epsilon*area",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "high_signal_k",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: high_signal_k",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "high_signal_threshold",
+    "role": "metadata",
+    "definition": "Reference median + high_signal_k*1.4826*reference MAD; NOT cell positivity threshold",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "signal_centroid_x_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: signal_centroid_x_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "signal_centroid_y_px",
+    "role": "metadata",
+    "definition": "Audit/coordinate/config metadata: signal_centroid_y_px",
+    "unit": "see definition",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "pixel_size_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "Area_um2",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um^2",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "ConvexHullArea_um2",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um^2",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "MajorAxisLength_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "MinorAxisLength_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "Perimeter_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "EquivalentDiameter_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "signal_centroid_offset_um",
+    "role": "metadata",
+    "definition": "Optional isotropic physical-scale feature: corresponding pixel feature times pixel_size_um (length) or its square (area)",
+    "unit": "um",
+    "applicable_when": "Relevant inputs and optional confirmed isotropic spacing available",
+    "nan_reason": "Optional input absent or associated computation invalid",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_truncated",
+    "role": "QC_flag",
+    "definition": "Instance touches source image boundary or an unobserved spatial-support boundary. Morphology, whole-instance and spatial target features are NaN; observed counts/mean remain audit metadata.",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_small_whole",
+    "role": "QC_flag",
+    "definition": "Boolean condition: small whole",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_small_edge",
+    "role": "QC_flag",
+    "definition": "Boolean condition: small edge",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_small_inner",
+    "role": "QC_flag",
+    "definition": "Boolean condition: small inner",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_reference_insufficient",
+    "role": "QC_flag",
+    "definition": "Boolean condition: reference insufficient",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_reference_mad_zero",
+    "role": "QC_flag",
+    "definition": "Boolean condition: reference mad zero",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_no_signal",
+    "role": "QC_flag",
+    "definition": "One or more positional summaries have near-zero signal/denominator. Does not assign biological negativity.",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_sector_insufficient",
+    "role": "QC_flag",
+    "definition": "Boolean condition: sector insufficient",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_sector_partial",
+    "role": "QC_flag",
+    "definition": "Boolean condition: sector partial",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_no_neighbors",
+    "role": "QC_flag",
+    "definition": "No other positive instance ID in the finite local extraction context; does not claim there are no cells elsewhere in the slide.",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_no_contact_edge",
+    "role": "QC_flag",
+    "definition": "Boolean condition: no contact edge",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_no_noncontact_edge",
+    "role": "QC_flag",
+    "definition": "Boolean condition: no noncontact edge",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_invalid_pixels",
+    "role": "QC_flag",
+    "definition": "Boolean condition: invalid pixels",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_reference_tissue_unknown",
+    "role": "QC_flag",
+    "definition": "No tissue mask supplied; reference excludes segmented IDs, invalid and unobserved pixels but tissue membership cannot be confirmed.",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_context_clipped",
+    "role": "QC_flag",
+    "definition": "Boolean condition: context clipped",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_disconnected",
+    "role": "QC_flag",
+    "definition": "Boolean condition: disconnected",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  },
+  {
+    "name": "qc_mask_type_unknown",
+    "role": "QC_flag",
+    "definition": "Boolean condition: mask type unknown",
+    "unit": "boolean",
+    "applicable_when": "All rows",
+    "nan_reason": "False/True only",
+    "implementation": "custom",
+    "used_by_full_model": false
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "all_cells": 1817783,
+  "model_hashes": {
+    "E1": "e06b52526c1b28b73d684098dff3e6e8e345c92ad0f43d10203210653a835d11",
+    "E2": "ab27ce96c4e4af3da9506a86cebd2a0c688bc5fcd4962c4b997ceedea6860dbf",
+    "E3": "4e6d68a2d4e4965c4d46081150092cf5228c40df9d48a1fc6651c617ad8553a6",
+    "E4": "4ae5bb47abd74aedd971a4f4122537a92e86f0f42c99c5aea0537db198625170"
+  },
+  "new_fits": 16,
+  "signature": "2ab97803d90820e06c8feeaafcd7a2f6a048a54dccbd9dda13964d54ee47da5a",
+  "status": "complete",
+  "thresholds": {
+    "E1": 0.42,
+    "E2": 0.39,
+    "E3": 0.45,
+    "E4": 0.3
+  },
+  "training_cells": 101057
+}

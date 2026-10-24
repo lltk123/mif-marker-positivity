@@ -1,0 +1,8 @@
+{
+  "root": "/mnt/disk3/mIHC/mif_marker_positivity_20261022",
+  "analysis": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023",
+  "old": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023",
+  "gmm": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_scimap_gmm_20261023",
+  "python": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/.venv/bin/python",
+  "disk_free": 7883348004864
+}

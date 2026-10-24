@@ -1,0 +1,28 @@
+{
+  "signature": {
+    "model": "GMM",
+    "code_sha256": "565f5a96e99da4ffc98a19fe2d1d121037e8e9861d8806a5380e3c8551daf69b",
+    "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce",
+    "cell_source_sha256": "01aa881ca69f1a730804998b4f62a36032b8753a349058e7ad8a8c5ea9c82fb7",
+    "prediction_sources": {
+      "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/audit/cells.parquet": "ca5e4c6d77d22fc1d2c0f24f80eb26df8cd79e390625ea96031f74992be45d21"
+    }
+  },
+  "output_sha256": {
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/GMM_metrics.csv": "241224d6ea7d3fc3fef56251fcec39c33f29afce2956fb594af895fecc1d2707",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/GMM_validation_threshold_grid.csv": "3202319052bfb028e79dd4591d3762fc4f49ca8b4d0c6aa40a12512d1e3fb1f8",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/models/GMM_thresholds.json": "2d35fdad54558224a79aebe3e6330913e5d79f41fb8356d553ca86c637549817",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/predictions/GMM/all_cells.parquet": "efa808186a78cb6862b7809efdc940ba10e5a8b6309824a8bb0330e0e8c0bc77",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/predictions/GMM/all_cells.csv.gz": "6d78ead738176ab60ac2fe98e0b7702c6f4382c02ab1400b013b653c4fa6f08d",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_external_val_TMA_cores.npz": "de8900673d13e2406d0c35f93444bbb820f7ac8a8e38c4c04f565cae6de82dec",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_external_val_TMA_cores_PR.csv.gz": "dbb8cbdb485704c4d13352adf5dcdeb395da95fb55e58cd8cd8fbfeba84c46b2",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_external_val_TMA_cores_ROC.csv.gz": "48d44f558cf2c960ed25407a0729ac96b7ea26c97b4cfd4db7e7495e93ef83d1",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_internal_val_WSIs.npz": "c77a3679ff2037b19a9df8375fc6c3b90ff0b1c968df6d11abb318c1e12d8ad8",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_internal_val_WSIs_PR.csv.gz": "d715331240d1be23944f1654fa9492bccb8afa031990468ce748e7316c8c10e2",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_internal_val_WSIs_ROC.csv.gz": "268724549823ce4c0e488c84544a1fc82778a340d085c2a53f8e9fea31bc9fc8",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_training_WSIs.npz": "28ef2d6c1c0d9de963a0ec5558137c866b84a52def885dbcab1644a3e1635f6c",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_training_WSIs_PR.csv.gz": "c124260f505e7ca71d7550e8302af6edf4e995d25eab8ef8fa5083475da11d1e",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/curves/GMM_training_WSIs_ROC.csv.gz": "3732a43e0b3b89074f3b7d3004ba9e975162bfa17a38fe39ecc7390144ce1de8"
+  },
+  "all_cells": 1817783
+}

@@ -1,0 +1,17 @@
+{
+  "status": "awaiting_paper",
+  "model_name": null,
+  "model_version": null,
+  "paper_reference": null,
+  "official_repository": null,
+  "code_revision": null,
+  "weights_sha256": null,
+  "pretraining_data": null,
+  "input_channels": null,
+  "official_preprocessing": null,
+  "threshold": null,
+  "threshold_operator": null,
+  "threshold_source": null,
+  "frozen_at": null,
+  "architecture_changed": false
+}

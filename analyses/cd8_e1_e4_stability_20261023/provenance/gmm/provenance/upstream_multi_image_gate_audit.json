@@ -1,0 +1,11 @@
+{
+  "multi_image_by_image_gates": {
+    "A": 3.914618306691613,
+    "B": 3.914618306691613
+  },
+  "separate_call_gates": {
+    "A": 1.7920585264241833,
+    "B": 3.914618306691613
+  },
+  "workaround": "One upstream rescale call per independent WSI/core/FOV; upstream source unchanged."
+}

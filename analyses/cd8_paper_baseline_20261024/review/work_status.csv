@@ -1,0 +1,13 @@
+﻿item,status,evidence
+data_and_grouping_audit,complete,cell_counts.csv; group_manifest.csv; key_manifest.csv
+real_image_id_alignment,complete_15_cells,sample_alignment.csv
+contract_unit_tests,passed_14,contract_test_results.csv
+synthetic_prediction_IO,passed_7,synthetic_cli_checks.csv
+paper_and_official_model,awaiting_user_reference,MODEL_SPEC_PENDING.json
+official_preprocessing_and_pretraining_overlap,pending_paper,MODEL_SPEC_PENDING.json
+new_model_training,not_run,PREFLIGHT_COMPLETE.json: new_model_fits=0
+real_cell_model_predictions_and_metrics,not_generated,PREFLIGHT_COMPLETE.json: new_model_predictions=0
+development_false_positive_false_negative_panels,pending_model_predictions,"samples are input-alignment examples, not FP/FN"
+model_time_memory_benchmark,not_run,RUNTIME.json has null training/inference/GPU metrics
+cross_dataset_overlap_with_Pan_M,not_checked_Pan_M_sealed,DATA_PROTOCOL.json
+full_source_sha256_rescan_and_archive_CRC,not_repeated,input_file_checks.csv; archives.csv

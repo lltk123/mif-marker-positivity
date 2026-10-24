@@ -1,0 +1,8 @@
+{
+  "status": "preflight_and_interfaces_complete_paper_pending",
+  "generated_utc": "2026-10-24T03:01:52.651712+00:00",
+  "remote_directory": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_paper_baseline_20261024",
+  "full_manifest": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_paper_baseline_20261024/artifacts/cells.parquet",
+  "new_model_fits": 0,
+  "pan_gold_accessed": false
+}

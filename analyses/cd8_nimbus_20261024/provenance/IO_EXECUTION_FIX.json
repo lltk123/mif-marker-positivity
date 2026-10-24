@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-24T04:06:54Z",
+  "action": "terminate own incomplete parallel inference attempt",
+  "pid": 429954,
+  "reason": "HDD read/write contention caused GPU waits; use RAM intermediate maps and sequential formal pipeline",
+  "complete_prediction_files": 0,
+  "numeric_method_changed": false,
+  "partial_cache_preserved": true
+}

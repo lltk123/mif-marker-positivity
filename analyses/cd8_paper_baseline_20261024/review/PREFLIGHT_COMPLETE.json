@@ -1,0 +1,15 @@
+{
+  "status": "preflight_complete_awaiting_paper",
+  "all_cells": 1817783,
+  "labelled_cells": 1077669,
+  "image_files": 176,
+  "image_units": 48,
+  "old_files_current_size_mtime_verified": 532,
+  "source_registry_repeated_FOV_observations": 0,
+  "original_label_files_hashed": 9,
+  "real_sample_cells": 15,
+  "pan_gold_accessed": false,
+  "full_new_input_sha256_scan": false,
+  "new_model_fits": 0,
+  "new_model_predictions": 0
+}

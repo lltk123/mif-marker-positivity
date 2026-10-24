@@ -1,0 +1,20 @@
+{
+  "marker": "CD8",
+  "feature": "Arithmetic mean of original channel pixels within the original nonzero cell mask; overlapping tiles use union of nonzero masks and unique global pixels; float64 accumulation",
+  "gmm_components": 3,
+  "random_state": 0,
+  "log": true,
+  "clipping_percentiles": [
+    0.01,
+    99.99
+  ],
+  "positive_rule": "upstream rescale score > 0.5; exactly 0.5 assigned negative",
+  "fit_population": "All segmented cells with finite nonnegative mean, irrespective of annotation",
+  "unit": "PhenoBIC: each original WSI (internal tiles reconstructed without duplicated overlap pixels) or each TMA core",
+  "evaluation": "Original splits preserved; no label tuning. Per-unit unsupervised calibration on target-image intensities is transductive, not frozen-threshold inference.",
+  "ranking_metrics": "ROC-AUC and average precision use continuous SCIMAP rescaled scores; scores are not calibrated probabilities.",
+  "pan_ambiguous": "Original 2/3 retained in prediction tables and counted separately; undefined as binary ground truth, so do not enter 0/1 metrics.",
+  "split_policy": "PhenoBIC only, original train/internal/external partitions retained. Entire Pan-M Gold sealed for later blind evaluation; no access during current analysis.",
+  "statistics": "Cell-weighted pooled confusion statistics and ROC/AP; equal-weight unit macro mean/std; descriptive only, no cell-independence p-values or CIs",
+  "source_commit": "e8f1609fbcf838e265541983af7e63490e5c7a13"
+}

@@ -1,0 +1,4 @@
+model,default,validation_selected,validation_development_fitted_macro_F1
+GMM,0.5,0.59,0.8844447751025148
+Nimbus_pretrained,0.5,0.54,0.8680940710877657
+Nimbus_finetuned,0.5,0.61,0.821485813498616

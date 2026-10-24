@@ -1,0 +1,8 @@
+image_id,model,n,max_original_score_reproduction_error
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,GMM,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,intensity_8,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,morphospatial_90,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,E1,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,E2,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,E3,200,0.0
+external_val_TMA_cores/TMA3_CD8/core_1_6_7,E4,200,0.0

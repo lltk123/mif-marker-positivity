@@ -1,0 +1,12 @@
+{
+  "retrieved_at": "2026-10-23T02:54:36.984750+00:00",
+  "documentation_url": "https://scimap.xyz/Functions/pp/rescale/",
+  "github_commit": "e8f1609fbcf838e265541983af7e63490e5c7a13",
+  "github_url": "https://github.com/ajitjohnson/scimap/blob/e8f1609fbcf838e265541983af7e63490e5c7a13/scimap/preprocessing/rescale.py",
+  "documented_and_github_function_AST_identical": true,
+  "sha256": {
+    "scimap_rescale_github.py": "b054ad3c4c55c91de9f8c1d0d719befe78525ffebaa14c99bd09fc0bc19bc4c8",
+    "scimap_rescale_documented_function.py": "7965be9df5453ed21521ec32b48eeed5186cb82df0d16cdab79b95f954866b15",
+    "scimap_rescale_documentation.html": "165f29cbaf215ffbc246f2d87d3d01faeb6471c8755d69c143eff2d4a33cc83f"
+  }
+}

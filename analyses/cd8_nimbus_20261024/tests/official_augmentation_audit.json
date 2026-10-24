@@ -1,0 +1,6 @@
+{
+  "batch_size": 8,
+  "original_failed": false,
+  "error": "",
+  "permitted_adapter_fix": "retain singleton channel dimension for intensity augmentation; no model/loss change"
+}

@@ -1,0 +1,28 @@
+{
+  "conclusion": "Internal validation gains do not establish external TMA generalization.",
+  "evidence": [
+    "held-out original internal/external splits",
+    "fixed model and threshold",
+    "intensity-only ablation",
+    "controlled images and real ROI review"
+  ],
+  "exports": [
+    "Chinese and English",
+    "editable PDF and SVG",
+    "PNG"
+  ],
+  "risks": [
+    "correlated cells",
+    "unequal supervision versus per-image GMM",
+    "expanded nuclei not membranes",
+    "unconfirmed tissue and physical spacing",
+    "display-only contrast",
+    "ROC/PR plot thinning; metrics computed on all cells"
+  ],
+  "backend": "Python matplotlib",
+  "manual_review": [
+    "Chinese controlled, real, ROC/PR, context plots",
+    "English real, ROC/PR plots"
+  ],
+  "no_pan_gold_access": true
+}

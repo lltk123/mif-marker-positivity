@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "old8_match_on_normalized_pixels",
+    "five_legacy_spatial_formulas_match",
+    "rotation_invariance_R1_R2_offset",
+    "gain_bias_pixel_invariance",
+    "clip_before_summaries",
+    "dilation_ties_background",
+    "erosion_Euclidean_1px",
+    "vanished_instance_preserved",
+    "invalid_calibration_NaN",
+    "dark_and_no_reference_QC",
+    "invalid_support"
+  ],
+  "rotations": [
+    {
+      "max_invariant_difference": 7.216449660063518e-16,
+      "rotation": 90
+    },
+    {
+      "max_invariant_difference": 1.1379786002407855e-15,
+      "rotation": 180
+    },
+    {
+      "max_invariant_difference": 7.494005416219807e-16,
+      "rotation": 270
+    }
+  ],
+  "status": "passed"
+}

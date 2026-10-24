@@ -1,0 +1,18 @@
+{
+  "completed": "2026-10-24T14:11:55.773427",
+  "scope": "PhenoBIC CD8 Nimbus pretrained and finetuned research adaptation; saved GMM comparator",
+  "numeric_checks_passed": true,
+  "visual_review_complete": true,
+  "PanM_accessed": false,
+  "not_full_paper_reproduction": true,
+  "model_count_new": 2,
+  "n_cells_per_model": 1817783,
+  "n_units": 48,
+  "adapter_commit": "7447f5315fb12188970b8ddbf4d04df842486291",
+  "evidence": [
+    "results/final_delivery_checks.csv",
+    "results/GMM_reuse_audit.csv",
+    "results/prediction_integrity.csv",
+    "figures/FIGURE_QA.json"
+  ]
+}

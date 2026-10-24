@@ -1,0 +1,7 @@
+{
+  "python": "3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]",
+  "matplotlib": "3.7.1",
+  "numpy": "1.26.4",
+  "pandas": "3.0.3",
+  "figure_script_sha256": "3650d4c9857d7aaae2e9c9be87659f3f626f90f98f3756c7f69af4074f8b7643"
+}

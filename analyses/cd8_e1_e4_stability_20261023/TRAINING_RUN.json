@@ -1,0 +1,80 @@
+{
+  "cell_weight": "uniform, identical to old model.fit without sample_weight",
+  "cells_sha256": "ca5e4c6d77d22fc1d2c0f24f80eb26df8cd79e390625ea96031f74992be45d21",
+  "code_sha256": "16dc027720bf14616667e32f72bc15abc110be5dd2f7484c1c3cdf6c451038c3",
+  "config_sha256": "38f531d6561b8f87ea3cc75cf101b4608cf1815bbe3e8109fa8651a69af75439",
+  "features": {
+    "E1": [
+      "norm_whole_mean",
+      "norm_whole_median",
+      "norm_whole_std",
+      "norm_whole_p10",
+      "norm_whole_p90",
+      "norm_whole_p95",
+      "norm_whole_IQR",
+      "norm_integrated_intensity"
+    ],
+    "E2": [
+      "norm_whole_mean",
+      "norm_whole_median",
+      "norm_whole_std",
+      "norm_whole_p10",
+      "norm_whole_p90",
+      "norm_whole_p95",
+      "norm_whole_IQR",
+      "norm_integrated_intensity",
+      "edge_inner_normalized_diff",
+      "edge_signal_enrichment",
+      "high_signal_edge_coverage",
+      "angular_R1",
+      "angular_R2",
+      "signal_centroid_offset_normalized",
+      "contact_noncontact_normalized_diff",
+      "neighbor_edge_area_fraction",
+      "contact_neighbor_band_normalized_diff"
+    ],
+    "E3": [
+      "norm_whole_mean",
+      "norm_whole_median",
+      "norm_whole_std",
+      "norm_whole_p10",
+      "norm_whole_p90",
+      "norm_whole_p95",
+      "norm_whole_IQR",
+      "norm_integrated_intensity",
+      "GMM_score"
+    ],
+    "E4": [
+      "norm_whole_mean",
+      "norm_whole_median",
+      "norm_whole_std",
+      "norm_whole_p10",
+      "norm_whole_p90",
+      "norm_whole_p95",
+      "norm_whole_IQR",
+      "norm_integrated_intensity",
+      "GMM_score",
+      "edge_inner_normalized_diff",
+      "edge_signal_enrichment",
+      "high_signal_edge_coverage",
+      "angular_R1",
+      "angular_R2",
+      "signal_centroid_offset_normalized",
+      "contact_noncontact_normalized_diff",
+      "neighbor_edge_area_fraction",
+      "contact_neighbor_band_normalized_diff"
+    ]
+  },
+  "features_sha256": "e0ae0eb368254cf578573a95b2e97186f6ea2ebab62132439f7039f46c764e0f",
+  "keys_sha256": "e2d3812b6a1a21b22af77880b6555250c83ce90f3abd675780753627e69e3a6d",
+  "parameters": {
+    "early_stopping": false,
+    "l2_regularization": 2.0,
+    "learning_rate": 0.06,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 80,
+    "random_state": 0
+  },
+  "protocol_sha256": "e22e02ea8348a3f3f6a4e13cb574cdb454b949fb7f89ebba5454dbc57e5b0d94"
+}

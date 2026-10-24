@@ -1,0 +1,2 @@
+test,required_pixels,max_abs_error,skipped_tiles,computed_tiles,seconds,device,passed
+skip_unused_output_tiles_preserves_requested_pixels,1103,0.0,2,4,17.842247719876468,CPU,True

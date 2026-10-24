@@ -1,0 +1,48 @@
+﻿group,check,status,value,source
+controlled,uniform,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,ring,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,one_sided,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,dark,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,bright_neighbor_without_spill,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,bright_neighbor_with_spill,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,tiny,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,no_reference,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+controlled,image_boundary,passed,assertions passed,tests/CONTROLLED_TESTS_PASSED.json
+HistomicsTK19,disk,passed,0.0,tests/CONTROLLED_TESTS_PASSED.json
+HistomicsTK19,ellipse,passed,0.0,tests/CONTROLLED_TESTS_PASSED.json
+HistomicsTK19,rectangle,passed,0.0,tests/CONTROLLED_TESTS_PASSED.json
+API,crop_and_padding_invariance,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,nonfinite_target_QC,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,tissue_exclusion,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,optional_physical_units,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,disconnected_QC,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,invalid_dtype_and_shape_rejection,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,outcome_metadata_rejection,passed,assertions passed,tests/API_TESTS_PASSED.json
+API,empty_Parquet_schema,passed,assertions passed,tests/API_TESTS_PASSED.json
+model_and_mapping,feature_rows,recorded,1817783,results/MODEL_COMPLETE.json
+model_and_mapping,unique_keys,recorded,True,results/MODEL_COMPLETE.json
+model_and_mapping,all_GMM_pixel_counts_match,recorded,True,results/MODEL_COMPLETE.json
+model_and_mapping,all_GMM_raw_means_match,recorded,True,results/MODEL_COMPLETE.json
+model_and_mapping,training_cells,recorded,101057,results/MODEL_COMPLETE.json
+model_and_mapping,evaluation_labelled_cells,recorded,1077669,results/MODEL_COMPLETE.json
+model_and_mapping,GMM_baseline_reproduced,recorded,True,results/MODEL_COMPLETE.json
+model_and_mapping,metadata_and_outcomes_excluded_from_features,recorded,True,results/MODEL_COMPLETE.json
+model_and_mapping,supervised_positive_threshold,recorded,0.5,results/MODEL_COMPLETE.json
+model_and_mapping,pan_gold_accessed,recorded,False,results/MODEL_COMPLETE.json
+final_audit,status,recorded,passed,results/FINAL_DATA_AUDIT.json
+final_audit,rows,recorded,1817783,results/FINAL_DATA_AUDIT.json
+final_audit,columns,recorded,163,results/FINAL_DATA_AUDIT.json
+final_audit,morphology_features,recorded,19,results/FINAL_DATA_AUDIT.json
+final_audit,model_features,recorded,90,results/FINAL_DATA_AUDIT.json
+final_audit,all_numeric_columns_no_infinity,recorded,True,results/FINAL_DATA_AUDIT.json
+final_audit,pan_gold_accessed,recorded,False,results/FINAL_DATA_AUDIT.json
+pilot,status,recorded,passed,pilot/PILOT_PASSED.json
+pilot,images,recorded,5,pilot/PILOT_PASSED.json
+pilot,cells,recorded,1000,pilot/PILOT_PASSED.json
+pilot,all_pixel_counts_equal_previous_GMM,recorded,True,pilot/PILOT_PASSED.json
+pilot,all_observed_means_match_previous_GMM_rtol_atol_1e_10,recorded,True,pilot/PILOT_PASSED.json
+CLI,status,recorded,passed,tests/CLI_TEST_PASSED.json
+CLI,cell_id,recorded,73,tests/CLI_TEST_PASSED.json
+CLI,raw_uint16_intensity_preserved,recorded,True,tests/CLI_TEST_PASSED.json
+CLI,parquet_columns,recorded,163,tests/CLI_TEST_PASSED.json
+CLI,csv_export,recorded,True,tests/CLI_TEST_PASSED.json

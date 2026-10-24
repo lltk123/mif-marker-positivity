@@ -1,0 +1,12 @@
+{
+  "seconds": 480.7503051077947,
+  "weight_sha256": "b6024bf6395483340b47334176c41c3db03bcb64c42d20682518d5b82382464f",
+  "peak_gpu_allocated_gib": 5.8368072509765625,
+  "peak_gpu_reserved_gib": 6.04296875,
+  "peak_rss_gib": 9.367019653320312,
+  "training_tiles": 560,
+  "validation_tiles": 384,
+  "validation_calls": 9,
+  "code_sha256": "16850e7035321fa5a76f6853fefe6008d23a6456f329c45c685a150610c9bee4",
+  "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce"
+}

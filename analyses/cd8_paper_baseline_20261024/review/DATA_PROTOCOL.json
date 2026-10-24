@@ -1,0 +1,28 @@
+{
+  "status": "preflight_only_paper_not_selected",
+  "dataset": "PhenoBIC-Data",
+  "marker": "CD8",
+  "key_columns": [
+    "dataset_id",
+    "image_id",
+    "cell_id",
+    "marker"
+  ],
+  "seed": 0,
+  "mask_type": "expanded_nucleus",
+  "mask_semantics_evidence": "Inherited frozen RUN_CONFIG.json; current upstream PMC access returned a verification page, not independently reverified in this run",
+  "boundary_interpretation": "Approximate expanded nuclear boundary; not a validated cell membrane",
+  "patient_ids_available": false,
+  "grouping": "patient if documented, else original WSI or TMA slide; TMA cores are not independent patients",
+  "fit_and_selection_scope": "Official training_WSIs only; grouped development folds available; exact paper training protocol pending",
+  "preprocessing": "Not selected. Preserve raw dtype/range; use target model official preprocessing after paper selection",
+  "validation_policy": "Official internal/external splits locked for future model-specific choices; both have prior E1-E4 evaluation exposure",
+  "pan_gold": "sealed; no file enumeration, image, label, distribution or prediction reads",
+  "cross_dataset_overlap": "NOT CHECKED: Pan-M remains sealed; no no-overlap assertion",
+  "within_phenobic_overlap": "Historical exact-file hashes plus current size/mtime check; overlapping internal FOVs use original union/ID logic; not a perceptual or patient identity proof",
+  "no_positive_metrics": "Precision, recall and F1 use zero_division=0; AP and ROC-AUC undefined without positives; report flags and denominators",
+  "no_model_inputs": "IDs, batch, truth and GMM scores excluded; feature selection not yet specified",
+  "code_commit": null,
+  "model_fits": 0,
+  "model_predictions_generated": 0
+}

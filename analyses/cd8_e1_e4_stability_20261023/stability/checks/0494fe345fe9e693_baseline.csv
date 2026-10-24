@@ -1,0 +1,8 @@
+image_id,model,n,max_original_score_reproduction_error
+internal_val_WSIs/WSI3,GMM,200,0.0
+internal_val_WSIs/WSI3,intensity_8,200,0.0
+internal_val_WSIs/WSI3,morphospatial_90,200,0.0
+internal_val_WSIs/WSI3,E1,200,0.0
+internal_val_WSIs/WSI3,E2,200,0.0
+internal_val_WSIs/WSI3,E3,200,0.0
+internal_val_WSIs/WSI3,E4,200,0.0

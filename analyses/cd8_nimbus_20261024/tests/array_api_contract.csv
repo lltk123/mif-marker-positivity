@@ -1,0 +1,3 @@
+test,passed,stub
+nonconsecutive_ID_and_official_resampling,True,True
+empty_mask_fixed_schema,True,True

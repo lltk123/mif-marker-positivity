@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "rows": 1817783,
+  "columns": 163,
+  "morphology_features": 19,
+  "model_features": 90,
+  "all_numeric_columns_no_infinity": true,
+  "pan_gold_accessed": false,
+  "artifacts": [
+    {
+      "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/PhenoBIC_CD8_features.parquet",
+      "bytes": 1096366557,
+      "sha256": "976decda7bc0839188604029070e17debb553378407bc1833d1e8967b72a7520"
+    },
+    {
+      "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/PhenoBIC_CD8_model_predictions.parquet",
+      "bytes": 25733928,
+      "sha256": "92b5166806a8ccf6910b0b03207579dc95111e1842c326f3909267fddcbabbd9"
+    },
+    {
+      "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/models/intensity_8.joblib",
+      "bytes": 116552,
+      "sha256": "9533511946274c99c619e4eee7403aebe0f048b62e1e0db1ccc461f9a2c8de32"
+    },
+    {
+      "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/models/morphospatial_90.joblib",
+      "bytes": 247631,
+      "sha256": "b819d9b0e95da6822a65a2be7f59175814e24f71e1eab40418f333611c0d2cfb"
+    }
+  ]
+}

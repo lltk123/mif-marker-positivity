@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "local_report_links_checked": 22,
+  "PDFs": [
+    {
+      "file": "context_comparison_en.pdf",
+      "pages": 1,
+      "extractable_characters": 388,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "context_comparison_zh.pdf",
+      "pages": 1,
+      "extractable_characters": 218,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "controlled_validation_en.pdf",
+      "pages": 1,
+      "extractable_characters": 828,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "controlled_validation_zh.pdf",
+      "pages": 1,
+      "extractable_characters": 494,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "model_curves_en.pdf",
+      "pages": 1,
+      "extractable_characters": 949,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "model_curves_zh.pdf",
+      "pages": 1,
+      "extractable_characters": 563,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "real_examples_en.pdf",
+      "pages": 1,
+      "extractable_characters": 1221,
+      "embedded_type0_fonts": true
+    },
+    {
+      "file": "real_examples_zh.pdf",
+      "pages": 1,
+      "extractable_characters": 785,
+      "embedded_type0_fonts": true
+    }
+  ],
+  "all_scripts_compile": true,
+  "core_source_hash_matches_run_config": true
+}

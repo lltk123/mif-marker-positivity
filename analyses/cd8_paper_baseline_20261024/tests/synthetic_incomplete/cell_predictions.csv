@@ -1,0 +1,5 @@
+dataset_id,image_id,cell_id,marker,split,slide_id,ground_truth_binary,score,prediction,model_version,model_name,threshold,threshold_operator,score_finite
+SYNTHETIC,WSI_fixture,11,CD8,development_fixture,slide_fixture,0.0,0.2,0.0,fixture_v1,SYNTHETIC_IO_TEST_NOT_MODEL,0.5,gt,True
+SYNTHETIC,WSI_fixture,37,CD8,development_fixture,slide_fixture,1.0,,,fixture_v1,SYNTHETIC_IO_TEST_NOT_MODEL,0.5,gt,False
+SYNTHETIC,WSI_fixture,93,CD8,development_fixture,slide_fixture,0.0,0.1,0.0,fixture_v1,SYNTHETIC_IO_TEST_NOT_MODEL,0.5,gt,True
+SYNTHETIC,WSI_fixture,101,CD8,development_fixture,slide_fixture,,,,fixture_v1,SYNTHETIC_IO_TEST_NOT_MODEL,0.5,gt,False

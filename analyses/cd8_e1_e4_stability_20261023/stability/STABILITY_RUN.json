@@ -1,0 +1,48 @@
+{
+  "full_unit_GMM_affine_refits": 192,
+  "halo": 8,
+  "inputs": {
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/E1_E4_PROTOCOL.json": "e22e02ea8348a3f3f6a4e13cb574cdb454b949fb7f89ebba5454dbc57e5b0d94",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/RUN_CONFIG.json": "38f531d6561b8f87ea3cc75cf101b4608cf1815bbe3e8109fa8651a69af75439",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/THRESHOLDS_FROZEN.json": "cf247ac2fca087fc2e1d6b8d9dabcadaf3b5669ab106ef4b78a7287d789c57c9",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/audit/input_manifest.csv": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/calibration/calibration_parameters.csv": "9f06fa16ffb24ca674fc9229044c9589b35d2f6af9b8371e378383478bdfdfe0",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/calibration/original_gmm_states.json": "8a1bac2528d3c55fcf1793a8d6015d84df169317c4db1bce998a473ea5daa246",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/stability_sample.parquet": "911bf63279a4c7ce5b94af766733f4bba28ab8b08eb9c1f16ea133020d6e0492",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/models/E1.joblib": "e06b52526c1b28b73d684098dff3e6e8e345c92ad0f43d10203210653a835d11",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/models/E2.joblib": "ab27ce96c4e4af3da9506a86cebd2a0c688bc5fcd4962c4b997ceedea6860dbf",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/models/E3.joblib": "4e6d68a2d4e4965c4d46081150092cf5228c40df9d48a1fc6651c617ad8553a6",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/models/E4.joblib": "4ae5bb47abd74aedd971a4f4122537a92e86f0f42c99c5aea0537db198625170",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/predictions/final_all_cells_fixed_0.5.parquet": "fe38651779fb93ab1d41d9f11338d8c2ba8b8b40d83c34b0f7ea8b688a48f701",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/common.py": "d96c49b5b4842004c0d8cd1e20e6ddf46854c3dd4db0b74ddecf03b5c642be9e",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/compact_features.py": "6d673d0f6da1e4e600c9d7351e2db306fbde0b3bb522686b14ea8ab985cd9c46",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/gmm_interface.py": "f1bba729f97d2df809d9d78c57976d1696f96cbe6dc88a3fc7c212c26b7847f6",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/io_adapter.py": "5501097af15fb911b68cec49d9896182c4c0d14b72bcc46191b00d41b13d4791",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/legacy_features.py": "bdca4d1ab2d1da87801565621e2e3c83875587df690eb2bd96a7b96df099b234",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/stability.py": "6e6ce46e97e56e0acbb2c7d1dc7c783073c1a4bda7434909287323fec2a1c6e1",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/models/intensity_8.joblib": "9533511946274c99c619e4eee7403aebe0f048b62e1e0db1ccc461f9a2c8de32",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/models/morphospatial_90.joblib": "b819d9b0e95da6822a65a2be7f59175814e24f71e1eab40418f333611c0d2cfb"
+  },
+  "models": [
+    "GMM",
+    "intensity_8",
+    "morphospatial_90",
+    "E1",
+    "E2",
+    "E3",
+    "E4"
+  ],
+  "perturbations": [
+    "gain_0.5",
+    "gain_2",
+    "bias_0.05",
+    "bias_0.10",
+    "rotate_90",
+    "rotate_180",
+    "rotate_270",
+    "erode_1",
+    "dilate_1"
+  ],
+  "sample_size": 9600,
+  "signature": "a44842db9e80560f19bec0886ee2aebd47c517f8ddf0e89b74caff25aace3327"
+}

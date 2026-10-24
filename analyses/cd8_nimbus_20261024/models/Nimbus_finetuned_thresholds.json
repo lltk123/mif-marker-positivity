@@ -1,0 +1,10 @@
+{
+  "model": "Nimbus_finetuned",
+  "default": 0.5,
+  "operator": ">",
+  "validation_selected": 0.61,
+  "selection": "equal WSI mean F1 on full labelled internal validation",
+  "validation_development_fitted_macro_F1": 0.821485813498616,
+  "not_unbiased_validation": true,
+  "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce"
+}

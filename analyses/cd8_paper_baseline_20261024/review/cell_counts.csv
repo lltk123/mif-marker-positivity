@@ -1,0 +1,4 @@
+split,n_all,n_labelled,n_positive,n_negative,n_unlabelled,n_unresolved,n_image_units,n_group_units,n_patient_ids
+external_val_TMA_cores,438236,437480,22331,415149,756,0,42,3,0
+internal_val_WSIs,667125,539132,18960,520172,127993,0,3,3,0
+training_WSIs,712422,101057,16197,84860,611365,0,3,3,0

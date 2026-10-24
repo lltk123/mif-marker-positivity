@@ -1,0 +1,5 @@
+{
+  "sha256": "6da5ccc927d0bf217b47c7af33a1f5dd0e44dd31ab39001d6fe124a823c6a2f5",
+  "selection": "all eligible training tiles; uniform seed0 up to128 validation tiles per WSI, before model scoring",
+  "code_sha256": "16850e7035321fa5a76f6853fefe6008d23a6456f329c45c685a150610c9bee4"
+}

@@ -1,0 +1,3 @@
+dataset_id,image_id,cell_id,split,context,perturbation,ground_truth_binary,observed_pixels,finite_pixels,mask_missing,intensity_input_valid,qc_reasons
+PhenoBIC-Data,external_val_TMA_cores/TMA3_CD8/core_1_5_2,3547,external_val_TMA_cores,TMA3_CD8,erode_1,0.0,73,73,False,False,qc_disconnected;qc_no_contact_edge;qc_neighbor_band_insufficient;qc_reference_tissue_unknown
+PhenoBIC-Data,external_val_TMA_cores/TMA3_CD8/core_2_6_3,2636,external_val_TMA_cores,TMA3_CD8,erode_1,0.0,93,93,False,False,qc_disconnected;qc_no_contact_edge;qc_neighbor_band_insufficient;qc_reference_tissue_unknown

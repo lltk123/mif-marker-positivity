@@ -1,0 +1,63 @@
+PhenoBIC CD8 morphology and spatial-feature analysis
+Run: 2026-10-23
+Server project: /mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023
+
+Scope
+Only PhenoBIC-Data is used. Pan-Multiplex Gold-Standard remains sealed and was not accessed. Original images, segmentation IDs, annotations and train/internal/external partitions are preserved.
+
+Main outputs
+PhenoBIC_CD8_features.parquet: 1,817,783 cells; unique key dataset_id + image_id + cell_id; 163 columns, including exactly 19 morphology and 90 candidate classifier features.
+PhenoBIC_CD8_model_predictions.parquet: labels and old GMM/new-model results joined AFTER extraction by the same explicit key. Unannotated cells remain present.
+FEATURE_DICTIONARY.csv/json: formula, unit, conditions, missingness reasons, model-input role.
+RUN_CONFIG.json: feature parameters, source commit, versions and source-code hash.
+TRAINING_PROTOCOL.json: fixed supervised evaluation protocol.
+results/: metrics, missingness, QC, completion audits.
+models/: fitted sklearn model bundles with ordered feature lists and training image IDs.
+scripts/: reusable extraction API, CLI, PhenoBIC batch adapter, controlled tests and classifier training.
+
+Environment
+Use .venv/bin/python in this project; Python 3.8.20; numpy 1.24.4; pandas 1.1.4; scipy 1.10.1; scikit-image 0.21.0; scikit-learn 1.1.3; tifffile 2023.7.10; pyarrow 15.0.2. The new venv inherits system packages from /mnt/disk3/conda_env/cellsighter. Existing GMM environment was not altered. No DAPI image is required.
+
+Reusable Python API
+from mif_features import FeatureConfig, extract_image, extract_roi
+from extract_single import write_features
+cfg = FeatureConfig(mask_type='expanded_nucleus', r_inner=2, r_outer=5)
+frame = extract_image(cd8_2d, instance_labels_2d, 'dataset', 'image', cfg)
+write_features(frame, 'new_features.parquet')
+
+For large data use bounding-box ROIs with halo >= ceil(max(r_outer, neighbor_distance)) + 2 pixels. Retain all neighbor instance IDs in each ROI. Supply global origin=(y,x), valid support and force_truncated when a source image cuts a cell. A binary ROI must not be interpreted as a new cell segmentation. The provided PhenoBIC adapter reconstructs overlapping internal FOV context with nonzero instance IDs and verifies overlap agreement.
+
+Single-image CLI (output must not already exist)
+.venv/bin/python scripts/extract_single.py --image CD8.tif --mask instances.tif --dataset-id example --image-id image01 --config config.json --output example_features.parquet --csv
+config.json contains FeatureConfig fields only. Optional --tissue-mask and --valid-mask are aligned TIFFs. Without configuration mask_type defaults to unknown. extract_image is suitable for moderate images; use batch_features.py for these large WSIs. Integer IDs are never inferred from table row numbers.
+
+Reproduce current project
+.venv/bin/python scripts/test_features_v2.py
+.venv/bin/python scripts/test_api.py
+.venv/bin/python scripts/batch_features.py pilot
+.venv/bin/python scripts/batch_features.py full --workers 8
+The completed batch run is resumable for this exact config/hash. Do not change code/config and reuse old cached outputs; use a new analysis directory for changed runs. train_compare_v2.py is the corrected training script, not an idempotent rerun command; reproduce in a new analysis directory to preserve existing models/results.
+
+Interpretation
+The paper describes buffered nuclear convex hulls, so mask_type=expanded_nucleus. Edges approximate cell boundaries and are not proven membranes. inner does not mean nucleus. Original nuclear masks, verified pixel spacing and tissue masks are absent. Local reference can contain cytoplasmic/neighbor/unsegmented-cell or tissue-exterior signal. reference_tissue_unknown flags this limitation. No tissue mask is inferred from CD8.
+Pixel-space geometry and original-intensity features are retained. No per-cell normalization. No independent physical-scale results without supplied pixel spacing. Crop-only display contrast is not used in calculations.
+Edge width=max(1,0.2*maximum internal EDT); reference radii 2 and 5 px; neighbor distance 2 px; epsilon=1e-8 in original intensity units. Small (<5 pixels), truncated/disconnected or invalid-signal regions have documented NaN/QC. Reference needs >=20 pixels, sectors >=2 pixels, sector summaries >=6 of 12 sectors. High-signal threshold median+3*1.4826*MAD is an engineering descriptor, not a positive-cell rule; MAD=0 makes coverage undefined. No-signal flags describe unstable localization metrics, not cell class.
+
+Morphometry
+HistomicsTK 1.4.0 requires Python >=3.9, incompatible with this Python 3.8 environment. scikit-image fallback was used. Its 19 outputs were compared with the actual released HistomicsTK function on disk, ellipse and rectangle masks; all agreed numerically. This does not establish universal equivalence. Degenerate/invalid shapes intentionally output NaN, unlike some HistomicsTK denominator fallbacks. Orientation is radians from the row axis according to actual regionprops behavior (not the horizontal-axis wording in the HistomicsTK docstring). Perimeter is digital; circularity may exceed 1. FractalDimension/WeightedHuMoments are excluded.
+
+Models and evaluation
+HistGradientBoostingClassifier, fixed 150 iterations, learning_rate=.06, 15 leaves, min_samples_leaf=80, l2=2, no early stopping, random_state=0. Native missing-value handling, no QC-based row removal. intensity_8 uses 8 whole-mask intensity statistics; morphospatial_90 uses the complete 90-feature set. Metadata, coordinates, IDs, QC flags, labels and GMM outputs are excluded as model inputs. Supervised fitting uses only 101,057 annotated cells in original 3 training WSIs. Probability >0.5 defines positive. No validation/test-based tuning. Three leave-one-training-WSI-out folds are descriptive OOF checks. Final training resubstitution scores are not generalization estimates.
+Old GMM is reused exactly and has per-image unsupervised calibration. Supervised classifiers use manual labels; comparisons do not have equal supervision. Internal/external subsets are PhenoBIC development benchmarks, not the sealed Pan-M Gold test set. Cells within an image are correlated; per-unit and macro metrics are supplied instead of cell-bootstrap confidence intervals. Patient independence beyond original dataset documentation is not assumed. Pixel intensity scales vary (TMA3 is uint8; WSI/TMA1/TMA2 float32), which can affect transfer of a fixed classifier.
+
+Sources
+https://huggingface.co/datasets/mittal-research-lab/PhenoBIC-Data
+Commit: aeffd288d922ee5df4cbb414f3c1f77507ba0001
+https://pmc.ncbi.nlm.nih.gov/articles/PMC13308180/
+https://scimap.xyz/Functions/pp/rescale/
+https://digitalslidearchive.github.io/HistomicsTK/histomicstk.features.html
+https://scikit-image.org/docs/0.21.x/api/skimage.measure.html
+HistomicsTK reference implementation and license are preserved under provenance/.
+
+CSV precision audit
+Default pandas CSV parsing slightly changed low-order score bits and score ties. read_csv(float_precision="round_trip") exactly reproduces prior GMM metrics. train_compare_v2.py incorporates this fix. repair_gmm_precision.py regenerated only baseline scores/metrics after training; no models were refit or tuned. Initial outputs are retained under results/csv_precision_initial and PhenoBIC_CD8_model_predictions_initial_csv_precision.parquet. MODEL_COMPLETE.json and FINAL_DATA_AUDIT.json confirm completion.

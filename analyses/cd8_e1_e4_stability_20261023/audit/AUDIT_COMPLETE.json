@@ -1,0 +1,12 @@
+{
+  "GMM_score_reconstructed": true,
+  "all_cells": 1817783,
+  "baseline_metrics_reproduced": true,
+  "baseline_supervised_predictions_reproduced": true,
+  "data_fingerprint": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78",
+  "pan_gold_accessed": false,
+  "sample_cells": 9600,
+  "source_data_files_hashed": 532,
+  "status": "complete",
+  "units": 48
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "cell_id": 73,
+  "raw_uint16_intensity_preserved": true,
+  "parquet_columns": 163,
+  "csv_export": true
+}

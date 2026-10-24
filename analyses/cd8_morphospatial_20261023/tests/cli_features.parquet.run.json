@@ -1,0 +1,31 @@
+{
+  "image": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/tests/cli_cd8.tif",
+  "mask": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_morphospatial_20261023/tests/cli_mask.tif",
+  "image_dtype": "uint16",
+  "mask_dtype": "uint32",
+  "shape": [
+    40,
+    40
+  ],
+  "cells": 1,
+  "config": {
+    "mask_type": "expanded_nucleus",
+    "edge_fraction": 0.2,
+    "edge_min_width": 1.0,
+    "edge_width_override": null,
+    "r_inner": 2.0,
+    "r_outer": 5.0,
+    "neighbor_distance": 2.0,
+    "min_whole_pixels": 5,
+    "min_region_pixels": 5,
+    "min_reference_pixels": 20,
+    "min_sector_pixels": 2,
+    "min_valid_sectors": 6,
+    "epsilon": 1e-08,
+    "high_signal_k": 3.0,
+    "pixel_size_um": null,
+    "morphology_backend": "skimage"
+  },
+  "python": "3.8.20",
+  "feature_code_sha256": "bdca4d1ab2d1da87801565621e2e3c83875587df690eb2bd96a7b96df099b234"
+}

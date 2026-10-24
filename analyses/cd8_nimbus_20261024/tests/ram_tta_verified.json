@@ -1,0 +1,6 @@
+{
+  "inference_code_sha256": "f1e8348b84ca5ef00b2042f21ef92890913f581d257b60a23b35bca04369b25f",
+  "max_abs_error": 0.0,
+  "actual_real_crop": "training WSI1 same pilot pixels",
+  "preserves_frozen_preprocessing": true
+}

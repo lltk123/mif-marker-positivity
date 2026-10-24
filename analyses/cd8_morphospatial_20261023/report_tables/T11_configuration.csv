@@ -1,0 +1,59 @@
+﻿parameter,value,source
+RUN_CONFIG.dataset_id,"""PhenoBIC-Data""",RUN_CONFIG.json
+RUN_CONFIG.dataset_commit,"""aeffd288d922ee5df4cbb414f3c1f77507ba0001""",RUN_CONFIG.json
+RUN_CONFIG.config.mask_type,"""expanded_nucleus""",RUN_CONFIG.json
+RUN_CONFIG.config.edge_fraction,0.2,RUN_CONFIG.json
+RUN_CONFIG.config.edge_min_width,1.0,RUN_CONFIG.json
+RUN_CONFIG.config.edge_width_override,null,RUN_CONFIG.json
+RUN_CONFIG.config.r_inner,2.0,RUN_CONFIG.json
+RUN_CONFIG.config.r_outer,5.0,RUN_CONFIG.json
+RUN_CONFIG.config.neighbor_distance,2.0,RUN_CONFIG.json
+RUN_CONFIG.config.min_whole_pixels,5,RUN_CONFIG.json
+RUN_CONFIG.config.min_region_pixels,5,RUN_CONFIG.json
+RUN_CONFIG.config.min_reference_pixels,20,RUN_CONFIG.json
+RUN_CONFIG.config.min_sector_pixels,2,RUN_CONFIG.json
+RUN_CONFIG.config.min_valid_sectors,6,RUN_CONFIG.json
+RUN_CONFIG.config.epsilon,1e-08,RUN_CONFIG.json
+RUN_CONFIG.config.high_signal_k,3.0,RUN_CONFIG.json
+RUN_CONFIG.config.pixel_size_um,null,RUN_CONFIG.json
+RUN_CONFIG.config.morphology_backend,"""skimage""",RUN_CONFIG.json
+RUN_CONFIG.feature_columns,"[""Orientation"", ""Area"", ""ConvexHullArea"", ""MajorAxisLength"", ""MinorAxisLength"", ""Perimeter"", ""Circularity"", ""Eccentricity"", ""EquivalentDiameter"", ""Extent"", ""MinorMajorAxisRatio"", ""Solidity"", ""HuMoments1"", ""HuMoments2"", ""HuMoments3"", ""HuMoments4"", ""HuMoments5"", ""HuMoments6"", ""HuMoments7"", ""whole_mean"", ""whole_median"", ""whole_std"", ""whole_p10"", ""whole_p90"", ""whole_p95"", ""whole_IQR"", ""integrated_intensity"", ""edge_mean"", ""edge_median"", ""edge_p90"", ""inner_mean"", ""inner_median"", ""inner_p90"", ""edge_inner_mean_diff"", ""edge_inner_normalized_diff"", ""local_reference_median"", ""local_reference_MAD"", ""whole_mean_minus_reference"", ""edge_mean_minus_reference"", ""inner_mean_minus_reference"", ""edge_inner_log2_ratio"", ""edge_signal_enrichment"", ""edge_sector_00_mean"", ""edge_sector_00_signal_mean"", ""edge_sector_00_high_fraction"", ""edge_sector_01_mean"", ""edge_sector_01_signal_mean"", ""edge_sector_01_high_fraction"", ""edge_sector_02_mean"", ""edge_sector_02_signal_mean"", ""edge_sector_02_high_fraction"", ""edge_sector_03_mean"", ""edge_sector_03_signal_mean"", ""edge_sector_03_high_fraction"", ""edge_sector_04_mean"", ""edge_sector_04_signal_mean"", ""edge_sector_04_high_fraction"", ""edge_sector_05_mean"", ""edge_sector_05_signal_mean"", ""edge_sector_05_high_fraction"", ""edge_sector_06_mean"", ""edge_sector_06_signal_mean"", ""edge_sector_06_high_fraction"", ""edge_sector_07_mean"", ""edge_sector_07_signal_mean"", ""edge_sector_07_high_fraction"", ""edge_sector_08_mean"", ""edge_sector_08_signal_mean"", ""edge_sector_08_high_fraction"", ""edge_sector_09_mean"", ""edge_sector_09_signal_mean"", ""edge_sector_09_high_fraction"", ""edge_sector_10_mean"", ""edge_sector_10_signal_mean"", ""edge_sector_10_high_fraction"", ""edge_sector_11_mean"", ""edge_sector_11_signal_mean"", ""edge_sector_11_high_fraction"", ""edge_sector_cv"", ""edge_sector_max_minus_median"", ""sector_signal_cv"", ""sector_signal_max_minus_median"", ""high_signal_edge_coverage"", ""signal_centroid_offset_px"", ""signal_centroid_offset_normalized"", ""neighbor_edge_mean"", ""nonneighbor_edge_mean"", ""neighbor_edge_mean_diff"", ""neighbor_edge_area_fraction"", ""nonneighbor_edge_area_fraction""]",RUN_CONFIG.json
+RUN_CONFIG.metadata_not_model_features,"[""dataset_id"", ""image_id"", ""source_image_id"", ""cell_id_source"", ""split"", ""context"", ""patient_id"", ""batch_id"", ""mask_type"", ""morphometry_backend"", ""qc_flags"", ""observed_pixel_count"", ""whole_valid_pixel_count"", ""edge_pixel_count"", ""edge_valid_pixel_count"", ""inner_pixel_count"", ""inner_valid_pixel_count"", ""local_reference_pixel_count"", ""edge_valid_sector_count"", ""signal_valid_sector_count"", ""neighbor_edge_pixel_count"", ""nonneighbor_edge_pixel_count"", ""edge_sector_00_pixel_count"", ""edge_sector_01_pixel_count"", ""edge_sector_02_pixel_count"", ""edge_sector_03_pixel_count"", ""edge_sector_04_pixel_count"", ""edge_sector_05_pixel_count"", ""edge_sector_06_pixel_count"", ""edge_sector_07_pixel_count"", ""edge_sector_08_pixel_count"", ""edge_sector_09_pixel_count"", ""edge_sector_10_pixel_count"", ""edge_sector_11_pixel_count"", ""centroid_x_px"", ""centroid_y_px"", ""observed_mean_CD8"", ""edge_width_px"", ""distance_max_px"", ""reference_r_inner_px"", ""reference_r_outer_px"", ""neighbor_distance_px"", ""epsilon_intensity"", ""high_signal_k"", ""high_signal_threshold"", ""signal_centroid_x_px"", ""signal_centroid_y_px"", ""pixel_size_um"", ""Area_um2"", ""ConvexHullArea_um2"", ""MajorAxisLength_um"", ""MinorAxisLength_um"", ""Perimeter_um"", ""EquivalentDiameter_um"", ""signal_centroid_offset_um"", ""qc_truncated"", ""qc_small_whole"", ""qc_small_edge"", ""qc_small_inner"", ""qc_reference_insufficient"", ""qc_reference_mad_zero"", ""qc_no_signal"", ""qc_sector_insufficient"", ""qc_sector_partial"", ""qc_no_neighbors"", ""qc_no_contact_edge"", ""qc_no_noncontact_edge"", ""qc_invalid_pixels"", ""qc_reference_tissue_unknown"", ""qc_context_clipped"", ""qc_disconnected"", ""qc_mask_type_unknown""]",RUN_CONFIG.json
+RUN_CONFIG.feature_module_sha256,"""bdca4d1ab2d1da87801565621e2e3c83875587df690eb2bd96a7b96df099b234""",RUN_CONFIG.json
+RUN_CONFIG.source_index,"""/mnt/disk3/mIHC/mif_marker_positivity_20261022/datasets/PhenoBIC-Data/qa/image_mask_label_index.csv""",RUN_CONFIG.json
+RUN_CONFIG.mask_type_evidence,"""https://pmc.ncbi.nlm.nih.gov/articles/PMC13308180/; Cell segmentation and Figure 2: buffered nuclear convex hull, hence expanded_nucleus for in-house WSI/TMA.""",RUN_CONFIG.json
+RUN_CONFIG.tissue_mask_provided,false,RUN_CONFIG.json
+RUN_CONFIG.pixel_spacing_confirmed,false,RUN_CONFIG.json
+RUN_CONFIG.workers,8,RUN_CONFIG.json
+RUN_CONFIG.pan_gold_policy,"""Sealed. No reads or use.""",RUN_CONFIG.json
+RUN_CONFIG.software.numpy,"""1.24.4""",RUN_CONFIG.json
+RUN_CONFIG.software.pandas,"""1.1.4""",RUN_CONFIG.json
+RUN_CONFIG.software.scipy,"""1.10.1""",RUN_CONFIG.json
+RUN_CONFIG.software.skimage,"""0.21.0""",RUN_CONFIG.json
+RUN_CONFIG.software.tifffile,"""2023.7.10""",RUN_CONFIG.json
+RUN_CONFIG.software.pyarrow,"""15.0.2""",RUN_CONFIG.json
+RUN_CONFIG.software.sklearn,"""1.1.3""",RUN_CONFIG.json
+TRAINING_PROTOCOL.fixed_before_validation_results,true,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.dataset,"""PhenoBIC only""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.holdout,"""Entire Pan-M Gold sealed; no access""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.fit_split,"""training_WSIs only, 101057 labelled cells""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.evaluation_splits,"[""internal_val_WSIs"", ""external_val_TMA_cores""]",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.models.intensity_8,"""8 raw whole-region intensity features""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.models.morphospatial_90,"""19 morphology plus raw intensity, edge/inner, local-reference, 12-sector, displacement and neighbor-side features""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.estimator,"""sklearn.ensemble.HistGradientBoostingClassifier""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.learning_rate,0.06,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.max_iter,150,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.max_leaf_nodes,15,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.min_samples_leaf,80,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.l2_regularization,2.0,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.early_stopping,false,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.parameters.random_state,0,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.classification_threshold,0.5,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.hyperparameter_search,false,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.threshold_tuning,false,TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.missing_data,"""Native NaN handling; no rows dropped for QC""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.feature_scaling,"""No cell-level normalization; tree model uses saved raw features""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.metadata_excluded,"[""all image/patient/batch/cell identifiers"", ""coordinates"", ""QC fields"", ""human labels"", ""GMM score/prediction""]",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.training_validation,"""Three leave-one-original-training-WSI-out folds for descriptive out-of-fold metrics; not used for parameter or threshold selection""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.baseline,"""Previously frozen SCIMAP GMM outputs joined after extraction; exact same labelled cells evaluated""",TRAINING_PROTOCOL.json
+TRAINING_PROTOCOL.stats,"""Per original split and per WSI/core; pooled metrics plus unit-level distributions; descriptive, not independent-cell hypothesis tests""",TRAINING_PROTOCOL.json

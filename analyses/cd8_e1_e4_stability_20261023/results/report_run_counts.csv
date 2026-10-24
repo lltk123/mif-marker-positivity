@@ -1,0 +1,10 @@
+item,value,source
+all_cells,1817783,keys/key_manifest.csv; population=all; sum(rows)
+labelled_training,101057,keys/key_manifest.csv; split=training_WSIs; population=labelled
+labelled_internal,539132,keys/key_manifest.csv; split=internal_val_WSIs; population=labelled
+labelled_external,437480,keys/key_manifest.csv; split=external_val_TMA_cores; population=labelled
+units,48,calibration/calibration_parameters.csv; row count
+sample_cells,9600,keys/stability_sample.csv; row count
+new_supervised_fits,16,results/new_model_fit_log.csv; row count
+stability_cell_model_pairs,604800,stability/STABILITY_COMPLETE.json
+brightness_GMM_refits,192,stability/perturbed_calibration.csv; row count

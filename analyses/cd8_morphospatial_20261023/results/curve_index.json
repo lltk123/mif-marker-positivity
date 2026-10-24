@@ -1,0 +1,56 @@
+[
+  {
+    "model": "GMM",
+    "split": "internal_val_WSIs",
+    "file": "GMM_internal_val_WSIs_curves.npz",
+    "n": 539132
+  },
+  {
+    "model": "GMM",
+    "split": "external_val_TMA_cores",
+    "file": "GMM_external_val_TMA_cores_curves.npz",
+    "n": 437480
+  },
+  {
+    "model": "GMM",
+    "split": "training_WSIs",
+    "file": "GMM_training_WSIs_curves.npz",
+    "n": 101057
+  },
+  {
+    "model": "intensity_8",
+    "split": "internal_val_WSIs",
+    "file": "intensity_8_internal_val_WSIs_curves.npz",
+    "n": 539132
+  },
+  {
+    "model": "intensity_8",
+    "split": "external_val_TMA_cores",
+    "file": "intensity_8_external_val_TMA_cores_curves.npz",
+    "n": 437480
+  },
+  {
+    "model": "intensity_8",
+    "split": "training_WSIs",
+    "file": "intensity_8_training_WSIs_curves.npz",
+    "n": 101057
+  },
+  {
+    "model": "morphospatial_90",
+    "split": "internal_val_WSIs",
+    "file": "morphospatial_90_internal_val_WSIs_curves.npz",
+    "n": 539132
+  },
+  {
+    "model": "morphospatial_90",
+    "split": "external_val_TMA_cores",
+    "file": "morphospatial_90_external_val_TMA_cores_curves.npz",
+    "n": 437480
+  },
+  {
+    "model": "morphospatial_90",
+    "split": "training_WSIs",
+    "file": "morphospatial_90_training_WSIs_curves.npz",
+    "n": 101057
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "pins": {
+    "Nimbus-Inference": {
+      "repository": "https://github.com/angelolab/Nimbus-Inference",
+      "commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+      "archive_sha256": "a6b2432bcc939ba6e0b34629c96217f28f16f97bb0576981983efcddc6ce676c"
+    },
+    "Nimbus": {
+      "repository": "https://github.com/angelolab/Nimbus",
+      "commit": "6942b10cc106654c154bc057af36bcf0f0b3604d",
+      "archive_sha256": "498b06773ccc9ac4ec06c02fdbbe5d058eb17b586659a4250a4aeed5d99c2988"
+    },
+    "https://hf-mirror.com": {
+      "revision": "3affc9e774d68408701e44ed6136b1e13503c639"
+    }
+  },
+  "errors": [
+    {
+      "endpoint": "https://huggingface.co",
+      "error": "HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/JLrumberger/Nimbus-Inference?blobs=true (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000171795CF310>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))"
+    }
+  ]
+}

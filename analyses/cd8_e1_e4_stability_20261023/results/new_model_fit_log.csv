@@ -1,0 +1,17 @@
+model,fit_kind,fold,heldout,n_train,seconds,file
+E1,OOF,0,training_WSIs/WSI1,60172,0.3550102710723877,models/E1_fold0.joblib
+E1,OOF,1,training_WSIs/WSI2,58166,0.31174492835998535,models/E1_fold1.joblib
+E1,OOF,2,training_WSIs/WSI3,83776,0.3882176876068115,models/E1_fold2.joblib
+E1,final,-1,,101057,0.44730329513549805,models/E1.joblib
+E2,OOF,0,training_WSIs/WSI1,60172,0.507662296295166,models/E2_fold0.joblib
+E2,OOF,1,training_WSIs/WSI2,58166,0.47362828254699707,models/E2_fold1.joblib
+E2,OOF,2,training_WSIs/WSI3,83776,0.5875906944274902,models/E2_fold2.joblib
+E2,final,-1,,101057,0.6839234828948975,models/E2.joblib
+E3,OOF,0,training_WSIs/WSI1,60172,0.3690359592437744,models/E3_fold0.joblib
+E3,OOF,1,training_WSIs/WSI2,58166,0.3415861129760742,models/E3_fold1.joblib
+E3,OOF,2,training_WSIs/WSI3,83776,0.4313356876373291,models/E3_fold2.joblib
+E3,final,-1,,101057,0.49753880500793457,models/E3.joblib
+E4,OOF,0,training_WSIs/WSI1,60172,0.5156238079071045,models/E4_fold0.joblib
+E4,OOF,1,training_WSIs/WSI2,58166,0.4828488826751709,models/E4_fold1.joblib
+E4,OOF,2,training_WSIs/WSI3,83776,0.5993611812591553,models/E4_fold2.joblib
+E4,final,-1,,101057,0.6978919506072998,models/E4.joblib

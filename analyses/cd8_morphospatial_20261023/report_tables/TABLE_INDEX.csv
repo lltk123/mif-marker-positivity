@@ -1,0 +1,17 @@
+﻿table_id,file,purpose,row_keys,source,rows
+T01,report_tables/T01_model_comparison.csv,原始划分的全部模型指标；training_resubstitution=True 为训练拟合内结果,split + model,results/model_comparison.csv,9
+T02,report_tables/T02_TMA_context_metrics.csv,TMA1/2/3 分组模型性能和混淆计数,context + model,results/metrics_per_context.csv,9
+T03,report_tables/T03_model_differences.csv,完整模型相对基线的绝对差；difference=model_value-reference_value,split + reference_model + metric,report_tables/T01_model_comparison.csv,20
+T04,report_tables/T04_training_oof_summary.csv,原训练集留一 WSI 样本外指标；不用于调参,model,results/training_oof_summary.csv,2
+T05,report_tables/T05_image_equal_weight_metrics.csv,图像等权汇总；std 为图像间标准差，非置信区间,model + split + metric,results/metrics_per_unit.csv,45
+T06,report_tables/T06_feature_distributions.csv,按原始组统计全部有效特征细胞的强度与空间分布，含未标注细胞,split + context + feature + statistic,results/feature_distributions_by_context.csv,180
+T07,report_tables/T07_feature_missingness.csv,90 项模型特征的 NaN 数与比例；fraction 为 0–1,feature,results/feature_missingness.csv,90
+T08,report_tables/T08_QC_counts.csv,QC 可重叠；不能相加为总细胞数；fraction 为 0–1,flag,results/qc_counts.csv,17
+T09,report_tables/T09_controlled_features.csv,9 个受控图像的原始数值、QC 和区域计数,image_id + cell_id,tests/controlled_features.csv,9
+T10,report_tables/T10_validation_audit.csv,受控测试、实现对照、API、真实试验及全量核验结果,group + check,原始 tests/pilot/results JSON 审计记录,47
+T11,report_tables/T11_configuration.csv,特征参数、版本、模型参数、训练限制及来源,parameter,RUN_CONFIG.json; TRAINING_PROTOCOL.json,58
+T12,report_tables/T12_artifact_integrity.csv,服务器完整特征表、预测表和模型的大小与 SHA256,file,results/FINAL_DATA_AUDIT.json,4
+T13,report_tables/T13_feature_dictionary.csv,全部 163 字段的定义、单位、NaN 条件和模型输入角色,name,FEATURE_DICTIONARY.csv,163
+T14,report_tables/T14_metrics_per_image.csv,逐 WSI/组织芯完整模型性能,model + image_id,results/metrics_per_unit.csv,144
+T15,report_tables/T15_training_oof_per_WSI.csv,留一训练 WSI 的逐折性能,model + heldout_image_id,results/training_oof_per_WSI.csv,6
+T16,report_tables/T16_metrics_by_truncation_QC.csv,按边界截断 QC 分层性能,model + split + qc_truncated,results/metrics_by_truncation_QC.csv,9

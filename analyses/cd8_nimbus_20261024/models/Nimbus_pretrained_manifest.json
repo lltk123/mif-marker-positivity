@@ -1,0 +1,33 @@
+{
+  "model": "Nimbus_pretrained",
+  "weight_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/weights/V1.pt",
+  "weight_sha256": "0651a3852fbafc03be415a1ec80ef947cc1913a081cf0bc649301ade887a82a9",
+  "official_code_commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+  "initial_weight_download_revision": "3affc9e774d68408701e44ed6136b1e13503c639",
+  "original_training_code_commit": "6942b10cc106654c154bc057af36bcf0f0b3604d",
+  "adapter_code_commit": "7447f5315fb12188970b8ddbf4d04df842486291",
+  "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce",
+  "normalization_sha256": "edc9a074004fd4f9c8dba136cb5d16638c32aaf11d8fe2d0f10c932472632335",
+  "input_channels": [
+    "CD8 normalized image",
+    "official instance interior binary mask"
+  ],
+  "input_scale": "official default assumed20x to10x (0.5), physical spacing unknown",
+  "mask_type": "expanded_nucleus",
+  "seed": 0,
+  "source_dataset": "PhenoBIC-Data",
+  "training_source": "author V1 pretraining; full image-level manifest unavailable",
+  "validation_source": "3 original internal validation WSIs",
+  "test_source": "42 original external CD8 TMA cores",
+  "thresholds": {
+    "model": "Nimbus_pretrained",
+    "default": 0.5,
+    "operator": ">",
+    "validation_selected": 0.54,
+    "selection": "equal WSI mean F1 on full labelled internal validation",
+    "validation_development_fitted_macro_F1": 0.8680940710877657,
+    "not_unbiased_validation": true,
+    "protocol_sha256": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce"
+  },
+  "training_complete": null
+}

@@ -1,0 +1,5 @@
+image_id,perturbation,L,U,n_full_GMM,n_calibration_eligible,gate_log1p,L_U_reestimated,GMM_action,method
+training_WSIs/WSI1,gain_0.5,0.0,24.32438430786133,151245,151245,0.7154018851580953,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+training_WSIs/WSI1,gain_2,0.0,97.29753723144532,151245,151245,1.652221033392077,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+training_WSIs/WSI1,bias_0.05,2.4324384307861333,51.081207046508794,151245,151245,1.743638499143112,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"
+training_WSIs/WSI1,bias_0.10,4.864876861572267,53.51364547729493,151245,151245,2.1237596277848425,True,full_unit_refit,"positive affine transform of full-unit sufficient statistics, verified by 20 full-pixel representative-unit checks"

@@ -1,0 +1,16 @@
+{
+  "visual_reviewed": [
+    "01_performance_fixed_zh.png",
+    "01_performance_oof_zh.png",
+    "02_core_changes_zh.png",
+    "03_calibration_missingness_zh.png",
+    "04_stability_fixed_zh.png",
+    "04_stability_oof_en.png",
+    "05_real_examples_zh.png"
+  ],
+  "all_files_decoded_or_SVG_text_checked": true,
+  "layout": "No clipped labels or overlapping panels seen",
+  "numerical_annotation": "Score-change annotations use two significant digits to retain small nonzero changes",
+  "source_data": "Every figure has source CSV",
+  "interpretation": "No patient-level independence or inferential confidence intervals claimed"
+}

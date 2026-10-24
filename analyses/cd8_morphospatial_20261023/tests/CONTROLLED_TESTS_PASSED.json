@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "controlled_cases": [
+    "uniform",
+    "ring",
+    "one_sided",
+    "dark",
+    "bright_neighbor_without_spill",
+    "bright_neighbor_with_spill",
+    "tiny",
+    "no_reference",
+    "image_boundary"
+  ],
+  "fixed_empty_schema_columns": 163,
+  "morphology_count": 19,
+  "numeric_model_candidates": 90,
+  "actual_histomicstk_columns": [
+    "Orientation.Orientation",
+    "Size.Area",
+    "Size.ConvexHullArea",
+    "Size.MajorAxisLength",
+    "Size.MinorAxisLength",
+    "Size.Perimeter",
+    "Shape.Circularity",
+    "Shape.Eccentricity",
+    "Shape.EquivalentDiameter",
+    "Shape.Extent",
+    "Shape.FractalDimension",
+    "Shape.MinorMajorAxisRatio",
+    "Shape.Solidity",
+    "Shape.HuMoments1",
+    "Shape.HuMoments2",
+    "Shape.HuMoments3",
+    "Shape.HuMoments4",
+    "Shape.HuMoments5",
+    "Shape.HuMoments6",
+    "Shape.HuMoments7"
+  ],
+  "selected_histomicstk_columns": [
+    "Orientation.Orientation",
+    "Size.Area",
+    "Size.ConvexHullArea",
+    "Size.MajorAxisLength",
+    "Size.MinorAxisLength",
+    "Size.Perimeter",
+    "Shape.Circularity",
+    "Shape.Eccentricity",
+    "Shape.EquivalentDiameter",
+    "Shape.Extent",
+    "Shape.MinorMajorAxisRatio",
+    "Shape.Solidity",
+    "Shape.HuMoments1",
+    "Shape.HuMoments2",
+    "Shape.HuMoments3",
+    "Shape.HuMoments4",
+    "Shape.HuMoments5",
+    "Shape.HuMoments6",
+    "Shape.HuMoments7"
+  ],
+  "histomicstk_version": "1.4.0 source loaded independently, package not installed",
+  "comparisons": [
+    {
+      "case": "disk",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "case": "ellipse",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "case": "rectangle",
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "definitions_differ": "Degenerate shapes and truncated/small regions produce NaN rather than HTK finite fallback denominators. Orientation follows actual skimage row-axis radians, not the horizontal-axis wording in HTK docstring."
+}
