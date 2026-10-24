@@ -1,4 +1,4 @@
-* text=auto
+* text=auto eol=lf
 *.py text eol=lf
 *.md text eol=lf
 *.csv text eol=lf
@@ -7,3 +7,7 @@
 *.svg text eol=lf
 *.png binary
 *.pdf binary
+
+# Preserve generated SVG path formatting and exact vendored SCIMAP source.
+*.svg -whitespace
+**/scimap_rescale_upstream.py -whitespace
