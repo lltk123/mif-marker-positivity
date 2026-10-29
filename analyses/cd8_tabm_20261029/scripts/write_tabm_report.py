@@ -315,7 +315,7 @@ def build_report(root):
         add('总体指标先在每个种子的完整有标签集合上计算，再汇总种子波动；它们是按细胞汇总结果。'
             '训练重代入成绩、AUC、specificity、TP/FP/FN/TN、真实/预测阳性比例与覆盖率都保存在对应 CSV。此次没有新 OOF；训练成绩不是 OOF，内部验证是明确的开发集。')
         add('### 外部 TMA 分组')
-        note('performance_'+mode,f'split={TEST},group_type=context,context=TMA1/TMA2/TMA3',
+        note('performance_'+mode,f'split={TEST},group_type=context,context=TMA1_CD8/TMA2_CD8/TMA3_CD8',
              'f1/precision/recall/roc_auc/average_precision/fp/fn_mean及_std')
         part=perf.loc[perf.split.eq(TEST)&perf.group_type.eq('context')&(perf.threshold_mode.eq(mode)|perf.model_family.eq('GMM'))]
         part=display(part,['f1','precision','recall','roc_auc','average_precision','fp','fn'])

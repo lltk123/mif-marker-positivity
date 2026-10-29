@@ -341,19 +341,23 @@ def draw_case(image, mask, valid, row, output, language, font_path=None):
     overlay[find_boundaries(mask, mode="inner") & (mask != cid)] = [0.65, 0.75, 0.85, 0.6]
     overlay[find_boundaries(mask == cid, mode="inner")] = [1.0, 0.65, 0.10, 1.0]
     axes[1].imshow(overlay)
+    # Keep every boundary, but restrict text to the closest visible neighbors.
+    target_y, target_x = np.nonzero((mask == cid) & valid)
+    target_center = (float(np.mean(target_x)), float(np.mean(target_y)))
+    neighbor_centers = []
     for other in np.unique(mask):
-        if other == 0:
+        if other == 0 or other == cid:
             continue
         hit = (mask == other) & valid
         if not hit.any():
             continue
         yy, xx = np.nonzero(hit)
-        axes[1].text(
-            float(np.mean(xx)), float(np.mean(yy)), str(int(other)),
-            color="#FFB347" if other == cid else "#CBD5E0",
-            fontsize=6, ha="center", va="center",
-            bbox={"facecolor": "black", "alpha": 0.35, "edgecolor": "none", "pad": 0.5},
-        )
+        x, y = float(np.mean(xx)), float(np.mean(yy))
+        distance2 = (x - target_center[0]) ** 2 + (y - target_center[1]) ** 2
+        neighbor_centers.append((distance2, int(other), x, y))
+    candidates = [(cid, *target_center)] + [
+        (other, x, y) for _, other, x, y in sorted(neighbor_centers)[:6]
+    ]
     # Physical pixel size is unavailable; label only the true pixel length.
     bar = min(20, max(1, image.shape[1] // 4))
     for ax in axes:
@@ -372,24 +376,62 @@ def draw_case(image, mask, valid, row, output, language, font_path=None):
     }
     transition = error_names.get(row["change_type"], row["change_type"]) if language == "zh" else row["change_type"].replace("_", " ")
     fig.suptitle(f"{catname} | B → C: {transition}", fontsize=10, y=0.99)
+    def display_score(value):
+        return f"{value:.2e}" if 0 < abs(value) < 0.001 else f"{value:.3f}"
+
     text = (
         f"ID {cid} | " + ("人工标签" if language == "zh" else "Label") +
         f" {int(row['ground_truth_binary'])} | " +
         " | ".join(
-            f"{model.replace('TabM_', '').replace('_s0', '')}={row['score_' + model]:.3f}"
+            f"{model.replace('TabM_', '').replace('_s0', '')}={display_score(row['score_' + model])}"
             for model in MODELS if "score_" + model in row
         )
     )
     fig.text(0.5, 0.145, text, ha="center", fontsize=8)
     note = (
         "橙线：扩张核；灰线：邻居；灰色缺块：无图像支持。共同显示灰度范围，γ=1。\n"
-        "仅作图像属性复核；候选类别不等同于污染机制。模型种子 0，固定门限 >0.5。"
+        "模型种子 0，门限 >0.5；候选不证明污染。其余邻居 ID 见 neighbor_context.csv。"
         if language == "zh" else
         "Orange: expanded nucleus; grey: neighbors; grey gaps: missing support. Shared display range, gamma=1.\n"
-        "Image-property review only; proxies do not establish contamination. Model seed 0; fixed threshold >0.5."
+        "Seed 0, threshold >0.5; proxies do not prove contamination. Other IDs: neighbor_context.csv."
     )
     fig.text(0.5, 0.045, note, ha="center", fontsize=7, linespacing=1.5)
     fig.subplots_adjust(left=0.02, right=0.98, bottom=0.20, top=0.86, wspace=0.08)
+    # Check actual rendered text bounds after aspect ratio and layout are fixed.
+    # This also leaves the scale bar and its label completely free of instance IDs.
+    from matplotlib.transforms import Bbox
+
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    ax = axes[1]
+    inset = 3.0 * fig.dpi / 72.0
+    frame = ax.get_window_extent(renderer)
+    safe = Bbox.from_extents(
+        frame.x0 + inset, frame.y0 + inset, frame.x1 - inset, frame.y1 - inset
+    )
+    scale_points = ax.transData.transform(
+        [[-0.5, image.shape[0] - 23], [bar + 12, image.shape[0] - 0.5]]
+    )
+    scale_region = Bbox.from_extents(
+        *np.minimum(scale_points[0], scale_points[1]),
+        *np.maximum(scale_points[0], scale_points[1]),
+    )
+    occupied = []
+    for other, x, y in candidates:
+        label = ax.text(
+            x, y, str(other), color="#FFB347" if other == cid else "#CBD5E0",
+            fontsize=6, ha="center", va="center", clip_on=True,
+            bbox={"facecolor": "black", "alpha": 0.35, "edgecolor": "none", "pad": 0.5},
+        )
+        label.set_gid("target-cell-id" if other == cid else "neighbor-cell-id")
+        bounds = label.get_window_extent(renderer).padded(1.0 * fig.dpi / 72.0)
+        within = (
+            safe.contains(bounds.x0, bounds.y0) and safe.contains(bounds.x1, bounds.y1)
+        )
+        if not within or bounds.overlaps(scale_region) or any(bounds.overlaps(b) for b in occupied):
+            label.remove()
+            continue
+        occupied.append(bounds)
     dest = output / language
     dest.mkdir(exist_ok=True)
     for ext in ["png", "svg"]:
