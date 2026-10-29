@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "task": "summary of completed frozen experiments",
+  "primary_rank": "external pooled labelled-cell F1; strict score > 0.5",
+  "secondary_panel": "E1-E4 training OOF thresholds; GMM retains original >0.5",
+  "models": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "GMM"
+  ],
+  "splits": {
+    "external_val_TMA_cores": 437480,
+    "internal_val_WSIs": 539132
+  },
+  "no_model_fit_or_prediction_run": true,
+  "pan_m_accessed": false,
+  "source_root": "F:\\Codex\\Projects\\学习\\mif-marker-positivity",
+  "limitations": "Unsupervised target-image adaptation; historical external exposure; unavailable patient/source-image independence audit",
+  "source_script_sha256": "98b041daaca70e1d1734a4e0e2dd0c203ba7121a4771db30e3067d081c62a614"
+}

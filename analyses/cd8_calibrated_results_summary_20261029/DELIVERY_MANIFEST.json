@@ -1,0 +1,82 @@
+[
+  {
+    "file": "ANALYSIS_REPORT.md",
+    "bytes": 9514,
+    "sha256": "6418c61633fb800b8f9bf4abd2b124f78153ce02c616f9faa2af220f1f9b0d0b"
+  },
+  {
+    "file": "AUDIT_CHECKS.csv",
+    "bytes": 9403,
+    "sha256": "a52306c9cba8cd7118ad64b895f56893b73beedcd0306ead8b62b38b3436e52c"
+  },
+  {
+    "file": "CALIBRATED_CONTEXT_METRICS.csv",
+    "bytes": 22359,
+    "sha256": "1d8a9812937d66e545c79573fd5678f3dc4fbfb6c86aa749c0f9f729c5eb9b6a"
+  },
+  {
+    "file": "CALIBRATED_MACRO_METRICS.csv",
+    "bytes": 18982,
+    "sha256": "e450df11c269b37320d53a8bdef6e1e241964ddccb0c835199934377ba1768f8"
+  },
+  {
+    "file": "CALIBRATED_RANKINGS.csv",
+    "bytes": 9015,
+    "sha256": "bd9c94ae13032cbecb1f475c451c06d2d6a5121111ebe1ba60b614741c95f185"
+  },
+  {
+    "file": "CALIBRATED_UNIT_METRICS.csv",
+    "bytes": 175283,
+    "sha256": "1c52030a6fb8790a1c510a47f3ed97b546ac478cbc87d43336f4d0550818c9f4"
+  },
+  {
+    "file": "EXPERIMENT_INVENTORY.csv",
+    "bytes": 3993,
+    "sha256": "4dadd74d2e4bd142e1dce2345362fcec1d601696c67b074c4073e9c10a73f0bf"
+  },
+  {
+    "file": "export_tables.mjs",
+    "bytes": 2716,
+    "sha256": "7c27eff248e91d219603ce446e5579912b53f97eb84d43fd64efa3f65105dff9"
+  },
+  {
+    "file": "LEAKAGE_AUDIT.json",
+    "bytes": 23396,
+    "sha256": "66da880296abd9e829e986ee370e93a6da2f1c118a16d768dc32d10f9e3bb8ec"
+  },
+  {
+    "file": "OUTPUT_MANIFEST.json",
+    "bytes": 1314,
+    "sha256": "45046294eceda7b5c2e9b47b4080517d1a007adaa1769de8e8372c8c260c546f"
+  },
+  {
+    "file": "PAIRED_VS_GMM.csv",
+    "bytes": 4055,
+    "sha256": "a299acf46b88b8ccb7242207a377db8a0dc9c2523eebe90bcb3c81f2c5962288"
+  },
+  {
+    "file": "prepare_summary.py",
+    "bytes": 8511,
+    "sha256": "98b041daaca70e1d1734a4e0e2dd0c203ba7121a4771db30e3067d081c62a614"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2577,
+    "sha256": "13d8b4116b0548bd5e6bd21a8e645461793987c59b9c41da656339ae337130d0"
+  },
+  {
+    "file": "SOURCE_MANIFEST.csv",
+    "bytes": 2291,
+    "sha256": "bb79657c6360edee6081d57b94cf0777aa407c3468ad98c69f884adfb3d0a6ac"
+  },
+  {
+    "file": "SUMMARY_CONFIG.json",
+    "bytes": 766,
+    "sha256": "91fc3fe72a595153b2c5a4a557342866acc2a2da59b739ffa34d125d529a16d5"
+  },
+  {
+    "file": "SUMMARY_VALIDATION.json",
+    "bytes": 1242,
+    "sha256": "7db4a0fecbc4f71f0f9f0d296e20a1c3ea3f22998854d4674af7a4cceed10e5f"
+  }
+]

@@ -95,3 +95,5 @@ NEW="$P/analyses/cd8_tabm_repeat_001"
 本轮 A 使用既有**原始强度**，没有增加 E1–E4 的图像级共同校准；因此结果回答本次 A/B/C 的消融问题，不应把变化仅归因于神经网络架构。
 
 代码归档 commit 与执行文件逐一校验见 [SOURCE_CODE_VERSION.json](SOURCE_CODE_VERSION.json)。完整模型、逐细胞预测与曲线保留在本服务器运行目录；审阅包提供代码、配置、MD、汇总 CSV 和图件。
+
+发布脚本按统一格式整理，16 个文件的 AST 均保持一致。原运行 commit/哈希保留在 SOURCE_CODE_VERSION.json；当前发布源码哈希及等价核对见 [排版核验](../../docs/publication/tabm_readability_20261029.csv)。

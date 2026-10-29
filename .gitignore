@@ -16,6 +16,7 @@
 !analyses/
 !analyses/**/
 !analyses/**/*.py
+!analyses/cd8_calibrated_results_summary_20261029/export_tables.mjs
 !analyses/**/*.md
 !analyses/**/*.json
 !analyses/**/*.csv

@@ -1,0 +1,50 @@
+{
+  "csv_round_trip": [
+    {
+      "file": "CALIBRATED_RANKINGS.csv",
+      "rows": 20,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "CALIBRATED_CONTEXT_METRICS.csv",
+      "rows": 60,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "CALIBRATED_UNIT_METRICS.csv",
+      "rows": 450,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "CALIBRATED_MACRO_METRICS.csv",
+      "rows": 20,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "PAIRED_VS_GMM.csv",
+      "rows": 16,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "EXPERIMENT_INVENTORY.csv",
+      "rows": 15,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "SOURCE_MANIFEST.csv",
+      "rows": 17,
+      "round_trip_values_match": true
+    },
+    {
+      "file": "AUDIT_CHECKS.csv",
+      "rows": 142,
+      "round_trip_values_match": true
+    }
+  ],
+  "all_source_hashes_unchanged": true,
+  "source_count": 17,
+  "arithmetic_checks": 142,
+  "leakage_audit_status": "No target-label leakage or freeze inconsistency found within the inspected code paths and saved run artifacts.",
+  "no_new_training": true,
+  "pan_m_accessed": false
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-29",
+  "hash_convention": "SHA256 of Git-normalized LF text; BOM retained",
+  "changes": "Standard-library CSV entry added; readable publication copies; original metric values and run provenance preserved",
+  "files": [
+    {
+      "file": "ANALYSIS_REPORT.md",
+      "sha256_git_lf": "43d4770fa7c2d62c6a98f244c3630633f32ee0d3fa9feb51b3dfb415eff0a018",
+      "bytes_git_lf": 8100
+    },
+    {
+      "file": "AUDIT_CHECKS.csv",
+      "sha256_git_lf": "f805ffef9a317cc26669e65014f743d99b6fb51dc43c8043156caaa65e5febdb",
+      "bytes_git_lf": 9260
+    },
+    {
+      "file": "CALIBRATED_CONTEXT_METRICS.csv",
+      "sha256_git_lf": "507470abcf6fd189c4e2f7a66329d31fa425fd8253676e2ed2dfc7e792cd8453",
+      "bytes_git_lf": 22298
+    },
+    {
+      "file": "CALIBRATED_MACRO_METRICS.csv",
+      "sha256_git_lf": "6e1b247a503284255a598c4d32de2c4c2c316372e2ae8c71a4510a67b4c118c7",
+      "bytes_git_lf": 18961
+    },
+    {
+      "file": "CALIBRATED_RANKINGS.csv",
+      "sha256_git_lf": "cbcfdeed043fc0fd92c036988e2986d428d32904c2025cc4cb3bbc0084fa924e",
+      "bytes_git_lf": 8994
+    },
+    {
+      "file": "CALIBRATED_UNIT_METRICS.csv",
+      "sha256_git_lf": "85d6b8c234b4d750fa8b88402fb71ac40a5fdf611e1b487c2a43ab3fee71fffc",
+      "bytes_git_lf": 174832
+    },
+    {
+      "file": "DELIVERY_MANIFEST.json",
+      "sha256_git_lf": "eb03050664608b8ccd5b25f96323d642d656a6a5688dcffc2c88de0668883838",
+      "bytes_git_lf": 2332
+    },
+    {
+      "file": "EXPERIMENT_INVENTORY.csv",
+      "sha256_git_lf": "d99061a1c1fcbb9861d9cdebbdf7faeb052aedcf9363153e364bcec718be5a79",
+      "bytes_git_lf": 3977
+    },
+    {
+      "file": "export_tables.mjs",
+      "sha256_git_lf": "116121dcfa619d5bd53af96d19266e6d5098156d010731f3663f22ac58ae3294",
+      "bytes_git_lf": 2714
+    },
+    {
+      "file": "LEAKAGE_AUDIT.json",
+      "sha256_git_lf": "5faeefe8964c25f3344b05ce8f4b39a6ba08bc585bab8bce387990d23dbdcf85",
+      "bytes_git_lf": 23064
+    },
+    {
+      "file": "OUTPUT_MANIFEST.json",
+      "sha256_git_lf": "45046294eceda7b5c2e9b47b4080517d1a007adaa1769de8e8372c8c260c546f",
+      "bytes_git_lf": 1314
+    },
+    {
+      "file": "PAIRED_VS_GMM.csv",
+      "sha256_git_lf": "dbe24140a3d7ff23fa8c2686e4019a20975b2d1658b2d8d7feb3e0676bb00f8d",
+      "bytes_git_lf": 4038
+    },
+    {
+      "file": "prepare_summary.py",
+      "sha256_git_lf": "a6e280aa173c7d48c77b82cf4a61641f5f19519685ba149025d383401b20b047",
+      "bytes_git_lf": 13387
+    },
+    {
+      "file": "PYTHON_REBUILD_VALIDATION.json",
+      "sha256_git_lf": "9dc3dac6a11c0ba4ea71df08f866577b82449b1664757fb607dea0b30fe00a4a",
+      "bytes_git_lf": 957
+    },
+    {
+      "file": "README.md",
+      "sha256_git_lf": "50d2f8e773dff90c393285ac9bf20cbb0180fc4eb14005f0aad24e290c8da5ff",
+      "bytes_git_lf": 2969
+    },
+    {
+      "file": "SOURCE_MANIFEST.csv",
+      "sha256_git_lf": "9e8509e02c2c0545d943581255da8a9ad4c6bf5e2877bb24031699a485d3c8cb",
+      "bytes_git_lf": 2273
+    },
+    {
+      "file": "SUMMARY_CONFIG.json",
+      "sha256_git_lf": "91fc3fe72a595153b2c5a4a557342866acc2a2da59b739ffa34d125d529a16d5",
+      "bytes_git_lf": 766
+    },
+    {
+      "file": "SUMMARY_VALIDATION.json",
+      "sha256_git_lf": "0e21c069c1f89eb4ceb02e094446aaab61dc481ba0ac8a4292362440e7e6676e",
+      "bytes_git_lf": 1193
+    }
+  ]
+}

@@ -14,12 +14,16 @@ class MemoryMonitor:
         self.thread.start()
 
     def _sample(self):
-        while not self.stop_event.wait(.05):
+        while not self.stop_event.wait(0.05):
             self.peak = max(self.peak, self.process.memory_info().rss)
 
     def finish(self):
         self.peak = max(self.peak, self.process.memory_info().rss)
         self.stop_event.set()
         self.thread.join()
-        return dict(peak_phase_process_rss_bytes=self.peak, phase_start_rss_bytes=self.baseline,
-                    peak_rss_increase_bytes=self.peak-self.baseline, memory_sampling_interval_ms=50)
+        return dict(
+            peak_phase_process_rss_bytes=self.peak,
+            phase_start_rss_bytes=self.baseline,
+            peak_rss_increase_bytes=self.peak - self.baseline,
+            memory_sampling_interval_ms=50,
+        )

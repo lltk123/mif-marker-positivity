@@ -46,3 +46,9 @@ python -m unittest discover -s tests
 ```
 
 上述检查验证发布边界、链接和源码结构；历史数值正确性由各实验已保存的验证表和报告提供。本次整理不重训模型、不重算性能。
+
+## 2026-10-29 新增入口
+
+- [TabM A/B/C](../analyses/cd8_tabm_20261029/README.md)：固定官方实现、三种子训练和全量评价。
+- [已完成校准实验汇总](../analyses/cd8_calibrated_results_summary_20261029/README.md)：只依赖 Python 标准库，可从仓库现有汇总表重建排名，无需原图或 GPU。
+- [TabM 发布源码排版核验](publication/tabm_readability_20261029.csv)：当前发布副本与原运行代码 AST 一致，保留两者的独立哈希。

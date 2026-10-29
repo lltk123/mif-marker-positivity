@@ -43,7 +43,9 @@ class ClassificationMetricContracts(unittest.TestCase):
         result = classification_metrics(
             np.array([0, 1]), np.array([0.5, np.nextafter(0.5, 1.0)]), 0.5
         )
-        self.assertEqual((result["tp"], result["fp"], result["fn"], result["tn"]), (1, 0, 0, 1))
+        self.assertEqual(
+            (result["tp"], result["fp"], result["fn"], result["tn"]), (1, 0, 0, 1)
+        )
         self.assertEqual(result["f1"], 1.0)
 
     def test_no_true_or_predicted_positives(self):
@@ -68,7 +70,9 @@ class ClassificationMetricContracts(unittest.TestCase):
         self.assertEqual(result["fn"], 1)
 
     def test_failed_score_keeps_complete_denominator(self):
-        result = classification_metrics(np.array([0, 1, 1]), np.array([0.1, np.nan, 0.9]), 0.5)
+        result = classification_metrics(
+            np.array([0, 1, 1]), np.array([0.1, np.nan, 0.9]), 0.5
+        )
         self.assertEqual(result["n_cells"], 3)
         self.assertEqual(result["n_true_positive"], 2)
         self.assertEqual(result["n_score_finite"], 2)
@@ -81,12 +85,14 @@ class ClassificationMetricContracts(unittest.TestCase):
 
 class CellKeyContracts(unittest.TestCase):
     def setUp(self):
-        self.cells = pd.DataFrame({
-            "dataset_id": ["synthetic"] * 4,
-            "image_id": ["wsi_a", "wsi_a", "wsi_b", "wsi_b"],
-            "cell_id": [90001, 7, 7, 90001],
-            "marker": ["CD8"] * 4,
-        })
+        self.cells = pd.DataFrame(
+            {
+                "dataset_id": ["synthetic"] * 4,
+                "image_id": ["wsi_a", "wsi_a", "wsi_b", "wsi_b"],
+                "cell_id": [90001, 7, 7, 90001],
+                "marker": ["CD8"] * 4,
+            }
+        )
         self.prediction = self.cells.assign(score=[0.11, 0.22, 0.33, 0.44])
 
     def test_shuffled_predictions_join_by_complete_key(self):
@@ -96,7 +102,9 @@ class CellKeyContracts(unittest.TestCase):
         np.testing.assert_allclose(aligned["score"], [0.11, 0.22, 0.33, 0.44])
 
     def test_duplicate_prediction_key_is_rejected(self):
-        duplicated = pd.concat([self.prediction, self.prediction.iloc[[0]]], ignore_index=True)
+        duplicated = pd.concat(
+            [self.prediction, self.prediction.iloc[[0]]], ignore_index=True
+        )
         with self.assertRaisesRegex(ValueError, "unique"):
             aligned_scores(self.cells, duplicated)
 
@@ -107,25 +115,35 @@ class CellKeyContracts(unittest.TestCase):
 
 class RiskStratumContracts(unittest.TestCase):
     def setUp(self):
-        self.train = pd.DataFrame({
-            "split": [TRAIN] * 4,
-            "ground_truth_binary": [1, 1, 0, 0],
-            "whole_mean": [1.0, 3.0, 10.0, 20.0],
-            "neighbor_edge_mean_diff": [1.0, 2.0, 3.0, 4.0],
-            "neighbor_edge_area_fraction": [0.2, 0.0, 0.2, 0.2],
-            "local_reference_median": [1.0, 3.0, 5.0, 7.0],
-            "sector_signal_cv": [0.1, 0.2, 0.3, 0.4],
-            "edge_sector_cv": [900.0] * 4,
-        })
+        self.train = pd.DataFrame(
+            {
+                "split": [TRAIN] * 4,
+                "ground_truth_binary": [1, 1, 0, 0],
+                "whole_mean": [1.0, 3.0, 10.0, 20.0],
+                "neighbor_edge_mean_diff": [1.0, 2.0, 3.0, 4.0],
+                "neighbor_edge_area_fraction": [0.2, 0.0, 0.2, 0.2],
+                "local_reference_median": [1.0, 3.0, 5.0, 7.0],
+                "sector_signal_cv": [0.1, 0.2, 0.3, 0.4],
+                "edge_sector_cv": [900.0] * 4,
+            }
+        )
 
     def test_fit_ignores_validation_test_and_unlabelled_training(self):
         before = fit_risk_strata(self.train)
-        extra = pd.concat([
-            self.train.assign(split=VALID),
-            self.train.assign(split=TEST),
-            self.train.assign(ground_truth_binary=np.nan),
-        ], ignore_index=True)
-        for column in ("whole_mean", "neighbor_edge_mean_diff", "local_reference_median", "sector_signal_cv"):
+        extra = pd.concat(
+            [
+                self.train.assign(split=VALID),
+                self.train.assign(split=TEST),
+                self.train.assign(ground_truth_binary=np.nan),
+            ],
+            ignore_index=True,
+        )
+        for column in (
+            "whole_mean",
+            "neighbor_edge_mean_diff",
+            "local_reference_median",
+            "sector_signal_cv",
+        ):
             extra[column] = 1e12
         after = fit_risk_strata(pd.concat([self.train, extra], ignore_index=True))
         self.assertEqual(before, after)
@@ -143,10 +161,18 @@ class RiskStratumContracts(unittest.TestCase):
             "sector_cv_q75": 0.3,
         }
         masks = apply_risk_strata(self.train, config)
-        np.testing.assert_array_equal(masks["weak_positive"], [True, False, False, False])
-        np.testing.assert_array_equal(masks["contact_bright_proxy"], [False, False, False, True])
-        np.testing.assert_array_equal(masks["high_local_reference_proxy"], [False, False, False, True])
-        np.testing.assert_array_equal(masks["directional_signal_proxy"], [False, False, False, True])
+        np.testing.assert_array_equal(
+            masks["weak_positive"], [True, False, False, False]
+        )
+        np.testing.assert_array_equal(
+            masks["contact_bright_proxy"], [False, False, False, True]
+        )
+        np.testing.assert_array_equal(
+            masks["high_local_reference_proxy"], [False, False, False, True]
+        )
+        np.testing.assert_array_equal(
+            masks["directional_signal_proxy"], [False, False, False, True]
+        )
 
     def test_missing_feature_does_not_create_a_proxy(self):
         partial = self.train.drop(columns="sector_signal_cv")
@@ -166,12 +192,22 @@ class PairedThresholdContracts(unittest.TestCase):
             ("GMM", "GMM", -1, "fixed_0.5", 0.5),
         ]
         for family, feature_set, seed, mode, threshold in settings:
-            records.append({
-                "model_family": family, "feature_set": feature_set, "seed": seed,
-                "threshold_mode": mode, "threshold": threshold, "split": TEST,
-                "group_type": "split", "group_id": TEST, "context": "all",
-                **classification_metrics(np.array([0, 1]), np.array([0.1, 0.8]), threshold),
-            })
+            records.append(
+                {
+                    "model_family": family,
+                    "feature_set": feature_set,
+                    "seed": seed,
+                    "threshold_mode": mode,
+                    "threshold": threshold,
+                    "split": TEST,
+                    "group_type": "split",
+                    "group_id": TEST,
+                    "context": "all",
+                    **classification_metrics(
+                        np.array([0, 1]), np.array([0.1, 0.8]), threshold
+                    ),
+                }
+            )
         result = paired_comparisons(pd.DataFrame(records))
         selected = result.loc[result["threshold_mode"].eq("validation_selected")]
         gmm = selected.loc[selected["comparison"].eq("TabM_A_minus_GMM")].iloc[0]

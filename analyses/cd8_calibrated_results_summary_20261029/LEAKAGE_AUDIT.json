@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "audit_name": "Independent read-only E1-E4 calibration and label-use audit",
+  "audit_date": "2026-10-29",
+  "audit_timezone": "Asia/Shanghai",
+  "recorded_at": "2026-10-29T19:47:38.140982+08:00",
+  "server": {
+    "host": "192.168.1.128",
+    "port": 2222,
+    "user": "hll",
+    "project_root": "/mnt/disk3/mIHC/mif_marker_positivity_20261022",
+    "analysis_root": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023",
+    "python": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python"
+  },
+  "local_source_copy": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023",
+  "scope": {
+    "dataset": "PhenoBIC CD8 only",
+    "dataset_revision": "aeffd288d922ee5df4cbb414f3c1f77507ba0001",
+    "no_training_or_prediction_rerun": true,
+    "no_original_image_read_in_this_audit": true,
+    "pan_m_accessed": false,
+    "source_and_existing_metadata_metrics_only": true
+  },
+  "conclusion": {
+    "status": "No target-label leakage or freeze inconsistency found within the inspected code paths and saved run artifacts.",
+    "supported_wording_zh": "共同校准未使用内部或外部标签；监督训练和门限选择仅使用原三张训练 WSI 标签。",
+    "unsupported_wording_zh": "不能据此认证完全不接触测试分布、患者级完全独立、无同源裁剪重叠，或从未因既往测试表现影响研究方向。"
+  },
+  "executed_checks": {
+    "remote_result": "Completed successfully; exit_code=0.",
+    "tool_output_reference": "functions.wait cell_id=57; remote exec chunk_id=2041f0",
+    "hash_audit_stdout": {
+      "protocol": true,
+      "keys": true,
+      "freeze": true,
+      "training_cells_hash": true,
+      "thresholds": {
+        "E1": 0.42,
+        "E2": 0.39,
+        "E3": 0.45,
+        "E4": 0.3
+      },
+      "training_only": true
+    },
+    "four_hash_pairs": [
+      {
+        "name": "protocol_to_threshold_freeze",
+        "observed_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/E1_E4_PROTOCOL.json",
+        "observed_sha256": "e22e02ea8348a3f3f6a4e13cb574cdb454b949fb7f89ebba5454dbc57e5b0d94",
+        "expected_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/THRESHOLDS_FROZEN.json",
+        "expected_field": "protocol_sha256",
+        "expected_sha256": "e22e02ea8348a3f3f6a4e13cb574cdb454b949fb7f89ebba5454dbc57e5b0d94",
+        "matches": true,
+        "method": "SHA-256 recomputed from the actual server file and compared with the saved metadata field during the completed read-only remote audit; the prior output printed equality, and this JSON records the equal digest from the metadata."
+      },
+      {
+        "name": "key_manifest_to_training_run",
+        "observed_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/key_manifest.csv",
+        "observed_sha256": "e2d3812b6a1a21b22af77880b6555250c83ce90f3abd675780753627e69e3a6d",
+        "expected_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/TRAINING_RUN.json",
+        "expected_field": "keys_sha256",
+        "expected_sha256": "e2d3812b6a1a21b22af77880b6555250c83ce90f3abd675780753627e69e3a6d",
+        "matches": true,
+        "method": "SHA-256 recomputed from the actual server file and compared with the saved metadata field during the completed read-only remote audit; the prior output printed equality, and this JSON records the equal digest from the metadata."
+      },
+      {
+        "name": "threshold_freeze_to_evaluation_completion",
+        "observed_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/THRESHOLDS_FROZEN.json",
+        "observed_sha256": "cf247ac2fca087fc2e1d6b8d9dabcadaf3b5669ab106ef4b78a7287d789c57c9",
+        "expected_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/EVALUATION_COMPLETE.json",
+        "expected_field": "threshold_freeze_sha256",
+        "expected_sha256": "cf247ac2fca087fc2e1d6b8d9dabcadaf3b5669ab106ef4b78a7287d789c57c9",
+        "matches": true,
+        "method": "SHA-256 recomputed from the actual server file and compared with the saved metadata field during the completed read-only remote audit; the prior output printed equality, and this JSON records the equal digest from the metadata."
+      },
+      {
+        "name": "cell_table_to_training_run",
+        "observed_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/audit/cells.parquet",
+        "observed_sha256": "ca5e4c6d77d22fc1d2c0f24f80eb26df8cd79e390625ea96031f74992be45d21",
+        "expected_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/TRAINING_RUN.json",
+        "expected_field": "cells_sha256",
+        "expected_sha256": "ca5e4c6d77d22fc1d2c0f24f80eb26df8cd79e390625ea96031f74992be45d21",
+        "matches": true,
+        "method": "SHA-256 recomputed from the actual server file and compared with the saved metadata field during the completed read-only remote audit; the prior output printed equality, and this JSON records the equal digest from the metadata."
+      }
+    ],
+    "key_manifest_readback": [
+      {
+        "split": "external_val_TMA_cores",
+        "population": "all",
+        "rows": 438236,
+        "canonical_keys_sha256": "e95a76226bd69a03141eadac663d7b6ea6e8d3eeff86263e6b59b54e2308ea95",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/external_val_TMA_cores_all.parquet"
+      },
+      {
+        "split": "external_val_TMA_cores",
+        "population": "labelled",
+        "rows": 437480,
+        "canonical_keys_sha256": "58d9d904c90ebcf2013ba64c02f997ca1a4aa1f77f4a74c0fc7bfd27bf735560",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/external_val_TMA_cores_labelled.parquet"
+      },
+      {
+        "split": "internal_val_WSIs",
+        "population": "all",
+        "rows": 667125,
+        "canonical_keys_sha256": "cbd2b3be9092c7c20f7860df9e57f1f209c32d1f76e96f46ca7cf7cafee3b31b",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/internal_val_WSIs_all.parquet"
+      },
+      {
+        "split": "internal_val_WSIs",
+        "population": "labelled",
+        "rows": 539132,
+        "canonical_keys_sha256": "7cf30ce8f2ac7a393166504832e083860f0a02ae36fffe57983850b082074a7d",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/internal_val_WSIs_labelled.parquet"
+      },
+      {
+        "split": "training_WSIs",
+        "population": "all",
+        "rows": 712422,
+        "canonical_keys_sha256": "7774264232dceb9376445a44f0614b66e58eae40b58e4fb6da86bbe3cfdaa0c3",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/training_WSIs_all.parquet"
+      },
+      {
+        "split": "training_WSIs",
+        "population": "labelled",
+        "rows": 101057,
+        "canonical_keys_sha256": "a1714919f7309696fe03bfed1e685b66df54522bccca7a0eef7e4e502c5fe41a",
+        "file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/keys/training_WSIs_labelled.parquet"
+      }
+    ],
+    "canonical_key_hash_scope": "Canonical per-split key hashes above were read from the existing manifest; this audit rehashed the manifest and audit/cells.parquet, not each separate key Parquet or its canonical serialization again.",
+    "threshold_reselection": [
+      {
+        "model": "E1",
+        "grid_rows": 99,
+        "independently_reselected_threshold": 0.42,
+        "frozen_threshold": 0.42,
+        "matches": true,
+        "selected_mean_WSI_F1": 0.8855052045634079,
+        "source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/OOF_threshold_grid.csv"
+      },
+      {
+        "model": "E2",
+        "grid_rows": 99,
+        "independently_reselected_threshold": 0.39,
+        "frozen_threshold": 0.39,
+        "matches": true,
+        "selected_mean_WSI_F1": 0.896257158023631,
+        "source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/OOF_threshold_grid.csv"
+      },
+      {
+        "model": "E3",
+        "grid_rows": 99,
+        "independently_reselected_threshold": 0.45,
+        "frozen_threshold": 0.45,
+        "matches": true,
+        "selected_mean_WSI_F1": 0.8794629935274577,
+        "source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/OOF_threshold_grid.csv"
+      },
+      {
+        "model": "E4",
+        "grid_rows": 99,
+        "independently_reselected_threshold": 0.3,
+        "frozen_threshold": 0.3,
+        "matches": true,
+        "selected_mean_WSI_F1": 0.895314972589071,
+        "source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/OOF_threshold_grid.csv"
+      }
+    ],
+    "prior_final_validation_readback": {
+      "status": "passed",
+      "checks": 62,
+      "original_files_rehashed": 532,
+      "pan_gold_accessed": false,
+      "script_sha256": "75bfec5e816c140d69597382e61afd92effb4ad291e5390d96a0fe5e8c0bbf12"
+    },
+    "prior_validation_scope": "Read and reported the completed validator record; the 62 checks and 532 original-file rehashes were not rerun by this audit.",
+    "evaluation_population_readback": {
+      "training_labelled": 101057,
+      "internal_labelled": 539132,
+      "external_labelled": 437480,
+      "all_instances": 1817783,
+      "all_labelled": 1077669,
+      "internal_external_n_failed_all_E1_E4_GMM": 0
+    }
+  },
+  "code_evidence": [
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\batch_extract.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/batch_extract.py",
+      "line_start": 47,
+      "line_end": 62,
+      "sha256": "f8a18debc7afd2ac646ae6b4bb443dc3541f36f82a018b0f0e746da729513122",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Calibration inputs explicitly list keys, split/context, per-cell p10/p90, finite and observed pixel counts; labels are not loaded in this calibration path."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\batch_extract.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/batch_extract.py",
+      "line_start": 64,
+      "line_end": 95,
+      "sha256": "f8a18debc7afd2ac646ae6b4bb443dc3541f36f82a018b0f0e746da729513122",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Recover missing percentiles from raw finite target-instance pixels; eligibility finite_pixel_count >= 5; group by image_id; L=min per-cell p10 and U=max per-cell p90."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\train_new.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/train_new.py",
+      "line_start": 58,
+      "line_end": 79,
+      "sha256": "a69eb61300e166784ae1b3f4f44202895edf992301d9c199be12ac79cb0f2fa9",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Outer join on explicit KEYS with one_to_one validation and complete-key assertions; supervised rows restricted to training_WSIs with binary labels; three WSI groups asserted."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\train_new.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/train_new.py",
+      "line_start": 89,
+      "line_end": 125,
+      "sha256": "a69eb61300e166784ae1b3f4f44202895edf992301d9c199be12ac79cb0f2fa9",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Each OOF model is fitted on the other training WSI groups; threshold_select receives only training labels, their OOF scores and training WSI groups."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\train_new.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/train_new.py",
+      "line_start": 12,
+      "line_end": 32,
+      "sha256": "a69eb61300e166784ae1b3f4f44202895edf992301d9c199be12ac79cb0f2fa9",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Threshold grid 0.01 through 0.99 uses equal-WSI mean F1 with strict >; ties prefer nearest 0.5 then larger threshold."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\train_new.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/train_new.py",
+      "line_start": 130,
+      "line_end": 175,
+      "sha256": "a69eb61300e166784ae1b3f4f44202895edf992301d9c199be12ac79cb0f2fa9",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Final fits use the same labelled training rows; thresholds and source hashes are written to THRESHOLDS_FROZEN.json before final internal/external inference."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\train_new.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/train_new.py",
+      "line_start": 189,
+      "line_end": 229,
+      "sha256": "a69eb61300e166784ae1b3f4f44202895edf992301d9c199be12ac79cb0f2fa9",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Final all-cell inference follows freezing; both threshold modes are emitted; original baseline thresholds remain 0.5."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\evaluate.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/evaluate.py",
+      "line_start": 30,
+      "line_end": 58,
+      "sha256": "bb9eb5333f4fba68e8bdce75140c95f5705ea2f89a2c856b6db25d34d997e8fb",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Metrics are generated on binary-labelled rows grouped by split/context/image, using saved model thresholds; no threshold selection occurs here."
+    },
+    {
+      "inspected_file": "F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\scripts\\evaluate.py",
+      "corresponding_server_file": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/scripts/evaluate.py",
+      "line_start": 89,
+      "line_end": 104,
+      "sha256": "bb9eb5333f4fba68e8bdce75140c95f5705ea2f89a2c856b6db25d34d997e8fb",
+      "line_number_scope": "Locally published readable source inspected during this audit; formatting may differ from the original server runtime source. These are not asserted to be server line numbers.",
+      "claim": "Selected-threshold OOF metrics are explicitly labelled development fitting values, rather than unbiased threshold-selection performance."
+    }
+  ],
+  "reproducibility": {
+    "transport_helper": "F:/Codex/Projects/学习/mif_data_preparation/ssh_remote.py",
+    "transport_pattern": "python ssh_remote.py command <shell-quoted Nimbus Python -c code> --timeout 120",
+    "executed_operation_description": "Read-only SSH execution of a Python script using Nimbus Python; recomputed four file SHA-256 values and compared saved metadata; read key manifest and completion record; independently selected OOF thresholds from the saved grid; printed filtered split and macro metrics.",
+    "equivalent_reproduction_code": "import hashlib,json\nfrom pathlib import Path\nimport pandas as pd\nR=Path('/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023')\ndef sha(p):\n    h=hashlib.sha256()\n    with p.open('rb') as f:\n        for b in iter(lambda:f.read(8*1024*1024),b''): h.update(b)\n    return h.hexdigest()\nf=json.loads((R/'THRESHOLDS_FROZEN.json').read_text())\nt=json.loads((R/'TRAINING_RUN.json').read_text())\ne=json.loads((R/'results/EVALUATION_COMPLETE.json').read_text())\nfor file,value in [('E1_E4_PROTOCOL.json',f['protocol_sha256']),('keys/key_manifest.csv',t['keys_sha256']),('THRESHOLDS_FROZEN.json',e['threshold_freeze_sha256']),('audit/cells.parquet',t['cells_sha256'])]:\n    actual=sha(R/file)\n    print(file,actual,value,actual==value)\n    assert actual==value\ngrid=pd.read_csv(R/'results/OOF_threshold_grid.csv')\nfor model,g in grid.groupby('model'):\n    best=g[g.mean_WSI_F1 >= g.mean_WSI_F1.max()-1e-15].copy()\n    best['distance']=(best.grid_integer-50).abs()\n    selected=best.sort_values(['distance','grid_integer'],ascending=[True,False]).iloc[0]\n    assert abs(float(selected.threshold)-f['thresholds'][model])<1e-12\n    print(model,len(g),selected.threshold,selected.mean_WSI_F1)\nprint(pd.read_csv(R/'keys/key_manifest.csv').to_json(orient='records'))\nprint((R/'results/FINAL_VALIDATION.json').read_text())\n",
+    "reproduction_code_note": "This is a saved equivalent of the completed checks, not a claim that this literal formatting was the original shell command. It contains no credentials."
+  },
+  "calibration_boundary": {
+    "unit": "3 training WSIs, 3 reconstructed internal WSIs, 42 independent external cores",
+    "unit_count": 48,
+    "eligible_instances": "At least 5 finite raw pixels, independently of labels and geometry QC.",
+    "formula": "L=min_i P10(I|Mi); U=max_i P90(I|Mi); I_norm=clip((I-L)/(U-L),0,1).",
+    "target_unlabelled_data_used": true,
+    "target_labels_used_for_calibration": false,
+    "interpretation": "Per-image unsupervised target adaptation, not a mapping fitted exclusively on the training distribution.",
+    "GMM": "Existing per-unit GMM also uses that unit's unlabelled observations; its threshold remains strict score > 0.5 in both comparison panels."
+  },
+  "ranking_scope": {
+    "primary_metric": "Pooled external-cell F1, fixed strict score > 0.5",
+    "primary_order": [
+      "E2",
+      "E4",
+      "E1",
+      "E3",
+      "GMM"
+    ],
+    "supplemental_metric": "Pooled external-cell F1 at global training-OOF-selected thresholds",
+    "supplemental_order": [
+      "E4",
+      "E2",
+      "E1",
+      "E3",
+      "GMM"
+    ],
+    "supplemental_E4_minus_E2_F1": 0.0009487845141102902,
+    "source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/metrics_split.csv",
+    "source_filters": {
+      "split": "external_val_TMA_cores",
+      "threshold_mode": [
+        "fixed_0.5",
+        "OOF_threshold"
+      ],
+      "metric": "F1"
+    },
+    "core_equal_ranking_agrees": true,
+    "core_equal_source": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_e1_e4_stability_20261023/results/metrics_macro_units.csv"
+  },
+  "limitations_not_newly_verified": [
+    "Patient-level disjointness was not newly verified: existing official image/WSI/core splits and explicit cell keys do not establish unique independent patients. Do not treat 42 cores as 42 independent patients.",
+    "Cross-split same-source crops, shared tissue regions or near-duplicate images were not newly exhaustively checked by image content/coordinates in this audit. Canonical keys and file hashes do not prove absence of homologous image content.",
+    "This source-and-artifact audit cannot prove absence of all historical human decisions informed by external performance. These external labels have already been evaluated in prior project rounds; the present ranking is retrospective.",
+    "Four SHA agreements establish current file/run consistency, not cryptographic proof of historical wall-clock ordering. Freeze-before-inference is supported by inspected control flow and saved metadata.",
+    "Threshold reselection here uses the saved OOF grid; it does not independently retrain models or regenerate every OOF probability. The inspected source shows training-only input to selection.",
+    "OOF scores used both to select and report the chosen threshold produce a development fitting value, not an unbiased estimate of the threshold-selection procedure.",
+    "E1-E4 each use one random seed. Their small F1 differences are descriptive; no robustness or significance claim follows.",
+    "TMA2 remains worse than GMM despite overall external gains. Pooled rankings do not imply improvement in every source."
+  ],
+  "other_model_inclusion": {
+    "TabM": "Completed A/B/C used raw features plus training-fitted preprocessing; not the E1 per-image L/U calibration. Do not relabel them as completed common-calibration counterparts.",
+    "Nimbus": "Official image preprocessing differs from E1 common calibration; pretrained-source independence and model-selection boundaries require separate discussion. Do not combine it into this controlled E1-E4 calibrated ablation ranking.",
+    "probability_calibration": "No additional supervised probability calibrator is being claimed for any method in this ranking."
+  }
+}

@@ -1,0 +1,143 @@
+﻿check,passed,detail
+fixed_rows,true,2 splits x 2 threshold panels x 5 methods
+external_val_TMA_cores/GMM/fixed_0.5/population,true,437480
+external_val_TMA_cores/GMM/fixed_0.5/coverage,true,full labelled population
+external_val_TMA_cores/GMM/fixed_0.5/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/fixed_0.5/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/fixed_0.5/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/fixed_0.5/threshold,true,0.5
+external_val_TMA_cores/E1/fixed_0.5/population,true,437480
+external_val_TMA_cores/E1/fixed_0.5/coverage,true,full labelled population
+external_val_TMA_cores/E1/fixed_0.5/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/fixed_0.5/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/fixed_0.5/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/fixed_0.5/threshold,true,0.5
+external_val_TMA_cores/E2/fixed_0.5/population,true,437480
+external_val_TMA_cores/E2/fixed_0.5/coverage,true,full labelled population
+external_val_TMA_cores/E2/fixed_0.5/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/fixed_0.5/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/fixed_0.5/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/fixed_0.5/threshold,true,0.5
+external_val_TMA_cores/E3/fixed_0.5/population,true,437480
+external_val_TMA_cores/E3/fixed_0.5/coverage,true,full labelled population
+external_val_TMA_cores/E3/fixed_0.5/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/fixed_0.5/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/fixed_0.5/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/fixed_0.5/threshold,true,0.5
+external_val_TMA_cores/E4/fixed_0.5/population,true,437480
+external_val_TMA_cores/E4/fixed_0.5/coverage,true,full labelled population
+external_val_TMA_cores/E4/fixed_0.5/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/fixed_0.5/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/fixed_0.5/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/fixed_0.5/threshold,true,0.5
+internal_val_WSIs/GMM/fixed_0.5/population,true,539132
+internal_val_WSIs/GMM/fixed_0.5/coverage,true,full labelled population
+internal_val_WSIs/GMM/fixed_0.5/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/fixed_0.5/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/fixed_0.5/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/fixed_0.5/threshold,true,0.5
+internal_val_WSIs/E1/fixed_0.5/population,true,539132
+internal_val_WSIs/E1/fixed_0.5/coverage,true,full labelled population
+internal_val_WSIs/E1/fixed_0.5/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/fixed_0.5/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/fixed_0.5/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/fixed_0.5/threshold,true,0.5
+internal_val_WSIs/E2/fixed_0.5/population,true,539132
+internal_val_WSIs/E2/fixed_0.5/coverage,true,full labelled population
+internal_val_WSIs/E2/fixed_0.5/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/fixed_0.5/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/fixed_0.5/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/fixed_0.5/threshold,true,0.5
+internal_val_WSIs/E3/fixed_0.5/population,true,539132
+internal_val_WSIs/E3/fixed_0.5/coverage,true,full labelled population
+internal_val_WSIs/E3/fixed_0.5/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/fixed_0.5/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/fixed_0.5/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/fixed_0.5/threshold,true,0.5
+internal_val_WSIs/E4/fixed_0.5/population,true,539132
+internal_val_WSIs/E4/fixed_0.5/coverage,true,full labelled population
+internal_val_WSIs/E4/fixed_0.5/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/fixed_0.5/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/fixed_0.5/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/fixed_0.5/threshold,true,0.5
+external_val_TMA_cores/GMM/OOF_threshold/population,true,437480
+external_val_TMA_cores/GMM/OOF_threshold/coverage,true,full labelled population
+external_val_TMA_cores/GMM/OOF_threshold/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/OOF_threshold/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/OOF_threshold/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/GMM/OOF_threshold/threshold,true,0.5
+external_val_TMA_cores/E1/OOF_threshold/population,true,437480
+external_val_TMA_cores/E1/OOF_threshold/coverage,true,full labelled population
+external_val_TMA_cores/E1/OOF_threshold/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/OOF_threshold/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/OOF_threshold/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E1/OOF_threshold/threshold,true,0.42
+external_val_TMA_cores/E2/OOF_threshold/population,true,437480
+external_val_TMA_cores/E2/OOF_threshold/coverage,true,full labelled population
+external_val_TMA_cores/E2/OOF_threshold/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/OOF_threshold/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/OOF_threshold/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E2/OOF_threshold/threshold,true,0.39
+external_val_TMA_cores/E3/OOF_threshold/population,true,437480
+external_val_TMA_cores/E3/OOF_threshold/coverage,true,full labelled population
+external_val_TMA_cores/E3/OOF_threshold/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/OOF_threshold/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/OOF_threshold/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E3/OOF_threshold/threshold,true,0.45
+external_val_TMA_cores/E4/OOF_threshold/population,true,437480
+external_val_TMA_cores/E4/OOF_threshold/coverage,true,full labelled population
+external_val_TMA_cores/E4/OOF_threshold/precision,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/OOF_threshold/recall,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/OOF_threshold/F1,true,recomputed from TP/FP/FN
+external_val_TMA_cores/E4/OOF_threshold/threshold,true,0.3
+internal_val_WSIs/GMM/OOF_threshold/population,true,539132
+internal_val_WSIs/GMM/OOF_threshold/coverage,true,full labelled population
+internal_val_WSIs/GMM/OOF_threshold/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/OOF_threshold/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/OOF_threshold/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/GMM/OOF_threshold/threshold,true,0.5
+internal_val_WSIs/E1/OOF_threshold/population,true,539132
+internal_val_WSIs/E1/OOF_threshold/coverage,true,full labelled population
+internal_val_WSIs/E1/OOF_threshold/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/OOF_threshold/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/OOF_threshold/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E1/OOF_threshold/threshold,true,0.42
+internal_val_WSIs/E2/OOF_threshold/population,true,539132
+internal_val_WSIs/E2/OOF_threshold/coverage,true,full labelled population
+internal_val_WSIs/E2/OOF_threshold/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/OOF_threshold/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/OOF_threshold/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E2/OOF_threshold/threshold,true,0.39
+internal_val_WSIs/E3/OOF_threshold/population,true,539132
+internal_val_WSIs/E3/OOF_threshold/coverage,true,full labelled population
+internal_val_WSIs/E3/OOF_threshold/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/OOF_threshold/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/OOF_threshold/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E3/OOF_threshold/threshold,true,0.45
+internal_val_WSIs/E4/OOF_threshold/population,true,539132
+internal_val_WSIs/E4/OOF_threshold/coverage,true,full labelled population
+internal_val_WSIs/E4/OOF_threshold/precision,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/OOF_threshold/recall,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/OOF_threshold/F1,true,recomputed from TP/FP/FN
+internal_val_WSIs/E4/OOF_threshold/threshold,true,0.3
+unit_sum/external_val_TMA_cores/E2/fixed_0.5,true,42
+unit_sum/external_val_TMA_cores/E4/fixed_0.5,true,42
+unit_sum/external_val_TMA_cores/E1/fixed_0.5,true,42
+unit_sum/external_val_TMA_cores/E3/fixed_0.5,true,42
+unit_sum/external_val_TMA_cores/GMM/fixed_0.5,true,42
+unit_sum/external_val_TMA_cores/E4/OOF_threshold,true,42
+unit_sum/external_val_TMA_cores/E2/OOF_threshold,true,42
+unit_sum/external_val_TMA_cores/E1/OOF_threshold,true,42
+unit_sum/external_val_TMA_cores/E3/OOF_threshold,true,42
+unit_sum/external_val_TMA_cores/GMM/OOF_threshold,true,42
+unit_sum/internal_val_WSIs/E2/fixed_0.5,true,3
+unit_sum/internal_val_WSIs/E1/fixed_0.5,true,3
+unit_sum/internal_val_WSIs/E4/fixed_0.5,true,3
+unit_sum/internal_val_WSIs/E3/fixed_0.5,true,3
+unit_sum/internal_val_WSIs/GMM/fixed_0.5,true,3
+unit_sum/internal_val_WSIs/E2/OOF_threshold,true,3
+unit_sum/internal_val_WSIs/E4/OOF_threshold,true,3
+unit_sum/internal_val_WSIs/E1/OOF_threshold,true,3
+unit_sum/internal_val_WSIs/E3/OOF_threshold,true,3
+unit_sum/internal_val_WSIs/GMM/OOF_threshold,true,3
+unique_inventory,true,15

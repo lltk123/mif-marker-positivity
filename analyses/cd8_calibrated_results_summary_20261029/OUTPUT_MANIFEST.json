@@ -1,0 +1,50 @@
+[
+  {
+    "file": "CALIBRATED_RANKINGS.csv",
+    "rows": 20,
+    "columns": 40,
+    "sha256": "bd9c94ae13032cbecb1f475c451c06d2d6a5121111ebe1ba60b614741c95f185"
+  },
+  {
+    "file": "CALIBRATED_CONTEXT_METRICS.csv",
+    "rows": 60,
+    "columns": 31,
+    "sha256": "1d8a9812937d66e545c79573fd5678f3dc4fbfb6c86aa749c0f9f729c5eb9b6a"
+  },
+  {
+    "file": "CALIBRATED_UNIT_METRICS.csv",
+    "rows": 450,
+    "columns": 29,
+    "sha256": "1c52030a6fb8790a1c510a47f3ed97b546ac478cbc87d43336f4d0550818c9f4"
+  },
+  {
+    "file": "CALIBRATED_MACRO_METRICS.csv",
+    "rows": 20,
+    "columns": 50,
+    "sha256": "e450df11c269b37320d53a8bdef6e1e241964ddccb0c835199934377ba1768f8"
+  },
+  {
+    "file": "PAIRED_VS_GMM.csv",
+    "rows": 16,
+    "columns": 13,
+    "sha256": "a299acf46b88b8ccb7242207a377db8a0dc9c2523eebe90bcb3c81f2c5962288"
+  },
+  {
+    "file": "EXPERIMENT_INVENTORY.csv",
+    "rows": 15,
+    "columns": 12,
+    "sha256": "4dadd74d2e4bd142e1dce2345362fcec1d601696c67b074c4073e9c10a73f0bf"
+  },
+  {
+    "file": "SOURCE_MANIFEST.csv",
+    "rows": 17,
+    "columns": 3,
+    "sha256": "bb79657c6360edee6081d57b94cf0777aa407c3468ad98c69f884adfb3d0a6ac"
+  },
+  {
+    "file": "AUDIT_CHECKS.csv",
+    "rows": 142,
+    "columns": 3,
+    "sha256": "a52306c9cba8cd7118ad64b895f56893b73beedcd0306ead8b62b38b3436e52c"
+  }
+]

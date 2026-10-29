@@ -15,10 +15,13 @@
 | E1–E4 与亮度／旋转／mask 稳定性 | 已完成 | [E1–E4](analyses/cd8_e1_e4_stability_20261023/ANALYSIS_REPORT.md) |
 | Nimbus_pretrained、Nimbus_finetuned | 已完成全量推理、微调与评价 | [Nimbus](analyses/cd8_nimbus_20261024/ANALYSIS_REPORT.md) |
 | TabM A/B/C 与匹配 HGB | 已完成每组 3 种子、全量评价与开发案例核对 | [TabM](analyses/cd8_tabm_20261029/ANALYSIS_REPORT.md) |
+| 已完成校准实验汇总（2026-10-29） | 已完成数值复核、固定／OOF 门限排名 | [校准结果与排序](analyses/cd8_calibrated_results_summary_20261029/ANALYSIS_REPORT.md) |
 
 **Nimbus 状态更新（2026-10-24）：** 首轮预训练和微调基线已经完成，当前没有正在运行的训练。预训练来源独立性、跨平台输入尺度和进一步任务适配仍是后续待研究事项，未写成已完成实验。Pan-M 继续封存，本仓库不提供或使用其图像、标签、分布及预测。
 
 **TabM 状态更新（2026-10-29）：** 已完成官方 TabM + PLE 从头训练及 A/B/C 消融。固定门限下 C 的外部平均 F1 为 0.5423，低于 GMM 的 0.7610；空间特征的收益集中于部分来源，TMA1/2 和弱阳性漏检仍有明显问题。见[关键结论与独立核算](analyses/cd8_tabm_20261029/independent_review/INDEPENDENT_REVIEW.md)。
+
+**今日结果汇总（2026-10-29）：** 逐图共同校准后，固定 0.5 的外部 F1 排名为 **E2 > E4 > E1 > E3 > GMM**；训练 OOF 门限下 E4 与 E2 接近。TabM 本轮使用原始强度及训练集变换，尚未接入该共同校准。详见[排名 CSV](analyses/cd8_calibrated_results_summary_20261029/CALIBRATED_RANKINGS.csv)及[本次发布内容](docs/UPDATES_20261029.md)。
 
 ## Data and Model Access
 
@@ -90,6 +93,7 @@ analyses/
   cd8_paper_baseline_20261024/  # 统一键、标签对齐与评估接口
   cd8_nimbus_20261024/         # 官方 Nimbus 适配、推理、微调与评价
   cd8_tabm_20261029/           # 官方 TabM、A/B/C 三种子消融、匹配 HGB
+  cd8_calibrated_results_summary_20261029/ # 已完成校准实验排名与汇总
 docs/                         # 复现、来源、发布清单与结果索引
 tools/                        # 发布边界与仓库检查
 tests/                        # 发布工具的独立检查

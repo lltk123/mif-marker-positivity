@@ -1,0 +1,47 @@
+{
+  "command": "python prepare_summary.py --output-dir NEW_DIRECTORY",
+  "python_standard_library_only": true,
+  "all_8_csv_values_match": true,
+  "tables": [
+    {
+      "file": "AUDIT_CHECKS.csv",
+      "rows": 142,
+      "values_equal": true
+    },
+    {
+      "file": "CALIBRATED_CONTEXT_METRICS.csv",
+      "rows": 60,
+      "values_equal": true
+    },
+    {
+      "file": "CALIBRATED_MACRO_METRICS.csv",
+      "rows": 20,
+      "values_equal": true
+    },
+    {
+      "file": "CALIBRATED_RANKINGS.csv",
+      "rows": 20,
+      "values_equal": true
+    },
+    {
+      "file": "CALIBRATED_UNIT_METRICS.csv",
+      "rows": 450,
+      "values_equal": true
+    },
+    {
+      "file": "EXPERIMENT_INVENTORY.csv",
+      "rows": 15,
+      "values_equal": true
+    },
+    {
+      "file": "PAIRED_VS_GMM.csv",
+      "rows": 16,
+      "values_equal": true
+    },
+    {
+      "file": "SOURCE_MANIFEST.csv",
+      "rows": 17,
+      "values_equal": true
+    }
+  ]
+}
