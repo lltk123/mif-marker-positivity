@@ -1,0 +1,58 @@
+{
+  "model_id": "HGB_A_s2",
+  "model_family": "HGB",
+  "feature_set": "A",
+  "seed": 2,
+  "features": [
+    "whole_mean",
+    "whole_median",
+    "whole_std",
+    "whole_p10",
+    "whole_p90",
+    "whole_p95",
+    "whole_IQR",
+    "integrated_intensity"
+  ],
+  "requested_features": [
+    "whole_mean",
+    "whole_median",
+    "whole_std",
+    "whole_p10",
+    "whole_p90",
+    "whole_p95",
+    "whole_IQR",
+    "integrated_intensity"
+  ],
+  "threshold_validation": 0.72,
+  "validation_macro_AP": 0.9861326665995037,
+  "validation_threshold_macro_F1": 0.9262668616613255,
+  "fit_seconds": 0.4130980623885989,
+  "peak_phase_process_rss_bytes": 3207864320,
+  "phase_start_rss_bytes": 3173568512,
+  "peak_rss_increase_bytes": 34295808,
+  "memory_sampling_interval_ms": 50,
+  "validation_inference_seconds": 0.7835952574387193,
+  "peak_process_rss_kib": 3232900,
+  "weights_sha256": "c547c78f1fb321081887c8038dbd8322219589dd7ec39ac4b6e5b3f27099801f",
+  "signature": {
+    "protocol": "fb1b1f78027fcd781b796868093e9ea1e4e815e912c2554941705238806ff148",
+    "features": "6f9a98d03a89b0df64db4bb6f95b0c7636049f9e4b385123a8da3ef4c45158de",
+    "preprocessor": "11ce207f8c80230050a76d16b7d874f0228511da5c3d8f3a438936bb942c5690",
+    "data": "44e760446a54e0d6c439ad7ae4659fd0a56bd9b32d6eb94079e936df1fddb173",
+    "matrix": "a49af80674e212599739cf0b6293215e1fd74012191d21decb47a556ce674308",
+    "train_indices": "fc050e6d20e94dadbf80b9c2951b579dad18e114d0be73dfad7b7b040708c81d",
+    "validation_indices": "5a455894a1ab69db848911feb721e0d986d2b11f2e0f0ebbedba0736c07fee30",
+    "core_code": "bda8e45ac1430240f5904327c98eb357871fa36423a8e0b666b3fed9803744a2",
+    "upstream": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade"
+  },
+  "preprocessing": "identical training-fitted median and QT as TabM",
+  "parameters": {
+    "learning_rate": 0.06,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 80,
+    "l2_regularization": 2.0,
+    "early_stopping": false,
+    "random_state": 2
+  }
+}

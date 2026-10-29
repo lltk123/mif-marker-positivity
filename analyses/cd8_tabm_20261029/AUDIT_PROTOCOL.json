@@ -1,0 +1,8 @@
+{
+  "frozen_unix_time": 1793264080.6779861,
+  "risk_strata_sha256": "f7266ecba91c62c19f4c8b02c109538b101e9b7a19ce508de7373f4a71fb462d",
+  "development_only_visual_review": true,
+  "weak_positive": "training positive raw whole_mean <= q25",
+  "neighbor_proxy": "neighbor_edge_area_fraction>0 and neighbor_edge_mean_diff>training contact q75",
+  "causal_claim": false
+}

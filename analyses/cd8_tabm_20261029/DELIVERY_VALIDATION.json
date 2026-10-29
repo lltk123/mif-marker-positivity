@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "n_models": 18,
+  "n_cells_per_model": 1817783,
+  "n_api_models_tested": 6,
+  "n_sample_images": 48,
+  "keys_sha256": "c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a",
+  "source_files": 16,
+  "PanM_accessed": false
+}

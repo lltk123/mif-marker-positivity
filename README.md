@@ -1,6 +1,6 @@
 # mIF Marker Positivity — CD8
 
-基于固定实例分割的逐细胞 CD8 阴阳识别：从原始荧光图像提取强度与空间表达特征，比较 SCIMAP GMM、HGB 特征模型和 Nimbus。当前研究数据为 **PhenoBIC-Data**。
+基于固定实例分割的逐细胞 CD8 阴阳识别：从原始荧光图像提取强度与空间表达特征，比较 SCIMAP GMM、HGB 特征模型、Nimbus 和 TabM。当前研究数据为 **PhenoBIC-Data**。
 
 ## Overview
 
@@ -14,8 +14,11 @@
 | 形态与空间特征、原 8/90 项模型 | 已完成 | [形态与空间分析](analyses/cd8_morphospatial_20261023/ANALYSIS_REPORT.md) |
 | E1–E4 与亮度／旋转／mask 稳定性 | 已完成 | [E1–E4](analyses/cd8_e1_e4_stability_20261023/ANALYSIS_REPORT.md) |
 | Nimbus_pretrained、Nimbus_finetuned | 已完成全量推理、微调与评价 | [Nimbus](analyses/cd8_nimbus_20261024/ANALYSIS_REPORT.md) |
+| TabM A/B/C 与匹配 HGB | 已完成每组 3 种子、全量评价与开发案例核对 | [TabM](analyses/cd8_tabm_20261029/ANALYSIS_REPORT.md) |
 
 **Nimbus 状态更新（2026-10-24）：** 首轮预训练和微调基线已经完成，当前没有正在运行的训练。预训练来源独立性、跨平台输入尺度和进一步任务适配仍是后续待研究事项，未写成已完成实验。Pan-M 继续封存，本仓库不提供或使用其图像、标签、分布及预测。
+
+**TabM 状态更新（2026-10-29）：** 已完成官方 TabM + PLE 从头训练及 A/B/C 消融。固定门限下 C 的外部平均 F1 为 0.5423，低于 GMM 的 0.7610；空间特征的收益集中于部分来源，TMA1/2 和弱阳性漏检仍有明显问题。见[关键结论与独立核算](analyses/cd8_tabm_20261029/independent_review/INDEPENDENT_REVIEW.md)。
 
 ## Data and Model Access
 
@@ -67,10 +70,13 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 | E4 | 0.8536 | 0.9493 |
 | Nimbus_pretrained | 0.5885 | 0.6400 |
 | Nimbus_finetuned | 0.5611 | 0.5579 |
+| TabM A（3 种子均值） | 0.5325 | 0.7590 |
+| TabM B（3 种子均值） | 0.5328 | 0.6877 |
+| TabM C（3 种子均值） | 0.5423 | 0.6706 |
 
-来源：[results_overview.csv](docs/results_overview.csv)。每行保留源 CSV 与筛选条件；完整报告另外给出查准率、查全率、混淆计数、逐图结果和门限开发方式。
+TabM 行为三个固定随机种子的指标均值，标准差在源表中；没有按测试表现选择种子。来源：[results_overview.csv](docs/results_overview.csv)。每行保留源 CSV 与筛选条件；完整报告另外给出查准率、查全率、混淆计数、逐图结果和门限开发方式。
 
-本轮 E2 的外部 F1 最高；Nimbus 首轮微调没有改善外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
+当前所列实验中 E2 的外部 F1 最高；Nimbus 首轮微调没有改善外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
 
 ![E1–E4 performance](analyses/cd8_e1_e4_stability_20261023/figures/01_performance_fixed_zh.png)
 
@@ -83,6 +89,7 @@ analyses/
   cd8_e1_e4_stability_20261023/ # 共同校准、E1–E4、冻结模型扰动检查
   cd8_paper_baseline_20261024/  # 统一键、标签对齐与评估接口
   cd8_nimbus_20261024/         # 官方 Nimbus 适配、推理、微调与评价
+  cd8_tabm_20261029/           # 官方 TabM、A/B/C 三种子消融、匹配 HGB
 docs/                         # 复现、来源、发布清单与结果索引
 tools/                        # 发布边界与仓库检查
 tests/                        # 发布工具的独立检查
@@ -95,5 +102,6 @@ tests/                        # 发布工具的独立检查
 - [PhenoBIC](https://github.com/Shachi-Mittal-Lab/PhenoBIC-qupath-extension)
 - [SCIMAP rescale](https://scimap.xyz/Functions/pp/rescale/)
 - [Nimbus paper](https://www.nature.com/articles/s41592-025-02826-9)
+- [TabM 固定官方版本](https://github.com/yandex-research/tabm/tree/28e47ae301c92ec37787dde1ce923a0793f405b4)
 
 第三方源码与权重遵循各自许可，见 [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md)。仓库说明结构参考 [ROSIE](https://gitlab.com/enable-medicine-public/rosie)；未引入 ROSIE 模型或源码。

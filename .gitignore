@@ -24,6 +24,8 @@
 !analyses/**/figures/**/*.svg
 !analyses/**/figures/**/*.pdf
 !analyses/**/review/samples/*.png
+!analyses/cd8_tabm_20261029/development_review/**/*.png
+!analyses/cd8_tabm_20261029/development_review/**/*.svg
 
 # Raw / sealed data and large cell-level artifacts are never published.
 **/datasets/**

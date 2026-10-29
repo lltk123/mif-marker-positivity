@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T10:12:44.026797+00:00",
+  "reason": [
+    "Real context values have _CD8 suffix; old plot context filters produced empty panels",
+    "Neighbor IDs cluttered image borders and scale bar; labels limited for readability",
+    "Tiny nonzero case scores need scientific display notation",
+    "Report filter description updated to actual context names"
+  ],
+  "changes": [
+    {
+      "path": "scripts/plot_tabm.py",
+      "previous_sha256": "158b222cab902837b81700190bc32884f44938c834cabdd0aa802cd00956504c",
+      "current_sha256": "409ad5f2f659ba0e872d0bfeb548a5d1f5743eb3b29316f516c942f62073a2eb"
+    },
+    {
+      "path": "scripts/review_tabm_errors.py",
+      "previous_sha256": "9452dcd0609c16a3dfdb9c18c13fa357b333229058919a9494ba1e30dc2c5f3a",
+      "current_sha256": "107c8fa4d55011c1bfcd80318884f9ef3bf1e2be0cde6d9d79dcc1ad3131a75f"
+    },
+    {
+      "path": "scripts/write_tabm_report.py",
+      "previous_sha256": "31ac6e0568e8e4581980991ad56261cb88c29906a5545d0810103a609b13b7fe",
+      "current_sha256": "e72a3e40ed7b30cf2ec19da8b455ba2dc31302421ad560737f1d1d46a8e96e87"
+    }
+  ],
+  "protected_files_sha256": {
+    "FROZEN_TEST_PROTOCOL.json": "87fabd6057127e84befe90795fa267bf10fb7b35b7452978df2575d95b19cb08",
+    "PREDICTIONS_COMPLETE.json": "34bb11a53beaa5abd428e9160c62eb7e457392caf4323ab62acdb3b274362d71",
+    "results/metrics_all.csv": "578c31d9267382feca446722f3346c0e4e5cfe611038d17854f0afe7a703ab1e",
+    "results/paired_comparisons.csv": "c8b5515309904d8a5c1d09b0874249e68e908ba1e31ed6c9f0d4ac7670e05549",
+    "results/risk_strata_metrics.csv": "dfa5975828203590de36373b5ae46b6eb9875b52bf412b2f0a9facdf2cb3e9cc"
+  },
+  "model_or_metric_change": false,
+  "backup": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/revisions/visual_fix_01"
+}

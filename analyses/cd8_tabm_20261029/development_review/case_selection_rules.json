@@ -1,0 +1,25 @@
+{
+  "cutoffs": {
+    "weak_positive_whole_mean_q25": 3.4354596317547266,
+    "contact_bright_diff_q75": 1.0864674736541522,
+    "local_reference_q75": 0.481655053794384,
+    "sector_cv_q75": 1.4022111989054538,
+    "fit_split": "training_WSIs",
+    "interpretation": "Image-property proxies, not evidence of causal contamination",
+    "contact_comparison": "strict >",
+    "weak_comparison": "<="
+  },
+  "selection_seed": 0,
+  "model_seed": 0,
+  "threshold": 0.5,
+  "comparison": "score > threshold",
+  "maximum_cases": 10,
+  "splits": [
+    "training_WSIs",
+    "internal_val_WSIs"
+  ],
+  "sampling": "At most two unique instances per category; one corrected and one introduced B-to-C error when available, then other development errors",
+  "interpretation": "All categories are image-property proxies requiring visual inspection; no causal contamination inference",
+  "high_local_reference_definition": "local_reference_median > training q75; identical strict comparison to evaluation",
+  "localized_edge_definition": "sector_signal_cv > training q75 AND edge_inner_mean_diff > 0; a narrower visual-case subset of the evaluation directional_signal_proxy"
+}

@@ -1,0 +1,8 @@
+item,value,source
+official_commit,28e47ae301c92ec37787dde1ce923a0793f405b4,upstream/SOURCE_MANIFEST.json
+tabm_version,0.0.3,RUN_CONFIG.json
+rtdl_num_embeddings,0.0.12,RUN_CONFIG.json
+hardware,Quadro RTX 4000,RUN_CONFIG.json
+analysis_code_identity,results/code_sha256.csv plus REPORT_GENERATION_MANIFEST.json,DELIVERY_VALIDATION.json
+risk_frozen_unix_time,1793264080.6779861,AUDIT_PROTOCOL.json
+model_frozen_unix_time,1793267272.2858276,FROZEN_TEST_PROTOCOL.json

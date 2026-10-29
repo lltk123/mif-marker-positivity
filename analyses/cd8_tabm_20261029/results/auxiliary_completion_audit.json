@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T09:44:06.973572+00:00",
+  "reason": "Reproduction CLI, font option, report completion guards; no feature/model/selection changes",
+  "core_unchanged": true,
+  "files": [
+    {
+      "file": "README.md",
+      "previous_sha256": "8a73b6ab0f6da1700d4efd761bce2b368c2a2d71e3e570ecf5c5299c800f8e11",
+      "current_sha256": "42c224199c2a91d25dcd2448efe80cb907fc1b11fa8365ccc46309743035b7a9"
+    },
+    {
+      "file": "scripts/fetch_official.py",
+      "previous_sha256": "52fa38a9e3312e1f7b59156c3c7bb73a561e33e42e51a92c75ac83e440212901",
+      "current_sha256": "a7240823a0542c570a60a1d7f0fd2e6649dfbe0dd420221af08400d8ae734cf1"
+    },
+    {
+      "file": "scripts/initialize_run.py",
+      "previous_sha256": null,
+      "current_sha256": "5ea83196d5636b5e2d60037ee74a692bbbae67098dfd5b21136a5353cb29f9d9"
+    },
+    {
+      "file": "scripts/run_pipeline.py",
+      "previous_sha256": "7b13d59ca9b5a8e20583f8f4b53c86713b80305628c81576bd56ee86cb371fee",
+      "current_sha256": "d253b832503a561488d519d7948edb1dc737f307f38710719235158167cc06d2"
+    },
+    {
+      "file": "scripts/review_tabm_errors.py",
+      "previous_sha256": "ae37536e5c866985dfb64165cab0f893ebd59ccd2585b24e45b315f7f005d962",
+      "current_sha256": "9452dcd0609c16a3dfdb9c18c13fa357b333229058919a9494ba1e30dc2c5f3a"
+    },
+    {
+      "file": "scripts/write_tabm_report.py",
+      "previous_sha256": "b4afbeb1e1403a2274c537cbfe5a81310f72975b6161a6c3588ea8cd7898081a",
+      "current_sha256": "31ac6e0568e8e4581980991ad56261cb88c29906a5545d0810103a609b13b7fe"
+    }
+  ]
+}

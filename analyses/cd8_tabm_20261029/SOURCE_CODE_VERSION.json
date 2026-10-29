@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/lltk123/mif-marker-positivity",
+  "code_commit": "a5033aa6e2c816dc01d2349dd0ce7677de7e4d80",
+  "commit_location": "local repository; source and review files delivered separately",
+  "official_tabm_commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+  "files": [
+    {
+      "file": "scripts/audit_embedding_bins.py",
+      "runtime_sha256": "6e8ee14ae80d5f6704886d7477962787e3492d17545737c43b4e139914191284",
+      "git_blob_sha256": "379bc1e5d5c30fa2a683bf755c599a758fe8130c951ea92deddcb3c173991ab9",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/audit_numeric_resolution.py",
+      "runtime_sha256": "f37cbfefbe1cbe543a4407dca23f4825fc7bd180c8242f7533ba8572c87ea929",
+      "git_blob_sha256": "f37cbfefbe1cbe543a4407dca23f4825fc7bd180c8242f7533ba8572c87ea929",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/common_tabm.py",
+      "runtime_sha256": "30cbc75e1ebe77bf931e40f197941c3174ff5277a367d12760a2a880ca2be79b",
+      "git_blob_sha256": "78993d5364ba9656fa7461794c36b8e49ee4b53ea7e3dc638d22c011515fb37a",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/evaluate_tabm.py",
+      "runtime_sha256": "6ef8eabbb1af2e63537afff4470faa6eeab3c9531fa7547efb557d2335d123f4",
+      "git_blob_sha256": "828fac5c1dabfb0a5945483e4915fcf2e1509a80781340ea765b40dc08f6d4c6",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/fetch_official.py",
+      "runtime_sha256": "a7240823a0542c570a60a1d7f0fd2e6649dfbe0dd420221af08400d8ae734cf1",
+      "git_blob_sha256": "c44331a7496c297b288fb536ceb93423a4471430324df80e0e2825e7211f0697",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/initialize_run.py",
+      "runtime_sha256": "5ea83196d5636b5e2d60037ee74a692bbbae67098dfd5b21136a5353cb29f9d9",
+      "git_blob_sha256": "3f35bfd43afff096194b5ce3685da7375d6891236e9ee82ca37c9e465b8a5984",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/plot_tabm.py",
+      "runtime_sha256": "409ad5f2f659ba0e872d0bfeb548a5d1f5743eb3b29316f516c942f62073a2eb",
+      "git_blob_sha256": "ef838bc7a82f251bd58c8ee151ea898278ff85298ef3b606e159aeea6c4dbeb0",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/predict_table.py",
+      "runtime_sha256": "759653d451d9a82afa5b1222d1d60122bc3ef750bae292ff03dfd618c3ade453",
+      "git_blob_sha256": "1d267de740a7408d1d0f213abb8fcd413e4c8a8fa261be5d6860c64e644abef0",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/prepare_tabm.py",
+      "runtime_sha256": "edb81c84569a7222aa8611ee7f47823481f3e6fdf60195c5ee4076324729cf7f",
+      "git_blob_sha256": "72523b782c6899652567ee0c3e9619242bcf4f01fdefeb78a027d0676322521c",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/resources_tabm.py",
+      "runtime_sha256": "1bd5dc7366ea02a78fe0923df35e5104c39ef04dd99f8a8efa8da6975e8def88",
+      "git_blob_sha256": "f0f3f1e8c36507e4bf35ea07b718137e70d2a5bcc767b575e94f57442d3f4cfa",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/review_tabm_errors.py",
+      "runtime_sha256": "107c8fa4d55011c1bfcd80318884f9ef3bf1e2be0cde6d9d79dcc1ad3131a75f",
+      "git_blob_sha256": "107c8fa4d55011c1bfcd80318884f9ef3bf1e2be0cde6d9d79dcc1ad3131a75f",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/run_pipeline.py",
+      "runtime_sha256": "d253b832503a561488d519d7948edb1dc737f307f38710719235158167cc06d2",
+      "git_blob_sha256": "7d1000fafb441f8c83ccdeb0304f18b44405b3ae63b5520254dbc696b3090d9b",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/test_contracts.py",
+      "runtime_sha256": "95d7850d1b944d9a3b198258c390850c9c5c31949de0170a3f447d6e6dca798f",
+      "git_blob_sha256": "d6f90b5cf03133e7f97ea07e5abf1497b067a90cf52ffce67e064aa91680ae56",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/train_tabm.py",
+      "runtime_sha256": "1f0dc297aa88f17dfdeee58b50b74282d8029d92f4d97e630497165f7a544ece",
+      "git_blob_sha256": "851905c627d9f7d082438ea330001fd4ed80972b48956fc2a60de18e22da0451",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/validate_delivery.py",
+      "runtime_sha256": "ab2ddde586cf73623d7d7fcfe140f08cc48f596e27cfe7bcf0c6f30c4f3eea32",
+      "git_blob_sha256": "bf5084877906c2ab726c8097dbbe977996bfc10ce54549e2a03043d516a0d2e6",
+      "equivalent_after_newline_normalization": true
+    },
+    {
+      "file": "scripts/write_tabm_report.py",
+      "runtime_sha256": "e72a3e40ed7b30cf2ec19da8b455ba2dc31302421ad560737f1d1d46a8e96e87",
+      "git_blob_sha256": "8a55b5cead67de69d874a71c0631a1f3cd7b4ca2c9938f8577ace286bd467ada",
+      "equivalent_after_newline_normalization": true
+    }
+  ],
+  "training_core_preserved": true
+}

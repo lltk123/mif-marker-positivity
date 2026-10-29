@@ -1,0 +1,10 @@
+case_name,dataset_id,image_id,cell_id,marker,ground_truth_binary,change_type,visual_observation,interpretation,numeric_source
+case_00_weak_positive,PhenoBIC-Data,training_WSIs/WSI3,32770,CD8,1.0,corrected_FN,掩码上侧及右侧可见较亮弧形；B到C纠正漏检，不能据此规定所有不完整环均为阴性。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_01_weak_positive,PhenoBIC-Data,training_WSIs/WSI3,13730,CD8,1.0,introduced_FN,目标位于密集邻居之间，掩码内部偏暗；B到C新增漏检，说明空间特征也可能损伤弱阳性。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_02_bright_neighbor_side_proxy,PhenoBIC-Data,training_WSIs/WSI1,111067,CD8,1.0,corrected_FN,细长目标内有局部信号，左下方邻近区域很亮；此例是纠正真阳性漏检，并非污染导致假阳性的证据。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_03_bright_neighbor_side_proxy,PhenoBIC-Data,internal_val_WSIs/WSI3,35651,CD8,0.0,introduced_FP,较小目标紧邻右侧亮实例；B到C新增误报，无法仅凭图像确认信号污染机制。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_04_high_local_reference_proxy,PhenoBIC-Data,internal_val_WSIs/WSI3,20707,CD8,1.0,corrected_FN,目标左侧亮弧明显；高局部参照仅是数值代理，本图不能直接认定为整片弥漫背景。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_05_high_local_reference_proxy,PhenoBIC-Data,internal_val_WSIs/WSI1,20993,CD8,0.0,introduced_FP,目标和周边呈低强度纹理，底部另有强亮区域；B到C新增误报。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_06_localized_edge_signal_proxy,PhenoBIC-Data,internal_val_WSIs/WSI1,55944,CD8,0.0,corrected_FP,目标主体较暗，左侧紧邻强亮实例；C纠正B的误报，与局部亮点代理相符但不证明因果。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_07_localized_edge_signal_proxy,PhenoBIC-Data,internal_val_WSIs/WSI1,19563,CD8,0.0,introduced_FP,目标紧邻左上方强亮实例；C新增误报，不能概括为模型已解决所有近邻亮信号情形。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv
+case_08_incomplete_support,PhenoBIC-Data,internal_val_WSIs/WSI2,122531,CD8,1.0,persistent_FN,目标为亮区域旁的小碎片实例；qc_disconnected为True、whole_mean缺失，但裁剪观察均值可读；插补后极低评分不能代替有效阴性观测。,工程视觉核对；未修改人工标签；不是病理复核,development_review/case_index.csv

@@ -1,6 +1,6 @@
 # TabM CD8 实验
 
-本轮在 PhenoBIC 的既有逐细胞特征上从头训练官方 TabM，并比较相同数值输入的 HGB。Pan-M 保持封存。完成状态及实测结果以 ANALYSIS_REPORT.md、results/report_tables.csv 和服务器完成标记为准。
+本轮在 PhenoBIC 的既有逐细胞特征上从头训练官方 TabM，并比较相同数值输入的 HGB。Pan-M 保持封存。本轮已完成 A/B/C 各 3 个种子的 TabM、相同特征的 9 个 HGB 对照，以及全量预测与评价。优先阅读[独立核对的关键结论](independent_review/INDEPENDENT_REVIEW.md)、[完整中文报告](ANALYSIS_REPORT.md)和[表格索引](results/report_tables.csv)；案例说明见[视觉核对](VISUAL_QA.md)。
 
 ## 输入与划分
 
@@ -93,3 +93,5 @@ NEW="$P/analyses/cd8_tabm_repeat_001"
 完整管线包括准备、少量样本检查、风险分层规则冻结、训练数值诊断、训练、冻结推理、嵌入分箱审计、评价、绘图、开发案例、完整性验证及中文报告。单步重跑通过 `--stage` 指定；不能绕过数据、代码和配置兼容性检查。
 
 本轮 A 使用既有**原始强度**，没有增加 E1–E4 的图像级共同校准；因此结果回答本次 A/B/C 的消融问题，不应把变化仅归因于神经网络架构。
+
+代码归档 commit 与执行文件逐一校验见 [SOURCE_CODE_VERSION.json](SOURCE_CODE_VERSION.json)。完整模型、逐细胞预测与曲线保留在本服务器运行目录；审阅包提供代码、配置、MD、汇总 CSV 和图件。

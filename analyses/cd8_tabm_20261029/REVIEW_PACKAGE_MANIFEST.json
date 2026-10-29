@@ -1,0 +1,1348 @@
+{
+  "created_utc": "2026-10-29T10:18:04.977642+00:00",
+  "run_dir": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029",
+  "files": [
+    {
+      "file": "ANALYSIS_REPORT.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/ANALYSIS_REPORT.md",
+      "bytes": 37270,
+      "sha256": "f625ae6186a0220d7061cde0c779813570d03055f1d0bcf7505b8b73fafcdb96"
+    },
+    {
+      "file": "AUDIT_PROTOCOL.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/AUDIT_PROTOCOL.json",
+      "bytes": 367,
+      "sha256": "7b4b3ab16c3b4b714739f5e84b7387471575f47b8407d9e7cd8747b9d8b9a941"
+    },
+    {
+      "file": "DATA_SCOPE.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/DATA_SCOPE.md",
+      "bytes": 1377,
+      "sha256": "ea4ff1f242e1822a30f224aeb0ed33e2a9645ac87175a36b3e4bd6cc8860e7fc"
+    },
+    {
+      "file": "DELIVERY_VALIDATION.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/DELIVERY_VALIDATION.json",
+      "bytes": 262,
+      "sha256": "4de68b0bcd98eb47141500ba0f44b385b4bbdb1d1f2eee5c40d424f937cea7b8"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/DEPENDENCIES.json",
+      "bytes": 578,
+      "sha256": "845abf69e338df974ecc8abcc111c19fba3cb92b9c7983117f7de8b2c983aeae"
+    },
+    {
+      "file": "FEATURE_DICTIONARY.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/FEATURE_DICTIONARY.csv",
+      "bytes": 42264,
+      "sha256": "6529b72d726c93adb8014cba4fb0f2efe1a896b77fa49922373b370b8bb9f8bd"
+    },
+    {
+      "file": "FEATURE_SETS.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/FEATURE_SETS.json",
+      "bytes": 8297,
+      "sha256": "6f9a98d03a89b0df64db4bb6f95b0c7636049f9e4b385123a8da3ef4c45158de"
+    },
+    {
+      "file": "FROZEN_TEST_PROTOCOL.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/FROZEN_TEST_PROTOCOL.json",
+      "bytes": 82553,
+      "sha256": "87fabd6057127e84befe90795fa267bf10fb7b35b7452978df2575d95b19cb08"
+    },
+    {
+      "file": "HARDWARE.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/HARDWARE.json",
+      "bytes": 258,
+      "sha256": "f09e0e2a0191dbf44054c93f7838edd4e5c40993d0cb5fd6d2c2178eb119b545"
+    },
+    {
+      "file": "OFFICIAL_IMPLEMENTATION_AUDIT.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/OFFICIAL_IMPLEMENTATION_AUDIT.md",
+      "bytes": 8526,
+      "sha256": "ebf6d2d36cb54460ae33640c5b2a61dbeedc376d3c496e5f841686b1d12ac2d3"
+    },
+    {
+      "file": "PREDICTIONS_COMPLETE.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/PREDICTIONS_COMPLETE.json",
+      "bytes": 131,
+      "sha256": "34bb11a53beaa5abd428e9160c62eb7e457392caf4323ab62acdb3b274362d71"
+    },
+    {
+      "file": "README.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/README.md",
+      "bytes": 7815,
+      "sha256": "bf79de8160104eb7289191f30d242c597e6deeda49d72c0935f0104cb37ec87f"
+    },
+    {
+      "file": "REPORT_GENERATION_MANIFEST.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/REPORT_GENERATION_MANIFEST.json",
+      "bytes": 4621,
+      "sha256": "eff026085e3f7eb61e0642e8c900b4148c451ec0070794744c57591859888a77"
+    },
+    {
+      "file": "RUN_CONFIG.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/RUN_CONFIG.json",
+      "bytes": 1318,
+      "sha256": "ec5449322409a8a430374940c5d1af2608ac61fcbbc3de20b0a77a36b30c8d27"
+    },
+    {
+      "file": "SOURCE_CODE_VERSION.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/SOURCE_CODE_VERSION.json",
+      "bytes": 5158,
+      "sha256": "d189f96214205cac6e1dc1976fa8fb6de310e90bdb7b96ebe2631cd19dafba90"
+    },
+    {
+      "file": "TABM_PROTOCOL.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/TABM_PROTOCOL.json",
+      "bytes": 3052,
+      "sha256": "fb1b1f78027fcd781b796868093e9ea1e4e815e912c2554941705238806ff148"
+    },
+    {
+      "file": "VISUAL_QA.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/VISUAL_QA.md",
+      "bytes": 2144,
+      "sha256": "50d6d3f2ecc6fafefe48a3d63a58bd8cb89950d41df152162228eab28164ba13"
+    },
+    {
+      "file": "development_review/REVIEW_MANIFEST.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/REVIEW_MANIFEST.json",
+      "bytes": 2644,
+      "sha256": "9265221d0b130d1375d05156e18ed7f46d30e6e41d459cf8209a3f9a7b694f07"
+    },
+    {
+      "file": "development_review/case_availability.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/case_availability.csv",
+      "bytes": 544,
+      "sha256": "683f89789c34080766df993f732c7f9763f06c852fdef83f960b888706504b87"
+    },
+    {
+      "file": "development_review/case_index.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/case_index.csv",
+      "bytes": 9057,
+      "sha256": "100a613c721f74430aa67e7f0272c3968db4ee5f965ebec17d55734f1f76d64c"
+    },
+    {
+      "file": "development_review/case_selection_rules.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/case_selection_rules.json",
+      "bytes": 1158,
+      "sha256": "491a87670d32b20b7d270629df8ba9399fb819d123f5ef727a51367f4b4474cc"
+    },
+    {
+      "file": "development_review/en/case_00_weak_positive.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_00_weak_positive.png",
+      "bytes": 184628,
+      "sha256": "c3b7966230c100b9ceefd39fb8c88893497b45079659ebae8c3d7f49d7932ac5"
+    },
+    {
+      "file": "development_review/en/case_00_weak_positive.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_00_weak_positive.svg",
+      "bytes": 102161,
+      "sha256": "c9d43f732d46ff0abb6ec83458a91f2f5c2cb1c0a4606adab098c331a68cf9ba"
+    },
+    {
+      "file": "development_review/en/case_01_weak_positive.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_01_weak_positive.png",
+      "bytes": 186330,
+      "sha256": "5cf59689727434b1d52b7d4ead4a46600269c433915115ec5008de6b70fd57ab"
+    },
+    {
+      "file": "development_review/en/case_01_weak_positive.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_01_weak_positive.svg",
+      "bytes": 105304,
+      "sha256": "9690e5858f9c13ef9ecc279bc425781f18921a908443f401956164fe9733c8e5"
+    },
+    {
+      "file": "development_review/en/case_02_bright_neighbor_side_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_02_bright_neighbor_side_proxy.png",
+      "bytes": 164897,
+      "sha256": "63cf5644ca8c4a5511c1b182e41d3d0c5b254a50132068ecaa31546b58e44c44"
+    },
+    {
+      "file": "development_review/en/case_02_bright_neighbor_side_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_02_bright_neighbor_side_proxy.svg",
+      "bytes": 70739,
+      "sha256": "bb74e7db7ba76c0efcd8e615240122cf3ef72a4c4d275e5dc1b4bbe189b1f58c"
+    },
+    {
+      "file": "development_review/en/case_03_bright_neighbor_side_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_03_bright_neighbor_side_proxy.png",
+      "bytes": 169118,
+      "sha256": "8a89f55d4a085e8587c0f819fdadaaef85019651de91c7acf4a2eea08c543ddb"
+    },
+    {
+      "file": "development_review/en/case_03_bright_neighbor_side_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_03_bright_neighbor_side_proxy.svg",
+      "bytes": 82750,
+      "sha256": "5fe1479f551128bd9b9be3fc9bf9108e51bb130beed48d607d4bbd182defe17f"
+    },
+    {
+      "file": "development_review/en/case_04_high_local_reference_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_04_high_local_reference_proxy.png",
+      "bytes": 174266,
+      "sha256": "5fc6b9f1e5bdd08b9972410c02a80ca7e6b30f567a07483353061ad0a403a0ff"
+    },
+    {
+      "file": "development_review/en/case_04_high_local_reference_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_04_high_local_reference_proxy.svg",
+      "bytes": 90438,
+      "sha256": "69c76088b7132af7e0ff5c7bf1a11493b16132e28dbd2e54e9720558a64455f9"
+    },
+    {
+      "file": "development_review/en/case_05_high_local_reference_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_05_high_local_reference_proxy.png",
+      "bytes": 173304,
+      "sha256": "66be1a4ac4ad9528da461fd22318f0998b244f665de5762837c7920433ceaf19"
+    },
+    {
+      "file": "development_review/en/case_05_high_local_reference_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_05_high_local_reference_proxy.svg",
+      "bytes": 85929,
+      "sha256": "c7157b9cab37b6cdfd2c6bc813a87346b41d80bfef0e438f807ceb8a552a4ba7"
+    },
+    {
+      "file": "development_review/en/case_06_localized_edge_signal_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_06_localized_edge_signal_proxy.png",
+      "bytes": 162478,
+      "sha256": "3d20cb7d4962b8776988d63ff0fb6f6fc5e2daa116d193e844d0dafd87d5139d"
+    },
+    {
+      "file": "development_review/en/case_06_localized_edge_signal_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_06_localized_edge_signal_proxy.svg",
+      "bytes": 80136,
+      "sha256": "967a2bca5d6248751f11e9fe1e2b329e1989764aef51a4979b63e69a356ef4cf"
+    },
+    {
+      "file": "development_review/en/case_07_localized_edge_signal_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_07_localized_edge_signal_proxy.png",
+      "bytes": 137514,
+      "sha256": "bede6c80dfbffd78b445d79292251e3000718a67177c503a8f32139a2ba960e3"
+    },
+    {
+      "file": "development_review/en/case_07_localized_edge_signal_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_07_localized_edge_signal_proxy.svg",
+      "bytes": 50411,
+      "sha256": "8f2b01ceaf580619260dc02067e418241e5fa2a94bd1391fbe9ab35b2a6a1fc4"
+    },
+    {
+      "file": "development_review/en/case_08_incomplete_support.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_08_incomplete_support.png",
+      "bytes": 155116,
+      "sha256": "f74068d2c8f2990063cf5c41d57794a8018e526353e2096ccfefecdbf82192da"
+    },
+    {
+      "file": "development_review/en/case_08_incomplete_support.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/en/case_08_incomplete_support.svg",
+      "bytes": 74895,
+      "sha256": "85a3c0fdf1ebd3e0dae97bece033e4e70330532f1b4e53b05525d982388df532"
+    },
+    {
+      "file": "development_review/neighbor_context.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/neighbor_context.csv",
+      "bytes": 49088,
+      "sha256": "e743036a3c632465ab222242280f7606745f96d84b713d525ff7313e8dee5e5f"
+    },
+    {
+      "file": "development_review/zh/case_00_weak_positive.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_00_weak_positive.png",
+      "bytes": 193557,
+      "sha256": "9fb7a19c3ca8919f3a0869ea7b359391d41fd3a3c79c744b77ecd08c21b9630a"
+    },
+    {
+      "file": "development_review/zh/case_00_weak_positive.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_00_weak_positive.svg",
+      "bytes": 102237,
+      "sha256": "53101b2e845fb9efbc24932e5a7c0db54981db25688ea18320e678429423689a"
+    },
+    {
+      "file": "development_review/zh/case_01_weak_positive.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_01_weak_positive.png",
+      "bytes": 195997,
+      "sha256": "6076bed45542c2365cd751894259bf666b19fec8a84cb1c27124867ae08e9bd1"
+    },
+    {
+      "file": "development_review/zh/case_01_weak_positive.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_01_weak_positive.svg",
+      "bytes": 105379,
+      "sha256": "b07301f17c4ea6ec7080300601261f640e357b43cffaf830c4c54cf26df45dc9"
+    },
+    {
+      "file": "development_review/zh/case_02_bright_neighbor_side_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_02_bright_neighbor_side_proxy.png",
+      "bytes": 176613,
+      "sha256": "ac4896e6eccfaef8813000a47b83715dfdd07e44d4438f619c0f1b3996809c76"
+    },
+    {
+      "file": "development_review/zh/case_02_bright_neighbor_side_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_02_bright_neighbor_side_proxy.svg",
+      "bytes": 70827,
+      "sha256": "3b77ca241477d8173a80d5cd41dc66603623d88ee44a7cf9ce7d3d6b337d7d49"
+    },
+    {
+      "file": "development_review/zh/case_03_bright_neighbor_side_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_03_bright_neighbor_side_proxy.png",
+      "bytes": 183644,
+      "sha256": "7fac54c0bd449032eba39dc39b11c02d548604fabc6eae7f90bf8ba5bddb8a44"
+    },
+    {
+      "file": "development_review/zh/case_03_bright_neighbor_side_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_03_bright_neighbor_side_proxy.svg",
+      "bytes": 82839,
+      "sha256": "13a262925070d198a4181543584a49ef4534b2bfa027eacd84c5282558fd04b0"
+    },
+    {
+      "file": "development_review/zh/case_04_high_local_reference_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_04_high_local_reference_proxy.png",
+      "bytes": 185178,
+      "sha256": "2b5c46f1ffecd3d309747627805e0cec823e7bea9fa481c13cd529591c90f99a"
+    },
+    {
+      "file": "development_review/zh/case_04_high_local_reference_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_04_high_local_reference_proxy.svg",
+      "bytes": 90512,
+      "sha256": "72b1228ebde5f05761fe9c9a55729a839c19ba4a9dceeea19356d4763557ec42"
+    },
+    {
+      "file": "development_review/zh/case_05_high_local_reference_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_05_high_local_reference_proxy.png",
+      "bytes": 185209,
+      "sha256": "0cab28c1df1d22dfa8c71ad3e7b408ff44105b2dca34c8b21bb86b1c4c4a8efb"
+    },
+    {
+      "file": "development_review/zh/case_05_high_local_reference_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_05_high_local_reference_proxy.svg",
+      "bytes": 86003,
+      "sha256": "7b9c22738a6c524c0cd340e23527fb07ff776f0cae644e12eef60d70225d064a"
+    },
+    {
+      "file": "development_review/zh/case_06_localized_edge_signal_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_06_localized_edge_signal_proxy.png",
+      "bytes": 175297,
+      "sha256": "65f0e993ad3c3343cd8dbc9c80d45e7ff6a6406fa0b48cb210862240ad524b15"
+    },
+    {
+      "file": "development_review/zh/case_06_localized_edge_signal_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_06_localized_edge_signal_proxy.svg",
+      "bytes": 80214,
+      "sha256": "15ba89d57f0f3bfe6951579e5118cac58524678e757e027518e662f64e801a98"
+    },
+    {
+      "file": "development_review/zh/case_07_localized_edge_signal_proxy.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_07_localized_edge_signal_proxy.png",
+      "bytes": 150926,
+      "sha256": "7126f5170165629290a005c04d536716a72e8c5e244dec8bd34830c44dd0d270"
+    },
+    {
+      "file": "development_review/zh/case_07_localized_edge_signal_proxy.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_07_localized_edge_signal_proxy.svg",
+      "bytes": 50474,
+      "sha256": "9ad344138585ee55eb6b2e09ccbe995927804610a3c3d52325d898ed2dfe4b7e"
+    },
+    {
+      "file": "development_review/zh/case_08_incomplete_support.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_08_incomplete_support.png",
+      "bytes": 181289,
+      "sha256": "04e6fe33835ff7dccc15da52f64ebbb1d1d3854fe45c314cdc6d69041ed62a1f"
+    },
+    {
+      "file": "development_review/zh/case_08_incomplete_support.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/development_review/zh/case_08_incomplete_support.svg",
+      "bytes": 74982,
+      "sha256": "0f6465b4f5fd249f5507c0fdb52b92cede3dc561507de0c6ec47725f647abd4b"
+    },
+    {
+      "file": "figures/FIGURE_CONTRACT.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/FIGURE_CONTRACT.json",
+      "bytes": 918,
+      "sha256": "1129d741746fb38340f9913dc82080dc3f67917d18f7bc212835f59c987c4ace"
+    },
+    {
+      "file": "figures/en/error_strata.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/error_strata.png",
+      "bytes": 216412,
+      "sha256": "6288e3e7e817ecc58a59ca89286e56820b255592128b0ee03b7b5b1622f2c703"
+    },
+    {
+      "file": "figures/en/error_strata.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/error_strata.svg",
+      "bytes": 89684,
+      "sha256": "c0c1e22e82bc07cf6bdf840701973c243be33902d158828f2a736cd72d21bbc1"
+    },
+    {
+      "file": "figures/en/feature_missingness.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/feature_missingness.png",
+      "bytes": 321859,
+      "sha256": "801b644a477bec50dc336634791d898361e1000f95c80a7ad5e30de8f1205213"
+    },
+    {
+      "file": "figures/en/feature_missingness.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/feature_missingness.svg",
+      "bytes": 32377,
+      "sha256": "6f332e7fcf4cb9a64aa03ebf6b80d6128ab7826553f2820e0bfaafc2a903e1ed"
+    },
+    {
+      "file": "figures/en/paired_core_changes_fixed_0.5.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/paired_core_changes_fixed_0.5.png",
+      "bytes": 309395,
+      "sha256": "4cebbe2841b44463f1ae0dd4d000c9b9fd066e6272c07abec3be2a2e9d3a5640"
+    },
+    {
+      "file": "figures/en/paired_core_changes_fixed_0.5.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/paired_core_changes_fixed_0.5.svg",
+      "bytes": 165956,
+      "sha256": "3cb59cd3a2190476efb6be522be39ce1d5dcd8f8b7c57fc0c64d200a73b15f41"
+    },
+    {
+      "file": "figures/en/paired_core_changes_validation_selected.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/paired_core_changes_validation_selected.png",
+      "bytes": 308757,
+      "sha256": "c662c822e01fa6232a8953502b381c9fcbf266b070f56c114d52a7d14616c7f1"
+    },
+    {
+      "file": "figures/en/paired_core_changes_validation_selected.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/paired_core_changes_validation_selected.svg",
+      "bytes": 168712,
+      "sha256": "204b45320066fb6c148403cc52eac22619a38d6b385ecf8db3b01c04f09d2937"
+    },
+    {
+      "file": "figures/en/performance_ablation.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/performance_ablation.png",
+      "bytes": 163283,
+      "sha256": "0c8b2e177cb13709358b36b101ca6e762e06db7d0c469a59019d1022637e3436"
+    },
+    {
+      "file": "figures/en/performance_ablation.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/performance_ablation.svg",
+      "bytes": 91780,
+      "sha256": "80759e4cfc8d7da57dad4934d8d6d134b967d60032ff293e26a2bcb73d5c1a3f"
+    },
+    {
+      "file": "figures/en/submodel_disagreement.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/submodel_disagreement.png",
+      "bytes": 105658,
+      "sha256": "ab0784f37ec4af779c48deb44d901486d719f1dab697b6dcf2dab923fdd98e16"
+    },
+    {
+      "file": "figures/en/submodel_disagreement.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/en/submodel_disagreement.svg",
+      "bytes": 39695,
+      "sha256": "73d232fa00c971feab68e7c32b308389e877a633e3b8d61c1e25ea3e566ee798"
+    },
+    {
+      "file": "figures/source_data/missingness.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/source_data/missingness.csv",
+      "bytes": 19221,
+      "sha256": "233c557a9d8fd14ba7ba2da60aba277c9713d3263d53d27a1b66b732e79977ec"
+    },
+    {
+      "file": "figures/source_data/paired_cores.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/source_data/paired_cores.csv",
+      "bytes": 602902,
+      "sha256": "06a67be5637f1b64a3730f429e24d66e5c2b7fa9f772a9e9a1a554e0ef7acd58"
+    },
+    {
+      "file": "figures/source_data/performance.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/source_data/performance.csv",
+      "bytes": 13579,
+      "sha256": "bfee4a5b6ed4940f8db7061218c7f1d642fbbe2974b53f6878ff388ec0404bcc"
+    },
+    {
+      "file": "figures/source_data/risk_strata.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/source_data/risk_strata.csv",
+      "bytes": 121938,
+      "sha256": "ab411c15f28f13b99e10f08a459bdc93943c28a71b46813470e6ca2d069b6620"
+    },
+    {
+      "file": "figures/source_data/submodel_disagreement.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/source_data/submodel_disagreement.csv",
+      "bytes": 75578,
+      "sha256": "9906f99488414b8059b648c4f95c414fb42fb11c0c0953bfb4301ce463882972"
+    },
+    {
+      "file": "figures/zh/error_strata.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/error_strata.png",
+      "bytes": 213505,
+      "sha256": "a4f825bd093b3166eca2a714abbc560a93537925b9246b0b6d1c750eaa634515"
+    },
+    {
+      "file": "figures/zh/error_strata.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/error_strata.svg",
+      "bytes": 89972,
+      "sha256": "63773a9b20b29133c3d0e461f0b7ec81790427a79d976343ff98d7835a09230d"
+    },
+    {
+      "file": "figures/zh/feature_missingness.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/feature_missingness.png",
+      "bytes": 317734,
+      "sha256": "583b80eb480d7e0964502c974efc3650a911b234f0f5a6f1a314a398fac2b3e2"
+    },
+    {
+      "file": "figures/zh/feature_missingness.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/feature_missingness.svg",
+      "bytes": 32764,
+      "sha256": "807f97a31a0848a8ec1d59f135561f269ef58925598ed445bce7d9bb4f8bbba1"
+    },
+    {
+      "file": "figures/zh/paired_core_changes_fixed_0.5.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/paired_core_changes_fixed_0.5.png",
+      "bytes": 308695,
+      "sha256": "caa603f7da8584576ded2a0c79bf2594b8e90812dfbcd1fcb9af4377ef262fee"
+    },
+    {
+      "file": "figures/zh/paired_core_changes_fixed_0.5.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/paired_core_changes_fixed_0.5.svg",
+      "bytes": 165897,
+      "sha256": "91a5c0609e5a563f5736b8eb4fd189de7e4e97a048af03a366c935308adbecf5"
+    },
+    {
+      "file": "figures/zh/paired_core_changes_validation_selected.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/paired_core_changes_validation_selected.png",
+      "bytes": 276102,
+      "sha256": "aab830154477daa4d28cf5f754af1444089a295a7912a48d2b64c6ba527f56bb"
+    },
+    {
+      "file": "figures/zh/paired_core_changes_validation_selected.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/paired_core_changes_validation_selected.svg",
+      "bytes": 168771,
+      "sha256": "a4cfaf425e184dd63fb2d2bf5881b225698664205182c81ab2ad2a9bb06b4d54"
+    },
+    {
+      "file": "figures/zh/performance_ablation.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/performance_ablation.png",
+      "bytes": 188265,
+      "sha256": "79168db544fb83a32c3dbe1ce143e17daa163b9de514fd68e1101750431f00b9"
+    },
+    {
+      "file": "figures/zh/performance_ablation.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/performance_ablation.svg",
+      "bytes": 92198,
+      "sha256": "fe48832257491bb6c49b07635d6c8fdac966c03ac53e57a158bf588618bbdf00"
+    },
+    {
+      "file": "figures/zh/submodel_disagreement.png",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/submodel_disagreement.png",
+      "bytes": 107995,
+      "sha256": "e23967a52bfff7416a6fb31114c1d9798dc8ac5df0c35cb28049b27e1a261286"
+    },
+    {
+      "file": "figures/zh/submodel_disagreement.svg",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/figures/zh/submodel_disagreement.svg",
+      "bytes": 39869,
+      "sha256": "6b5a71425f9f9d1ca8cc982e9382bb3d4c2029946b53b55208e5c89bcfd9bb63"
+    },
+    {
+      "file": "independent_review/INDEPENDENT_REVIEW.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/INDEPENDENT_REVIEW.md",
+      "bytes": 7168,
+      "sha256": "1ed4e75d41ffee74eeabe97bebd4a4d4ced75720965833d4e7b5cb5741e68bde"
+    },
+    {
+      "file": "independent_review/independent_review.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/independent_review.json",
+      "bytes": 223155,
+      "sha256": "0832bef03237e3e6b33629be3e8e158f3dd015fd07a7593bdb7c58585ab301e4"
+    },
+    {
+      "file": "independent_review/model_summary.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/model_summary.csv",
+      "bytes": 17056,
+      "sha256": "70fb70e2435bb97da6b69ab55c2aa84df23364b33748090a87068373dec8b056"
+    },
+    {
+      "file": "independent_review/pair_summary.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/pair_summary.csv",
+      "bytes": 29579,
+      "sha256": "88eebc6a7ab4452bfebc2141eaeedfdee23e3cce535d849ee0d4b13b379d3a74"
+    },
+    {
+      "file": "independent_review/risk_C_minus_B.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/risk_C_minus_B.csv",
+      "bytes": 4184,
+      "sha256": "82be5441bb371a1c37f838b122c6dcd14be59782b6b53ce5c8c5d414ab3caf11"
+    },
+    {
+      "file": "independent_review/risk_summary.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/independent_review/risk_summary.csv",
+      "bytes": 14365,
+      "sha256": "ffa891c91cbcd25dd9008713ab8fc15e4e5ef6e81a02a167735c693a744b113d"
+    },
+    {
+      "file": "models/HGB_A_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s0/metadata.json",
+      "bytes": 2014,
+      "sha256": "630c545aba690fa79d1c6ce6cfb240ed941714d4edafed3d7cd6bc242420e99b"
+    },
+    {
+      "file": "models/HGB_A_s0/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s0/threshold_grid.csv",
+      "bytes": 2387,
+      "sha256": "42627313c1d58889b56d6fba34b4c07022f74e9a534548437cc02d7efb9a0935"
+    },
+    {
+      "file": "models/HGB_A_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s1/metadata.json",
+      "bytes": 2014,
+      "sha256": "10bb20c81c16f94c783b5ee71b30a035dba1e4798b4e50ad1388b36b6656cfe8"
+    },
+    {
+      "file": "models/HGB_A_s1/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s1/threshold_grid.csv",
+      "bytes": 2387,
+      "sha256": "42627313c1d58889b56d6fba34b4c07022f74e9a534548437cc02d7efb9a0935"
+    },
+    {
+      "file": "models/HGB_A_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s2/metadata.json",
+      "bytes": 2014,
+      "sha256": "b994b8711f9686165368acd49b5ab56fa4a75164ffef1674df07d8dca571edcf"
+    },
+    {
+      "file": "models/HGB_A_s2/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_A_s2/threshold_grid.csv",
+      "bytes": 2387,
+      "sha256": "42627313c1d58889b56d6fba34b4c07022f74e9a534548437cc02d7efb9a0935"
+    },
+    {
+      "file": "models/HGB_B_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s0/metadata.json",
+      "bytes": 2742,
+      "sha256": "59a8def51926d3a638c4f4654553f4c25a14c8b30c7657aee42b6b5ba375f223"
+    },
+    {
+      "file": "models/HGB_B_s0/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s0/threshold_grid.csv",
+      "bytes": 2391,
+      "sha256": "8e0a7b3413f3074657fa7cc5448d11dcb034eef4fdba112cb74ada53b873d77e"
+    },
+    {
+      "file": "models/HGB_B_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s1/metadata.json",
+      "bytes": 2742,
+      "sha256": "145ec72a6470a3f428eb26fb9d9a8a6bc19c1f6dab0b1ca91e0a09a967ca7a62"
+    },
+    {
+      "file": "models/HGB_B_s1/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s1/threshold_grid.csv",
+      "bytes": 2391,
+      "sha256": "8e0a7b3413f3074657fa7cc5448d11dcb034eef4fdba112cb74ada53b873d77e"
+    },
+    {
+      "file": "models/HGB_B_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s2/metadata.json",
+      "bytes": 2742,
+      "sha256": "8d70a68bcb89dc8797bf4f3d06279a15770019840f4b62cedb7b0c0fad46e488"
+    },
+    {
+      "file": "models/HGB_B_s2/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_B_s2/threshold_grid.csv",
+      "bytes": 2391,
+      "sha256": "8e0a7b3413f3074657fa7cc5448d11dcb034eef4fdba112cb74ada53b873d77e"
+    },
+    {
+      "file": "models/HGB_C_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s0/metadata.json",
+      "bytes": 6615,
+      "sha256": "f05a792d6f319058f6644ca51bd7b808789f47d35a0ad30a39741ea52476dacc"
+    },
+    {
+      "file": "models/HGB_C_s0/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s0/threshold_grid.csv",
+      "bytes": 2383,
+      "sha256": "1ac5555e53805f609c78bf5c0d5a717a48c405e632cdec1ea4d545ee7fc259d8"
+    },
+    {
+      "file": "models/HGB_C_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s1/metadata.json",
+      "bytes": 6615,
+      "sha256": "acee5baaa2aa0bdb70c278c6afa44264fc0b7fa602eb141cc0b530da1aa0412c"
+    },
+    {
+      "file": "models/HGB_C_s1/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s1/threshold_grid.csv",
+      "bytes": 2383,
+      "sha256": "1ac5555e53805f609c78bf5c0d5a717a48c405e632cdec1ea4d545ee7fc259d8"
+    },
+    {
+      "file": "models/HGB_C_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s2/metadata.json",
+      "bytes": 6615,
+      "sha256": "22811c3e33dec67fed9aaca912b6c666b1ff95f8fef85d2fd61cfc4286bcd054"
+    },
+    {
+      "file": "models/HGB_C_s2/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/HGB_C_s2/threshold_grid.csv",
+      "bytes": 2383,
+      "sha256": "1ac5555e53805f609c78bf5c0d5a717a48c405e632cdec1ea4d545ee7fc259d8"
+    },
+    {
+      "file": "models/TabM_A_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0/metadata.json",
+      "bytes": 2372,
+      "sha256": "203ce044f560dae7c1b8ac75b7bdc50388db75d45ea91d7e1feef2929adb6efd"
+    },
+    {
+      "file": "models/TabM_A_s0_lower_lr/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_lower_lr/history.csv",
+      "bytes": 2442,
+      "sha256": "13b5ed7d6c764529b8d04d33e742097dd00ba5570fe1b46f085578eb078dfe0e"
+    },
+    {
+      "file": "models/TabM_A_s0_lower_lr/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_lower_lr/metadata.json",
+      "bytes": 2268,
+      "sha256": "16889f6ee937938597bf81b826d764f8ed8045ecd7f711ba7cfde773e8cf72ac"
+    },
+    {
+      "file": "models/TabM_A_s0_lower_lr/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_lower_lr/threshold_grid.csv",
+      "bytes": 2387,
+      "sha256": "1cd69d3a0c11450fde929357dd528a5baf763c4be85d4d41f993f5e28c0fe129"
+    },
+    {
+      "file": "models/TabM_A_s0_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_official_default/history.csv",
+      "bytes": 2435,
+      "sha256": "b03a7a54354b3091a53b011b6e09f526c10b88de3c9ac3b5fd038f43df1effb5"
+    },
+    {
+      "file": "models/TabM_A_s0_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_official_default/metadata.json",
+      "bytes": 2281,
+      "sha256": "b82591a25ff3ffb01b3eaa0eb08aa12b6299549f2ed15e19b607f8083e14006a"
+    },
+    {
+      "file": "models/TabM_A_s0_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s0_official_default/threshold_grid.csv",
+      "bytes": 2391,
+      "sha256": "358fafadf350cbab9e387232df7d3f8c51c6fc97f5f6399e9ed055526053b635"
+    },
+    {
+      "file": "models/TabM_A_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s1/metadata.json",
+      "bytes": 2371,
+      "sha256": "69958a810e7b54faf740e5aeff5c60f0424356d7de2a5565673943363fbdb774"
+    },
+    {
+      "file": "models/TabM_A_s1_lower_lr/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s1_lower_lr/history.csv",
+      "bytes": 1717,
+      "sha256": "52926772dc65129c7101b52de7ea2d0664545d818e72cfe6ba7fad34d0878f52"
+    },
+    {
+      "file": "models/TabM_A_s1_lower_lr/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s1_lower_lr/metadata.json",
+      "bytes": 2267,
+      "sha256": "6e97fc44a4fa608325e5576665e27ed48cfb51d18d046691114a116853cd6571"
+    },
+    {
+      "file": "models/TabM_A_s1_lower_lr/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s1_lower_lr/threshold_grid.csv",
+      "bytes": 2384,
+      "sha256": "0e7e29c6c78b23f2afb18c557a3a59f9ce113b1eae1dbf8f44536378dc7b293f"
+    },
+    {
+      "file": "models/TabM_A_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s2/metadata.json",
+      "bytes": 2371,
+      "sha256": "184d89df4b3ce811bb74beb3fe713ce3631109dde9bd9f140c5407a7dfe38de4"
+    },
+    {
+      "file": "models/TabM_A_s2_lower_lr/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s2_lower_lr/history.csv",
+      "bytes": 2258,
+      "sha256": "5f65506be200d3139316a415c40cfd9d39d45e7c61220a960b9bce1e062e03f3"
+    },
+    {
+      "file": "models/TabM_A_s2_lower_lr/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s2_lower_lr/metadata.json",
+      "bytes": 2267,
+      "sha256": "ede82ec8ab380960e301e90ff2c0eaea47512ee0749b344c31a64761c73a8595"
+    },
+    {
+      "file": "models/TabM_A_s2_lower_lr/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_A_s2_lower_lr/threshold_grid.csv",
+      "bytes": 2387,
+      "sha256": "04b005e75b1dd453df266bd01e260063effd9ed77057729369977fe692315dcc"
+    },
+    {
+      "file": "models/TabM_B_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0/metadata.json",
+      "bytes": 3119,
+      "sha256": "925679ad70927fa66466e72ac31ab4c99c6131caa69b37de381ed161a73acb55"
+    },
+    {
+      "file": "models/TabM_B_s0_lower_lr/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_lower_lr/history.csv",
+      "bytes": 1530,
+      "sha256": "bd64575585bb2707038469848df4e434866a98787d3bd530f4c0c7128dc0c2ca"
+    },
+    {
+      "file": "models/TabM_B_s0_lower_lr/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_lower_lr/metadata.json",
+      "bytes": 2992,
+      "sha256": "05eef504bf6c4f3b75f0d3deac4353175785deb03c9362528a7c0cf7a98373ec"
+    },
+    {
+      "file": "models/TabM_B_s0_lower_lr/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_lower_lr/threshold_grid.csv",
+      "bytes": 2382,
+      "sha256": "d0daa072d39b9753a2665dc1075f74960b9bb10be9f17511639452d38727ff34"
+    },
+    {
+      "file": "models/TabM_B_s0_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_official_default/history.csv",
+      "bytes": 1235,
+      "sha256": "45a1d8545bf07480cdd30d85e3ad83b9c484e5e11c2145018675d59e50fe0af8"
+    },
+    {
+      "file": "models/TabM_B_s0_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_official_default/metadata.json",
+      "bytes": 3007,
+      "sha256": "e1b019737f75a226cc8ba0ca2387379855122d1c937c2b7660e90a3101c5b893"
+    },
+    {
+      "file": "models/TabM_B_s0_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s0_official_default/threshold_grid.csv",
+      "bytes": 2378,
+      "sha256": "0c8537d0c9ec8547811ae4d77727fb36cff9601b7defbaf935f34789091b987f"
+    },
+    {
+      "file": "models/TabM_B_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s1/metadata.json",
+      "bytes": 3122,
+      "sha256": "3d161799c0c1d182a50215155865cde7380ec7229ace694b90ab46baebedb5cd"
+    },
+    {
+      "file": "models/TabM_B_s1_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s1_official_default/history.csv",
+      "bytes": 1714,
+      "sha256": "05e771d106c1bb9c566b706255267b54736a6282cab25e44914737a71e06d7f5"
+    },
+    {
+      "file": "models/TabM_B_s1_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s1_official_default/metadata.json",
+      "bytes": 3010,
+      "sha256": "6057448b291fa612f7f43263a4275f0e09e228f90c344c9b0912596612ae391c"
+    },
+    {
+      "file": "models/TabM_B_s1_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s1_official_default/threshold_grid.csv",
+      "bytes": 2383,
+      "sha256": "e3df776679d34ece946983e5cfa2c2e9787304e4db593b3805d27769986b628e"
+    },
+    {
+      "file": "models/TabM_B_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s2/metadata.json",
+      "bytes": 3119,
+      "sha256": "331cbfd702f9b376f4801db429154ae0bf26bdc02650d007942c4b63a1542d40"
+    },
+    {
+      "file": "models/TabM_B_s2_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s2_official_default/history.csv",
+      "bytes": 1361,
+      "sha256": "f537f4cfa55b0f072085e2311c80141c2adb3f4ce1b93df33e76451d4321aa6c"
+    },
+    {
+      "file": "models/TabM_B_s2_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s2_official_default/metadata.json",
+      "bytes": 3007,
+      "sha256": "3267e5eea015639e577054df916398b5a85b4a2bf1326e78b95330c8c114d956"
+    },
+    {
+      "file": "models/TabM_B_s2_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_B_s2_official_default/threshold_grid.csv",
+      "bytes": 2384,
+      "sha256": "fe73d92a71e4fcf8d59417c91c4a5117c6d7124a54d4932a938fd47ed1a472bd"
+    },
+    {
+      "file": "models/TabM_C_s0/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0/metadata.json",
+      "bytes": 6993,
+      "sha256": "1890681ebcc5f385aacb70cf83e303883b4d734838979ad1fc82c46a269bf8ec"
+    },
+    {
+      "file": "models/TabM_C_s0_lower_lr/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_lower_lr/history.csv",
+      "bytes": 1319,
+      "sha256": "1d3a0d5ce8a39d92ade3bddf49950ac95a1640e905693f0570f288e20f3aeaa0"
+    },
+    {
+      "file": "models/TabM_C_s0_lower_lr/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_lower_lr/metadata.json",
+      "bytes": 6866,
+      "sha256": "45343ee8208d76ca78b2f3d90109964572a4ffb973accd70b1d6f0aa3b4da45e"
+    },
+    {
+      "file": "models/TabM_C_s0_lower_lr/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_lower_lr/threshold_grid.csv",
+      "bytes": 2385,
+      "sha256": "260a7094d44a9098782bd713e842dc0309fae61502210c53db283dc1b070fb00"
+    },
+    {
+      "file": "models/TabM_C_s0_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_official_default/history.csv",
+      "bytes": 1258,
+      "sha256": "d22a705bc71983e5bebbb4c40a7b635124223be291d759416f64713cf26187fc"
+    },
+    {
+      "file": "models/TabM_C_s0_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_official_default/metadata.json",
+      "bytes": 6881,
+      "sha256": "32a572850dec161da971b6f99ec08cd50359bb8cbed706b337781154c3ad781d"
+    },
+    {
+      "file": "models/TabM_C_s0_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s0_official_default/threshold_grid.csv",
+      "bytes": 2388,
+      "sha256": "a9e940f3a0689a4c609fdc8b191711ca133e662c124e89579433476b3a9f59de"
+    },
+    {
+      "file": "models/TabM_C_s1/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s1/metadata.json",
+      "bytes": 6994,
+      "sha256": "8cc8331d4ab3c9a573578fc4cca79dd16d0fb7c6ef0c4bea5a84df9c5dcdd5ad"
+    },
+    {
+      "file": "models/TabM_C_s1_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s1_official_default/history.csv",
+      "bytes": 1320,
+      "sha256": "29b42cd8abe0a7c370d8f8b189482a8e0822672d346a7358d2f107a86eb4ac7e"
+    },
+    {
+      "file": "models/TabM_C_s1_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s1_official_default/metadata.json",
+      "bytes": 6882,
+      "sha256": "347320b6087615c24d7c86e3c4f1ac3d2e2f3ad56eea83d7b5bd755ffb48ceba"
+    },
+    {
+      "file": "models/TabM_C_s1_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s1_official_default/threshold_grid.csv",
+      "bytes": 2392,
+      "sha256": "f11d41110ab341f0b45470a25df9e261d3e6b96ed54159f4179e08ebeeaa6110"
+    },
+    {
+      "file": "models/TabM_C_s2/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s2/metadata.json",
+      "bytes": 6992,
+      "sha256": "e98b1a17ad68b32e397ead2409c3c0d8e5766ba3376507a1c90d2ceeba13100d"
+    },
+    {
+      "file": "models/TabM_C_s2_official_default/history.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s2_official_default/history.csv",
+      "bytes": 1079,
+      "sha256": "46b5ae16b339845e769e02f2c2997d4810ab3625690999a0f852fb0eea4181db"
+    },
+    {
+      "file": "models/TabM_C_s2_official_default/metadata.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s2_official_default/metadata.json",
+      "bytes": 6880,
+      "sha256": "169890f55267c105f89b090b8b698911449be5e1c7bc3b7d6b614af744ca810c"
+    },
+    {
+      "file": "models/TabM_C_s2_official_default/threshold_grid.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/TabM_C_s2_official_default/threshold_grid.csv",
+      "bytes": 2380,
+      "sha256": "9d99229780579fada3fc39ee815ebbbf4b51aaf14b8d242c867ee6a59237b450"
+    },
+    {
+      "file": "models/embedding_bin_edges.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/models/embedding_bin_edges.json",
+      "bytes": 103108,
+      "sha256": "6dca14bf6b4748b79c75d40bf335b31a3cceb9432bd4dab2209bcab1815a87a0"
+    },
+    {
+      "file": "requirements.txt",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/requirements.txt",
+      "bytes": 216,
+      "sha256": "9fc8161c0de1803949c5f0dc555b7c2de755290605d87a7936f75f36443005a7"
+    },
+    {
+      "file": "results/EVALUATION_MANIFEST.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/EVALUATION_MANIFEST.json",
+      "bytes": 904,
+      "sha256": "059d6e0761c839c6d42732ec2304a408c068fba5b0492c446ea3f7529b318d8c"
+    },
+    {
+      "file": "results/NUMERIC_RESOLUTION_AUDIT.md",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/NUMERIC_RESOLUTION_AUDIT.md",
+      "bytes": 2497,
+      "sha256": "f6cf784aff22218bc42cb9a3bc2b8cd27fd8a4f4123d9fcba8f3a1d6e025159c"
+    },
+    {
+      "file": "results/PILOT_VALIDATION.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/PILOT_VALIDATION.json",
+      "bytes": 1098,
+      "sha256": "d260a9d04a68464c096ed0d0edc86bb93e0a01cfa63a0d34e8c53abb5f18557a"
+    },
+    {
+      "file": "results/api_validation_keys.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/api_validation_keys.csv",
+      "bytes": 8567,
+      "sha256": "8d6a8db367e6754275feeba660e991978f9049995f29ba2b4dcb1a4d1792b8fd"
+    },
+    {
+      "file": "results/auxiliary_completion_audit.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/auxiliary_completion_audit.json",
+      "bytes": 1565,
+      "sha256": "3b77e3346e6067ce16fc7279c151a7a4256c71548ae7c57ec5c1915841d84d7f"
+    },
+    {
+      "file": "results/code_sha256.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/code_sha256.csv",
+      "bytes": 1568,
+      "sha256": "4a1eec7c549d46ed1e358df39911bfe8c474b8583f20465744e986a9deb13a62"
+    },
+    {
+      "file": "results/curve_manifest.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/curve_manifest.csv",
+      "bytes": 32802,
+      "sha256": "db7aa4aec0fb396289ab5f01faa9e595335369290d31b745860410975195065b"
+    },
+    {
+      "file": "results/delivery_prediction_validation.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/delivery_prediction_validation.csv",
+      "bytes": 1833,
+      "sha256": "33e7d1a38d74cf779c02203613c20ae612830a0656ae3b1c579891cb2fe1b078"
+    },
+    {
+      "file": "results/embedding_bins.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/embedding_bins.csv",
+      "bytes": 36282,
+      "sha256": "6ea983f80f427e0240b863671f927f4b17a0f5aa24767ea711cb3cd21454d91a"
+    },
+    {
+      "file": "results/feature_availability.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/feature_availability.csv",
+      "bytes": 20745,
+      "sha256": "1fe8f209a15e4cb67e4157767abd2a368d5ecbe42be939861cc952f4af93ff98"
+    },
+    {
+      "file": "results/feature_manifest.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/feature_manifest.csv",
+      "bytes": 3644,
+      "sha256": "9fb5b42970bedfba57c9a1be891d1f0b42e7c745b155091d46cdcfdda121189f"
+    },
+    {
+      "file": "results/feature_missingness_by_unit_class.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/feature_missingness_by_unit_class.csv",
+      "bytes": 1311599,
+      "sha256": "444229f2e9f15d179cf7ed52be4432b5e0d984dfaf68cec7b1514bbcff9e8672"
+    },
+    {
+      "file": "results/inference_resources.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/inference_resources.csv",
+      "bytes": 4405,
+      "sha256": "98b0f19d1a5f4b8f1f7c1434798114cf3cda5a2184bb904b6d0d7888bc0361df"
+    },
+    {
+      "file": "results/key_hashes.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/key_hashes.csv",
+      "bytes": 1012,
+      "sha256": "9c4d2074cea86e9609357e0c7929609ec497e2eec38a1b1ab2259028244fa58c"
+    },
+    {
+      "file": "results/metrics_all.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/metrics_all.csv",
+      "bytes": 685474,
+      "sha256": "578c31d9267382feca446722f3346c0e4e5cfe611038d17854f0afe7a703ab1e"
+    },
+    {
+      "file": "results/metrics_fixed_0.5.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/metrics_fixed_0.5.csv",
+      "bytes": 347330,
+      "sha256": "44b928f3b889b3d66b89ef0a7c278f2bc4d1ff69eaa268de70d99e520be30a96"
+    },
+    {
+      "file": "results/metrics_seed_summary.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/metrics_seed_summary.csv",
+      "bytes": 1565961,
+      "sha256": "7874703a315dad66ffb3eb9a68571c5c6dd6be1ea448c955664866f5577e1d4d"
+    },
+    {
+      "file": "results/metrics_validation_selected.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/metrics_validation_selected.csv",
+      "bytes": 338543,
+      "sha256": "f4f8b43e544e5fc345e28884fdd0c0ecf1fc4973d86661d7359d6d19547bb763"
+    },
+    {
+      "file": "results/numeric_resolution_audit_manifest.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/numeric_resolution_audit_manifest.json",
+      "bytes": 1612,
+      "sha256": "d22a14f6c89ef462257e80d79e6434561f96b106c0154202d7041d1f90307127"
+    },
+    {
+      "file": "results/numeric_resolution_train.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/numeric_resolution_train.csv",
+      "bytes": 48829,
+      "sha256": "78ee8eb46fec274adb1efb33721df94aa8fa1d4a65613b33c6cdf59be7d53bdf"
+    },
+    {
+      "file": "results/paired_comparisons.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/paired_comparisons.csv",
+      "bytes": 2507560,
+      "sha256": "c8b5515309904d8a5c1d09b0874249e68e908ba1e31ed6c9f0d4ac7670e05549"
+    },
+    {
+      "file": "results/prediction_input_hashes.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/prediction_input_hashes.csv",
+      "bytes": 2554,
+      "sha256": "10737fd9945938a5310b505ff2a05880f06b35ff6b9704cb003b9b8669e6bbd3"
+    },
+    {
+      "file": "results/qc_by_split_class.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/qc_by_split_class.csv",
+      "bytes": 58418,
+      "sha256": "98dbfd350e3954c89d168a3de5c0514ba59477335304181557eba8143fdc3bd1"
+    },
+    {
+      "file": "results/report_data_inventory.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_data_inventory.csv",
+      "bytes": 188,
+      "sha256": "d169cacd6fb120ca2fe49a938a61f2dfdaa59bd5a7e7b7be7c22b9ed30b0f0c7"
+    },
+    {
+      "file": "results/report_disagreement.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_disagreement.csv",
+      "bytes": 1190,
+      "sha256": "6bf46c5277c1abc7f7189ff80b18442e992a07a934652cb6f45daa4856b0b9fc"
+    },
+    {
+      "file": "results/report_feature_sets.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_feature_sets.csv",
+      "bytes": 76,
+      "sha256": "a46746f3146ebfb0bd2030969702b77815dc474e5c56e4dc49281361e145f3aa"
+    },
+    {
+      "file": "results/report_lowest_cores.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_lowest_cores.csv",
+      "bytes": 7467,
+      "sha256": "80ed248a4350a19bf96f6d2eb9378beb4c33d1e01b97d88c67a30505178beb42"
+    },
+    {
+      "file": "results/report_missingness.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_missingness.csv",
+      "bytes": 35887,
+      "sha256": "bb849e971bdf695126a885b1b224082d5388cc8cb9c2fb2fd2b1054e25b5c1b1"
+    },
+    {
+      "file": "results/report_model_artifacts.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_model_artifacts.csv",
+      "bytes": 3991,
+      "sha256": "b821f6b3560c6bafcc44ab1cf98332c5fbbc6e65c29b5d34f6e7f995acc8924d"
+    },
+    {
+      "file": "results/report_numeric_resolution.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_numeric_resolution.csv",
+      "bytes": 48829,
+      "sha256": "78ee8eb46fec274adb1efb33721df94aa8fa1d4a65613b33c6cdf59be7d53bdf"
+    },
+    {
+      "file": "results/report_paired_deltas.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_paired_deltas.csv",
+      "bytes": 630720,
+      "sha256": "816a7636c86b3b39a707774a39d6c7d70af945a4a05a08050b6b174ddd41df94"
+    },
+    {
+      "file": "results/report_performance_fixed_0.5.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_performance_fixed_0.5.csv",
+      "bytes": 174408,
+      "sha256": "99f6c66cb8127ce4a837b491af62a08afeba3ad5002678f1055ac4e39f2c3490"
+    },
+    {
+      "file": "results/report_performance_validation_selected.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_performance_validation_selected.csv",
+      "bytes": 185501,
+      "sha256": "a7e6d3ba4526f56d9aebc4df87d398c347e5837546e32eaf594278307ebd668b"
+    },
+    {
+      "file": "results/report_provenance.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_provenance.csv",
+      "bytes": 462,
+      "sha256": "837d6d64949487f01128b1c044b6678da13d0b92430ca53719fecb5b58f8de4b"
+    },
+    {
+      "file": "results/report_resources.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_resources.csv",
+      "bytes": 4119,
+      "sha256": "4be02a73ef09c25b9a5144447b474fdb6383f0ffe71ba8c4bf307910835d17c3"
+    },
+    {
+      "file": "results/report_risk_strata.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_risk_strata.csv",
+      "bytes": 1346965,
+      "sha256": "4d69f22519d77e11c9ab1156df778369c7907ff3e24e3201cc0758a9765ca235"
+    },
+    {
+      "file": "results/report_tables.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_tables.csv",
+      "bytes": 8525,
+      "sha256": "3235bed643611762f89cd52fb814f8246ba38ba4eb2c32cd0337ea56d04999cf"
+    },
+    {
+      "file": "results/report_training_configuration.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_training_configuration.csv",
+      "bytes": 898,
+      "sha256": "4ace87efa115e165a0f9a2ac7afafba0302c877e1d95bc3241378ee468281d22"
+    },
+    {
+      "file": "results/report_unit_equal.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/report_unit_equal.csv",
+      "bytes": 63477,
+      "sha256": "f087c6482fb627fe8f0415631327d689ab370601c76dad0f32a0630d06d7d28d"
+    },
+    {
+      "file": "results/risk_strata_metrics.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/risk_strata_metrics.csv",
+      "bytes": 5756060,
+      "sha256": "dfa5975828203590de36373b5ae46b6eb9875b52bf412b2f0a9facdf2cb3e9cc"
+    },
+    {
+      "file": "results/selected_configurations.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/selected_configurations.json",
+      "bytes": 525,
+      "sha256": "0c1233d9830b2788f93067dd6758f52dafd1d2f487b9c7e06babd69c1cdee555"
+    },
+    {
+      "file": "results/submodel_disagreement.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/submodel_disagreement.csv",
+      "bytes": 284044,
+      "sha256": "9b309c782c76578ded008a4dab2380fd216d941d1adac4f8e6ac7dd2dc517e23"
+    },
+    {
+      "file": "results/unit_equal_summary.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/unit_equal_summary.csv",
+      "bytes": 314494,
+      "sha256": "0ac9732867b13012566ad7865eb83ee20fb085365e2e482a9790051ec3e13ca4"
+    },
+    {
+      "file": "results/unit_performance_ranked.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/unit_performance_ranked.csv",
+      "bytes": 618371,
+      "sha256": "a3e8b8eeec81fc8f7c308c47bbf3c354ceb8259f4b4c7172ba8c73b575a011b9"
+    },
+    {
+      "file": "results/visual_fix_audit.json",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/visual_fix_audit.json",
+      "bytes": 1815,
+      "sha256": "73801e13b9abd0055eb46a262b212edc0070a044e0d1f223676729b950a197c4"
+    },
+    {
+      "file": "scripts/audit_embedding_bins.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/audit_embedding_bins.py",
+      "bytes": 1834,
+      "sha256": "6e8ee14ae80d5f6704886d7477962787e3492d17545737c43b4e139914191284"
+    },
+    {
+      "file": "scripts/audit_numeric_resolution.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/audit_numeric_resolution.py",
+      "bytes": 11602,
+      "sha256": "f37cbfefbe1cbe543a4407dca23f4825fc7bd180c8242f7533ba8572c87ea929"
+    },
+    {
+      "file": "scripts/common_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/common_tabm.py",
+      "bytes": 1754,
+      "sha256": "30cbc75e1ebe77bf931e40f197941c3174ff5277a367d12760a2a880ca2be79b"
+    },
+    {
+      "file": "scripts/evaluate_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/evaluate_tabm.py",
+      "bytes": 26300,
+      "sha256": "6ef8eabbb1af2e63537afff4470faa6eeab3c9531fa7547efb557d2335d123f4"
+    },
+    {
+      "file": "scripts/fetch_official.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/fetch_official.py",
+      "bytes": 1910,
+      "sha256": "a7240823a0542c570a60a1d7f0fd2e6649dfbe0dd420221af08400d8ae734cf1"
+    },
+    {
+      "file": "scripts/initialize_run.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/initialize_run.py",
+      "bytes": 7977,
+      "sha256": "5ea83196d5636b5e2d60037ee74a692bbbae67098dfd5b21136a5353cb29f9d9"
+    },
+    {
+      "file": "scripts/plot_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/plot_tabm.py",
+      "bytes": 16493,
+      "sha256": "409ad5f2f659ba0e872d0bfeb548a5d1f5743eb3b29316f516c942f62073a2eb"
+    },
+    {
+      "file": "scripts/predict_table.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/predict_table.py",
+      "bytes": 3059,
+      "sha256": "759653d451d9a82afa5b1222d1d60122bc3ef750bae292ff03dfd618c3ade453"
+    },
+    {
+      "file": "scripts/prepare_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/prepare_tabm.py",
+      "bytes": 7971,
+      "sha256": "edb81c84569a7222aa8611ee7f47823481f3e6fdf60195c5ee4076324729cf7f"
+    },
+    {
+      "file": "scripts/resources_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/resources_tabm.py",
+      "bytes": 954,
+      "sha256": "1bd5dc7366ea02a78fe0923df35e5104c39ef04dd99f8a8efa8da6975e8def88"
+    },
+    {
+      "file": "scripts/review_tabm_errors.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/review_tabm_errors.py",
+      "bytes": 29041,
+      "sha256": "107c8fa4d55011c1bfcd80318884f9ef3bf1e2be0cde6d9d79dcc1ad3131a75f"
+    },
+    {
+      "file": "scripts/run_pipeline.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/run_pipeline.py",
+      "bytes": 11252,
+      "sha256": "d253b832503a561488d519d7948edb1dc737f307f38710719235158167cc06d2"
+    },
+    {
+      "file": "scripts/test_contracts.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/test_contracts.py",
+      "bytes": 8463,
+      "sha256": "95d7850d1b944d9a3b198258c390850c9c5c31949de0170a3f447d6e6dca798f"
+    },
+    {
+      "file": "scripts/train_tabm.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/train_tabm.py",
+      "bytes": 21796,
+      "sha256": "1f0dc297aa88f17dfdeee58b50b74282d8029d92f4d97e630497165f7a544ece"
+    },
+    {
+      "file": "scripts/validate_delivery.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/validate_delivery.py",
+      "bytes": 2457,
+      "sha256": "ab2ddde586cf73623d7d7fcfe140f08cc48f596e27cfe7bcf0c6f30c4f3eea32"
+    },
+    {
+      "file": "scripts/write_tabm_report.py",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/scripts/write_tabm_report.py",
+      "bytes": 39645,
+      "sha256": "e72a3e40ed7b30cf2ec19da8b455ba2dc31302421ad560737f1d1d46a8e96e87"
+    },
+    {
+      "file": "visual_qa_cases.csv",
+      "server_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/visual_qa_cases.csv",
+      "bytes": 2941,
+      "sha256": "2e4454a92a68cdf81598c82dac59d2bcb6ab160fe055b95bcd3d671dd981b26a"
+    }
+  ],
+  "excluded_over_limit": [
+    {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/risk_strata_paired_comparisons.csv",
+      "bytes": 17400878,
+      "reason": "over_8_MiB_review_limit"
+    }
+  ],
+  "full_artifacts_kept_on_server": [
+    "data/",
+    "predictions/",
+    "curves/",
+    "models/*.joblib",
+    "models/*/weights.pt",
+    "development_review/*.npz"
+  ],
+  "PanM_accessed": false
+}

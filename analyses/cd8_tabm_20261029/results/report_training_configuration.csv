@@ -1,0 +1,18 @@
+parameter,value
+arch_type,"""tabm"""
+k,32
+n_blocks,2
+d_block,512
+dropout,0.1
+embedding,"{""type"": ""PiecewiseLinearEmbeddings"", ""n_bins"": 48, ""d_embedding"": 16, ""activation"": false, ""version"": ""B"", ""fitting"": ""train-only quantiles""}"
+optimizer,"{""type"": ""AdamW"", ""weight_decay"": 0.0003}"
+candidates,"[{""name"": ""official_default"", ""learning_rate"": 0.002}, {""name"": ""lower_lr"", ""learning_rate"": 0.0005}]"
+batch_size,256
+max_epochs,100
+patience,16
+seeds,"[0, 1, 2]"
+training_loss,"""mean cross entropy over B*k separate member outputs"""
+inference,"""mean(softmax(logits, class_dim)[positive], member_dim)"""
+precision,"""float32"""
+selection_metric,"""equal-WSI mean AP on original internal validation; max"""
+HGB,"{""learning_rate"": 0.06, ""max_iter"": 150, ""max_leaf_nodes"": 15, ""min_samples_leaf"": 80, ""l2_regularization"": 2.0, ""early_stopping"": false}"

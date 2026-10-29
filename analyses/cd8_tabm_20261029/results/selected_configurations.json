@@ -1,0 +1,26 @@
+[
+  {
+    "feature_set": "A",
+    "selected_candidate": {
+      "name": "lower_lr",
+      "learning_rate": 0.0005
+    },
+    "validation_macro_AP": 0.9878399549377942
+  },
+  {
+    "feature_set": "B",
+    "selected_candidate": {
+      "name": "official_default",
+      "learning_rate": 0.002
+    },
+    "validation_macro_AP": 0.987767079481091
+  },
+  {
+    "feature_set": "C",
+    "selected_candidate": {
+      "name": "official_default",
+      "learning_rate": 0.002
+    },
+    "validation_macro_AP": 0.9905631284270681
+  }
+]

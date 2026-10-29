@@ -1,0 +1,26 @@
+{
+  "claim": "Describe whether added morphology/spatial features and TabM versus matched HGB improve external classification, without presupposing a winner.",
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib",
+  "panels": [
+    "external precision/recall/F1",
+    "paired core F1 changes",
+    "weak-positive and neighbour/background proxy error strata",
+    "raw feature missingness",
+    "uncalibrated submodel disagreement"
+  ],
+  "exports": [
+    "Chinese PNG",
+    "Chinese editable SVG",
+    "English PNG",
+    "English editable SVG",
+    "CSV source data"
+  ],
+  "error_bars": "between-seed sample SD (n=3), descriptive only",
+  "review_risks": [
+    "development-selected thresholds are not independent validation evidence",
+    "cores are not assumed independent patients",
+    "feature proxies do not establish contamination",
+    "member disagreement is not calibrated uncertainty"
+  ]
+}

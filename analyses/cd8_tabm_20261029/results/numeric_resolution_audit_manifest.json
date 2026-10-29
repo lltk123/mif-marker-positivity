@@ -1,0 +1,33 @@
+{
+  "script_sha256": "f37cbfefbe1cbe543a4407dca23f4825fc7bd180c8242f7533ba8572c87ea929",
+  "inputs": {
+    "ready": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/data/DATA_READY.json",
+      "sha256": "8b07e57696f79cc092bde014ae8c489fa2118789bdae086180fe86da879969b3"
+    },
+    "cells": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/data/cells.parquet",
+      "sha256": "44e760446a54e0d6c439ad7ae4659fd0a56bd9b32d6eb94079e936df1fddb173"
+    },
+    "matrix": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/data/X.npy",
+      "sha256": "a49af80674e212599739cf0b6293215e1fd74012191d21decb47a556ce674308"
+    },
+    "indices": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/data/train_indices.npy",
+      "sha256": "fc050e6d20e94dadbf80b9c2951b579dad18e114d0be73dfad7b7b040708c81d"
+    },
+    "features": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/FEATURE_SETS.json",
+      "sha256": "6f9a98d03a89b0df64db4bb6f95b0c7636049f9e4b385123a8da3ef4c45158de"
+    }
+  },
+  "training_ordered_key_sha256": "a7e0413ef9a19622e95cc51eb894b6a10375640591ded444d5a2cfc69647d186",
+  "n_training_cells": 101057,
+  "fit_noise_std": 1e-05,
+  "model_or_preprocessing_changed": false,
+  "outputs": {
+    "numeric_resolution_train.csv": "78ee8eb46fec274adb1efb33721df94aa8fa1d4a65613b33c6cdf59be7d53bdf",
+    "NUMERIC_RESOLUTION_AUDIT.md": "f6cf784aff22218bc42cb9a3bc2b8cd27fd8a4f4123d9fcba8f3a1d6e025159c"
+  }
+}
