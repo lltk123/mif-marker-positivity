@@ -71,6 +71,7 @@
 # Downloaded / fitted models, environments, bootstrap files and runtime logs.
 **/weights/**
 **/upstream/**
+**/dependencies/**
 **/bootstrap/**
 **/python/**
 **/.venv/**
