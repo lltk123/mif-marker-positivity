@@ -1,0 +1,37 @@
+{
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib",
+  "conclusion": "Present the existing pooled performance and per-core variation without changing model selection or numerical values.",
+  "evidence": {
+    "performance_official_default": "GMM and two Nimbus models at strict score > 0.5; internal and external panels.",
+    "performance_validation_selected": "Two Nimbus models at thresholds selected on the internal development set.",
+    "per_core_F1": "The same 42 external cores in image_id order; descriptive paired model performance."
+  },
+  "export": {
+    "formats": [
+      "PNG",
+      "editable-text SVG"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "dpi": 220,
+    "dimensions_inches": {
+      "performance": [
+        10,
+        4
+      ],
+      "per_core": [
+        9,
+        4
+      ]
+    }
+  },
+  "statistics": "One Nimbus seed; descriptive cell-pooled metrics, no confidence intervals or cell-level significance tests. Cores are not claimed to be independent patients.",
+  "risks": [
+    "Do not confuse the internal threshold-development result with unbiased validation.",
+    "No numerical recomputation, model change, external threshold selection or image manipulation."
+  ],
+  "correction": "The original plotting script produced quantitative figures only in English. The missing Chinese versions are added; prior English figures remain byte-identical."
+}

@@ -16,12 +16,14 @@
 | Nimbus_pretrained、Nimbus_finetuned | 已完成全量推理、微调与评价 | [Nimbus](analyses/cd8_nimbus_20261024/ANALYSIS_REPORT.md) |
 | TabM A/B/C 与匹配 HGB | 已完成每组 3 种子、全量评价与开发案例核对 | [TabM](analyses/cd8_tabm_20261029/ANALYSIS_REPORT.md) |
 | 已完成校准实验汇总（2026-10-29） | 已完成数值复核、固定／OOF 门限排名 | [校准结果与排序](analyses/cd8_calibrated_results_summary_20261029/ANALYSIS_REPORT.md) |
+| 外层百分位校准与 90 项特征重提 | 已完成 48 单位、1,817,783 个实例及 QC | [共同校准](analyses/cd8_robust_calibration_20261030/ANALYSIS_REPORT.md) |
+| 校准后 TabM A/B/C 与匹配 HGB | 已完成每组 3 种子、全量预测与独立审计 | [TabM 重训练](analyses/cd8_tabm_robust_20261030/ANALYSIS_REPORT.md) |
+| 校准后 Nimbus 预训练／微调 | 已完成官方 V1 新尺度推理和单独微调 | [Nimbus 重训练](analyses/cd8_nimbus_robust_20261030/ANALYSIS_REPORT.md) |
+| 本轮新旧性能对比（2026-10-31） | 已完成统一指标、逐芯比较及双语图表 | [综合报告](analyses/cd8_robust_comparison_20261030/ANALYSIS_REPORT.md) |
 
-**Nimbus 状态更新（2026-10-24）：** 首轮预训练和微调基线已经完成，当前没有正在运行的训练。预训练来源独立性、跨平台输入尺度和进一步任务适配仍是后续待研究事项，未写成已完成实验。Pan-M 继续封存，本仓库不提供或使用其图像、标签、分布及预测。
+**最新完成（2026-10-31）：** 已完成逐图外层 P1/P99 校准、像素级特征重提、TabM A/B/C 各 3 种子训练与匹配 HGB、Nimbus 预训练推理和单独微调，以及全量评价。当前没有正在运行的 Nimbus 或 TabM 训练。新结果保存在独立目录，旧实验全部保留；Pan-M 继续封存，未读取其图像、标签、分布或预测。
 
-**TabM 状态更新（2026-10-29）：** 已完成官方 TabM + PLE 从头训练及 A/B/C 消融。固定门限下 C 的外部平均 F1 为 0.5423，低于 GMM 的 0.7610；空间特征的收益集中于部分来源，TMA1/2 和弱阳性漏检仍有明显问题。见[关键结论与独立核算](analyses/cd8_tabm_20261029/independent_review/INDEPENDENT_REVIEW.md)。
-
-**今日结果汇总（2026-10-29）：** 逐图共同校准后，固定 0.5 的外部 F1 排名为 **E2 > E4 > E1 > E3 > GMM**；训练 OOF 门限下 E4 与 E2 接近。TabM 本轮使用原始强度及训练集变换，尚未接入该共同校准。详见[排名 CSV](analyses/cd8_calibrated_results_summary_20261029/CALIBRATED_RANKINGS.csv)及[本次发布内容](docs/UPDATES_20261029.md)。
+阅读入口：[本轮综合报告](analyses/cd8_robust_comparison_20261030/ANALYSIS_REPORT.md) · [外部排序 CSV](analyses/cd8_robust_comparison_20261030/report_tables/RANK_external_val_TMA_cores.csv) · [新旧配对变化](analyses/cd8_robust_comparison_20261030/report_tables/EXTERNAL_PAIRED_CHANGES.csv) · [发布内容](docs/UPDATES_20261031.md)。
 
 ## Data and Model Access
 
@@ -60,6 +62,33 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 
 ## Results
 
+### 本轮校准与重训练（2026-10-31）
+
+每个合格实例先取原始 CD8 像素 P10/P90；同一 WSI 或 TMA 组织芯内，取这些实例分位数的 **P1/P99** 作为共同 L/U，再对像素执行 `clip((I-L)/(U-L), 0, 1)` 并重新提取特征。未按外层百分位删除细胞，校准不使用标签。此前 E1–E4 的 L/U 取实例分位数的最小／最大值，两次方法分别记录。
+
+在相同的外部 **437,480** 个有标签细胞上，固定严格 `score > 0.5`：
+
+| 本轮模型／参照 | Precision | Recall | F1 | AP |
+|---|---:|---:|---:|---:|
+| TabM B：8 项强度＋19 项形态 | 0.9491 | 0.7725 | **0.8518** | 0.9451 |
+| Nimbus 预训练：新尺度直接推理 | 0.8717 | 0.8291 | 0.8499 | 0.9257 |
+| TabM C：B＋63 项空间特征 | 0.9637 | 0.7454 | 0.8406 | **0.9576** |
+| TabM A：8 项强度 | 0.9544 | 0.7491 | 0.8393 | 0.9482 |
+| Nimbus 微调：新尺度从 V1 微调 | 0.7273 | 0.9278 | 0.8154 | 0.8909 |
+| 原 GMM：复用原结果 | 0.6547 | 0.9086 | 0.7610 | 0.8302 |
+
+来源：[RANK_external_val_TMA_cores.csv](analyses/cd8_robust_comparison_20261030/report_tables/RANK_external_val_TMA_cores.csv)，`split=external_val_TMA_cores, level=split, threshold_mode=fixed_0.5`，列 `precision_mean/recall_mean/f1_mean/average_precision_mean`。TabM 为种子 0/1/2 的指标均值，Nimbus 为单次配置；同表提供种子标准差。训练只使用原训练 WSI 标签，内部 WSI 用于早停、配置和补充门限选择，外部沿用官方划分评价。
+
+本轮五组的外部总体 F1 均高于 GMM；B 的 F1 最高，C 的 AP 最高。收益并非所有来源一致：TabM B 的 TMA2 召回仍为 **0.5751**（[MODEL_COMPARISON.csv](analyses/cd8_robust_comparison_20261030/results/MODEL_COMPARISON.csv)，`variant=new, model_family=TabM, feature_set=B, level=context, unit=TMA2_CD8, threshold_mode=fixed_0.5`，`recall` 的三种子均值）。Nimbus 微调的总体 F1 仍低于新尺度预训练。
+
+新旧 TabM A/B/C 的 F1 分别由 0.5325/0.5328/0.5423 提高到 0.8393/0.8518/0.8406；Nimbus 预训练／微调由 0.5885/0.5611 提高到 0.8499/0.8154。对应数值及 TP/FP/FN 变化见[配对表](analyses/cd8_robust_comparison_20261030/report_tables/EXTERNAL_PAIRED_CHANGES.csv)的 `f1_mean_old/f1_mean_new/f1_delta` 等列。
+
+[验证集所选门限](analyses/cd8_robust_comparison_20261030/report_tables/VALIDATION_THRESHOLD.csv)单独呈现。匹配 HGB A/B/C 的外部 F1 为 0.8461/0.8414/0.8488，见 [MAIN_FIXED_0_5.csv](analyses/cd8_robust_comparison_20261030/report_tables/MAIN_FIXED_0_5.csv)，`variant=new, model_family=HGB, split=external_val_TMA_cores`、列 `f1_mean`。所有历史方法与本轮结果的[完整固定门限排名](docs/results_rankings_20261031.csv)仍以原 E2 的 F1=0.8576 最高，本次没有重跑 E1–E4。
+
+![本轮固定门限性能](analyses/cd8_robust_comparison_20261030/figures/performance_fixed_0_5_zh.png)
+
+### 历史结果（原样保留）
+
 外部 CD8 TMA 的 **437,480** 个有标签细胞，统一严格 `score > 0.5`：
 
 | 方法 | F1 | AP |
@@ -77,9 +106,9 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 | TabM B（3 种子均值） | 0.5328 | 0.6877 |
 | TabM C（3 种子均值） | 0.5423 | 0.6706 |
 
-TabM 行为三个固定随机种子的指标均值，标准差在源表中；没有按测试表现选择种子。来源：[results_overview.csv](docs/results_overview.csv)。每行保留源 CSV 与筛选条件；完整报告另外给出查准率、查全率、混淆计数、逐图结果和门限开发方式。
+TabM 行为三个固定随机种子的指标均值，标准差在源表中；没有按测试表现选择种子。来源：[results_overview.csv](docs/results_overview.csv)，历史模型名不含 `outerP1P99`；本表保持此前结果。该 CSV 追加了本轮结果，每行保留源 CSV 与筛选条件；完整报告另外给出查准率、查全率、混淆计数、逐图结果和门限开发方式。
 
-当前所列实验中 E2 的外部 F1 最高；Nimbus 首轮微调没有改善外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
+历史与本轮全部已列实验中，E2 的外部 F1 仍最高；Nimbus 首轮及本轮微调均没有超过各自预训练版本的外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
 
 ![E1–E4 performance](analyses/cd8_e1_e4_stability_20261023/figures/01_performance_fixed_zh.png)
 
@@ -93,13 +122,17 @@ analyses/
   cd8_paper_baseline_20261024/  # 统一键、标签对齐与评估接口
   cd8_nimbus_20261024/         # 官方 Nimbus 适配、推理、微调与评价
   cd8_tabm_20261029/           # 官方 TabM、A/B/C 三种子消融、匹配 HGB
-  cd8_calibrated_results_summary_20261029/ # 已完成校准实验排名与汇总
+  cd8_calibrated_results_summary_20261029/ # 历史校准实验排名与汇总
+  cd8_robust_calibration_20261030/ # 外层 P1/P99、像素重提、QC
+  cd8_tabm_robust_20261030/        # 校准后 TabM A/B/C、HGB、三种子
+  cd8_nimbus_robust_20261030/      # 新尺度 Nimbus 推理与独立微调
+  cd8_robust_comparison_20261030/  # 本轮综合报告、新旧配对及审计
 docs/                         # 复现、来源、发布清单与结果索引
 tools/                        # 发布边界与仓库检查
 tests/                        # 发布工具的独立检查
 ```
 
-原实验脚本的发布副本经过格式化并补充说明，计算逻辑未改；AST 对照与文件哈希见 [代码整理核验](docs/publication/code_readability_audit.csv)。服务器原代码、缓存和结果保持原样。历史脚本包含固定路径，使用前请阅读复现说明，不要用格式化文件覆盖已冻结运行来强行复用缓存。
+原实验脚本的发布副本经过格式化并补充说明，计算逻辑未改；AST 对照与文件哈希见 [代码整理核验](docs/publication/code_readability_audit.csv)。本轮另见 [2026-10-31 排版与哈希记录](docs/publication/robust_readability_20261031.csv)。服务器原代码、缓存和结果保持原样。历史脚本包含固定路径，使用前请阅读复现说明，不要用格式化文件覆盖已冻结运行来强行复用缓存。
 
 ## References
 

@@ -14,6 +14,18 @@
 - [E1–E4 产物索引](../analyses/cd8_e1_e4_stability_20261023/FULL_ARTIFACT_PATHS.csv)
 - [Nimbus 产物索引](../analyses/cd8_nimbus_20261024/FULL_ARTIFACT_PATHS.csv)
 
+2026-10-31 新增完整产物保留在同一服务器根目录下：
+
+| 内容 | 相对服务器项目根目录的路径 |
+|---|---|
+| 校准后 90 项逐细胞特征 | `analyses/cd8_robust_calibration_20261030/PhenoBIC_CD8_features.parquet` |
+| TabM／HGB 权重、全量预测及 32 成员输出 | `analyses/cd8_tabm_robust_20261030/models/`、`predictions/` |
+| Nimbus 权重、全量预测及缓存 | `analyses/cd8_nimbus_robust_20261030/weights/`、`predictions/`、`cache/` |
+| 约 20 MB 的细分风险配对审计表 | `analyses/cd8_tabm_robust_20261030/results/risk_strata_paired_comparisons.csv` |
+| 229,883 行独立审计逐项检查 | `analyses/cd8_robust_comparison_20261030/provenance/independent_tabm_audit/LOCAL_CHECKS.csv` |
+
+上述较大审计表保留服务器原件；仓库提供 [report_risk_strata.csv](../analyses/cd8_tabm_robust_20261030/results/report_risk_strata.csv)、[独立审计报告](../analyses/cd8_robust_comparison_20261030/provenance/independent_tabm_audit/AUDIT_REPORT.md)及其小型汇总证据。模型目录中的 JSON 元数据可以发布，权重二进制不发布。完成清单中的服务器路径及 SHA 是追溯记录，不表示大文件已纳入 Git。
+
 ## Git 规则
 
 `.gitignore` 默认忽略未知文件，仅放行约定的源码、配置、文档、汇总表和图件；随后再次排除数据、环境、权重、密钥、缓存和逐细胞文件。`tools/check_publication.py` 在提交前检查实际待提交路径、文件大小、凭据模式、表格粒度和 Markdown 本地链接。不能用 `git add -f` 绕过这些边界。

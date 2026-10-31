@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "no_formal_results_modified": true,
+  "PanM_accessed": false,
+  "local_audit": "LOCAL_AUDIT.json",
+  "full_prediction_audit": "FULL_PREDICTION_AUDIT.json",
+  "report": "AUDIT_REPORT.md",
+  "outputs_sha256": {
+    "audit_local_tables.py": "d4819c2ac8686bf4cb7891c022324829aa49ec9b5f529ebe1587a483f8db86d0",
+    "AUDIT_REPORT.md": "8568b884e47d8d49e2f6892de8a5474fd5b66fb44909c94199b97457b77c2445",
+    "audit_tabm_predictions_readonly_v2.py": "9e5de7b226f978f6b0349479a32e380de8ec99adb021f0669641bf029029c120",
+    "diagnose_threshold_grid.py": "3b9e15e968bc454708c23278426ce5cef516a845809e5800da8814c56f869ba1",
+    "diagnose_threshold_grid_with_counts.py": "169bedc2d9cde71f6895c10a899484e5ccf5080eb67e95839a465f73bf66eeef",
+    "FULL_PREDICTION_AUDIT.csv": "5da6a745546cb0b162c8252d7778da1f026c2c7510a9e1f39dbc3cae76d51665",
+    "FULL_PREDICTION_AUDIT.json": "48d2cf6efce45f22138ff841d2228e685ef847afe728bd99638afaf2e15f495b",
+    "FULL_PREDICTION_AUDIT_part0.csv": "bbc71bdcf056e2e2ba56968517821ff0835bf569204ce0f0d7209ff5deccbf95",
+    "FULL_PREDICTION_AUDIT_part0.json": "cd70d95000180c3ed546172d3f2a261fd7249ddf960797afa24d90cab4999b98",
+    "FULL_PREDICTION_AUDIT_part1.csv": "f6977321ee31212c86fc54e2915fdd0fae468974dbc02b8eb95af35a6c0b2225",
+    "FULL_PREDICTION_AUDIT_part1.json": "f70eaea6b5564016ad9819035521ea7d7bcc2d5a2db707fe52a4d5493ae9105b",
+    "LOCAL_AUDIT.json": "43e1e9dae598a35b353448f920abacfb5353742f41d4a1759f7ef6e50e2c3ec9",
+    "LOCAL_CHECK_SUMMARY.csv": "c70ba3b1b2733521c7df993e88e316446655a1ef53d12424d440c647e8455ab3",
+    "MODEL_RESULTS_CHECKED.csv": "de88a79e20e79e3d9d863e38e65f5509d45d38cb0ab717ec33870ea9733751c2",
+    "RISK_TABLE_CHECK.json": "91e7fff50a92b7efb56e2d3e5e71169cf520e2fe89df1ec128f9a8a669fe6c3f",
+    "THRESHOLD_DTYPE_CHANGED_COUNTS.csv": "3cdc447062fc1c119e39df51dea542c009cb1c54e895182370249822960e54a1",
+    "THRESHOLD_DTYPE_DIAGNOSTIC.csv": "1ddefdce5838c4a7107f77bb00485c2d52203b62ea44d9740cab796ec5276468",
+    "THRESHOLD_DTYPE_DIAGNOSTIC.json": "60b9f8abf7d7f100dc53c82bb9cc60e03813e1d87e368be0f74e2b7102d4f7b6"
+  },
+  "server_only_full_check_table": {
+    "path": "LOCAL_CHECKS.csv",
+    "rows": 229883,
+    "sha256": "8ae2588f88d33976b5a22e3a0a3b9dcced2be22ed214461c18afe695c4ba7df2",
+    "bytes": 9048665
+  },
+  "scope": "Independent post-completion audit; does not replace or mutate original experiment completion gates"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "rows": 1817783,
+  "source_feature_sha256": "976decda7bc0839188604029070e17debb553378407bc1833d1e8967b72a7520",
+  "normalized_feature_sha256": "e3893a90b72e5cd7a91e14c612d9f220b24dbe93e9d2f67dfe42bffcc80cd36b",
+  "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+  "keys": [
+    "dataset_id",
+    "image_id",
+    "cell_id"
+  ],
+  "labels_used": false,
+  "code_sha256": "02c8a9fb3a1eb628390d481684d41aad34d764836c99837628c3e3c764a077d5"
+}

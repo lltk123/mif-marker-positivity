@@ -1,0 +1,6 @@
+test,passed,synthetic
+known_confusion_and_ranking,True,True
+strict_greater_than_gate,True,True
+zero_positive_unit_NA,True,True
+failed_observation_not_success_subset,True,True
+symmetric_threshold_tie_chooses_higher,True,True

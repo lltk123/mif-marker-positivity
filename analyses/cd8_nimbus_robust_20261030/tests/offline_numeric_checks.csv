@@ -1,0 +1,10 @@
+test,passed,shared_code_sha256
+shared_pixel_formula_and_zero,True,
+invalid_support_preserved,True,
+degenerate_bounds_unscorable,True,
+negative_range_unscorable,True,
+no_eligible_instance_NaN_bounds,True,
+invalid_bounds_strict_JSON,True,
+float64_computation,True,
+outer_upper_limits_single_extreme,True,
+shared_implementation_exact,True,141cbc4f41b8689faa3f25e4b891a04d7c55ce4b6d80b85d750109c41137323d

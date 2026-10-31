@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "source_csvs": [
+    "figures/source_data/external_core_performance.csv",
+    "figures/source_data/validation_selected_performance.csv",
+    "figures/source_data/official_default_performance.csv"
+  ],
+  "figures": [
+    "figures/en/performance_official_default.png",
+    "figures/en/performance_validation_selected.svg",
+    "figures/en/performance_official_default.svg",
+    "figures/en/per_core_F1.svg",
+    "figures/en/performance_validation_selected.png",
+    "figures/en/per_core_F1.png"
+  ]
+}

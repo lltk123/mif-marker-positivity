@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "input_sha256": {
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_comparison_20261030/results/COMPARISON_COMPLETE.json": "33b8d41e06662951e811e120707dcbda950eadc2f41868703fb92c8527b29816",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_calibration_20261030/calibration/unit_bounds.csv": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_calibration_20261030/calibration/clipping_audit.csv": "d84dd24ca8e2c90a37551eb09041db9112fd6055898c7a93e60ba9becb10c928",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_calibration_20261030/extraction_manifest.json": "382998979bb2977c852d2dd57535d9f39736d445ec586c814937501ae90ae599",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_comparison_20261030/scripts/make_report.py": "cc5dfe7b2206cea358a82eaea64e98d4928b259f0528bcd86c4a6fe6fb7cbafc",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_comparison_20261030/scripts/data_quality_report.py": "e948c320858f1aa964b0d5cc717c8f6f5a0daa2f659e06eff1dcd086ca1a3c68",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_comparison_20261030/RETRAIN_PROTOCOL.json": "2af6885e5021be568144c844f5dc5cfc60b67b0ab121ec62909a5636e6740552",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_calibration_20261030/calibration/clipping_summary.csv": "153905b9e82e05ad3cc329ed98cb6fd2e2e607dc8c7f10283cbd0709393c417c",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_robust_calibration_20261030/feature_missingness_highlights.csv": "7fa4180c33ea7539640e5ad327a43859a6e81c1a667f2613fd00fb2005c5ec22"
+  },
+  "output_sha256": {
+    "ANALYSIS_REPORT.md": "f4569eaffc44a2f0c5b6bff6dabd3f4ae370dc410a43fab5b116eef1a5837c44",
+    "FIGURE_CONTRACT.json": "f82b95333f4e960eebefef0845d6a763adf430046bb87b4a7d77ac2de384178f",
+    "report_tables/PAIRED_CONTEXT_CHANGES.csv": "6b4d47969d220899059113107f2cff6f19bc27f72684e4bdb36a7dee4c01006d",
+    "report_tables/EXTERNAL_PAIRED_CHANGES.csv": "cfef0b1ce0e5f337ea1c8eddd320d0d4ddac0dd15b02b2548b5828e3b62d4c5e",
+    "report_tables/DATA_QUALITY_PLOT_DATA.csv": "c37a3d57638a2363a7527f8567511600b1410384784dbca41ef0f1645725e1cf",
+    "report_tables/RANK_internal_val_WSIs.csv": "d967c7afeac073200c74e1cab846b12941b81e6da616988be73000af55b91ca6",
+    "report_tables/DATA_QUALITY_CLIPPING.csv": "153905b9e82e05ad3cc329ed98cb6fd2e2e607dc8c7f10283cbd0709393c417c",
+    "report_tables/DATA_QUALITY_MISSINGNESS.csv": "7fa4180c33ea7539640e5ad327a43859a6e81c1a667f2613fd00fb2005c5ec22",
+    "report_tables/VALIDATION_THRESHOLD.csv": "17458a158f2ecb0f13eb8f03d2c85966f538e436d3ff151d36286a8443512111",
+    "report_tables/MAIN_FIXED_0_5.csv": "2aec259ac2bc60f0a5621a316151d666874a8179348fe965ee230790cb487f34",
+    "report_tables/RANK_external_val_TMA_cores.csv": "f1a91102eca860d926f74a86cb4e80b0ba02e560530bae574c28517a36a42102",
+    "figures/calibration_clipping_zh.svg": "692785d4d03ee033cd53de88aa798772c68fbc512595ed14bf6b83a254846ef5",
+    "figures/calibration_clipping_zh.png": "1f5325463b831e708ee80d150aa4b239412eb5a13d57e2d8d695d7b59c64596d",
+    "figures/paired_cores_fixed_0_5_zh.png": "76d201367bc455a20da4d91d099110a55a484827349468961ccce60b22fc3a10",
+    "figures/data_quality_en.svg": "7545ee7ea2fa300588e141303d5a957aec5171d5453d89c6a76712156fd31390",
+    "figures/performance_fixed_0_5_zh.png": "57c5aef99f6e8adb82381e08771dc1be516089a471aae8e7be6e60bbfaace5d8",
+    "figures/performance_fixed_0_5_en.svg": "87cd3533167b8ace46ae871e8bb959e9005ea94588a18a8ad78fd4701b20e4d1",
+    "figures/data_quality_zh.svg": "fa57b5542327e31d1da0ec5073e60a0836a4a8f8647b14348cb4876d29a61fd0",
+    "figures/data_quality_zh.png": "8923c510468042fead228c4a4b9b8917328f5543e205bd05d7ad437b098301c6",
+    "figures/paired_cores_fixed_0_5_en.png": "ca53117023d253929cf8396cd65d0c978c99a5ab46f02e3f2a3cf9c5b8ed3797",
+    "figures/performance_fixed_0_5_zh.svg": "148f8f8bf93d61e8e30f43b30a46cabf4e2337b64485dbbf1918fb5def6935e5",
+    "figures/paired_cores_fixed_0_5_en.svg": "3979b975f93d85c9b8fa5d9ed8711e20b0d39e2230c4a1793e0aeb82f269c1a7",
+    "figures/calibration_clipping_en.svg": "5223f063fa5754ec1fabe368406a4e52ba28e939e68698cd106549306db271e2",
+    "figures/data_quality_en.png": "32c21f690e08751a76fe66138c6e80c029ce0093e62958a446f657991a9b278d",
+    "figures/paired_cores_fixed_0_5_zh.svg": "e300813bd191db43024fe019c0f6c97229064f10905d4dfab5a535e6db06fa4f",
+    "figures/performance_fixed_0_5_en.png": "1478620554ede9126ceaa9fe92e2be904e3647a39a3d13a91d70f59e6ee1afa2",
+    "figures/calibration_clipping_en.png": "286a687afc72f0769845924d7488373dc837c366d195520ac8b5e4b61164a960",
+    "figure_source/performance.csv": "1fe4d52cc7ae66d5c72bae51b7fe0cc928752d3106a36fceaf92e99a2fc20638",
+    "figure_source/calibration_clipping.csv": "40753227561e66f7ad14f5b9718589cf179f90fcdc55ea063ff5d44158c71f46",
+    "figure_source/paired_cores.csv": "db7cbacd90e359879df04fe059305e873d80c94a54d0f9039159f618462d2de1"
+  },
+  "plot_languages": [
+    "zh",
+    "en"
+  ],
+  "svg_text_editable": true
+}

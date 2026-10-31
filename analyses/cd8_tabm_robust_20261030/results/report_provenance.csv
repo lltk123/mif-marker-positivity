@@ -1,0 +1,8 @@
+item,value,source,normalization_method
+official_commit,28e47ae301c92ec37787dde1ce923a0793f405b4,upstream/SOURCE_MANIFEST.json,E1_outer_P1_P99
+tabm_version,0.0.3,RUN_CONFIG.json,E1_outer_P1_P99
+rtdl_num_embeddings,0.0.12,RUN_CONFIG.json,E1_outer_P1_P99
+hardware,Quadro RTX 4000,RUN_CONFIG.json,E1_outer_P1_P99
+analysis_code_identity,results/code_sha256.csv plus REPORT_GENERATION_MANIFEST.json,DELIVERY_VALIDATION.json,E1_outer_P1_P99
+risk_frozen_unix_time,1793369250.6402667,AUDIT_PROTOCOL.json,E1_outer_P1_P99
+model_frozen_unix_time,1793377508.4871402,FROZEN_TEST_PROTOCOL.json,E1_outer_P1_P99

@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "report_complete_sha256": "5d2e6a4547a9f90fab511cf8b45ee3d38dfdb6b62170b21a3647633e1eeedd86",
+  "visual_review_completed": true,
+  "n_pairs": 8,
+  "figures": [
+    {
+      "figure": "performance_fixed_0_5",
+      "language": "zh",
+      "png_sha256": "57c5aef99f6e8adb82381e08771dc1be516089a471aae8e7be6e60bbfaace5d8",
+      "svg_sha256": "148f8f8bf93d61e8e30f43b30a46cabf4e2337b64485dbbf1918fb5def6935e5",
+      "editable_text_elements": 37,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "performance_fixed_0_5",
+      "language": "en",
+      "png_sha256": "1478620554ede9126ceaa9fe92e2be904e3647a39a3d13a91d70f59e6ee1afa2",
+      "svg_sha256": "87cd3533167b8ace46ae871e8bb959e9005ea94588a18a8ad78fd4701b20e4d1",
+      "editable_text_elements": 37,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "paired_cores_fixed_0_5",
+      "language": "zh",
+      "png_sha256": "76d201367bc455a20da4d91d099110a55a484827349468961ccce60b22fc3a10",
+      "svg_sha256": "e300813bd191db43024fe019c0f6c97229064f10905d4dfab5a535e6db06fa4f",
+      "editable_text_elements": 47,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "paired_cores_fixed_0_5",
+      "language": "en",
+      "png_sha256": "ca53117023d253929cf8396cd65d0c978c99a5ab46f02e3f2a3cf9c5b8ed3797",
+      "svg_sha256": "3979b975f93d85c9b8fa5d9ed8711e20b0d39e2230c4a1793e0aeb82f269c1a7",
+      "editable_text_elements": 47,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "calibration_clipping",
+      "language": "zh",
+      "png_sha256": "1f5325463b831e708ee80d150aa4b239412eb5a13d57e2d8d695d7b59c64596d",
+      "svg_sha256": "692785d4d03ee033cd53de88aa798772c68fbc512595ed14bf6b83a254846ef5",
+      "editable_text_elements": 20,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "calibration_clipping",
+      "language": "en",
+      "png_sha256": "286a687afc72f0769845924d7488373dc837c366d195520ac8b5e4b61164a960",
+      "svg_sha256": "5223f063fa5754ec1fabe368406a4e52ba28e939e68698cd106549306db271e2",
+      "editable_text_elements": 20,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "data_quality",
+      "language": "zh",
+      "png_sha256": "8923c510468042fead228c4a4b9b8917328f5543e205bd05d7ad437b098301c6",
+      "svg_sha256": "fa57b5542327e31d1da0ec5073e60a0836a4a8f8647b14348cb4876d29a61fd0",
+      "editable_text_elements": 37,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    },
+    {
+      "figure": "data_quality",
+      "language": "en",
+      "png_sha256": "32c21f690e08751a76fe66138c6e80c029ce0093e62958a446f657991a9b278d",
+      "svg_sha256": "7545ee7ea2fa300588e141303d5a957aec5171d5453d89c6a76712156fd31390",
+      "editable_text_elements": 37,
+      "embedded_raster_elements": 0,
+      "visual_review": "Readable; no overlapping labels/legends or clipped data"
+    }
+  ],
+  "numeric_source": "REPORT_COMPLETE.json binds generated tables, figure sources and output hashes",
+  "scope": "All eight actual PNGs viewed after full experimental results were generated; SVG structure checked"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "checks": 9,
+  "full_images_used": false,
+  "model_inference_run": false,
+  "new_training_run": false
+}

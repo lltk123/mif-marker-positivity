@@ -1,0 +1,2 @@
+source,known_training_platforms,known_PanM_subsets,Gold_relation,local_PanM_read,PhenoBIC_pretraining_overlap_status,limitation
+Nimbus public paper and pinned repository README,"CODEX, Vectra, MIBI",CODEX colon; Vectra colon; Vectra pancreas; MIBI breast; MIBI decidua,"expert-labelled subset of Pan-M, not asserted independent",False,no author-provided complete V1 training image hash manifest; exact cross-pretraining overlap cannot be excluded,PhenoBIC release later than V1 is insufficient proof of independent image acquisition

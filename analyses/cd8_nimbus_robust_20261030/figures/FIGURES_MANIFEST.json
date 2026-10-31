@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "source_csvs": [
+    "figures/source_data/official_default_performance.csv",
+    "figures/source_data/validation_selected_performance.csv",
+    "figures/source_data/external_core_performance.csv"
+  ],
+  "figures": [
+    "figures/en/development_bright_neighbor_side.png",
+    "figures/en/development_bright_neighbor_side.svg",
+    "figures/en/development_diffuse_local_reference.png",
+    "figures/en/development_diffuse_local_reference.svg",
+    "figures/en/development_incomplete_support.png",
+    "figures/en/development_incomplete_support.svg",
+    "figures/en/development_localized_edge_brightness.png",
+    "figures/en/development_localized_edge_brightness.svg",
+    "figures/en/development_weak_positive.png",
+    "figures/en/development_weak_positive.svg",
+    "figures/en/per_core_F1.png",
+    "figures/en/per_core_F1.svg",
+    "figures/en/performance_official_default.png",
+    "figures/en/performance_official_default.svg",
+    "figures/en/performance_validation_selected.png",
+    "figures/en/performance_validation_selected.svg",
+    "figures/zh/development_bright_neighbor_side.png",
+    "figures/zh/development_bright_neighbor_side.svg",
+    "figures/zh/development_diffuse_local_reference.png",
+    "figures/zh/development_diffuse_local_reference.svg",
+    "figures/zh/development_incomplete_support.png",
+    "figures/zh/development_incomplete_support.svg",
+    "figures/zh/development_localized_edge_brightness.png",
+    "figures/zh/development_localized_edge_brightness.svg",
+    "figures/zh/development_weak_positive.png",
+    "figures/zh/development_weak_positive.svg",
+    "figures/zh/per_core_F1.png",
+    "figures/zh/per_core_F1.svg",
+    "figures/zh/performance_official_default.png",
+    "figures/zh/performance_official_default.svg",
+    "figures/zh/performance_validation_selected.png",
+    "figures/zh/performance_validation_selected.svg"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "groups_per_language": 8,
+  "bilingual_qa": "provenance/bilingual_figures_complete.json"
+}

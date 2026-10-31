@@ -1,0 +1,5 @@
+scope,n_labelled_cells,n_all_cells,n_units,normalization_method
+external_val_TMA_cores,437480.0,,42.0,E1_outer_P1_P99
+internal_val_WSIs,539132.0,,3.0,E1_outer_P1_P99
+training_WSIs,101057.0,,3.0,E1_outer_P1_P99
+all_instances_including_unlabelled,,1817783.0,,E1_outer_P1_P99

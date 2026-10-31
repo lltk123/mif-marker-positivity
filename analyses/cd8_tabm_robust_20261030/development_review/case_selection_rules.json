@@ -1,0 +1,37 @@
+{
+  "cutoffs": {
+    "weak_positive_whole_mean_q25": 3.4354596317547266,
+    "contact_bright_diff_q75": 1.0864674736541522,
+    "local_reference_q75": 0.481655053794384,
+    "sector_cv_q75": 1.4022111989054538,
+    "fit_split": "training_WSIs",
+    "interpretation": "Image-property proxies, not evidence of causal contamination",
+    "contact_comparison": "strict >",
+    "weak_comparison": "<=",
+    "feature_columns": {
+      "whole_mean": "audit_raw_whole_mean",
+      "neighbor_edge_area_fraction": "audit_raw_neighbor_edge_area_fraction",
+      "neighbor_edge_mean_diff": "audit_raw_neighbor_edge_mean_diff",
+      "local_reference_median": "audit_raw_local_reference_median",
+      "sector_signal_cv": "audit_raw_sector_signal_cv",
+      "edge_inner_mean_diff": "audit_raw_edge_inner_mean_diff"
+    },
+    "feature_scale": "original raw intensity; unchanged old/new risk cohorts",
+    "source_rules_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/data/risk_strata.json",
+    "source_rules_sha256": "f7266ecba91c62c19f4c8b02c109538b101e9b7a19ce508de7373f4a71fb462d",
+    "model_predictors_exclude_audit_raw_columns": true
+  },
+  "selection_seed": 0,
+  "model_seed": 0,
+  "threshold": 0.5,
+  "comparison": "score > threshold",
+  "maximum_cases": 10,
+  "splits": [
+    "training_WSIs",
+    "internal_val_WSIs"
+  ],
+  "sampling": "At most two unique instances per category; one corrected and one introduced B-to-C error when available, then other development errors",
+  "interpretation": "All categories are image-property proxies requiring visual inspection; no causal contamination inference",
+  "high_local_reference_definition": "local_reference_median > training q75; identical strict comparison to evaluation",
+  "localized_edge_definition": "sector_signal_cv > training q75 AND edge_inner_mean_diff > 0; a narrower visual-case subset of the evaluation directional_signal_proxy"
+}

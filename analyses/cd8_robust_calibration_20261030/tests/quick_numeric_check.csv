@@ -1,0 +1,16 @@
+image_id,cell_id,all90_exact,seconds
+training_WSIs/WSI2,1,True,0.5888613145798445
+training_WSIs/WSI2,219276,True,0.03200658317655325
+training_WSIs/WSI2,438886,True,0.034345874562859535
+internal_val_WSIs/WSI3,3495,True,0.031079985201358795
+internal_val_WSIs/WSI3,3872,True,0.038153727538883686
+internal_val_WSIs/WSI3,157859,True,0.0291083212941885
+external_val_TMA_cores/TMA1_CD8/core_6_4,1,True,0.11436145473271608
+external_val_TMA_cores/TMA1_CD8/core_6_4,7347,True,0.03255519177764654
+external_val_TMA_cores/TMA1_CD8/core_6_4,14692,True,0.030545824207365513
+external_val_TMA_cores/TMA2_CD8/core_7_1,1,True,0.056877910159528255
+external_val_TMA_cores/TMA2_CD8/core_7_1,2048,True,0.03698208648711443
+external_val_TMA_cores/TMA2_CD8/core_7_1,4095,True,0.03178062103688717
+external_val_TMA_cores/TMA3_CD8/core_1_4_4,1,True,0.08171698451042175
+external_val_TMA_cores/TMA3_CD8/core_1_4_4,2677,True,0.01565297320485115
+external_val_TMA_cores/TMA3_CD8/core_1_4_4,5353,True,0.01559733971953392

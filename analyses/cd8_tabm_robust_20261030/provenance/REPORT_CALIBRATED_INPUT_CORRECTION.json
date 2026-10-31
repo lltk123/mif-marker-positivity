@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-30T16:07:11.017301+00:00",
+  "scope": "Report wording and runnable command adaptation only",
+  "old_sha256": "270a2af890dcba8c0c75d0b73b0c00d1e6044ad7b4aed59999fcf90f81a56b69",
+  "new_sha256": "a0386a287ebc77fd35cc75112eb44fe360594eaeb157b4dd6c2cbc1b2f5098a2",
+  "changes": [
+    "C spatial inputs recomputed on normalized pixels; geometry preserved",
+    "API expects normalized features before fitted QT and explicit metadata",
+    "local eligible instance calibration without labels",
+    "validation uses locking pipeline; full pipeline and GPU API use outer flock",
+    "actual training/development/frozen evaluation roles stated"
+  ],
+  "numeric_computation_changed": false,
+  "model_core_changed": false,
+  "outputs_generated_before_change": false,
+  "validation": "Python AST parse and exact replacement assertions passed"
+}

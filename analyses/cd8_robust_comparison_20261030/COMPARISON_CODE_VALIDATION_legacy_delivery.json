@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "captured_utc": "2026-10-30T15:14:07.741417+00:00",
+  "scope": "Legacy Nimbus delivery schema compatibility; no model/data/metric changes",
+  "tests": 18,
+  "elapsed_test_seconds": 4.89,
+  "local_exit_code": 0,
+  "command": "python scripts/test_compare_results.py",
+  "checks": [
+    "documented old delivery accepted",
+    "missing evidence file/list rejected",
+    "incomplete flag/count/timestamp rejected",
+    "new variant rejects old schema",
+    "real old TabM and Nimbus require_delivery=True"
+  ],
+  "code_sha256": {
+    "scripts/compare_results.py": "e60fd6a19fb6fdcdde0c617a260f0eb9c1e3aae84a1e1509f3bb2a921cd53eba",
+    "scripts/test_compare_results.py": "01a93cf7ce9f5c2258e43938970d6c237af60bed88d66e9492356d0f731148ee",
+    "scripts/run_retraining.py": "0fe4dbd8ca679e553c472b93a6e528bcb9fd09c633af8d7d68f8c398375e4caf",
+    "README.md": "3c244e9f31e24f0ea6989d00475799abd415c03c5ee038819e0ade7d2bf867bb"
+  },
+  "previous_validation_preserved": "COMPARISON_CODE_VALIDATION.json",
+  "PanM_accessed": false
+}

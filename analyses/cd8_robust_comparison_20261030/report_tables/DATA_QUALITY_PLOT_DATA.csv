@@ -1,0 +1,10 @@
+panel,split,metric,value_percent,numerator,denominator,denominator_type,source_csv,source_filter,source_value_column
+a,training_WSIs,zero_instance_pixels,9.687086090592672,21912614,226204390,finite instance pixels,DATA_QUALITY_CLIPPING.csv,aggregation=split; split=training_WSIs,at_zero_percent
+b,training_WSIs,high_signal_edge_coverage,8.62803226177743,61468,712422,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=training_WSIs; feature=high_signal_edge_coverage,new_missing_percent
+b,training_WSIs,edge_signal_enrichment,3.8788807757200088,27634,712422,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=training_WSIs; feature=edge_signal_enrichment,new_missing_percent
+a,internal_val_WSIs,zero_instance_pixels,4.815617837309693,11503054,238869744,finite instance pixels,DATA_QUALITY_CLIPPING.csv,aggregation=split; split=internal_val_WSIs,at_zero_percent
+b,internal_val_WSIs,high_signal_edge_coverage,2.8954094060333517,19316,667125,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=internal_val_WSIs; feature=high_signal_edge_coverage,new_missing_percent
+b,internal_val_WSIs,edge_signal_enrichment,2.3908562863031664,15950,667125,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=internal_val_WSIs; feature=edge_signal_enrichment,new_missing_percent
+a,external_val_TMA_cores,zero_instance_pixels,94.85408561637928,134234976,141517337,finite instance pixels,DATA_QUALITY_CLIPPING.csv,aggregation=split; split=external_val_TMA_cores,at_zero_percent
+b,external_val_TMA_cores,high_signal_edge_coverage,98.9984848346553,433847,438236,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=external_val_TMA_cores; feature=high_signal_edge_coverage,new_missing_percent
+b,external_val_TMA_cores,edge_signal_enrichment,48.51632453746383,212616,438236,all instances including unlabeled,DATA_QUALITY_MISSINGNESS.csv,aggregation=split; split=external_val_TMA_cores; feature=edge_signal_enrichment,new_missing_percent

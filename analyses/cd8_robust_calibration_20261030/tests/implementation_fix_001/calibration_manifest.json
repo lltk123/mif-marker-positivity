@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "method_id": "E1_outer_P1_P99",
+  "protocol_sha256": "df4b3b8b52a2945aa7b5879742eb70ae2dcadcf71602e3b1aa1a9230fd28c7f7",
+  "unit_bounds_file": "calibration/unit_bounds.csv",
+  "unit_bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+  "all_keys_sha256": "c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a",
+  "rows": 1817783,
+  "n_units": 48,
+  "cell_percentiles_source_sha256": "e30516b59bdb0d25422dd90899745b83d8df62e84dc8ac79c947c81c1981bb68",
+  "source_feature_sha256": "976decda7bc0839188604029070e17debb553378407bc1833d1e8967b72a7520",
+  "source_input_manifest_sha256": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78"
+}

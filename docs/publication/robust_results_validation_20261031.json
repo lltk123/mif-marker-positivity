@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "historical_rows_preserved": 12,
+  "new_rows": 8,
+  "all_fixed_threshold": 0.5,
+  "all_external_labelled_cells": 437480,
+  "n_ranked_models": 20,
+  "highest_F1_model": "E2",
+  "idempotent_rebuild": true,
+  "old_experiment_files_modified": false,
+  "completed_delivery_non_python_files_unchanged": 414,
+  "AST_equivalent_scripts": 76,
+  "PanM_accessed": false,
+  "inputs": [
+    "docs/results_overview.csv",
+    "analyses/cd8_robust_comparison_20261030/report_tables/MAIN_FIXED_0_5.csv"
+  ],
+  "outputs_sha256": {
+    "docs/results_overview.csv": "be68311761573643e5f4c0934badff229b55a794b59ffea101c505d19522aaf8",
+    "docs/results_rankings_20261031.csv": "e948279f7c6542213cd4e35f1c3902faa19426c5d6f261b658620e02cac358cf"
+  }
+}

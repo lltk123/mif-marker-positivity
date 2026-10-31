@@ -1,0 +1,121 @@
+{
+  "run_id": "cd8_robust_retraining_20261030",
+  "date": "2026-10-30",
+  "status": "frozen_before_model_training",
+  "project_root_server": "/mnt/disk3/mIHC/mif_marker_positivity_20261022",
+  "normalization": {
+    "method_id": "E1_outer_P1_P99",
+    "inner_percentiles": [
+      10,
+      90
+    ],
+    "outer_percentiles": [
+      1,
+      99
+    ],
+    "method": "linear",
+    "dtype": "float64",
+    "min_finite_instance_pixels": 5,
+    "mapping": "clip((I-L)/(U-L),0,1)",
+    "unit": "original WSI / deduplicated internal WSI / individual external core",
+    "all_instances_in_calibration": true,
+    "labels_used_for_calibration": false,
+    "remove_tail_instances": false,
+    "per_tile_calibration": false
+  },
+  "runs": {
+    "shared": "cd8_robust_calibration_20261030",
+    "tabm": "cd8_tabm_robust_20261030",
+    "nimbus": "cd8_nimbus_robust_20261030"
+  },
+  "data": {
+    "dataset": "PhenoBIC-Data CD8",
+    "dataset_commit": "aeffd288d922ee5df4cbb414f3c1f77507ba0001",
+    "all_cells": 1817783,
+    "train_labelled": 101057,
+    "validation_labelled": 539132,
+    "test_labelled": 437480,
+    "keys": [
+      "dataset_id",
+      "image_id",
+      "cell_id",
+      "marker"
+    ],
+    "splits": "unchanged original splits",
+    "mask_type": "expanded_nucleus",
+    "pan_m": "sealed; no access"
+  },
+  "tabm": {
+    "feature_counts": {
+      "A": 8,
+      "B": 27,
+      "C": 90
+    },
+    "official_commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+    "variant": "TabM with piecewise-linear embeddings",
+    "members": 32,
+    "seed0_lr_candidates": [
+      0.002,
+      0.0005
+    ],
+    "formal_seeds": [
+      0,
+      1,
+      2
+    ],
+    "max_epochs": 100,
+    "patience": 16,
+    "selection": "internal validation WSI equal-weight AP",
+    "preprocessing": "train-only median, official noisy-fit normal QT, train-only PLE bins",
+    "loss": "mean per-member cross entropy",
+    "inference": "mean per-member positive softmax probability",
+    "hgb_matched_controls": true,
+    "error_strata": "reuse old training-derived raw-feature strata; raw features are audit metadata, not new classifier inputs"
+  },
+  "nimbus": {
+    "official_inference_commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+    "weight_file": "V1.pt",
+    "weight_revision": "3affc9e774d68408701e44ed6136b1e13503c639",
+    "weight_sha256": "0651a3852fbafc03be415a1ec80ef947cc1913a081cf0bc649301ade887a82a9",
+    "models": [
+      "Nimbus_outerP1P99_pretrained",
+      "Nimbus_outerP1P99_finetuned"
+    ],
+    "seed": 0,
+    "max_epochs": 10,
+    "patience": 5,
+    "learning_rate": 0.000003,
+    "batch_size": 8,
+    "input_magnification_assumed": 20,
+    "model_magnification": 10,
+    "spatial_scale": 0.5,
+    "scalar_17_2643_reused": false,
+    "initialization": "original official V1; not previously fine-tuned weight",
+    "official_assets_isolated": true
+  },
+  "evaluation": {
+    "default": "strict score > 0.5",
+    "supplement": "internal-validation WSI equal-weight F1, grid0.01:0.01:0.99; tie closest0.5 then higher",
+    "full_predefined_labelled_population": true,
+    "old_results": "reuse saved old GMM, TabM and Nimbus; no old retraining",
+    "deliverables": [
+      "code",
+      "frozen configuration",
+      "calibration and clipping audits",
+      "full-cell predictions",
+      "models",
+      "metrics CSV",
+      "figures",
+      "Chinese MD report"
+    ]
+  },
+  "authorization": "User requested both models retrained using previously proposed percentile normalization",
+  "network_status": {
+    "host": "fe80::37e1:b921:8e56:f784%25",
+    "port": 2222,
+    "transport": "IPv6 link local",
+    "host_key": "matched previously pinned server fingerprint",
+    "ipv4_status": "ARP incomplete; TCP timeout",
+    "authenticated": true
+  }
+}

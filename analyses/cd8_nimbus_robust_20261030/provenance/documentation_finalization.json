@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "created": "2026-10-30T23:28:28.240515",
+  "script_sha256": "e27b62acdaf9219afb72b907c196eafba7d2f7275be4611681cf69fff9ea4d66",
+  "report_sha256_before": "9a463883857e796872e053da7ab15a04bf26301b113d59db5516f2ba518b1e7e",
+  "report_sha256_after": "3f1b5f11bab66d0f7cdd148cf17cb796c3ff2da9b015d658543b529ccb218e75",
+  "readme_sha256_after": "ee2625412ccf75f29c7dc4435fa43261d2e4f6e8bee09e187b4292d125c5aa93",
+  "scope": "Documentation only: correct local versus server test paths, explain timing scope, add completion links. No numerical table, prediction, weight, protocol or computational script changed."
+}

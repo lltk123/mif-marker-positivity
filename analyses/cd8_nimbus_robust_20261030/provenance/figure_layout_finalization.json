@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "created": "2026-10-30T23:32:47.601194",
+  "script_sha256": "c25ca8c07c9e419ffa34178a1510c4f2a64ea526b0090817fd2c222e3576d787",
+  "source_sha256": {
+    "figures/source_data/official_default_performance.csv": "dd6a5367b863a1cbc79ae3dce972c2bbac8bef334503c2362ea084cc08eab055",
+    "figures/source_data/validation_selected_performance.csv": "23e0cff0dbb91f90d6a64fa2db27881ed5c00685b8ffe64546aafb277e000252"
+  },
+  "original_figure_sha256": {
+    "figures/en/performance_official_default.png": "92d47932e8b1fe7a43c7c20308ed044b409560470271601dba7f180eb92f3cbf",
+    "figures/en/performance_official_default.svg": "4b3c4205af9336a63a87753a735b3ab8c8e0c5af4af9c0daad5408cec28ee199",
+    "figures/en/performance_validation_selected.png": "2ed3e655e49446dd000da5db333f492d18f80803662ae678c1f6b55239277fa1",
+    "figures/en/performance_validation_selected.svg": "52bafe6623b07fa732103b3ccd9a4eccd338fbadb0a102988c7427af714069c3"
+  },
+  "output_sha256": {
+    "figures/en/performance_official_default.png": "096c2ee84355e2ea7d0d36cd893adad9f140b14458d4be92043bcbaf39b7df7f",
+    "figures/en/performance_official_default.svg": "8f6b82440e8dec14efbb97ed78d8d3455fb766ef5d073c9d5f7a7b38cc0f8c2d",
+    "figures/en/performance_validation_selected.png": "7749b22bda75fb850d62c8c904f50a87ceb8952f4f0f26d5db4853077547f39e",
+    "figures/en/performance_validation_selected.svg": "bbd8a5c9fe9a0617aea1c89337b5dad8aa7bdcf245809d1448aa1f7eb1899a56"
+  },
+  "readme_sha256_after": "3d7a29525206fab33410ff6423c28fec93a3833c6a86dc7fe31e4aaca1df2719",
+  "backup": "provenance/figure_layout_original/20261030_233247",
+  "scope": "Legend layout only. No numerical source table, model, prediction, protocol or computational script changed."
+}

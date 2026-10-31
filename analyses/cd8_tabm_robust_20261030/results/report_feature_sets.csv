@@ -1,0 +1,4 @@
+feature_set,n_requested,n_effective,excluded,normalization_method
+A,8,8,{},E1_outer_P1_P99
+B,27,27,{},E1_outer_P1_P99
+C,90,90,{},E1_outer_P1_P99

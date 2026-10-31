@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-30T16:50:59.329290+00:00",
+  "reviewer": "tabm_evaluation",
+  "normalization_method": "E1_outer_P1_P99",
+  "visual_method": "Direct image previews, no image modifications",
+  "main_pngs_visually_reviewed": [
+    "figures/en/error_strata.png",
+    "figures/en/feature_missingness.png",
+    "figures/en/paired_core_changes_fixed_0.5.png",
+    "figures/en/paired_core_changes_validation_selected.png",
+    "figures/en/performance_ablation.png",
+    "figures/en/submodel_disagreement.png",
+    "figures/zh/error_strata.png",
+    "figures/zh/feature_missingness.png",
+    "figures/zh/paired_core_changes_fixed_0.5.png",
+    "figures/zh/paired_core_changes_validation_selected.png",
+    "figures/zh/performance_ablation.png",
+    "figures/zh/submodel_disagreement.png"
+  ],
+  "development_pngs_visually_reviewed": [
+    "development_review/zh/case_00_weak_positive.png",
+    "development_review/zh/case_01_weak_positive.png",
+    "development_review/en/case_02_bright_neighbor_side_proxy.png",
+    "development_review/en/case_03_bright_neighbor_side_proxy.png",
+    "development_review/zh/case_04_high_local_reference_proxy.png",
+    "development_review/zh/case_05_high_local_reference_proxy.png",
+    "development_review/en/case_06_localized_edge_signal_proxy.png",
+    "development_review/en/case_07_localized_edge_signal_proxy.png",
+    "development_review/zh/case_08_incomplete_support.png"
+  ],
+  "visual_checks": [
+    "No clipped labels, illegible fonts or overlapping panels observed",
+    "All main plot contexts contain the intended 12/12/18 TMA cores",
+    "Main plots reflect fixed and validation-selected threshold modes separately",
+    "Development cases show original CD8, target and neighbour instance boundaries, original IDs and pixel scale bars",
+    "Nine case transitions agree with strict score >0.5 and original labels; examples do not establish contamination mechanisms"
+  ],
+  "source_table_checks": [
+    {
+      "table": "performance.csv",
+      "rows": 37,
+      "status": "passed",
+      "sha256": "d4258d05d88c5daaf8a758a71f8e3bbc41f1d14224db9e44a96803f517dfd237"
+    },
+    {
+      "table": "paired_cores.csv",
+      "rows": 1008,
+      "status": "passed",
+      "sha256": "79895eb6fa1827520fc8452da27b752de4f04a8053c8383995ce4b590842009c"
+    },
+    {
+      "table": "risk_strata.csv",
+      "rows": 370,
+      "status": "passed",
+      "sha256": "d8b99ea92ad0669bdb967df7dd767eb8664cb98ba088536c81d4dd6506e32c3e"
+    },
+    {
+      "table": "missingness.csv",
+      "rows": 270,
+      "status": "passed",
+      "sha256": "d3e1c7d4cdb1345d3b6099b419edeb647eb367c5b186c77872476f7c8e93960e"
+    },
+    {
+      "table": "submodel_disagreement.csv",
+      "rows": 378,
+      "status": "passed",
+      "sha256": "aaecac6f1406761b645cb54247c83a10cd9c3fd59b67aabc4e7cf239e78616b6"
+    }
+  ],
+  "editable_svg_checks": [
+    {
+      "path": "figures/en/error_strata.svg",
+      "text_elements": 64,
+      "sha256": "cb2f4d6c70408934c8ada97341b21a9930d0dbb51decfb1c9cd3cc295cde86c0"
+    },
+    {
+      "path": "figures/en/feature_missingness.svg",
+      "text_elements": 91,
+      "sha256": "fe913a197485c3f9c10fe6de21ed42dbcdc39f24a0c7eaa4805fa9f89cbbb3bf"
+    },
+    {
+      "path": "figures/en/paired_core_changes_fixed_0.5.svg",
+      "text_elements": 113,
+      "sha256": "a0f983663996a38762532e949c5ff647efd6c7ef801599c1fea5ba4fe01afb29"
+    },
+    {
+      "path": "figures/en/paired_core_changes_validation_selected.svg",
+      "text_elements": 111,
+      "sha256": "394c452d0321320929de84585a2869be3d8420d2db73dcf7e9eb286d11b8a9da"
+    },
+    {
+      "path": "figures/en/performance_ablation.svg",
+      "text_elements": 73,
+      "sha256": "f3785523bcca564ed6bfdcfeb9ee31ee653a7c2d1fc9c6a91b1fc5769ff0afc7"
+    },
+    {
+      "path": "figures/en/submodel_disagreement.svg",
+      "text_elements": 25,
+      "sha256": "5f5d5d8b3ba371edcdbdb0a33b66ff91a5a0754577757059dfea0320a4b587bd"
+    },
+    {
+      "path": "figures/zh/error_strata.svg",
+      "text_elements": 64,
+      "sha256": "572b45da8816b6c87bdf449cfa0a69c36a97cde236cc368798f303390d48b7e1"
+    },
+    {
+      "path": "figures/zh/feature_missingness.svg",
+      "text_elements": 91,
+      "sha256": "6daed23b1fd535bc577b404bea60ffc14b9aa811deffca1af1a231b7d475319d"
+    },
+    {
+      "path": "figures/zh/paired_core_changes_fixed_0.5.svg",
+      "text_elements": 113,
+      "sha256": "21ad6e456498b3590a52543956e659576d06958c5ef5a9b9a45035b41ce200a6"
+    },
+    {
+      "path": "figures/zh/paired_core_changes_validation_selected.svg",
+      "text_elements": 111,
+      "sha256": "88afe45847b057121982f42b62735f8918af946dea8254bceb4791277734fc5f"
+    },
+    {
+      "path": "figures/zh/performance_ablation.svg",
+      "text_elements": 73,
+      "sha256": "e5cb1d6e921f2f29e3611087b34c2b8d2ef800896380717266b9ddab3c48e592"
+    },
+    {
+      "path": "figures/zh/submodel_disagreement.svg",
+      "text_elements": 25,
+      "sha256": "1fe88a4715a6b3d163ac746189e810d37670ff45448f1e4bfd97738ab11904e0"
+    },
+    {
+      "path": "development_review/en/case_00_weak_positive.svg",
+      "text_elements": 15,
+      "sha256": "15ac092fd25b11ad31561b7d35b63fe41d86e2ede28e4cce031e28a20f902b1c"
+    },
+    {
+      "path": "development_review/en/case_01_weak_positive.svg",
+      "text_elements": 15,
+      "sha256": "8d0bfcc10ddf1fb20fbec20e3ba2a81bfbf5e2f3dce6d686c7fa2a29e34b455d"
+    },
+    {
+      "path": "development_review/en/case_02_bright_neighbor_side_proxy.svg",
+      "text_elements": 15,
+      "sha256": "8eb71a33d04df389dd7e46d40704a0bce4e188590895cf3c2ef09fe1ae21ca8b"
+    },
+    {
+      "path": "development_review/en/case_03_bright_neighbor_side_proxy.svg",
+      "text_elements": 14,
+      "sha256": "99bd5ecd9c669c21abad8b688f44051f41c9dabe812be82aafbe118e656e621e"
+    },
+    {
+      "path": "development_review/en/case_04_high_local_reference_proxy.svg",
+      "text_elements": 14,
+      "sha256": "150f5d6a6af7acd8106d0a1bf4a4d473b9a5f464aad6c3b211316b6f76ab7670"
+    },
+    {
+      "path": "development_review/en/case_05_high_local_reference_proxy.svg",
+      "text_elements": 15,
+      "sha256": "bcad830fc96434ca29767c6dccd7d22356b4cf2372822cf4a0ba4407ceea7436"
+    },
+    {
+      "path": "development_review/en/case_06_localized_edge_signal_proxy.svg",
+      "text_elements": 15,
+      "sha256": "9795a003589cc35a8d3f6515bb5f8b1f97a41ad1b56a6a263bebfb2bcc659c18"
+    },
+    {
+      "path": "development_review/en/case_07_localized_edge_signal_proxy.svg",
+      "text_elements": 14,
+      "sha256": "7ee141cc78bc41ae60dc2b1070e9caf824f0aadd4477e46099bf876a5779dbaf"
+    },
+    {
+      "path": "development_review/en/case_08_incomplete_support.svg",
+      "text_elements": 14,
+      "sha256": "bb6e0620585a05e7dfd16f7f1389a3adf26f43768c2495dece4706327775d437"
+    },
+    {
+      "path": "development_review/zh/case_00_weak_positive.svg",
+      "text_elements": 15,
+      "sha256": "50ea6b075e18ccda1eeab172280ad747c91e19472a7d9bae7a89f8c5dec535e1"
+    },
+    {
+      "path": "development_review/zh/case_01_weak_positive.svg",
+      "text_elements": 15,
+      "sha256": "bb5568e26edeae5d4236c42be9343436a4ea1505da2016fd380217d28ae65f74"
+    },
+    {
+      "path": "development_review/zh/case_02_bright_neighbor_side_proxy.svg",
+      "text_elements": 15,
+      "sha256": "d72880aec09fae5425d491268b1a82e75687f89aa754bf762b11effe8d3d9c7d"
+    },
+    {
+      "path": "development_review/zh/case_03_bright_neighbor_side_proxy.svg",
+      "text_elements": 14,
+      "sha256": "a74b2eaec19ae4e1f0a2fa2381f5a1f2536637bf3d6b679e73707394e9bef89b"
+    },
+    {
+      "path": "development_review/zh/case_04_high_local_reference_proxy.svg",
+      "text_elements": 14,
+      "sha256": "9015a0896bbfd81c8b3b6375883c2efc43506a0f29831cae610e1eef0807bb19"
+    },
+    {
+      "path": "development_review/zh/case_05_high_local_reference_proxy.svg",
+      "text_elements": 15,
+      "sha256": "5d0703303fab5320b284285177815af3ec805fa84628f262b9a5beeb79fe4101"
+    },
+    {
+      "path": "development_review/zh/case_06_localized_edge_signal_proxy.svg",
+      "text_elements": 15,
+      "sha256": "30d89b5d3aed1e0352b3e8a158b6259cfa64a7c2134ffea634dfaf16a7228e20"
+    },
+    {
+      "path": "development_review/zh/case_07_localized_edge_signal_proxy.svg",
+      "text_elements": 14,
+      "sha256": "bb10bedd22fe871859a00528c0e8dd385764dc09ea21959936013d8af36b7a2d"
+    },
+    {
+      "path": "development_review/zh/case_08_incomplete_support.svg",
+      "text_elements": 14,
+      "sha256": "e906b5f258281e0ca6089b901fbecb4c25ca99f79d4edcedcf93ba6acc3deb14"
+    }
+  ],
+  "n_main_pngs": 12,
+  "n_development_cases": 9,
+  "n_editable_svgs": 30,
+  "notes": [
+    "Missingness describes calibrated feature values before training-fitted imputation/quantile transform, not the old raw feature values.",
+    "Risk strata are fixed using audit_raw_* values from the original feature table.",
+    "Some highly missing spatial features remain near 99% missing externally; shown without suppressing them.",
+    "This independent QA sidecar does not change frozen predictions, evaluation tables, delivery validation or report manifests."
+  ],
+  "pan_m_accessed": false
+}

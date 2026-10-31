@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "controlled + 15 supplied crops / 5 sources; no full-unit bounds or full extraction claimed",
+  "checks": 95,
+  "cases": 15,
+  "code_sha256": {
+    "calibration_core.py": "141cbc4f41b8689faa3f25e4b891a04d7c55ce4b6d80b85d750109c41137323d",
+    "feature_adapter.py": "b2713d4668e56e05e4901f3905727248407842ac4a2bd66772b910a26f0d0b7f",
+    "run_features.py": "7d7538c93b0234f6b7d857ff0f0d6f357890cbe7389db5491d81e440be28881f",
+    "validate_features.py": "92f258f20ea520fe11d3cdb8d771534d7b532f127473e909999b8fa9c613458f"
+  }
+}

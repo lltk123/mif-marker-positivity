@@ -1,0 +1,16 @@
+{
+  "reason": "Shared CSV bounds reader switched to round_trip; Nimbus already used round_trip, but protocol/manifest signatures changed. Restart before model inference or training instead of relabeling caches.",
+  "bound_values_and_bytes_changed": false,
+  "gpu_inference_or_training_started": false,
+  "new_shared_protocol_sha256": "4e6f070207d5a09fb2a38963c4bca6e23c28e2a6bc41a323482cfac21847e6fc",
+  "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+  "preserved_artifacts": [
+    "NIMBUS_PROTOCOL.json",
+    "RUN_CONFIG.json",
+    "models/normalization.json",
+    "results/normalization_parameters.csv",
+    "cache/units"
+  ],
+  "backup": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/revisions/csv_round_trip_fix_v1",
+  "time_unix": 1793364685.4404824
+}

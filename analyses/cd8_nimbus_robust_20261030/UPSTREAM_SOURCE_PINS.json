@@ -1,0 +1,13 @@
+{
+  "commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+  "files": {
+    "__init__.py": "0a47f32cb5d17dff6012992f6eb2154c0bb9c691e0c4748b7e48295af905b82e",
+    "cell_analyzer.py": "649d3d79770d87b5fd0966e54b15fef3146b446a7565eb05b1dc5ed2bcb444f7",
+    "example_dataset.py": "00143fc2faf5031cd1512ff2e5cce247225cc4ffe0ba576530a41fb4b2388c08",
+    "nimbus.py": "ccdf84ccecebfbdff7ed8fc942ef7fb15589990e03313d72f1daa0465b065af8",
+    "trainer.py": "707b39d527f924ef0a1b92cd462db340e78addcf51cf7b1342a73039af46b573",
+    "unet.py": "edb6cefd3452d9b1cada0b9b9bf94c6f68bd663e32aeece0005fd60bc0c24ab6",
+    "utils.py": "86125ab48b182271d76f4e6894dd7bf302154a0c6820bccc1317055a585f034b",
+    "viewer_widget.py": "34e3fd2043aaf28bfcf9bdc7a03688864f9d9f9ff89352cf02563730bc29ed01"
+  }
+}

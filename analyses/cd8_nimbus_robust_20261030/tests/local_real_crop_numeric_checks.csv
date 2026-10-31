@@ -1,0 +1,15 @@
+test,passed,shared_code_sha256,crop,pixels,scope
+shared_pixel_formula_and_zero,True,,,,
+invalid_support_preserved,True,,,,
+degenerate_bounds_unscorable,True,,,,
+negative_range_unscorable,True,,,,
+no_eligible_instance_NaN_bounds,True,,,,
+invalid_bounds_strict_JSON,True,,,,
+float64_computation,True,,,,
+outer_upper_limits_single_extreme,True,,,,
+shared_implementation_exact,True,19c04229130ace72ee6672ffe5c69555197a1a41830f5973ff4195bc6a090928,,,
+real_crop_numeric_only,True,,case_000_Nimbus_pretrained.npz,11236.0,synthetic test bounds on existing development crop; not full-unit calibration or inference
+real_crop_numeric_only,True,,case_001_Nimbus_pretrained.npz,11655.0,synthetic test bounds on existing development crop; not full-unit calibration or inference
+real_crop_numeric_only,True,,case_002_Nimbus_pretrained.npz,12996.0,synthetic test bounds on existing development crop; not full-unit calibration or inference
+real_crop_numeric_only,True,,case_003_Nimbus_pretrained.npz,13224.0,synthetic test bounds on existing development crop; not full-unit calibration or inference
+real_crop_numeric_only,True,,case_004_Nimbus_pretrained.npz,13224.0,synthetic test bounds on existing development crop; not full-unit calibration or inference

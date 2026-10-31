@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "independent local summary/freeze/fit-budget audit; full-cell audit separately recorded",
+  "n_checks": 229883,
+  "metrics_rows": 1998,
+  "TabM_fits": 12,
+  "HGB_fits": 9,
+  "formal_models": 18,
+  "frozen_sha256": "d77b643a5a49dffe4dd77baee60ddb02450d26f4ebae2b49a188d07c581dc1fa",
+  "metrics_sha256": "4f2e687628afa44e593e68b39121fbcfbe62683bb7f8fc9298cc84b8307c58fa",
+  "report_sha256": "39c6ea595d4a4414cda7b708a2628296c80e92781c49a39bc35660bb80e4e447",
+  "script_sha256": "d4819c2ac8686bf4cb7891c022324829aa49ec9b5f529ebe1587a483f8db86d0",
+  "PanM_accessed": false
+}

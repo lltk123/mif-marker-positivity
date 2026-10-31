@@ -1,0 +1,2 @@
+inference_code_sha256,max_abs_error,actual_real_crop,preserves_frozen_preprocessing,shared_calibration
+b7b27c89edfef8258067c1d77e0473360b21c11ca894db65e188b13a735b2a89,0.0,training WSI1 same pilot pixels,True,"{'bounds_sha256': '6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6', 'manifest_sha256': '0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43', 'protocol_sha256': 'db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359'}"

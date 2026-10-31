@@ -1,0 +1,45 @@
+{
+  "status": "local_synthetic_validation_passed_full_experiment_not_run",
+  "tests": [
+    {
+      "script": "test_calibrated_inputs.py",
+      "exit_code": 0,
+      "output": "test_architecture_and_training_budget_unchanged (__main__.CalibratedInputContracts.test_architecture_and_training_budget_unchanged) ... ok\ntest_changed_geometry_rejected (__main__.CalibratedInputContracts.test_changed_geometry_rejected) ... ok\ntest_changed_key_rejected_not_aligned_by_row (__main__.CalibratedInputContracts.test_changed_key_rejected_not_aligned_by_row) ... ok\ntest_duplicate_key_rejected (__main__.CalibratedInputContracts.test_duplicate_key_rejected) ... ok\ntest_failed_calibration_kept_even_with_missing_intensities (__main__.CalibratedInputContracts.test_failed_calibration_kept_even_with_missing_intensities) ... ok\ntest_feature_input_cannot_contain_truth (__main__.CalibratedInputContracts.test_feature_input_cannot_contain_truth) ... ok\ntest_fractional_id_rejected (__main__.CalibratedInputContracts.test_fractional_id_rejected) ... ok\ntest_missing_raw_audit_mean_rejected (__main__.CalibratedInputContracts.test_missing_raw_audit_mean_rejected) ... ok\ntest_missing_raw_risk_field_never_falls_back_to_normalized (__main__.CalibratedInputContracts.test_missing_raw_risk_field_never_falls_back_to_normalized) ... ok\ntest_raw_risk_cohorts_preserved_independent_of_model_values (__main__.CalibratedInputContracts.test_raw_risk_cohorts_preserved_independent_of_model_values) ... ok\ntest_shared_manifest_rejects_changed_calibration_inputs (__main__.CalibratedInputContracts.test_shared_manifest_rejects_changed_calibration_inputs) ... ok\ntest_shuffled_explicit_ids_and_normalized_vs_raw_means (__main__.CalibratedInputContracts.test_shuffled_explicit_ids_and_normalized_vs_raw_means) ... ok\ntest_wrong_calibration_unit_rejected (__main__.CalibratedInputContracts.test_wrong_calibration_unit_rejected) ... ok\ntest_wrong_raw_mean_rejected (__main__.CalibratedInputContracts.test_wrong_raw_mean_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.899s\n\nOK\n"
+    },
+    {
+      "script": "test_contracts.py",
+      "exit_code": 0,
+      "output": "test_duplicate_prediction_key_is_rejected (__main__.CellKeyContracts.test_duplicate_prediction_key_is_rejected) ... ok\ntest_missing_prediction_key_is_rejected (__main__.CellKeyContracts.test_missing_prediction_key_is_rejected) ... ok\ntest_shuffled_predictions_join_by_complete_key (__main__.CellKeyContracts.test_shuffled_predictions_join_by_complete_key) ... ok\ntest_failed_score_keeps_complete_denominator (__main__.ClassificationMetricContracts.test_failed_score_keeps_complete_denominator) ... ok\ntest_no_predicted_positives_with_true_positive (__main__.ClassificationMetricContracts.test_no_predicted_positives_with_true_positive) ... ok\ntest_no_true_or_predicted_positives (__main__.ClassificationMetricContracts.test_no_true_or_predicted_positives) ... ok\ntest_no_true_positives_with_false_positive (__main__.ClassificationMetricContracts.test_no_true_positives_with_false_positive) ... ok\ntest_strict_half_threshold (__main__.ClassificationMetricContracts.test_strict_half_threshold) ... ok\ntest_review_selector_importable_self_test (__main__.DevelopmentReviewContracts.test_review_selector_importable_self_test) ... ok\ntest_gmm_reference_remains_fixed_for_selected_threshold_comparison (__main__.PairedThresholdContracts.test_gmm_reference_remains_fixed_for_selected_threshold_comparison) ... ok\ntest_apply_uses_correct_signal_cv_and_strict_proxy_threshold (__main__.RiskStratumContracts.test_apply_uses_correct_signal_cv_and_strict_proxy_threshold) ... ok\ntest_fit_ignores_validation_test_and_unlabelled_training (__main__.RiskStratumContracts.test_fit_ignores_validation_test_and_unlabelled_training) ... ok\ntest_missing_feature_does_not_create_a_proxy (__main__.RiskStratumContracts.test_missing_feature_does_not_create_a_proxy) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.167s\n\nOK\n"
+    }
+  ],
+  "tests_total": 27,
+  "gpu_used": false,
+  "real_data_used": false,
+  "PanM_accessed": false,
+  "dry_run_stages": 13,
+  "missing_full_inputs_fail_closed": true,
+  "no_completion_markers_created": true,
+  "source_sha256": {
+    "audit_embedding_bins.py": "3a91a7121950e5faa4fec53efc01b69b5e440cb892ad2fbc899aca3be9653eca",
+    "audit_numeric_resolution.py": "4294f69fda8618983ffacc73c918bbe260337aa5e13763e4adec250683aac248",
+    "bootstrap_runtime.py": "c5e08b1ac30f967d5759dce5ab504c2c8c081e6b45242109258053dbc9bc07e6",
+    "calibrated_inputs.py": "2aee8ba3bce57adc4a036d36cdaca1b6d532925baa5df14484d26c5525374c2f",
+    "common_tabm.py": "323370cbefb59ff9b7c5dd35b17b56b11a72c59f4871f74d5076a2b23759dcae",
+    "evaluate_tabm.py": "d32a6653193419e5e850c7e2770fa212c5fed3c266b634ac0c779430fc24ad91",
+    "fetch_official.py": "a7240823a0542c570a60a1d7f0fd2e6649dfbe0dd420221af08400d8ae734cf1",
+    "plot_tabm.py": "b69d419946a375f09079b3279d3144ce86865013a75765c3c1a6867b48943049",
+    "predict_table.py": "4699b5076e2cfb11ff8e71c0cb53a2bdcaf24e9dbb7635f849a14010c07ebe69",
+    "prepare_tabm.py": "6131dc9d187572f0c0ab76bc712513c04efaade48921165da62453e1aabc2c56",
+    "resources_tabm.py": "1bd5dc7366ea02a78fe0923df35e5104c39ef04dd99f8a8efa8da6975e8def88",
+    "review_tabm_errors.py": "b41e2edfedb691a44dd0074c540d5bbb9a5ed67c91856cd02d65806f17f538d5",
+    "run_pipeline.py": "700fdf1d22b35b01310298601d087254997730b79a8483d4f47026474a119ccb",
+    "test_calibrated_inputs.py": "efbf7fc86649c6c5ee47b5a10d895966a96e0b586d92627ac025b193d6188b24",
+    "test_contracts.py": "95d7850d1b944d9a3b198258c390850c9c5c31949de0170a3f447d6e6dca798f",
+    "train_tabm.py": "f241629b15d2f9eb392279875eef25453d4ea84b42a7a8ea602da831720a4e3d",
+    "validate_delivery.py": "a022931bc11a154f7c9c48b94a344fc968ec58dc5ac50f6d818b953d51dfd3fc",
+    "write_tabm_report.py": "270a2af890dcba8c0c75d0b73b0c00d1e6044ad7b4aed59999fcf90f81a56b69"
+  },
+  "missing_input_output": "Traceback (most recent call last):\n  File \"F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_tabm_robust_20261030\\scripts\\run_pipeline.py\", line 228, in <module>\n    run(args.run_dir,args.stage,args.font_path,args.dry_run)\n  File \"F:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_tabm_robust_20261030\\scripts\\run_pipeline.py\", line 190, in run\n    raise FileNotFoundError('Full E1_outer_P1_P99 inputs are required; missing:\\n'+'\\n'.join(missing))\nFileNotFoundError: Full E1_outer_P1_P99 inputs are required; missing:\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_robust_calibration_20261030\\PhenoBIC_CD8_features.parquet\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_robust_calibration_20261030\\extraction_manifest.json\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_robust_calibration_20261030\\PROTOCOL.json\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_robust_calibration_20261030\\calibration\\unit_bounds.csv\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_morphospatial_20261023\\PhenoBIC_CD8_features.parquet\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_e1_e4_stability_20261023\\audit\\cells.parquet\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_tabm_20261029\\data\\risk_strata.json\nF:\\Codex\\Projects\\学习\\mif-marker-positivity\\analyses\\cd8_robust_calibration_20261030\\FEATURE_DICTIONARY.csv\n",
+  "python": "3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]",
+  "post_test_report_patch": "Added data-driven calibration failure table; AST parsed. No tested core implementation changed."
+}

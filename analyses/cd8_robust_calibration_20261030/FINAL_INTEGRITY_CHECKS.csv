@@ -1,0 +1,9 @@
+check,observed,expected,passed,evidence
+rows,1817783,1817783,True,extraction_manifest.json + PROTOCOL.json
+calibration_units,48,48,True,extraction_manifest.json + PROTOCOL.json
+original_geometry_features,19,19,True,extraction_manifest.json + PROTOCOL.json
+features,90,90,True,extraction_manifest.json + PROTOCOL.json
+all_keys_sha256,c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a,c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a,True,extraction_manifest.json + PROTOCOL.json
+no_duplicate_or_null_keys,True,True,True,Completed manifest can only be written after the corresponding frozen run_features.merge guard passes; no repeated scan
+no_infinite_feature_values,True,True,True,Completed manifest can only be written after the corresponding frozen run_features.merge guard passes; no repeated scan
+all_19_geometry_values_and_NaN_positions_exact,True,True,True,Completed manifest can only be written after the corresponding frozen run_features.merge guard passes; no repeated scan

@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "created": "2026-10-30T23:49:22.783372",
+  "checks": 199,
+  "verified_files": 150,
+  "verified_bytes": 893661709,
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "computational_code_sha256": "0e4b6c05cba86994296f252884525fa6fa8171d081891137039170ab59120742",
+  "report_sha256": "3f1b5f11bab66d0f7cdd148cf17cb796c3ff2da9b015d658543b529ccb218e75",
+  "validation_csv_sha256": "fa543abcfab3116b6d75d23a02569cfeff56a8c6fb6790b89c5a375c46ec30c9",
+  "pretrained_weight_sha256": "0651a3852fbafc03be415a1ec80ef947cc1913a081cf0bc649301ade887a82a9",
+  "finetuned_weight_sha256": "7f9d043f3097bae1c5bb2ba810e99f683499fcb5f89dd502e260b94a5bb3d8b2",
+  "script_sha256": "98d95e0064c2e764f53551b64c80ec4b0339bca40692621bb316498aed0d54a2"
+}

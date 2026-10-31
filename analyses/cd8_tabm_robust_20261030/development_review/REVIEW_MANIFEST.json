@@ -1,0 +1,53 @@
+{
+  "fingerprint": {
+    "script_sha256": "b41e2edfedb691a44dd0074c540d5bbb9a5ed67c91856cd02d65806f17f538d5",
+    "rules_sha256": "b45c736dbaa5f1471c60f9fae110c202c7a23c3c64dcddf9179965a93ccacbf6",
+    "original_io_sha256": "5501097af15fb911b68cec49d9896182c4c0d14b72bcc46191b00d41b13d4791",
+    "models": {
+      "TabM_A_s0": {
+        "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/predictions/TabM_A_s0.parquet",
+        "bytes": 344988149,
+        "mtime_ns": 1793377604151278060,
+        "score_key_hash": "d4c15bf56ad3632593085b159985109c5bbd6f693c2804437d2411732f2ef9fe"
+      },
+      "TabM_B_s0": {
+        "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/predictions/TabM_B_s0.parquet",
+        "bytes": 377086305,
+        "mtime_ns": 1793377670719147817,
+        "score_key_hash": "cca64b53b6ade19a7bc0fa8b7a3ed91ac8383d142d2886e52462a4c5cb6070c6"
+      },
+      "TabM_C_s0": {
+        "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/predictions/TabM_C_s0.parquet",
+        "bytes": 379548840,
+        "mtime_ns": 1793377763103091723,
+        "score_key_hash": "fd1bae99a88abe780c4b50e0bbb7903ab3aecc08acc042c7d041369e5f0f2b77"
+      },
+      "HGB_C_s0": {
+        "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/predictions/HGB_C_s0.parquet",
+        "bytes": 29236048,
+        "mtime_ns": 1793377566307390195,
+        "score_key_hash": "5896d7011f667b51320a1d727441ec62b82ea3260ce68d8e01e57c3f15c97e72"
+      }
+    },
+    "cells_bytes": 1077408277,
+    "cells_mtime_ns": 1793369236272027759,
+    "font_sha256": "5dcd1c336cc9344cb77c03a0cd8982ca8a7dc97d620fd6c9c434e02dcb1ceeb3"
+  },
+  "status": "complete",
+  "n_cases": 9,
+  "strata_note": "High local reference uses strict >q75. Localized edge uses sector CV >q75 plus edge-inner mean difference >0, a narrower visual subset of evaluation directional_signal_proxy.",
+  "n_visible_neighbor_records": 241,
+  "figure_contract": {
+    "claim": "Inspect how spatial features change individual development errors without assuming mechanism",
+    "archetype": "image plate + quant",
+    "backend": "Python/matplotlib",
+    "source_data": "case_index.csv, neighbor_context.csv, original-pixel NPZ crops",
+    "exports": [
+      "Chinese and English PNG",
+      "editable-text SVG"
+    ],
+    "physical_scale": "Unavailable; scale bars in pixels",
+    "display": "Global linear contrast per crop, shared between raw and overlay panels; no pixel edits",
+    "statistics": "Illustrative seed-0 errors only; formal multi-seed results are separate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "Computational applicability guards, not biological causality; mutually exclusive by listed priority",
+  "high_signal_edge_coverage": "Requires whole_valid, edge>=5, reference>=20, MAD>epsilon; no_signal alone does not make coverage missing",
+  "edge_signal_enrichment": "Requires whole_valid, edge>=5, inner>=5, reference>=20, total corrected S>epsilon*area. Remaining NaNs after these preceding guards must carry no_signal.",
+  "no_images_read": true,
+  "no_labels_read": true,
+  "code_sha256": "3ba972091e263b7ffb094f27665cdb73b9733b57a3f2a95f26452650eb7ab38a"
+}

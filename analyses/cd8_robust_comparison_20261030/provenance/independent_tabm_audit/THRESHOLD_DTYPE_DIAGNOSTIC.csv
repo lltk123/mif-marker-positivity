@@ -1,0 +1,5 @@
+model_id,score_source_and_dtype,max_grid_error,mismatching_thresholds,grid_differences,winner
+TabM_B_s1,validation32,0.0,[],[],0.86
+TabM_B_s1,validation64,4.110432023207711e-05,[0.99],[4.110432023207711e-05],0.86
+TabM_B_s1,inference32,0.0,[],[],0.86
+TabM_B_s1,inference64,4.110432023207711e-05,[0.99],[4.110432023207711e-05],0.86

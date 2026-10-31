@@ -27,6 +27,8 @@
 !analyses/**/review/samples/*.png
 !analyses/cd8_tabm_20261029/development_review/**/*.png
 !analyses/cd8_tabm_20261029/development_review/**/*.svg
+!analyses/cd8_tabm_robust_20261030/development_review/**/*.png
+!analyses/cd8_tabm_robust_20261030/development_review/**/*.svg
 
 # Raw / sealed data and large cell-level artifacts are never published.
 **/datasets/**
@@ -43,7 +45,10 @@
 **/keys/**
 **/bboxes/**
 **/cache/**
+**/arrays/**
+**/shards/**
 **/artifacts/**
+**/delivery/**
 **/pilot_cells_*
 **/all_cells*
 **/cell_keys*
@@ -73,6 +78,7 @@
 
 # Downloaded / fitted models, environments, bootstrap files and runtime logs.
 **/weights/**
+**/checkpoints/**
 **/upstream/**
 **/dependencies/**
 **/bootstrap/**
@@ -96,6 +102,8 @@
 *.joblib
 *.pkl
 *.pickle
+*.keras
+*.pt2
 *.pyc
 *.pyo
 *.log
@@ -123,3 +131,8 @@
 *.pfx
 .DS_Store
 Thumbs.db
+
+# Current-run working snapshots and the 20 MB detailed audit stay on the server.
+# Published report_risk_strata.csv retains the reviewable risk-stratum summary.
+analyses/cd8_nimbus_robust_20261030/provenance/figure_layout_original/**
+analyses/cd8_tabm_robust_20261030/results/risk_strata_paired_comparisons.csv

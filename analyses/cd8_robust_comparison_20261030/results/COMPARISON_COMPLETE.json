@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "source_sha256": {
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/metrics_all.csv": "578c31d9267382feca446722f3346c0e4e5cfe611038d17854f0afe7a703ab1e",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/results/metrics_all.csv": "4f2e687628afa44e593e68b39121fbcfbe62683bb7f8fc9298cc84b8307c58fa",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/all_metrics.csv": "62dc51af5d980dac0b350a8cf0346e50402857bdb18701bc7bba4e586b26e208",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/results/all_metrics.csv": "874ac8dcfa9b487ba8db20230abc3661fed266c256c9884132bf66efc1ab6f76"
+  },
+  "completion_manifest_sha256": {
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/PREDICTIONS_COMPLETE.json": "34bb11a53beaa5abd428e9160c62eb7e457392caf4323ab62acdb3b274362d71",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/results/EVALUATION_MANIFEST.json": "059d6e0761c839c6d42732ec2304a408c068fba5b0492c446ea3f7529b318d8c",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/FROZEN_TEST_PROTOCOL.json": "87fabd6057127e84befe90795fa267bf10fb7b35b7452978df2575d95b19cb08",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029/DELIVERY_VALIDATION.json": "4de68b0bcd98eb47141500ba0f44b385b4bbdb1d1f2eee5c40d424f937cea7b8",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/PREDICTIONS_COMPLETE.json": "61be7944399724d6b0922aeea2b336a735e9550db037cacd2add06eb525394ca",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/results/EVALUATION_MANIFEST.json": "ef0d43c2626749c7a889975270057803266f11b605efcc49baafa8dd0423fab7",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/FROZEN_TEST_PROTOCOL.json": "d77b643a5a49dffe4dd77baee60ddb02450d26f4ebae2b49a188d07c581dc1fa",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/DELIVERY_VALIDATION.json": "d3bb3019383244da78f05f65720d783ca9742f0c0adf3e11a82a5ffdff24f30f",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/NIMBUS_PROTOCOL.json": "61b382bcba3eb997960d8a70c6b0b4e6b218d38a4b2d7f3ec6b88d88b6e9d8ce",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/provenance/Nimbus_pretrained_evaluation_complete.json": "804de439d758988488145b4b53162dc7070c40c11c04a8eb85d89b7e006b0b88",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/Nimbus_pretrained_metrics.csv": "aeecba09a02a08f84de197991c1d15795988a60c9449ddec06da5f0964058bef",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/provenance/Nimbus_finetuned_evaluation_complete.json": "79acfd866bf2781f658bd756083619e2417c0ebde4f70ac2d5ca0201d60e2e98",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/Nimbus_finetuned_metrics.csv": "4365301652631652600721fec4482ad20be4d3c2f280e4a8f27500143c44a617",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/provenance/delivery_complete.json": "72294376a47e3cf824d23a246164a4fb1af464375e3b100ac5995bdca0007345",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/final_delivery_checks.csv": "7af7332189e2667ff511b5a90e9f853226c9f01f2e01e30a5d9e0c819a164992",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/GMM_reuse_audit.csv": "e652e8bfaef9a18741c8b66a489d7837bf9f1a1569f34f899dbf7d16207838d3",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/results/prediction_integrity.csv": "2497596abcc6c197b928ea2090463409846e5209a2daa50b0ed011c426792641",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/figures/FIGURE_QA.json": "67da8c64a6829d23963781f020e28c46c630248a0ca8c2d81bf9786ff64ea564",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/NIMBUS_PROTOCOL.json": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/Nimbus_outerP1P99_pretrained_evaluation_complete.json": "44c095102f8abb653c3a850e5c230bbb3f3c122ca133425adac3459426fa176a",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/results/Nimbus_outerP1P99_pretrained_metrics.csv": "fc33806af22f1a8b723c44fa411720ca542c98cd3ffe50a551cd92449e82f21c",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/Nimbus_outerP1P99_finetuned_evaluation_complete.json": "6ed76127b38e670edcb0f2c4f62ee27954562630456c530afe0533898005b392",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/results/Nimbus_outerP1P99_finetuned_metrics.csv": "a67383b227c4913b84563bf6dfc7114e42a81bbb4a71741893b7e22d7e2364d3",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/calibration_coverage_complete.json": "7ac8cb2d041c7e10a13c8566c355964fb23bba4654d73ef67b62618da7ebeaa2",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/results/calibration_coverage.csv": "0ef3faeef719afa6a8e75d74a5621dfa75e55f646c9c81d96ae2908185ce091f",
+    "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/delivery_complete.json": "35dd1c3631253d50b8f8d6d6047ea7215968009c96eb120d25bf337e7520b571"
+  },
+  "comparison_code_sha256": "e60fd6a19fb6fdcdde0c617a260f0eb9c1e3aae84a1e1509f3bb2a921cd53eba",
+  "protocol_sha256": "2af6885e5021be568144c844f5dc5cfc60b67b0ab121ec62909a5636e6740552",
+  "require_delivery": true,
+  "output_sha256": {
+    "MODEL_COMPARISON.csv": "67a41fc5901fc347fa9120e30d4bb33e4ffec44d8aa6c754344ef7efa3d0df39",
+    "SUMMARY_METRICS.csv": "1fe4d52cc7ae66d5c72bae51b7fe0cc928752d3106a36fceaf92e99a2fc20638",
+    "PAIRED_CHANGES.csv": "db7cbacd90e359879df04fe059305e873d80c94a54d0f9039159f618462d2de1",
+    "RANKINGS_FIXED_0.5.csv": "45804021629e1b7c4f3ab47956c7a851d66a058d445ec90b115527dd28b8b84d"
+  },
+  "n_metric_rows": 4422,
+  "n_summary_rows": 1830,
+  "n_paired_rows": 888,
+  "count_interpretation": "Summary counts are seed means, not pooled cells. Failed-row confusion counts are scored-subset or unavailable; formal rates are suppressed.",
+  "calibration_interpretation": "Finite prediction coverage and image calibration coverage are distinct; calibration-failed cells are retained.",
+  "new_models": "TabM/HGB A/B/C three seeds; Nimbus pretrained and finetuned one seed"
+}

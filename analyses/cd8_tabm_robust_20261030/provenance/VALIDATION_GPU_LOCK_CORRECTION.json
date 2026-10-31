@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-30T16:00:52.993668+00:00",
+  "issue": "Standalone delivery API validation uses CUDA after driver released the prediction lock",
+  "change": "Reacquire shared nonblocking GPU lock only for standalone validate stage; all remains covered by documented outer flock",
+  "old_pipeline_sha256": "700fdf1d22b35b01310298601d087254997730b79a8483d4f47026474a119ccb",
+  "new_pipeline_sha256": "ad364fc3865dc61959670dfc7a6444f61a91419ab8d40100bc9c3a3b69e6b6c8",
+  "model_core_code_changed": false,
+  "features_or_model_parameters_changed": false,
+  "required_retraining": false,
+  "required_reprediction": false,
+  "recomputed_results": [],
+  "stage_not_yet_executed": true
+}

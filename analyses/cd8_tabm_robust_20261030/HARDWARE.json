@@ -1,0 +1,18 @@
+{
+  "captured_utc": "2026-10-30T14:05:19.588817+00:00",
+  "platform": "Linux-5.13.0-30-generic-x86_64-with-glibc2.31",
+  "machine": "x86_64",
+  "hostname": "user-System-Product-Name",
+  "cpu_count": 16,
+  "physical_memory_bytes": 67099742208,
+  "CUDA_VISIBLE_DEVICES": null,
+  "cuda_available": true,
+  "torch_cuda_version": "11.8",
+  "visible_gpus": [
+    {
+      "index": 0,
+      "name": "Quadro RTX 4000",
+      "total_memory_bytes": 8361803776
+    }
+  ]
+}

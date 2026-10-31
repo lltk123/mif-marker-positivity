@@ -1,0 +1,12 @@
+{
+  "model": "Nimbus_outerP1P99_finetuned",
+  "default": 0.5,
+  "operator": ">",
+  "validation_selected": 0.6,
+  "selection": "equal WSI mean F1 on full labelled internal validation",
+  "validation_development_fitted_macro_F1": 0.8370067137195907,
+  "not_unbiased_validation": true,
+  "selection_status": "complete",
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "prediction_score_sha256": "5b4ef823cd07a15ec59969b743a2454f100ba177cebb5c7387f138f774d01e5d"
+}

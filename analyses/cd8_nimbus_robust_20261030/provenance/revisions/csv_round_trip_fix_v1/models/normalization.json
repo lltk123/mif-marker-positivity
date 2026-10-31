@@ -1,0 +1,13 @@
+{
+  "method_id": "E1_outer_P1_P99",
+  "shared_calibration": {
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "6b51d7622a017a8a8b2a07cbce6ef9b5e7e8cf0c33700ec6af7862ab32e22cb0",
+    "protocol_sha256": "df4b3b8b52a2945aa7b5879742eb70ae2dcadcf71602e3b1aa1a9230fd28c7f7"
+  },
+  "input_provenance": {
+    "prior_source_manifest_sha256": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78",
+    "prior_cells_sha256": "01aa881ca69f1a730804998b4f62a36032b8753a349058e7ad8a8c5ea9c82fb7"
+  },
+  "n_units": 48
+}

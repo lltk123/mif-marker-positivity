@@ -1,0 +1,27 @@
+{
+  "status": "passed_local_only",
+  "tests": 14,
+  "fixture_metric_rows": 4422,
+  "fixture_paired_rows": 888,
+  "fixtures": "Existing completed baseline tables duplicated explicitly in memory; not new model results.",
+  "checks": [
+    "one missing seed/unit/mode row rejected",
+    "missing entire threshold mode rejected",
+    "missing GMM rejected",
+    "unit missing from all runs rejected",
+    "changed image key rejected",
+    "failed scores retain all cells and suppress formal means",
+    "calibration validity separate from finite scores",
+    "missing calibration audit rejected",
+    "inconsistent counts rejected",
+    "code/protocol changes reject cache",
+    "completion markers required and freeze-bound",
+    "Nimbus authoritative metric/concatenation mismatch rejected",
+    "real old completion records verified read-only"
+  ],
+  "sha256": {
+    "compare_results.py": "ef4bfd3ac94cfaf1a092e64966749ec1530a7e7e84dcf0c8adeb6ecb0d0810a5",
+    "test_compare_results.py": "103b3b98769555ba983268cb9061a405ca6492675a880f37df1229654ecaac55"
+  },
+  "server_synced": false
+}

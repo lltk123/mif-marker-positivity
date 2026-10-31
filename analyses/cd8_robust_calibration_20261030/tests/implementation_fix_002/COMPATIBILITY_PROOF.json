@@ -1,0 +1,15 @@
+{
+  "revision": "002",
+  "before_protocol_sha256": "4e6f070207d5a09fb2a38963c4bca6e23c28e2a6bc41a323482cfac21847e6fc",
+  "after_protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+  "before_run_features_sha256": "8f804dbe718969695ebdbcc118dd7fb79bef9ca32353e3ca9a65fe2fcf27afd8",
+  "after_run_features_sha256": "2c7e036a298e66a50104f1b5e8e257231caf3101ebea4941e8920cc51ea2d815",
+  "all_top_level_code_except_pilot_AST_identical": true,
+  "unit_bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+  "all_keys_sha256": "c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a",
+  "normalize_module_sha256": "141cbc4f41b8689faa3f25e4b891a04d7c55ce4b6d80b85d750109c41137323d",
+  "feature_adapter_sha256": "b2713d4668e56e05e4901f3905727248407842ac4a2bd66772b910a26f0d0b7f",
+  "bounds_unchanged": true,
+  "keys_unchanged": true,
+  "normalize_and_feature_adapter_unchanged": true
+}

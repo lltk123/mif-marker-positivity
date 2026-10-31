@@ -52,3 +52,27 @@ python -m unittest discover -s tests
 - [TabM A/B/C](../analyses/cd8_tabm_20261029/README.md)：固定官方实现、三种子训练和全量评价。
 - [已完成校准实验汇总](../analyses/cd8_calibrated_results_summary_20261029/README.md)：只依赖 Python 标准库，可从仓库现有汇总表重建排名，无需原图或 GPU。
 - [TabM 发布源码排版核验](publication/tabm_readability_20261029.csv)：当前发布副本与原运行代码 AST 一致，保留两者的独立哈希。
+
+## 2026-10-31：共同校准与双模型重训练
+
+本轮全量计算已完成。统一入口、分阶段命令和恢复条件见[本轮 README](../analyses/cd8_robust_comparison_20261030/README.md)。它使用原服务器上两个固定环境：形态环境计算共享特征，Nimbus 环境运行新模型及报告；不会自动取得全部数据或权重。
+
+```bash
+# 只重建仓库性能总览与固定门限排名；不访问原图或 GPU。
+python tools/update_robust_overview.py
+
+# 以下仅在原服务器、原冻结代码与依赖齐备时用于核验／恢复。
+PROJECT=/mnt/disk3/mIHC/mif_marker_positivity_20261022
+"$PROJECT/analyses/cd8_nimbus_20261024/.venv/bin/python" \
+  "$PROJECT/analyses/cd8_robust_comparison_20261030/scripts/run_retraining.py" \
+  --stage all --workers 4 --dry-run
+```
+
+- [校准接口](../analyses/cd8_robust_calibration_20261030/README.md)：原像素 P10/P90、跨实例 P1/P99、完整单位去重及特征重提。
+- [TabM 训练／预测](../analyses/cd8_tabm_robust_20261030/README.md)：A/B/C 三种子、训练集预处理、成员概率聚合与匹配 HGB。
+- [Nimbus 推理／微调](../analyses/cd8_nimbus_robust_20261030/README.md)：固定官方 V1 和任务适配输入尺度、全实例评分与切块核验。
+- [正式参数与版本](../analyses/cd8_robust_comparison_20261030/RETRAIN_PROTOCOL.json)及各子目录冻结协议；[独立数值核查](../analyses/cd8_robust_comparison_20261030/provenance/independent_tabm_audit/AUDIT_REPORT.md)。
+
+本轮发布副本仅按 Black 排版，并逐文件核对完全相同的 Python AST；[robust_readability_20261031.csv](publication/robust_readability_20261031.csv)记录原始文件、LF 规范化文件和发布源码 SHA。冻结配置及完成清单仍记录**实际运行时源码**的哈希。不要把格式化副本覆盖原运行目录后复用原完成标记；新机器运行须先配置数据和固定上游依赖，在新目录重新冻结源码与输入。服务器原运行与原审阅包均保持原样。
+
+所有训练与性能计算均发生在本次发布之前；发布阶段只读取配置、报告、汇总表及图件，不重新训练、不读取 Pan-M。

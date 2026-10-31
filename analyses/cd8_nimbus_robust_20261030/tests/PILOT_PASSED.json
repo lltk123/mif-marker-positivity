@@ -1,0 +1,22 @@
+{
+  "real_source_groups": 5,
+  "official_comparison_tolerance": 2e-06,
+  "actual_tta_rotations": [
+    270,
+    270,
+    270,
+    270
+  ],
+  "flips": [
+    "y",
+    "x"
+  ],
+  "key_contract": "explicit integer label IDs",
+  "upstream_commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+  "shared_calibration": {
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43",
+    "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359"
+  },
+  "pilot_code_sha256": "6fb53ce810f7a7bf5fa062ca6fa6dd37c030335c72d925fdf7f5de5958a3186a"
+}

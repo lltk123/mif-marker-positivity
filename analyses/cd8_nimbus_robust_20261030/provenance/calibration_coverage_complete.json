@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "table_sha256": "0ef3faeef719afa6a8e75d74a5621dfa75e55f646c9c81d96ae2908185ce091f",
+  "n_all_cells": 1817783,
+  "source_sha256": {
+    "cell_source": "01aa881ca69f1a730804998b4f62a36032b8753a349058e7ad8a8c5ea9c82fb7",
+    "shared_protocol": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+    "shared_bounds": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "shared_manifest": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43",
+    "audit_code": "5f7b0d541736e7b94275831133f36b6350c8068b7b4069b76b24dd8c50b034dc"
+  },
+  "definition": "calibration-invalid labelled cells / all original labelled cells in each metric group; independent of model scoring failure"
+}

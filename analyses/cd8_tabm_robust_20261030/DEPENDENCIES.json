@@ -1,0 +1,25 @@
+{
+  "captured_utc": "2026-10-30T14:05:19.588817+00:00",
+  "runtime_executable": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python",
+  "python": "3.11.13 (main, Sep 18 2025, 19:46:39) [Clang 20.1.4 ]",
+  "packages": {
+    "torch": "2.2.2+cu118",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.5.2",
+    "pyarrow": "17.0.0",
+    "joblib": "1.6.0",
+    "psutil": "7.2.2",
+    "matplotlib": "3.11.2",
+    "scikit-image": "0.24.0",
+    "tifffile": "2026.3.3",
+    "imagecodecs": "2026.1.14",
+    "opencv-python": "not installed",
+    "rtdl-num-embeddings": "0.0.12"
+  },
+  "tabm_version": "0.0.3",
+  "tabm_commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+  "source": "observed current interpreter; no environment installation or modification",
+  "runtime_reused_read_only": true
+}

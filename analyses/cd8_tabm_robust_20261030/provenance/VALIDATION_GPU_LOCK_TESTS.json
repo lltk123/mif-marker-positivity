@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "standalone validation acquires available lock and executes",
+    "standalone validation refuses occupied lock before execution",
+    "all stage respects outer lock without nested acquisition"
+  ],
+  "elapsed_seconds": 0.25986337661743164,
+  "fixture_only": true,
+  "real_model_or_data_used": false
+}

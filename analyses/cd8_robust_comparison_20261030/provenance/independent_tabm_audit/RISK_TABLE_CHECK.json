@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "n_rows": 19980,
+  "n_empty_cohort_rows": 2701,
+  "empty_cohort_policy": "n_cells=0; confusion counts and F1 are NaN, not false zero-negative observations",
+  "checks": [
+    "nonempty confusion counts sum to full cohort count",
+    "F1 independently recomputed",
+    "cohort counts invariant across all models and thresholds"
+  ],
+  "source": "results/risk_strata_metrics.csv",
+  "biological_causality_claimed": false
+}

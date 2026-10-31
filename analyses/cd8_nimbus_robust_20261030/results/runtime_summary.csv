@@ -1,0 +1,3 @@
+model,inference_seconds,inference_peak_gpu_allocated_gib,inference_process_peak_rss_gib,fit_seconds,fit_peak_gpu_allocated_gib,fit_process_peak_rss_gib
+Nimbus_outerP1P99_pretrained,2745.004004043527,0.9810376167297363,17.530052185058594,0.0,0.0,0.0
+Nimbus_outerP1P99_finetuned,2643.5792083041742,0.9810376167297363,17.61077117919922,531.5022724950686,5.8368072509765625,9.109588623046875

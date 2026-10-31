@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "rows": 100,
+  "source_groups": 5,
+  "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+  "validation_sha256": "183c1beceb5c559523b990f50b20a94b1cb66d27fac6e09ff299c3a0f9750fb0"
+}

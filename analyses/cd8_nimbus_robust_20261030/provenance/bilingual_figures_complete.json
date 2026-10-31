@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "visual_review_completed": true,
+  "created": "2026-10-30T23:47:41.942889",
+  "script_sha256": "94061f0a0b05a2563ce92b1eeb57667079f23d2bfa9cd41d46516b8015f8bf5c",
+  "source_sha256": {
+    "figures/source_data/official_default_performance.csv": "dd6a5367b863a1cbc79ae3dce972c2bbac8bef334503c2362ea084cc08eab055",
+    "figures/source_data/validation_selected_performance.csv": "23e0cff0dbb91f90d6a64fa2db27881ed5c00685b8ffe64546aafb277e000252",
+    "figures/source_data/external_core_performance.csv": "1d335a222f80ac9b031de073d4bbc12657f7e674315c80b37d462d8c27491237"
+  },
+  "figure_sha256": {
+    "figures/zh/development_bright_neighbor_side.png": "72b1b1045fb807050ff2651dc80ea3f356d544898d22ef16a82810b09d7cc623",
+    "figures/zh/development_bright_neighbor_side.svg": "9323b0830ce8f87ac2211864fc02d2b814d5ea856ca9ebb76a9cb2464531a5e6",
+    "figures/zh/development_diffuse_local_reference.png": "80a8210aed08300c50a999dc86ba6c47f4214efca45a0578b4ce3aa8bd9f1752",
+    "figures/zh/development_diffuse_local_reference.svg": "79e9766b882a4aec6a7f0179d04573844da23696fca1432e07c829d7d723d2c3",
+    "figures/zh/development_incomplete_support.png": "38e5b8a9c204c1377bb4e212eee6203e9f9cdb0990740923e74863846c94be41",
+    "figures/zh/development_incomplete_support.svg": "3a416631d0679b93adc05dbf8ab2219bec7b3f405d34ebc3146a92369ed08713",
+    "figures/zh/development_localized_edge_brightness.png": "6a12c372316856fb7a20becd3bef36836f41d6721a59419f96fd250a667965eb",
+    "figures/zh/development_localized_edge_brightness.svg": "5e383d47ca57aac36cc891e59ee0e1565951110377ce1638962e6409b2054d9f",
+    "figures/zh/development_weak_positive.png": "4be170a776057024cf51102b0366000dc1ca2547a877d464fba2cd0e9ae7d3c6",
+    "figures/zh/development_weak_positive.svg": "73c64ee66b23de1522d22bb52b004450b1947ff796a1fc1d7b862708329d944b",
+    "figures/zh/per_core_F1.png": "d775861cbab531e94494a0ae90a831f6fbbb9dde1eb38dfbd7fc288fb79b99be",
+    "figures/zh/per_core_F1.svg": "87a35ad2c2b09672a62dd975414e0df2bf568176b2b6f08215be8661cb777547",
+    "figures/zh/performance_official_default.png": "63b0f7de90cc445a71c5e6a3d07d3634cb6999c5b0522b6d4ffe6411333ea03e",
+    "figures/zh/performance_official_default.svg": "01d8ec88e0fa717adf7be7cf73abd307887b6870208bb090a44e4e16322404b3",
+    "figures/zh/performance_validation_selected.png": "ae4bb2e86c8496438782e6668b1cd2fd5715f9c61b90a08fc62ab2d8f8a5b570",
+    "figures/zh/performance_validation_selected.svg": "39298455cb03ae026d9b96349c9cd30e18906a2ea2d287db148de0e71c73e381",
+    "figures/en/development_bright_neighbor_side.png": "4cc76616aec00ed5352bf6328f0a5cb1687a6041097d110a933571023a000d37",
+    "figures/en/development_bright_neighbor_side.svg": "e745d25318034530939802b0d3689b3ca5ce19be4bb17651340d69caca5011cb",
+    "figures/en/development_diffuse_local_reference.png": "33aa597d2330ed729fd0453241cd57a779ffa27508b76868c7455024c1cb2e9f",
+    "figures/en/development_diffuse_local_reference.svg": "4b769818962178a6cc41c7c3671bbd31ead7881e7608314fc214abaf41a02f42",
+    "figures/en/development_incomplete_support.png": "7dbbef3bd3ff3689c1201a694f5b513fc34837e46ac648673211626327085d31",
+    "figures/en/development_incomplete_support.svg": "c1990df0a83d6ca551fd746c4ff2940feaf162b1c4437bb2a4f3366e8bc5ea22",
+    "figures/en/development_localized_edge_brightness.png": "9910ff771105c4c76f0ba912f715ae5672962b16ea057ab64b79510fe09c74b0",
+    "figures/en/development_localized_edge_brightness.svg": "71dcef8a19defce7c9edf667a4d2329d4a61990dc8cee1f0d914a81d9b927c7a",
+    "figures/en/development_weak_positive.png": "9d12832956f35ce2af0627cda8bb0a7dae2d471081ddb4bd7e5288239d171747",
+    "figures/en/development_weak_positive.svg": "0364b35e357300d4eebe79c82bd3cfa494025d5c47b53ba0e8ad4aee85fbfb07",
+    "figures/en/per_core_F1.png": "b4c6215ab92f9904b3c5f72b01d1e4a192fe7da63428b3d79ff89b565d5d469b",
+    "figures/en/per_core_F1.svg": "6d1aa6d7871851020104d9613665252ea8c06ad3faecb0ec11e215399881b930",
+    "figures/en/performance_official_default.png": "096c2ee84355e2ea7d0d36cd893adad9f140b14458d4be92043bcbaf39b7df7f",
+    "figures/en/performance_official_default.svg": "8f6b82440e8dec14efbb97ed78d8d3455fb766ef5d073c9d5f7a7b38cc0f8c2d",
+    "figures/en/performance_validation_selected.png": "7749b22bda75fb850d62c8c904f50a87ceb8952f4f0f26d5db4853077547f39e",
+    "figures/en/performance_validation_selected.svg": "bbd8a5c9fe9a0617aea1c89337b5dad8aa7bdcf245809d1448aa1f7eb1899a56"
+  },
+  "english_files_unchanged": true,
+  "groups_per_language": 8,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "generated_chinese_groups": [
+    "performance_official_default",
+    "performance_validation_selected",
+    "per_core_F1"
+  ],
+  "font_file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+  "metric_table_sha256_unchanged": "874ac8dcfa9b487ba8db20230abc3661fed266c256c9884132bf66efc1ab6f76",
+  "report_sha256_unchanged": "3f1b5f11bab66d0f7cdd148cf17cb796c3ff2da9b015d658543b529ccb218e75",
+  "coverage_csv_sha256": "c4d7df77cb216cfb71d04d8d32580d9da4bf58acc844e132554da821a76d8e4a",
+  "manifest_sha256": "ee4e9e9e02c3a96b6b83964eca19d3c80cbb8f572717784389286f918142f454",
+  "visual_review_time": "2026-10-30T23:49:03.069740",
+  "visual_review": "All three Chinese quantitative PNGs inspected: legible Chinese text, complete labels, no data-obscuring legends; SVG text remains editable."
+}

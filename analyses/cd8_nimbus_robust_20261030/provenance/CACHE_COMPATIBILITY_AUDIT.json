@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "reason": "Shared pilot example selection only; same exact bounds, keys and calculation modules",
+  "before_nimbus_protocol_sha256": "a43dd7fdfbb2b67805cd2fb7bda483fd3882490e72581c953d5d1f8c7188ab7e",
+  "after_nimbus_protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "before_shared": {
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "eba437c16b61627f6f049bcadcf5b02cd1d80aa6ed216b93dcb9374504b7e9bc",
+    "protocol_sha256": "4e6f070207d5a09fb2a38963c4bca6e23c28e2a6bc41a323482cfac21847e6fc"
+  },
+  "after_shared": {
+    "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43"
+  },
+  "source_input_provenance": {
+    "prior_source_manifest_sha256": "9f9bcbe1a2a5e774b1e7e7cc8f2a0a6258f31374669de5590f2bb3f763ab7d78",
+    "prior_cells_sha256": "01aa881ca69f1a730804998b4f62a36032b8753a349058e7ad8a8c5ea9c82fb7"
+  },
+  "n_complete_units": 48,
+  "numeric_arrays_rewritten": false,
+  "numeric_model_input_arrays_hashed": 240,
+  "all_cache_array_stat_identities_unchanged": true,
+  "array_identity_sha256": "fb0e945480f18a80fdf37a9a9be361f269a8244e246ec0385a1dd92f384eea4d",
+  "preserved_metadata_directory": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/provenance/revisions/shared_pilot_fix_v2",
+  "proof_sha256": "0eccbc48d86a641829743eef82770ad74a86bacb7f6608d78c1453653eb635a2",
+  "audit_code_sha256": "f5aebd0d40575b869c16b36b4a6249d8a329fb346af2edfe6b8bd05f38608e10",
+  "finished_unix": 1793367064.822382
+}

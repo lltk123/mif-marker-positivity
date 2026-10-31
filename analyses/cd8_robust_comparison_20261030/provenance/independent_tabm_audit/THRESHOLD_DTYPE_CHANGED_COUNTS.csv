@@ -1,0 +1,2 @@
+threshold,image_id,n_changed,n_true_positive,n_true_negative,native_positive,promoted_positive
+0.99,internal_val_WSIs/WSI3,1,1,0,0,1

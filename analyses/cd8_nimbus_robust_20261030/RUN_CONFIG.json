@@ -1,0 +1,13 @@
+{
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "code_sha256": "0e4b6c05cba86994296f252884525fa6fa8171d081891137039170ab59120742",
+  "server_root": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030",
+  "python": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python",
+  "thread_limits": 4,
+  "shared_calibration": {
+    "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359",
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43"
+  },
+  "cuda_visible_devices": "0"
+}

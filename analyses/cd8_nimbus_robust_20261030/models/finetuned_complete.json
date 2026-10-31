@@ -1,0 +1,18 @@
+{
+  "seconds": 531.5022724950686,
+  "weight_sha256": "7f9d043f3097bae1c5bb2ba810e99f683499fcb5f89dd502e260b94a5bb3d8b2",
+  "peak_gpu_allocated_gib": 5.8368072509765625,
+  "peak_gpu_reserved_gib": 6.04296875,
+  "peak_rss_gib": 9.109588623046875,
+  "training_tiles": 560,
+  "validation_tiles": 384,
+  "validation_calls": 9,
+  "code_sha256": "2da06d062be7407cd592835d1aecb2669606f1ebb41fa989008be840c5c64a3a",
+  "shared_calibration": {
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43",
+    "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359"
+  },
+  "initial_weight_sha256": "0651a3852fbafc03be415a1ec80ef947cc1913a081cf0bc649301ade887a82a9",
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3"
+}

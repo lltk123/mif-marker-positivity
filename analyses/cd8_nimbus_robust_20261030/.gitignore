@@ -1,0 +1,12 @@
+cache/
+weights/
+upstream/
+predictions/
+*.pt
+*.pth
+*.npy
+*.npz
+*.parquet
+*.csv.gz
+.venv/
+__pycache__/

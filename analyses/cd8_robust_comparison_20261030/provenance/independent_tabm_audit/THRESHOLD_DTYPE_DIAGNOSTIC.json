@@ -1,0 +1,56 @@
+{
+  "validation32": {
+    "max_grid_error": 0.0,
+    "mismatching_thresholds": [],
+    "grid_differences": [],
+    "winner": 0.86
+  },
+  "validation64": {
+    "max_grid_error": 4.110432023207711e-05,
+    "mismatching_thresholds": [
+      0.99
+    ],
+    "grid_differences": [
+      4.110432023207711e-05
+    ],
+    "winner": 0.86
+  },
+  "inference32": {
+    "max_grid_error": 0.0,
+    "mismatching_thresholds": [],
+    "grid_differences": [],
+    "winner": 0.86
+  },
+  "inference64": {
+    "max_grid_error": 4.110432023207711e-05,
+    "mismatching_thresholds": [
+      0.99
+    ],
+    "grid_differences": [
+      4.110432023207711e-05
+    ],
+    "winner": 0.86
+  },
+  "validation_vs_final": {
+    "max_score_abs_delta": 0.0,
+    "n_not_bitwise_equal": 0,
+    "n_validation_cells": 539132
+  },
+  "stored_prediction_vs_float64": {
+    "threshold": 0.86,
+    "validation_selected_mismatches_full": 0,
+    "fixed_0_5_mismatches_full": 0
+  },
+  "float32_to_float64_changed_decisions": [
+    {
+      "threshold": 0.99,
+      "image_id": "internal_val_WSIs/WSI3",
+      "n_changed": 1,
+      "n_true_positive": 1,
+      "n_true_negative": 0,
+      "native_positive": 0,
+      "promoted_positive": 1
+    }
+  ],
+  "script_sha256": "169bedc2d9cde71f6895c10a899484e5ccf5080eb67e95839a465f73bf66eeef"
+}

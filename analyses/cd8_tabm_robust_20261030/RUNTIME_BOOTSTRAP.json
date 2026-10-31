@@ -1,0 +1,74 @@
+{
+  "status": "runtime_ready_not_trained",
+  "source_run": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_20261029",
+  "official_commit": "28e47ae301c92ec37787dde1ce923a0793f405b4",
+  "files": [
+    {
+      "file": "upstream/SOURCE_MANIFEST.json",
+      "sha256": "3ac1905a905360c9cd6ff3c1cd94b38c1016bd66919303dec19c0ad8037ed1db",
+      "bytes": 1823
+    },
+    {
+      "file": "upstream/tabm.py",
+      "sha256": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+      "bytes": 60545
+    },
+    {
+      "file": "upstream/README.md",
+      "sha256": "302b2d36c3bf226cc98121923ea1881617287a161e25cf9a765b82b26b9d4969",
+      "bytes": 30478
+    },
+    {
+      "file": "upstream/LICENSE",
+      "sha256": "24330ebf083bc17c1db833b0109ef6ffc9019449330e9e4ec9797c061185c7a6",
+      "bytes": 11340
+    },
+    {
+      "file": "upstream/example.ipynb",
+      "sha256": "be6dcd68bb8b21fed858d0e57d3a4bf3e54c875b522776e06d7796b0c5b28d67",
+      "bytes": 22477
+    },
+    {
+      "file": "upstream/pyproject.toml",
+      "sha256": "943277cecbdb2cbf87e685316170432afc0520e3e0b5d3f717b42b353fb808bb",
+      "bytes": 2213
+    },
+    {
+      "file": "upstream/paper/README.md",
+      "sha256": "43428b8d71b2558c75ce4e8bcda10a04284a631158fa30ef735d7db9b67c8703",
+      "bytes": 19120
+    },
+    {
+      "file": "dependencies/rtdl_num_embeddings-0.0.12.dist-info/METADATA",
+      "sha256": "cca1a6c04d45237caba7f677cc76645b971eea89058494db97b4f87d90ad2ddb",
+      "bytes": 903
+    },
+    {
+      "file": "dependencies/rtdl_num_embeddings-0.0.12.dist-info/RECORD",
+      "sha256": "f5522e40b1d1267c5a31c22b9f2d5f863bbeb8f76fd097bfa99b61ba26b78b6f",
+      "bytes": 435
+    },
+    {
+      "file": "dependencies/rtdl_num_embeddings-0.0.12.dist-info/WHEEL",
+      "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db",
+      "bytes": 82
+    },
+    {
+      "file": "dependencies/rtdl_num_embeddings-0.0.12.dist-info/licenses/LICENSE",
+      "sha256": "35381b68041ebc3408e1b76ab24ce5eed1f7ea93afd62d109ffdabf1b0daa324",
+      "bytes": 11339
+    },
+    {
+      "file": "dependencies/rtdl_num_embeddings.py",
+      "sha256": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1",
+      "bytes": 29948
+    },
+    {
+      "file": "upstream/rtdl_num_embeddings-0.0.12-py3-none-any.whl",
+      "sha256": "87fd61270118915cf40888f2164f3a1f0353edf702f15fd91e71a147d23c930d",
+      "bytes": 13293
+    }
+  ],
+  "copied_fitted_artifacts": false,
+  "PanM_accessed": false
+}

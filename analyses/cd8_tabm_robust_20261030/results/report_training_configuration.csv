@@ -1,0 +1,18 @@
+parameter,value,normalization_method
+arch_type,"""tabm""",E1_outer_P1_P99
+k,32,E1_outer_P1_P99
+n_blocks,2,E1_outer_P1_P99
+d_block,512,E1_outer_P1_P99
+dropout,0.1,E1_outer_P1_P99
+embedding,"{""type"": ""PiecewiseLinearEmbeddings"", ""n_bins"": 48, ""d_embedding"": 16, ""activation"": false, ""version"": ""B"", ""fitting"": ""train-only quantiles""}",E1_outer_P1_P99
+optimizer,"{""type"": ""AdamW"", ""weight_decay"": 0.0003}",E1_outer_P1_P99
+candidates,"[{""name"": ""official_default"", ""learning_rate"": 0.002}, {""name"": ""lower_lr"", ""learning_rate"": 0.0005}]",E1_outer_P1_P99
+batch_size,256,E1_outer_P1_P99
+max_epochs,100,E1_outer_P1_P99
+patience,16,E1_outer_P1_P99
+seeds,"[0, 1, 2]",E1_outer_P1_P99
+training_loss,"""mean cross entropy over B*k separate member outputs""",E1_outer_P1_P99
+inference,"""mean(softmax(logits, class_dim)[positive], member_dim)""",E1_outer_P1_P99
+precision,"""float32""",E1_outer_P1_P99
+selection_metric,"""equal-WSI mean AP on original internal validation; max""",E1_outer_P1_P99
+HGB,"{""learning_rate"": 0.06, ""max_iter"": 150, ""max_leaf_nodes"": 15, ""min_samples_leaf"": 80, ""l2_regularization"": 2.0, ""early_stopping"": false}",E1_outer_P1_P99

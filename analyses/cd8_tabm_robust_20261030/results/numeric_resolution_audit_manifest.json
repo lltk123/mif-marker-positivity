@@ -1,0 +1,33 @@
+{
+  "script_sha256": "4294f69fda8618983ffacc73c918bbe260337aa5e13763e4adec250683aac248",
+  "inputs": {
+    "ready": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/data/DATA_READY.json",
+      "sha256": "7033068188b75eae3aac6b98d87105006bd9d48b14464f6004baf9c42f3f3b44"
+    },
+    "cells": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/data/cells.parquet",
+      "sha256": "3c25584a5369ca580681c42379cff2a034afe030c5878d8c516acf5dad39c756"
+    },
+    "matrix": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/data/X.npy",
+      "sha256": "b8199126755020afad4e58e40165caa1145478215bce6fbc193b62348ab0349d"
+    },
+    "indices": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/data/train_indices.npy",
+      "sha256": "fc050e6d20e94dadbf80b9c2951b579dad18e114d0be73dfad7b7b040708c81d"
+    },
+    "features": {
+      "path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_tabm_robust_20261030/FEATURE_SETS.json",
+      "sha256": "6f9a98d03a89b0df64db4bb6f95b0c7636049f9e4b385123a8da3ef4c45158de"
+    }
+  },
+  "training_ordered_key_sha256": "a7e0413ef9a19622e95cc51eb894b6a10375640591ded444d5a2cfc69647d186",
+  "n_training_cells": 101057,
+  "fit_noise_std": 1e-05,
+  "model_or_preprocessing_changed": false,
+  "outputs": {
+    "numeric_resolution_train.csv": "3a4afdf152d66e0e312c695b1a29f32aba9d4777c0806b7263854c90b7b9feb0",
+    "NUMERIC_RESOLUTION_AUDIT.md": "f6cf784aff22218bc42cb9a3bc2b8cd27fd8a4f4123d9fcba8f3a1d6e025159c"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "comparison software, not scientific results",
+  "server_tests": 14,
+  "server_test_seconds": 9.609,
+  "exit_code": 0,
+  "server_interpreter": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python",
+  "recorded_at_utc": "2026-10-30T13:25:59.434456+00:00",
+  "code_sha256": {
+    "compare_results.py": "ef4bfd3ac94cfaf1a092e64966749ec1530a7e7e84dcf0c8adeb6ecb0d0810a5",
+    "test_compare_results.py": "103b3b98769555ba983268cb9061a405ca6492675a880f37df1229654ecaac55"
+  },
+  "runner_dry_run": "six expected stages; original morphology interpreter for shared, original Nimbus interpreter for model/report stages",
+  "font_verified": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
+}

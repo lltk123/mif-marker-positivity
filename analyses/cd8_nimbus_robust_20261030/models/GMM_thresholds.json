@@ -1,0 +1,7 @@
+{
+  "model": "GMM",
+  "default": 0.5,
+  "operator": ">",
+  "validation_selected": null,
+  "selection": "original GMM fixed 0.5; no new threshold fitting"
+}

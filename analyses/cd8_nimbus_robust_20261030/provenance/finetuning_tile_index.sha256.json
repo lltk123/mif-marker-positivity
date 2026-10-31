@@ -1,0 +1,11 @@
+{
+  "sha256": "6da5ccc927d0bf217b47c7af33a1f5dd0e44dd31ab39001d6fe124a823c6a2f5",
+  "selection": "all eligible training tiles; uniform seed0 up to128 validation tiles per WSI, before model scoring",
+  "code_sha256": "2da06d062be7407cd592835d1aecb2669606f1ebb41fa989008be840c5c64a3a",
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "shared_calibration": {
+    "bounds_sha256": "6e64815f592d78f5661da8263c92c2e9cf035a591748db3f4fbef7de4a71f1f6",
+    "manifest_sha256": "0cf7e2e6cbff4a3c6ca93249326037d12d6e49dac289bc75864de84e49a76e43",
+    "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359"
+  }
+}

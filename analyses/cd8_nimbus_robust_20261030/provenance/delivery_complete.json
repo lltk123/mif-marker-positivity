@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "report_sha256": "3f1b5f11bab66d0f7cdd148cf17cb796c3ff2da9b015d658543b529ccb218e75",
+  "protocol_sha256": "d5087c68b41eb0a05167f648b204637ab466fbfd0cc2233318d271fc04c219c3",
+  "main_table_failed_observations": 0,
+  "documentation_finalization": "provenance/documentation_finalization.json"
+}

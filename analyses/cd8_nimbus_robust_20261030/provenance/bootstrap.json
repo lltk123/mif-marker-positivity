@@ -1,0 +1,10 @@
+{
+  "source_run": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024",
+  "source_package": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/upstream/Nimbus-Inference-241281ef85ba34d9857cc03886cc45aedd0f0b34/src/nimbus_inference",
+  "official_commit": "241281ef85ba34d9857cc03886cc45aedd0f0b34",
+  "isolated_import_path": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_robust_20261030/upstream/src",
+  "source_only": false,
+  "python_executable": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python",
+  "python_version": "3.11.13 (main, Sep 18 2025, 19:46:39) [Clang 20.1.4 ]",
+  "old_source_or_assets_modified": false
+}

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "normalization_method": "E1_outer_P1_P99",
+  "protocol_sha256": "d77b643a5a49dffe4dd77baee60ddb02450d26f4ebae2b49a188d07c581dc1fa",
+  "risk_strata_sha256": "b45c736dbaa5f1471c60f9fae110c202c7a23c3c64dcddf9179965a93ccacbf6",
+  "n_all_cells": 1817783,
+  "n_models": 19,
+  "n_metric_rows": 1998,
+  "python": "3.11.13",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "sklearn": "1.5.2",
+  "curves": "full ROC/PR arrays for splits and TMA contexts",
+  "curve_threshold_convention": "sklearn ROC/PR curves use score >= threshold; formal classification tables use the separately recorded strict > rule.",
+  "missing_score_policy": "All labelled rows retained; full-set metrics NaN if any score nonfinite.",
+  "uncertainty_warning": "Member disagreement is descriptive, not calibrated uncertainty.",
+  "statistical_policy": "Seed SD is descriptive, not patient-level confidence intervals; no cell bootstrap or significance test."
+}

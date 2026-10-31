@@ -1,0 +1,9 @@
+{
+  "frozen_unix_time": 1793369250.6402667,
+  "development_only_visual_review": true,
+  "normalization_method": "E1_outer_P1_P99",
+  "weak_positive": "original raw training positive whole_mean <= original training q25; audit_raw mapping; model inputs calibrated",
+  "neighbor_proxy": "neighbor_edge_area_fraction>0 and neighbor_edge_mean_diff>training contact q75",
+  "causal_claim": false,
+  "risk_strata_sha256": "b45c736dbaa5f1471c60f9fae110c202c7a23c3c64dcddf9179965a93ccacbf6"
+}

@@ -1,0 +1,6 @@
+category,n_stratum,n_errors,n_corrected_FP,n_corrected_FN,n_introduced_FP,n_introduced_FN,n_persistent_FP,n_persistent_FN,n_selected,requested,missing_reason,shortfall_reason
+weak_positive,7203,1771,0,250,0,322,0,1199,2,2,,
+bright_neighbor_side_proxy,35727,2476,719,53,52,134,1258,260,2,2,,
+high_local_reference_proxy,66911,3796,1369,40,73,244,1770,300,2,2,,
+localized_edge_signal_proxy,60623,499,238,0,12,33,147,69,2,2,,
+incomplete_support,7,1,0,0,0,0,0,1,1,2,,No further unique development errors; instances are not reused across categories

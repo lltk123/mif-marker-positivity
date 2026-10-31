@@ -1,0 +1,15 @@
+{
+  "question": "Does outer-instance P1/P99 calibration improve the frozen TabM and Nimbus workflows?",
+  "claim_policy": "Actual results determine direction; no improvement is presumed",
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib",
+  "panels": [
+    "old/new F1, precision, recall with GMM reference",
+    "42 paired core F1 values per model",
+    "calibration U and clipped pixel fractions",
+    "pre-existing zero pixels and reference-dependent feature missingness"
+  ],
+  "error_bars": "sample SD across three TabM seeds; none for one-seed Nimbus or GMM",
+  "export": "Chinese and English PNG 300 dpi; editable-text SVG; CSV source data",
+  "statistics": "descriptive paired comparisons; no cell bootstrap or significance tests"
+}

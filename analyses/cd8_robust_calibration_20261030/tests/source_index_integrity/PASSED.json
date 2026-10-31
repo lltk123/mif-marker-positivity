@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "rows": 1817783,
+  "source_images": 176,
+  "empty_source_images": 33,
+  "all_keys_sha256": "c6efbebaa94c08f49eb3218c6d69b5ede3a79a8ae70d9ad80c8cfdd27dcd616a",
+  "protocol_sha256": "db88a81f03992fb06c5937fa442167a3bdd2493970d2d963392f3c8f964de359"
+}

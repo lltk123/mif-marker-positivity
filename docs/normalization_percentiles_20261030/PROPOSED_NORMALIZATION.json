@@ -1,0 +1,39 @@
+{
+  "method_id": "E1_outer_P1_P99",
+  "date": "2026-10-30",
+  "status": "literature_guided_specification_not_executed",
+  "calibration_unit": "original WSI; deduplicated pooled internal WSI; individual TMA core",
+  "eligibility": "original instance with at least 5 finite valid pixels, independent of labels and geometry QC",
+  "inner_percentiles": [
+    10,
+    90
+  ],
+  "outer_percentiles": [
+    1,
+    99
+  ],
+  "outer_weighting": "one equal-weight statistic per eligible original instance; not pixel weighted",
+  "lower_bound": "P1 of eligible instance P10 values",
+  "upper_bound": "P99 of eligible instance P90 values",
+  "quantile_method": "linear",
+  "dtype": "float64",
+  "mapping": "clip((I-L)/(U-L),0,1)",
+  "zero_is_valid": true,
+  "invalid_support": "preserve as invalid",
+  "invalid_range": "U-L <= 32*float64_eps*max(abs(L),abs(U),float64_tiny)",
+  "empty_or_invalid": "retain all original keys; calibration_invalid and NaN derived inputs",
+  "clipping_population_for_audit": "finite pixels in eligible original instances; each unique global pixel counted once",
+  "whole_image_context": "same mapping for target, neighboring and reference pixels; no per-tile refit",
+  "raw_data_changed": false,
+  "tail_cells_removed": false,
+  "previous_results_changed": false,
+  "pan_m_accessed": false,
+  "new_training_or_evaluation_run": false,
+  "direct_evidence_for_exact_combination": false,
+  "evidence_ids": [
+    "PHENOBIC_CELL_10_90",
+    "CODEX_CELL_1_99",
+    "SPACEC_CELL_1_99"
+  ],
+  "provenance_note": "Literature-guided combination; the cited papers do not establish this exact nested formula as optimal for CD8."
+}
