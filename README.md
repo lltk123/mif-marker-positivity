@@ -20,6 +20,7 @@
 | 校准后 TabM A/B/C 与匹配 HGB | 已完成每组 3 种子、全量预测与独立审计 | [TabM 重训练](analyses/cd8_tabm_robust_20261030/ANALYSIS_REPORT.md) |
 | 校准后 Nimbus 预训练／微调 | 已完成官方 V1 新尺度推理和单独微调 | [Nimbus 重训练](analyses/cd8_nimbus_robust_20261030/ANALYSIS_REPORT.md) |
 | 本轮新旧性能对比（2026-10-31） | 已完成统一指标、逐芯比较及双语图表 | [综合报告](analyses/cd8_robust_comparison_20261030/ANALYSIS_REPORT.md) |
+| 表征修复、目标/邻域 mask 消融与统一评价 | 7 HGB + 5×3 神经组完成；correctness_001；联合目标未达成，人工复核待完成 | [三阶段实验](analyses/cd8_representation_targetaware_20261031_v1/ANALYSIS_REPORT.md) |
 
 **最新完成（2026-10-31）：** 已完成逐图外层 P1/P99 校准、像素级特征重提、TabM A/B/C 各 3 种子训练与匹配 HGB、Nimbus 预训练推理和单独微调，以及全量评价。当前没有正在运行的 Nimbus 或 TabM 训练。新结果保存在独立目录，旧实验全部保留；Pan-M 继续封存，未读取其图像、标签、分布或预测。
 
@@ -61,6 +62,10 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 输出一行一个原实例，包含数值特征、QC、显式 ID 与运行配置。默认不会覆盖已有输出。GMM、E1–E4、Nimbus 的批处理和微调命令分别保留在实验 README 中；这些完整流程依赖服务器上的数据、上游实现和缓存，克隆仓库本身不等于已具备全部输入。
 
 ## Results
+
+### 三阶段受控实验（2026-10-31；2026-11-01 发布）
+
+[中文报告](analyses/cd8_representation_targetaware_20261031_v1/reports/REPORT_zh.md) · [English report](analyses/cd8_representation_targetaware_20261031_v1/reports/REPORT_en.md) · [精简结果](analyses/cd8_representation_targetaware_20261031_v1/reports/CONCISE_EXTERNAL_RESULTS.csv)。原 H1 内部选择保留；H0/E2 固定 0.5 F1 仍最高；mask 模型在本轮受控对照提高 AP，但弱阳性召回联合标准未通过。ENS 是三 seed 概率集成，seed 指标均值另列。dtype 修复真实判定变化为 0，31 例人工复核尚未完成；真实病例图像不随本次发布。
 
 ### 本轮校准与重训练（2026-10-31）
 

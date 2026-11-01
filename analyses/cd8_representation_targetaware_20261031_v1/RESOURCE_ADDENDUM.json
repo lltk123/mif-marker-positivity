@@ -1,0 +1,20 @@
+{
+  "reason": "resource preflight; no new model trained or new performance evaluated",
+  "GPU": "Quadro RTX 4000 8GB",
+  "available_GPU_MiB": 7212,
+  "CPU": 16,
+  "available_RAM_kB": 57728536,
+  "checkpoint_validation_subset": "deterministic label-blind hash sample of at most 10000 labelled cells per internal WSI; same subset for all epochs/groups/seeds; final thresholds and candidate ranking use complete internal set",
+  "crop_storage": "float32 normalized CD8 plus packed binary masks; preserve weak measured values",
+  "hard_GPU_hours": 8,
+  "old_HGB_environment": "use original morphospatial Python/sklearn environment for all H0-H6 fits",
+  "external_population": "all 437480 labelled cells preserved; feature extraction and crops do not use external labels except pre-existing labelled membership",
+  "neural_group_candidate": "mean probability of the 3 prespecified seeds; no extra fit. Report every seed, descriptive seed summaries and explicitly named ensembles. Final candidate selection uses full internal WSI equal-weight AP of each HGB or neural ensemble; exclude missing-indicators-only H6. Individual best seeds are never selected.",
+  "neural_optimizer_details": {
+    "gradient_clip_norm": 1.0,
+    "early_stopping_min_delta_AP": 1e-05,
+    "GroupNorm": "8 groups, no batch composition statistics",
+    "inference_batch_size": 512,
+    "training_batch_size": 128
+  }
+}

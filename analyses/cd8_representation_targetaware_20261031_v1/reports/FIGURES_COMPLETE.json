@@ -1,0 +1,11 @@
+{
+  "figures": 4,
+  "exports": 24,
+  "backend": "Python only",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "code_sha256": "a987176a1c33213df9159d2911bba0fa6c704e15e148b780e667a0606f5262f4",
+  "visual_QA": "passed local inspection; see VISUAL_QA.json"
+}

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "cd8_representation_targetaware_20261031_v1",
+  "finalized_utc": "2026-10-31T09:52:42.835725+00:00",
+  "model_fits_completed": {
+    "HGB": 7,
+    "neural": 15
+  },
+  "no_retraining_in_correctness_revision": true,
+  "frozen_selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+  "correctness_tests_passed": 10,
+  "real_dtype_changed_predictions": 0,
+  "independent_numeric_validation": {
+    "prediction_sets": 28,
+    "pooled_rows": 327,
+    "max_absolute_difference": 1.1102230246251565e-16
+  },
+  "human_case_review": "pending user; 31 real cells; labels not adjudicated",
+  "scientific_joint_target_met": false,
+  "seed_provenance": "posthoc reconstruction, not contemporaneous logging",
+  "PanM_accessed": false,
+  "source_archive_sha256": "917de7c86f117d5e2a3a8e8b765698de49ac2e1e355b277d1bf44d61c7bb5ab8",
+  "publication_date": "2026-11-01",
+  "real_images_published": false,
+  "publication_retrained": false
+}

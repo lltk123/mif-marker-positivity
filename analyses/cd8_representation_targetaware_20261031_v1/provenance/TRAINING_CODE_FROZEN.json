@@ -1,0 +1,14 @@
+{
+  "created": 1793432734.9106266,
+  "no_new_model_trained": true,
+  "sha256": {
+    "PROTOCOL.json": "79284785711830690b42d307b50591744dd244a34394ec931a1bb4580ec856d1",
+    "RESOURCE_ADDENDUM.json": "e5e1a664d48264d57d543779102a9274a67c1644aaf65b32bcfec7d3a47504eb",
+    "scripts/stage1_prepare.py": "22ebda8eb41864760d3da72a5f03061b3ee98e6bedd7616a6d7b5aaf71141c0b",
+    "scripts/experiment_common.py": "1e256d064272526aa9de38e24f268b2337fa736bac476aed403a2f7f222318be",
+    "scripts/stage1_hgb.py": "e4472b3ac6ac9ce96a1ae88223cc0bc6c6f56d15386c8e49cb62697bf3e47cb8",
+    "scripts/repaired_features.py": "e36ddef08dfa8366163018585e337ca370964a8ffc0d9e99ad9bb14352a9f0b4",
+    "scripts/training_supervisor.py": "e33eac8e82437a4a2b6bdb05100f7a7d90d71831012aaa367d31d99a460e7422",
+    "scripts/stage2_neural.py": "3ad699a012550c095cd3b4ca268be842173c5aa4309d717aa10c583283d30f18"
+  }
+}

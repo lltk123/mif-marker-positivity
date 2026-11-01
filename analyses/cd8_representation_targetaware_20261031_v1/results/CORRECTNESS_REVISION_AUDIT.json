@@ -1,0 +1,26 @@
+{
+  "PanM_accessed": false,
+  "below_8h": true,
+  "changed_metric_rows_by_count": {
+    "fn": 0,
+    "fp": 0,
+    "tn": 0,
+    "tp": 0
+  },
+  "frozen_selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+  "frozen_threshold_values_unchanged": true,
+  "models_unchanged": true,
+  "native_dtype_threshold_applied": true,
+  "neural_train_development_seconds": 2243.0863251686096,
+  "notes": "Original frozen selection retained. Tree nodes and neural scalar weights are not comparable. Guard changes apply prospectively, not retroactively to completed training.",
+  "old_all_calibration_decisions_changed_sum_across_repeats_budgets": 0,
+  "old_zero_budget_decisions_changed_sum_across_repeats": 0,
+  "partial_run_or_timeout_observed": false,
+  "posthoc_provenance_explicit": true,
+  "predictions_unchanged": true,
+  "retrained": false,
+  "revision": "correctness_001",
+  "selected_model": "H1",
+  "total_recorded_neural_seconds_including_external": 2740.781587123871,
+  "zero_budget_and_one_class_fallback_exact": true
+}

@@ -1,0 +1,13 @@
+{
+  "metric_rows": 6540,
+  "risk_rows": 11118,
+  "models": 28,
+  "seconds": 443.90019845962524,
+  "all_main_model_populations_aligned": true,
+  "full_external_labelled": 437480,
+  "full_internal_labelled": 539132,
+  "full_train_labelled": 101057,
+  "selection_frozen_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+  "PanM_accessed": false,
+  "code_sha256": "8c1c9c3f892ffb13c97d6d8fb02b9a37b7ca711b2d0f5a2cc56727e9804a30eb"
+}

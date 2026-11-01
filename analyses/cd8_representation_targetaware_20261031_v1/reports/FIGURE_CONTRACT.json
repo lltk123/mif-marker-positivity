@@ -1,0 +1,66 @@
+{
+  "backend": "Python/matplotlib only",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "formats": [
+    "PNG",
+    "SVG with editable text",
+    "PDF TrueType"
+  ],
+  "statistics": "HGB one deterministic fit; neural paired seeds 0/1/2, ensemble curves explicitly separate; label-calibration SD is across 3 sampling repeats, not patient CI",
+  "figures": {
+    "stage1": {
+      "claim": "Normalization-only delta F1=-0.004162; representation-only delta F1=-0.009068; source recall remains a separate outcome.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "controlled HGB AP/F1",
+        "achieved source recall at internal R90"
+      ],
+      "source": [
+        "EXTERNAL_MAIN.csv",
+        "EXTERNAL_BY_TMA.csv"
+      ]
+    },
+    "target_aware": {
+      "claim": "Target-aware inputs are evaluated jointly for proxy false positives, weak recall and achieved external recall.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "diagnostic PR curves with frozen operating points",
+        "proxy tradeoff",
+        "three paired seeds"
+      ],
+      "source": [
+        "curves/*TEST_DIAGNOSTIC_PR.npz",
+        "RISK_STRATA.csv",
+        "METRICS_BY_UNIT.csv"
+      ]
+    },
+    "calibration": {
+      "claim": "Fixed per-core target labels are evaluated on a strictly isolated, identical held-out population across budgets.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "held-out F1",
+        "source recall",
+        "Brier score"
+      ],
+      "source": [
+        "TARGET_LABEL_CALIBRATION_SIMULATION.csv",
+        "CALIBRATION_RESERVED_INSTANCES.csv"
+      ]
+    },
+    "composition": {
+      "claim": "Only the normalization estimation pool changes; target raw pixel hashes remain identical. This is diagnostic.",
+      "archetype": "quantitative grid",
+      "panels": [
+        "absolute score change",
+        "fraction changed at .5"
+      ],
+      "source": [
+        "COMPOSITION_SUMMARY.csv",
+        "COMPOSITION_DIAGNOSTIC.csv"
+      ]
+    }
+  }
+}

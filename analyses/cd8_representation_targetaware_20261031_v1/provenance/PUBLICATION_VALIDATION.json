@@ -1,0 +1,25 @@
+{
+  "publication_date": "2026-11-01",
+  "source_archive_verified": true,
+  "tests": {
+    "correctness_guards": 10,
+    "descriptors": 10,
+    "publication_evidence": 8,
+    "repository": 5,
+    "total_passed": 33
+  },
+  "results_and_figures_byte_identical_to_final_delivery": true,
+  "legacy_function_AST_unchanged": true,
+  "formatting_AST_checked": true,
+  "scientific_figures": 24,
+  "private_case_images_included": false,
+  "private_context_scan_findings": 0,
+  "runtime_path_test_includes_unicode_windows_path": true,
+  "secrets_file_size_granularity_and_markdown_links": "tools/check_publication.py --staged passed for the full index (1738 files); exact-index review repeated before commit",
+  "retraining_performed": false,
+  "PanM_accessed": false,
+  "local_environment_note": "pandas emitted optional numexpr/bottleneck version warnings; all tests passed; no dependency or environment changes made",
+  "full_reproduction_limit": "Full data/weights/GPU pipeline not rerun. Published environment inventories are historical; raw input access and separate Linux runtime environments are required.",
+  "staged_byte_identity_verified": true,
+  "whitespace_check": "Active source/docs pass. Original CODE_CHANGES.diff.txt retains 8 space-only unified-diff context lines; preserved byte-identical as historical evidence."
+}

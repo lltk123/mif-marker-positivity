@@ -1,0 +1,9 @@
+{
+  "selected_model": "H1",
+  "real_case_review_pending": true,
+  "predefined_proxy_criterion_met": false,
+  "source_metrics_sha256": "a5f85672c8d0fcd409f41de3afe53a772e64da519d4950ee1eb20fc66db8126d",
+  "source_risk_sha256": "944afa52d82e2586fd26549eb2fbd24902dc8d92c54c691c44c3f7ae314f6663",
+  "code_sha256": "52221c3c73b411a2c8bc7adf80cc38dd5a3f917f2945311b5cb633d8ec1e49b7",
+  "no_new_experiments_during_reporting": true
+}

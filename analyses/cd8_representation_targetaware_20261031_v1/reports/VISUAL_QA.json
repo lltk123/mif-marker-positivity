@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-31T09:45:09.281016+00:00",
+  "scientific_pngs_visually_inspected": 8,
+  "scientific_exports": 24,
+  "case_overviews_inspected": 31,
+  "full_resolution_cases_inspected": [
+    "C001_zh",
+    "C010_en",
+    "C010_zh",
+    "C024_zh",
+    "C031_en"
+  ],
+  "bilingual_labels_checked": true,
+  "overlapping_labels_corrected": true,
+  "english_panel_title_corrected": true,
+  "report_and_case_links_checked": true,
+  "all_figure_hashes_verified": true,
+  "final_server_code_matches_packaged_code": true,
+  "image_integrity": "Raw 96x96 CD8 and original instance arrays retained. Display uses recorded linear scale. 20 px bars are pixels, not physical length. No generated images.",
+  "human_case_review": "pending user; visual layout QA does not validate biological labels"
+}

@@ -1,0 +1,6 @@
+{
+  "synthetic_tests": 10,
+  "passed": true,
+  "training_run": false,
+  "tests": "dtype ties; atomics; corrupt and missing scores; key order; budget exhaustion; failed retry; completion states"
+}

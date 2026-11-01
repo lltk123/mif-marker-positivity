@@ -1,0 +1,15 @@
+{
+  "revision": "correctness_001",
+  "files": {
+    "scripts/completion_supervisor.py": "d471acb6e5487a7af8af04ebe38c976b56b6efadf0150e91175d5f14ee9abf00",
+    "scripts/execution_guards.py": "77920616659b7e1dbfc5d12265ad2a56d63175269fa78fd9fa4ba17adda3f631",
+    "scripts/revision_runner.py": "8b4a45a26f08268110ebf8790be6390b55b103302a44e7cdfd4ac375aa9f5831",
+    "scripts/stage2_neural.py": "bd9fe2b2562bf082bd0a2015f69f091a3ea24ae1b26f804d8badc3ea4b757a44",
+    "scripts/stage3_evaluate.py": "be2f6eaac6560ef3555f6f49c00e2397f26213871e2efd91ce1cd9f488179af6",
+    "scripts/stage3_freeze_hgb_predict.py": "2451554830f630109cdcc9bf83ff2bec8fcfae2fab6969374bfaf42f388387e0",
+    "scripts/stage3_neural_predict.py": "3f1b21709876a2069bec425e690ccf12f1b68d00fcab885f782d47e82f94a3e6",
+    "scripts/test_correctness.py": "8470c4b402578fb5b9255ee10b8614f63f4f6da0b9f305a7fa4f68259e04f0bd",
+    "scripts/training_supervisor.py": "09af49122588402c72c470022d8bc7f5eb45e69f662b85232ebdc191460d0713"
+  },
+  "models_or_thresholds_changed": false
+}

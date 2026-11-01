@@ -1,0 +1,159 @@
+{
+  "time": 1793439284.524508,
+  "installed_revision_matches": {
+    "scripts/completion_supervisor.py": {
+      "expected": "d471acb6e5487a7af8af04ebe38c976b56b6efadf0150e91175d5f14ee9abf00",
+      "actual": "d471acb6e5487a7af8af04ebe38c976b56b6efadf0150e91175d5f14ee9abf00",
+      "equal": true
+    },
+    "scripts/execution_guards.py": {
+      "expected": "77920616659b7e1dbfc5d12265ad2a56d63175269fa78fd9fa4ba17adda3f631",
+      "actual": "77920616659b7e1dbfc5d12265ad2a56d63175269fa78fd9fa4ba17adda3f631",
+      "equal": true
+    },
+    "scripts/revision_runner.py": {
+      "expected": "8b4a45a26f08268110ebf8790be6390b55b103302a44e7cdfd4ac375aa9f5831",
+      "actual": "8b4a45a26f08268110ebf8790be6390b55b103302a44e7cdfd4ac375aa9f5831",
+      "equal": true
+    },
+    "scripts/stage2_neural.py": {
+      "expected": "bd9fe2b2562bf082bd0a2015f69f091a3ea24ae1b26f804d8badc3ea4b757a44",
+      "actual": "bd9fe2b2562bf082bd0a2015f69f091a3ea24ae1b26f804d8badc3ea4b757a44",
+      "equal": true
+    },
+    "scripts/stage3_evaluate.py": {
+      "expected": "be2f6eaac6560ef3555f6f49c00e2397f26213871e2efd91ce1cd9f488179af6",
+      "actual": "be2f6eaac6560ef3555f6f49c00e2397f26213871e2efd91ce1cd9f488179af6",
+      "equal": true
+    },
+    "scripts/stage3_freeze_hgb_predict.py": {
+      "expected": "2451554830f630109cdcc9bf83ff2bec8fcfae2fab6969374bfaf42f388387e0",
+      "actual": "2451554830f630109cdcc9bf83ff2bec8fcfae2fab6969374bfaf42f388387e0",
+      "equal": true
+    },
+    "scripts/stage3_neural_predict.py": {
+      "expected": "3f1b21709876a2069bec425e690ccf12f1b68d00fcab885f782d47e82f94a3e6",
+      "actual": "3f1b21709876a2069bec425e690ccf12f1b68d00fcab885f782d47e82f94a3e6",
+      "equal": true
+    },
+    "scripts/test_correctness.py": {
+      "expected": "8470c4b402578fb5b9255ee10b8614f63f4f6da0b9f305a7fa4f68259e04f0bd",
+      "actual": "8470c4b402578fb5b9255ee10b8614f63f4f6da0b9f305a7fa4f68259e04f0bd",
+      "equal": true
+    },
+    "scripts/training_supervisor.py": {
+      "expected": "09af49122588402c72c470022d8bc7f5eb45e69f662b85232ebdc191460d0713",
+      "actual": "09af49122588402c72c470022d8bc7f5eb45e69f662b85232ebdc191460d0713",
+      "equal": true
+    }
+  },
+  "code_inventory": {
+    "test_correctness.py": "8470c4b402578fb5b9255ee10b8614f63f4f6da0b9f305a7fa4f68259e04f0bd",
+    "stage3_neural_predict.py": "3f1b21709876a2069bec425e690ccf12f1b68d00fcab885f782d47e82f94a3e6",
+    "execution_guards.py": "77920616659b7e1dbfc5d12265ad2a56d63175269fa78fd9fa4ba17adda3f631",
+    "stage4_figures.py": "18c8eb08d3e4149f39587252aa57f40e5fab668529d08d1ed325e8cdff6c7f82",
+    "stage1_prepare.py": "22ebda8eb41864760d3da72a5f03061b3ee98e6bedd7616a6d7b5aaf71141c0b",
+    "experiment_common.py": "1e256d064272526aa9de38e24f268b2337fa736bac476aed403a2f7f222318be",
+    "revision_runner.py": "8b4a45a26f08268110ebf8790be6390b55b103302a44e7cdfd4ac375aa9f5831",
+    "stage1_composition.py": "897ace203a4377b01145ff3747b6c27182eece54bdab12bc94f63551bdcc0f30",
+    "stage5_validate_package.py": "710a21f2299f73fee3b8d62c0a558115c37458cb51d1083150ba10b60cb0f445",
+    "stage3_freeze_hgb_predict.py": "2451554830f630109cdcc9bf83ff2bec8fcfae2fab6969374bfaf42f388387e0",
+    "stage1_hgb.py": "e4472b3ac6ac9ce96a1ae88223cc0bc6c6f56d15386c8e49cb62697bf3e47cb8",
+    "stage3_evaluate.py": "be2f6eaac6560ef3555f6f49c00e2397f26213871e2efd91ce1cd9f488179af6",
+    "stage4_report.py": "52221c3c73b411a2c8bc7adf80cc38dd5a3f917f2945311b5cb633d8ec1e49b7",
+    "repaired_features.py": "e36ddef08dfa8366163018585e337ca370964a8ffc0d9e99ad9bb14352a9f0b4",
+    "stage4_review.py": "8e631bdb2dd5afb2a904e443b118dbe3f3db34997e7cbe22e212fbdf5cb36e73",
+    "training_supervisor.py": "09af49122588402c72c470022d8bc7f5eb45e69f662b85232ebdc191460d0713",
+    "stage2_neural.py": "bd9fe2b2562bf082bd0a2015f69f091a3ea24ae1b26f804d8badc3ea4b757a44",
+    "completion_supervisor.py": "d471acb6e5487a7af8af04ebe38c976b56b6efadf0150e91175d5f14ee9abf00",
+    "stage4_input_quality.py": "b8bb9ea55d0a02cc4da675cbfe8d6e921d853e5fa142a9fbfa6a7a24f6bd1aeb"
+  },
+  "selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+  "all_22_model_hashes_unchanged": true,
+  "revision": {
+    "PanM_accessed": false,
+    "below_8h": true,
+    "changed_metric_rows_by_count": {
+      "fn": 0,
+      "fp": 0,
+      "tn": 0,
+      "tp": 0
+    },
+    "frozen_selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+    "frozen_threshold_values_unchanged": true,
+    "models_unchanged": true,
+    "native_dtype_threshold_applied": true,
+    "neural_train_development_seconds": 2243.0863251686096,
+    "notes": "Original frozen selection retained. Tree nodes and neural scalar weights are not comparable. Guard changes apply prospectively, not retroactively to completed training.",
+    "old_all_calibration_decisions_changed_sum_across_repeats_budgets": 0,
+    "old_zero_budget_decisions_changed_sum_across_repeats": 0,
+    "partial_run_or_timeout_observed": false,
+    "posthoc_provenance_explicit": true,
+    "predictions_unchanged": true,
+    "retrained": false,
+    "revision": "correctness_001",
+    "seconds": 704.0250227451324,
+    "selected_model": "H1",
+    "total_recorded_neural_seconds_including_external": 2740.781587123871,
+    "zero_budget_and_one_class_fallback_exact": true
+  },
+  "before_after_code": [
+    {
+      "file": "test_correctness.py",
+      "before_sha256": null,
+      "after_sha256": "8470c4b402578fb5b9255ee10b8614f63f4f6da0b9f305a7fa4f68259e04f0bd"
+    },
+    {
+      "file": "stage3_neural_predict.py",
+      "before_sha256": "033e135139f30b7a463c4c99426fe521b9c614a74c08c05da8f33eea86df8380",
+      "after_sha256": "3f1b21709876a2069bec425e690ccf12f1b68d00fcab885f782d47e82f94a3e6"
+    },
+    {
+      "file": "execution_guards.py",
+      "before_sha256": null,
+      "after_sha256": "77920616659b7e1dbfc5d12265ad2a56d63175269fa78fd9fa4ba17adda3f631"
+    },
+    {
+      "file": "revision_runner.py",
+      "before_sha256": null,
+      "after_sha256": "8b4a45a26f08268110ebf8790be6390b55b103302a44e7cdfd4ac375aa9f5831"
+    },
+    {
+      "file": "stage3_freeze_hgb_predict.py",
+      "before_sha256": "47bc99c983196dfd0ed1460c8d7f7567a565cfcb0d57115969bd742873eb1206",
+      "after_sha256": "2451554830f630109cdcc9bf83ff2bec8fcfae2fab6969374bfaf42f388387e0"
+    },
+    {
+      "file": "stage3_evaluate.py",
+      "before_sha256": "8c1c9c3f892ffb13c97d6d8fb02b9a37b7ca711b2d0f5a2cc56727e9804a30eb",
+      "after_sha256": "be2f6eaac6560ef3555f6f49c00e2397f26213871e2efd91ce1cd9f488179af6"
+    },
+    {
+      "file": "training_supervisor.py",
+      "before_sha256": "e33eac8e82437a4a2b6bdb05100f7a7d90d71831012aaa367d31d99a460e7422",
+      "after_sha256": "09af49122588402c72c470022d8bc7f5eb45e69f662b85232ebdc191460d0713"
+    },
+    {
+      "file": "stage2_neural.py",
+      "before_sha256": "3ad699a012550c095cd3b4ca268be842173c5aa4309d717aa10c583283d30f18",
+      "after_sha256": "bd9fe2b2562bf082bd0a2015f69f091a3ea24ae1b26f804d8badc3ea4b757a44"
+    },
+    {
+      "file": "completion_supervisor.py",
+      "before_sha256": "3bbd64fe80327b1fbe84ca71386db6a3d3c0f9fcbdf0cb1cc7b4650c912abfad",
+      "after_sha256": "d471acb6e5487a7af8af04ebe38c976b56b6efadf0150e91175d5f14ee9abf00"
+    }
+  ],
+  "delivery": [
+    {
+      "name": "CD8_results_code_20261031_correctness001.zip",
+      "bytes": 7244156,
+      "sha256": "f898e880957c85b586ecfb50341fbb41b5edd481fc516d4ec09de96181a9f247"
+    },
+    {
+      "name": "CD8_real_case_review_20261031_correctness001.zip",
+      "bytes": 3087220,
+      "sha256": "e5314c5e24f291d4bdb0b45b6fdfb0ff99a4af1d92e464de31934a5e7a715ead"
+    }
+  ]
+}

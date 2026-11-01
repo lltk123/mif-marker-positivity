@@ -1,0 +1,27 @@
+{
+  "model": "N_tabular_only_s0",
+  "family": "neural",
+  "group": "tabular_only",
+  "seed": 0,
+  "epochs_run": 10,
+  "best_epoch": 9,
+  "best_checkpoint_macro_AP": 0.9880741552045782,
+  "development_macro_AP": 0.9883696864620618,
+  "thresholds": {
+    "fixed_0.5": 0.5,
+    "dev_F1": 0.867,
+    "dev_recall_90": 0.924,
+    "dev_recall_95": 0.794
+  },
+  "nominal_parameters": 202306,
+  "active_parameters": 7970,
+  "fit_and_development_seconds": 82.25413084030151,
+  "development_inference_seconds": 28.157041549682617,
+  "peak_GPU_allocated_bytes": 126702592,
+  "process_peak_RSS_KiB": 5303068,
+  "model_sha256": "ac839ed56df7f42b45940f80f598221a1520d46550cc3fbf3f07e6a0363d035b",
+  "feature_sha256": "3c70dbf22c48ff4c245067f542a3e47e10bfef6cf121a92e6d18ccf6d616c9db",
+  "deployment_candidate": true,
+  "checkpoint_validation_population": "fixed label-blind <=10000 per internal WSI; full internal set used for final thresholds and candidate comparison",
+  "no_external_selection": true
+}

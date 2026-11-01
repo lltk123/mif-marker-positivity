@@ -11,3 +11,6 @@
 # Preserve generated SVG path formatting and exact vendored SCIMAP source.
 *.svg -whitespace
 **/scimap_rescale_upstream.py -whitespace
+
+# Preserve frozen delivery/source hashes byte for byte in this experiment.
+analyses/cd8_representation_targetaware_20261031_v1/** -text

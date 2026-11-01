@@ -1,0 +1,15 @@
+{
+  "all_finite": true,
+  "complete": true,
+  "dtype": "float64",
+  "external_rows": 437480,
+  "feature_sha256": "3c70dbf22c48ff4c245067f542a3e47e10bfef6cf121a92e6d18ccf6d616c9db",
+  "inference_seconds": 0.597203254699707,
+  "keys_sha256": "82c1f08ec3d19c6f04ff0b53258fa55967d82812d74d45c72d7fb604db875d9e",
+  "model_sha256": "feaccd483eedca92ca2aa44341bfc76861bb031a23423cec313ba0d945974bf1",
+  "rows": 1077669,
+  "schema_version": 2,
+  "score_sha256": "f7d08043a240a360e407727381e7c916000f0aaf3c2d43ccc980aba402880b2d",
+  "selection_frozen_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3",
+  "selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3"
+}

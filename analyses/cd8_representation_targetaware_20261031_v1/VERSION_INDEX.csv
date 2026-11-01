@@ -1,0 +1,5 @@
+version,meaning,reference,sha256
+design_20261031,Original pre-training protocol; original no-push policy retained as historical evidence,PROTOCOL.json,79284785711830690b42d307b50591744dd244a34394ec931a1bb4580ec856d1
+frozen_selection,H1 and 22 model hashes; not reselected using external results,models/MODEL_SELECTION_FROZEN.json,288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3
+correctness_001_final,Final corrected code and visual-label revision,provenance/VISUAL_QA_CODE_FROZEN_002.json,725f47aa6f0b6b7a0ed759d18fd5d90bba4fa69584de6fe08b73e554db9cea7e
+publication_20261101,"Portable path/import adapters, formatting and public documentation; numerical artifacts unchanged",provenance/SOURCE_MANIFEST.csv,per-file in referenced manifest

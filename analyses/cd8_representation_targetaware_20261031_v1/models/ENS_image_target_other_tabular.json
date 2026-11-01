@@ -1,0 +1,29 @@
+{
+  "model": "ENS_image_target_other_tabular",
+  "family": "neural_ensemble",
+  "group": "image_target_other_tabular",
+  "members": [
+    "N_image_target_other_tabular_s0",
+    "N_image_target_other_tabular_s1",
+    "N_image_target_other_tabular_s2"
+  ],
+  "n_seeds": 3,
+  "development_macro_AP": 0.9884859225890951,
+  "mean_individual_seed_development_macro_AP": 0.9881415108692905,
+  "thresholds": {
+    "fixed_0.5": 0.5,
+    "dev_F1": 0.875,
+    "dev_recall_90": 0.94,
+    "dev_recall_95": 0.82
+  },
+  "active_parameters": 606918,
+  "nominal_parameters": 606918,
+  "inference_seconds_for_tie": 113.34403657913208,
+  "deployment_candidate": true,
+  "extra_fits": 0,
+  "member_model_sha256": {
+    "N_image_target_other_tabular_s0": "b86666ee657ca26b5ab9a08eaecb2e99d5d30a18075b095b591684557d69a70d",
+    "N_image_target_other_tabular_s1": "2855a377df070caed835f04b5b6de519732d7f0d7fc15a016f2896e83af16988",
+    "N_image_target_other_tabular_s2": "56ee21e92f23c856187a9795cbbb27670c0a4b6c13f3c4c6386ba11ceeb37c78"
+  }
+}

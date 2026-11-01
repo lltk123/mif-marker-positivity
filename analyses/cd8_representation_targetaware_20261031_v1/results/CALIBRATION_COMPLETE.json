@@ -1,0 +1,18 @@
+{
+  "replicates": [
+    101,
+    102,
+    103
+  ],
+  "budgets_per_core": [
+    20,
+    50,
+    100
+  ],
+  "all_100_reserved_instances_excluded_from_every_budget_and_zero_budget_baseline": true,
+  "fixed_full_external_main_unchanged": 437480,
+  "holdout_n_per_replicate": 433280,
+  "sampling_label_blind": true,
+  "interpretation": "supervised within-core simulation, not zero-target-label generalization",
+  "rows": 18468
+}

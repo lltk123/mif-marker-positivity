@@ -1,0 +1,15 @@
+{
+  "all_finite": true,
+  "complete": true,
+  "dtype": "float32",
+  "external_rows": 437480,
+  "feature_sha256": "3c70dbf22c48ff4c245067f542a3e47e10bfef6cf121a92e6d18ccf6d616c9db",
+  "inference_seconds": 25.215959310531616,
+  "keys_sha256": "82c1f08ec3d19c6f04ff0b53258fa55967d82812d74d45c72d7fb604db875d9e",
+  "model_sha256": "56ee21e92f23c856187a9795cbbb27670c0a4b6c13f3c4c6386ba11ceeb37c78",
+  "peak_GPU_allocated_bytes": 393263104,
+  "rows": 1077669,
+  "schema_version": 2,
+  "score_sha256": "94ca5977ef9fff1bdd9977347e26e33233ac38d51269d2c81fb0630a651a5d52",
+  "selection_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3"
+}

@@ -1,0 +1,17 @@
+{
+  "python": "3.11.13 (main, Sep 18 2025, 19:46:39) [Clang 20.1.4 ]",
+  "executable": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_nimbus_20261024/.venv/bin/python",
+  "versions": {
+    "torch": "2.2.2+cu118",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "pyarrow": "17.0.0",
+    "scipy": "1.17.1",
+    "scikit-image": "0.24.0",
+    "tifffile": "2026.3.3",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "captured_time": 1793435126.753328
+}

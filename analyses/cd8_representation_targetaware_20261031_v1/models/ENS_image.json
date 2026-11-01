@@ -1,0 +1,29 @@
+{
+  "model": "ENS_image",
+  "family": "neural_ensemble",
+  "group": "image",
+  "members": [
+    "N_image_s0",
+    "N_image_s1",
+    "N_image_s2"
+  ],
+  "n_seeds": 3,
+  "development_macro_AP": 0.7210106009215461,
+  "mean_individual_seed_development_macro_AP": 0.7106145606846929,
+  "thresholds": {
+    "fixed_0.5": 0.5,
+    "dev_F1": 0.414,
+    "dev_recall_90": 0.192,
+    "dev_recall_95": 0.112
+  },
+  "active_parameters": 581862,
+  "nominal_parameters": 606918,
+  "inference_seconds_for_tie": 184.29856634140015,
+  "deployment_candidate": true,
+  "extra_fits": 0,
+  "member_model_sha256": {
+    "N_image_s0": "4acbdb70a772321dfe93cc051760b82941c3c3be58362ea80c7600773179e09a",
+    "N_image_s1": "93e45c4cc93e973ac77a7a6639deb9c756edae6d95f214f4d8d7c11bd2d4cead",
+    "N_image_s2": "b97dcf3cbd3397b1c5edc7fd22303185e12441ff5c67e2ef98dcf63474001a9d"
+  }
+}

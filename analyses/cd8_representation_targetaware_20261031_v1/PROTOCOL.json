@@ -1,0 +1,250 @@
+{
+  "experiment_id": "cd8_representation_targetaware_20261031_v1",
+  "status": "frozen_design_before_any_new_training",
+  "project_commit": "db3939ee7bcb75382ba697564f89e4d5be688c2a",
+  "remote_project": "/mnt/disk3/mIHC/mif_marker_positivity_20261022",
+  "remote_run": "/mnt/disk3/mIHC/mif_marker_positivity_20261022/analyses/cd8_representation_targetaware_20261031_v1",
+  "data_policy": {
+    "dataset": "PhenoBIC CD8 only",
+    "PanM": "sealed: no images, labels, distributions or predictions accessed",
+    "no_old_files_overwritten": true,
+    "no_automatic_commit_push": true,
+    "no_paid_compute": true
+  },
+  "splits": {
+    "training_WSIs": {
+      "n_units": 3,
+      "labelled": 101057
+    },
+    "internal_val_WSIs": {
+      "n_units": 3,
+      "labelled": 539132
+    },
+    "external_val_TMA_cores": {
+      "n_units": 42,
+      "labelled": 437480,
+      "all_instances": 438236
+    },
+    "patient_mapping": "unavailable; cores are not independent patients",
+    "alignment": "dataset_id,image_id,cell_id,marker; same labelled populations for every formal model"
+  },
+  "development": "train labels fit models and preprocessing; internal WSI labels choose epochs, predefined configuration, thresholds and final deployment candidate; no new training OOF claimed; external only evaluated after configuration freeze; historical external exposure disclosed",
+  "HGB": {
+    "learning_rate": 0.06,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 80,
+    "l2_regularization": 2.0,
+    "early_stopping": false,
+    "random_state": 0,
+    "fits_budget": 7
+  },
+  "stage1_comparisons": [
+    {
+      "id": "H0",
+      "features": "legacy E2 I8+S9",
+      "pixel_normalization": "legacy min(cell P10)/max(cell P90)",
+      "missing": "native NaN",
+      "role": "reproduction anchor; compare saved legacy predictions"
+    },
+    {
+      "id": "H1",
+      "features": "same legacy E2 I8+S9",
+      "pixel_normalization": "outer P1(cell P10)/P99(cell P90)",
+      "missing": "native NaN",
+      "contrast": "H1-H0 normalization only"
+    },
+    {
+      "id": "H2",
+      "features": "same I8 and 7 nonreplaced legacy S9 plus 13 repaired descriptors replacing high_signal_edge_coverage and edge_signal_enrichment",
+      "pixel_normalization": "outer P1/P99",
+      "missing": "native NaN",
+      "contrast": "H2-H1 representation only"
+    },
+    {
+      "id": "H3",
+      "features": "same H2",
+      "pixel_normalization": "outer P1/P99",
+      "missing": "train-median imputation + all feature missing indicators",
+      "contrast": "H3-H2 handling"
+    },
+    {
+      "id": "H4",
+      "features": "same H2",
+      "pixel_normalization": "outer P1/P99",
+      "missing": "same H3 + train-only normal quantile transform of value channels; indicators unchanged",
+      "contrast": "H4-H3 value transform only"
+    },
+    {
+      "id": "H5",
+      "features": "same H2",
+      "pixel_normalization": "outer P1/P99",
+      "missing": "train-median imputation without indicators",
+      "contrast": "H3-H5 indicator contribution"
+    },
+    {
+      "id": "H6",
+      "features": "H2 missing indicators only",
+      "pixel_normalization": "outer P1/P99",
+      "missing": "no measured value channels",
+      "role": "missingness-only source shortcut diagnostic"
+    }
+  ],
+  "repaired_features": {
+    "support_threshold": 0.0,
+    "support_meaning": "fraction of measured pixels strictly >0; descriptive nonzero support, not biological positivity",
+    "regions": [
+      "whole",
+      "edge",
+      "inner",
+      "reference"
+    ],
+    "features": [
+      "nonzero_rate_whole",
+      "nonzero_rate_edge",
+      "nonzero_rate_inner",
+      "nonzero_rate_reference",
+      "positive_mean_whole",
+      "positive_mean_edge",
+      "positive_mean_inner",
+      "positive_mean_reference",
+      "nonzero_rate_edge_minus_reference",
+      "nonzero_rate_edge_minus_inner",
+      "positive_mean_edge_minus_reference",
+      "positive_mean_edge_minus_inner",
+      "ordinal_edge_vs_reference"
+    ],
+    "ordinal": "P(edge>reference)+0.5 P(edge==reference)-0.5; exact ties; no epsilon denominator",
+    "unsupported": "NaN and separate support/no-nonzero states; no pseudo-count or epsilon creates measured signal",
+    "MAD": "not used by repaired descriptors; existing legacy descriptors retain original invalid guards"
+  },
+  "stage1_composition_diagnostic": {
+    "population": "300 preselected training/internal target cells only; 50 per WSI, balanced by label where available",
+    "target_pixels": "raw target pixels and mask never changed",
+    "other_instance_pools": [
+      "all",
+      "drop top 1 percent raw P90",
+      "70 percent lowest-P90 plus target",
+      "70 percent highest-P90 plus target"
+    ],
+    "bounds": [
+      "legacy min/max",
+      "outer P1/P99"
+    ],
+    "no_retraining": true,
+    "interpretation": "measurement/normalization sensitivity diagnostic, not held-out generalization"
+  },
+  "image_model": {
+    "encoder": "from-scratch lightweight four-block Conv encoder, widths 32/64/96/128, stride 2, global mean pooling",
+    "crop": 96,
+    "units": "native pixels; physical spacing unknown",
+    "input_channels": 3,
+    "inputs": [
+      "CD8,0,0",
+      "CD8,target_mask,0",
+      "CD8,target_mask,other_instance_mask"
+    ],
+    "other_mask": "all existing instance IDs except target; no label or CD8-based neighbor selection",
+    "initialization": "identical architecture, parameter count and paired seed initialization; absent channels zero",
+    "interpolation": "no resize; masks nearest neighbor only if geometric transform needed",
+    "augmentation": "paired 90-degree rotations and horizontal/vertical flips; no mask color augmentation",
+    "tabular": "H2 measured features; train-median+missing indicators+train standardization",
+    "fusion": "end-to-end image encoder + tabular MLP + common head; no stacking",
+    "neural_groups": [
+      "image",
+      "image_target",
+      "image_target_other",
+      "tabular_only",
+      "image_target_other_tabular"
+    ],
+    "nominal_architecture": "same two-branch graph with unused latent branch gated to zero; active parameters recorded",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "batch_size": 128,
+    "max_epochs": 10,
+    "patience": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "loss": "unweighted cross entropy; natural within-WSI class proportions",
+    "training_examples_per_epoch": 50000,
+    "sampling": "same seeded WSI-balanced labelled training indices for all groups; deterministic epoch schedules",
+    "checkpoint_selection": "internal equal-WSI mean AP",
+    "fits_budget": 15,
+    "hard_gpu_hours": 8,
+    "resource_rule": "do not start jobs that exceed confirmed available quota; if hard cap reached report completed seed0 groups and partial repetitions without test-based selection"
+  },
+  "final_candidate_rule": "internal equal-WSI AP; if within 0.005 prefer fewer active parameters, then lower measured inference cost; ties stable predefined group order H0,H1,H2,H3,H4,H5,image,image_target,image_target_other,tabular_only,image_target_other_tabular; external never selects model",
+  "evaluation": {
+    "fixed_threshold": 0.5,
+    "operator": ">",
+    "development_threshold_grid": [
+      0.001,
+      0.999,
+      0.001
+    ],
+    "recall_targets": [
+      0.9,
+      0.95
+    ],
+    "recall_rule": "largest threshold satisfying internal equal-WSI recall requirement; report actual achieved external recall, not a guarantee",
+    "supplementary_F1_threshold": "max internal equal-WSI F1; tie nearest .5 then higher",
+    "metrics": [
+      "AP",
+      "ROC-AUC",
+      "precision",
+      "recall",
+      "F1",
+      "TP",
+      "FP",
+      "FN",
+      "TN",
+      "positive_fraction_error",
+      "coverage",
+      "runtime",
+      "peak_memory"
+    ],
+    "groups": [
+      "split",
+      "WSI/TMA",
+      "core"
+    ],
+    "risk_strata": "reuse frozen raw weak-positive and contact-bright-negative proxy IDs; add zero-signal, missingness and boundary-QC strata with training-only frozen definitions",
+    "test_PR": "descriptive only; test-optimal points are not deployable thresholds",
+    "statistical_unit": "WSI/core descriptive variation; no independent-cell significance claim"
+  },
+  "target_label_calibration_simulation": {
+    "name": "separate supervised target-core adaptation simulation",
+    "budgets_per_core": [
+      20,
+      50,
+      100
+    ],
+    "sampling": "uniform deterministic hash ranking, labels not used for sampling; nested budgets",
+    "replicates": [
+      101,
+      102,
+      103
+    ],
+    "holdout": "reserve maximum 100 sampled instances per core; exclude all 100 from evaluation for every budget and uncalibrated baseline",
+    "calibrator": "one regularized logistic intercept on frozen model logits; L2 penalty 1; no temperature or model retraining; if calibration subset has one class retain global mapping and record fallback",
+    "scope": "only probability outputs, not GMM rescaling scores",
+    "interpretation": "within-core supervised calibration, not zero-target-label generalization"
+  },
+  "success_criteria": {
+    "representation": "improve internal macro-AP and report external all groups, no requirement to favor novelty",
+    "target_awareness": "at developer-selected recall target .90 reduce contact-bright-negative proxy FPR by at least 20 percent relative to paired image-only while weak-positive recall loss <=.02; disclose actual external overall recall and per-source tradeoffs",
+    "mechanism": "proxy improvement alone does not establish causal neighbor contamination"
+  },
+  "review": {
+    "cases_budget": 48,
+    "selection": "predefined balanced sources and true FP/FN, weak-positive/contact-bright/zero/boundary strata; deterministic IDs; development and external diagnosis labelled separately",
+    "assets": "real CD8 crops, original instance masks, reference labels, all model scores and editable review checklist",
+    "human_status": "pending user review; never call automated proxies expert-reviewed"
+  },
+  "resource_status": "server alias not yet identified; no server connection attempted; only existing authorized resources permitted",
+  "created_utc": "2026-10-31T07:25:28.317576+00:00"
+}

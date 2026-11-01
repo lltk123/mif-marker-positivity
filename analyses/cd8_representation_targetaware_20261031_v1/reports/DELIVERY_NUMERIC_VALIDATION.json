@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "saved_prediction_models": 28,
+  "complete_set_metric_rows_recounted": 327,
+  "max_abs_rank_or_F1_error": 1.1102230246251565e-16,
+  "all_external_populations": 437480,
+  "all_main_original_reference_labels_retained": true,
+  "PanM_accessed": false,
+  "visual_QA": "passed local inspection; see VISUAL_QA.json",
+  "human_case_review": "pending user",
+  "model_sha_unchanged_after_development_selection": true,
+  "code_sha256": "710a21f2299f73fee3b8d62c0a558115c37458cb51d1083150ba10b60cb0f445"
+}

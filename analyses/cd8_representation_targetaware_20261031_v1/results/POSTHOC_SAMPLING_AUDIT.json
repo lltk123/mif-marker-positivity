@@ -1,0 +1,9 @@
+{
+  "external_rows_in_samples": 0,
+  "groups_identical_per_seed_epoch": true,
+  "not_contemporaneous_training_evidence": true,
+  "reconstructed_after_training": true,
+  "seed0_matches_contemporaneous_smoke": true,
+  "validation_rows": 30000,
+  "validation_sha256": "b16780d8d17661a3565bc9c58fbfd3f7a194280facdd23dfa1f52bccab9c6a64"
+}

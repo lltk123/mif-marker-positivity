@@ -1,0 +1,247 @@
+--- original/completion_supervisor.py
++++ correctness_001/completion_supervisor.py
+@@ -1,21 +1,22 @@
+ from pathlib import Path
+ import subprocess,time,json,traceback,os
++from execution_guards import atomic_json,wait_bounded
+ p=Path('/mnt/disk3/mIHC/mif_marker_positivity_20261022');r=p/'analyses/cd8_representation_targetaware_20261031_v1'
+ f=p/'analyses/cd8_morphospatial_20261023/.venv/bin/python';n=p/'analyses/cd8_nimbus_20261024/.venv/bin/python'
+-def write(name,d):(r/'logs'/name).write_text(json.dumps(d,indent=2))
++def write(name,d):atomic_json(r/'logs'/name,d)
+ try:
+- deadline=time.time()+7200
++ deadline=time.time()+28800+7200
+  while not ((r/'models/NEURAL_COMPLETE.json').exists() and (r/'results/COMPOSITION_COMPLETE.json').exists()):
+   for err in ['logs/PIPELINE_FAILED.json','logs/PREPARATION_FAILED.json','models/NEURAL_BUDGET_REACHED.json']:
+    if (r/err).exists():raise RuntimeError('Dependency failure: '+err)
+-  if time.time()>deadline:raise TimeoutError('Training/composition dependency wait exceeded 2h')
++  if time.time()>deadline:raise TimeoutError('Training/composition dependency wait exceeded 10h including preparation allowance')
+   write('FINAL_PIPELINE_STAGE.json',{'stage':'waiting for fixed training and composition completion','updated':time.time()});time.sleep(20)
+  steps=[('external_HGB',f,'stage3_freeze_hgb_predict.py'),('external_neural',n,'stage3_neural_predict.py'),('evaluation',f,'stage3_evaluate.py'),('crop_support_QC',n,'stage4_input_quality.py'),('real_review',n,'stage4_review.py'),('figures',n,'stage4_figures.py'),('report',n,'stage4_report.py'),('delivery_validation',n,'stage5_validate_package.py')]
+  env=dict(os.environ);env.update(PYTHONDONTWRITEBYTECODE='1',CUBLAS_WORKSPACE_CONFIG=':4096:8',OMP_NUM_THREADS='4',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2')
+  for name,python,script in steps:
+   write('FINAL_PIPELINE_STAGE.json',{'stage':name,'updated':time.time()});cmd=[str(python),'-B','-u',str(r/'scripts'/script)]
+   with (r/'logs'/(name+'.log')).open('a') as log:
+-   z=subprocess.Popen(cmd,cwd=str(r),stdout=log,stderr=subprocess.STDOUT,env=env);write(name+'_process.json',{'pid':z.pid,'command':cmd,'started':time.time()});rc=z.wait()
++   z=subprocess.Popen(cmd,cwd=str(r),stdout=log,stderr=subprocess.STDOUT,env=env,start_new_session=True);write(name+'_process.json',{'pid':z.pid,'command':cmd,'started':time.time()});remaining=max(0.,28800.-json.loads((r/'logs/GPU_BUDGET.json').read_text())['consumed_seconds']) if name=='external_neural' else 7200.;rc=wait_bounded(z,remaining)
+   if rc:raise RuntimeError(name+' exited '+str(rc))
+  write('FINAL_PIPELINE_COMPLETE.json',{'completed':time.time(),'human_case_review':'pending user','visual_QA':'pending local inspection','all_computational_stages_complete':True});write('FINAL_PIPELINE_STAGE.json',{'stage':'numeric validation and packages complete; awaiting local visual QA','updated':time.time()})
+ except Exception:
+--- original/stage2_neural.py
++++ correctness_001/stage2_neural.py
+@@ -7,6 +7,8 @@
+ from torch import nn
+ from torch.utils.data import Dataset,DataLoader
+ from experiment_common import *
++from execution_guards import BudgetLedger,BudgetExhausted,atomic_npy,atomic_checkpoint
++_LEDGER=None
+ GROUPS=['image','image_target','image_target_other','tabular_only','image_target_other_tabular']
+ 
+ class Network(nn.Module):
+@@ -72,10 +74,11 @@
+  gen=torch.Generator();gen.manual_seed(771)
+  return DataLoader(ds,batch_size=batch,sampler=indices.tolist(),num_workers=workers,pin_memory=True,generator=gen,persistent_workers=False)
+ 
+-def predict(model,ds,indices,group,batch=512):
++def predict(model,ds,indices,group,batch=512,ledger=None):
+  model.eval();out=np.full(len(ds),np.nan,np.float32);started=time.time()
+  with torch.no_grad():
+   for image,features,y,rows in loader(ds,np.asarray(indices),batch):
++   if ledger:ledger.checkpoint()
+    score=torch.softmax(model(image.cuda(non_blocking=True),features.cuda(non_blocking=True),group),1)[:,1];out[rows.numpy()]=score.cpu().numpy()
+  torch.cuda.synchronize();return out,time.time()-started
+ 
+@@ -91,6 +94,7 @@
+  return int(active)
+ 
+ def main():
++ global _LEDGER
+  ap=argparse.ArgumentParser();ap.add_argument('--smoke-only',action='store_true');args=ap.parse_args()
+  assert torch.cuda.is_available();torch.set_num_threads(4)
+  d,manifest=load();train=(d.split==TRAIN).to_numpy();dev=(d.split==DEV).to_numpy();devidx=d.index[dev].to_numpy();development=d.index[(train|dev)].to_numpy();y=d.ground_truth_binary.to_numpy(np.int64);A,prep=tabular_matrix(d,manifest['feature_sets']['H2'],train);savej(RUN/'data/NEURAL_TABULAR_PREPROCESSOR.json',prep);valid_idx=subset(d)
+@@ -103,28 +107,36 @@
+   savej(RUN/'results/NEURAL_SMOKE_COMPLETE.json',records);print(json.dumps(records),flush=True);return
+  assert (RUN/'results/NEURAL_SMOKE_COMPLETE.json').exists()
+  budget_path=RUN/'logs/GPU_BUDGET.json'
+- budget=json.loads(budget_path.read_text()) if budget_path.exists() else {'consumed_seconds':0.,'hard_cap_seconds':28800.,'definition':'conservative wall time of neural fit, checkpoint validation and full development inference; not isolated GPU kernel time'}
++ ledger=BudgetLedger(budget_path);_LEDGER=ledger;budget=ledger.data
+  models=[]
+  for seed in [0,1,2]:
+   for group in GROUPS:
+    name='N_'+group+'_s'+str(seed);done=RUN/'models'/(name+'.json');path=RUN/'models'/(name+'.pt')
+    if done.exists():models.append(json.loads(done.read_text()));continue
+    if budget['consumed_seconds']>=budget['hard_cap_seconds']:
+-    savej(RUN/'models/NEURAL_BUDGET_REACHED.json',{'completed':[z['model'] for z in models],'budget':budget});return
+-   started=time.time();seed_all(seed);model=Network(A.shape[1]).cuda();optimizer=torch.optim.AdamW(model.parameters(),lr=.0003,weight_decay=.0001);ds=Crops(A,y,group,True,seed);ev=Crops(A,y,group);best=-np.inf;wait=0;epochs=[];train_groups=[g.index.to_numpy() for _,g in d.loc[train].groupby('image_id',sort=True)];torch.cuda.reset_peak_memory_stats()
++    raise BudgetExhausted('No remaining budget')
++   started=time.time();ledger.begin(name);seed_all(seed);model=Network(A.shape[1]).cuda();savej(RUN/'provenance'/(name+'_initialization.json'),{'recorded_during_training':True,'seed':seed,'hash':hashlib.sha256(b''.join(v.detach().cpu().numpy().tobytes() for v in model.state_dict().values())).hexdigest()});optimizer=torch.optim.AdamW(model.parameters(),lr=.0003,weight_decay=.0001);ds=Crops(A,y,group,True,seed);ev=Crops(A,y,group);best=-np.inf;wait=0;epochs=[];train_groups=[g.index.to_numpy() for _,g in d.loc[train].groupby('image_id',sort=True)];torch.cuda.reset_peak_memory_stats()
+    for epoch in range(10):
+-    if budget['consumed_seconds']+time.time()-started>=budget['hard_cap_seconds']:break
+-    ds.epoch=epoch;rng=np.random.default_rng(seed*10000+epoch);indices=np.concatenate([rng.choice(g,16667 if k<2 else 16666,replace=len(g)<16667) for k,g in enumerate(train_groups)]);rng.shuffle(indices);model.train();losses=[];epoch_start=time.time()
++    ledger.checkpoint()
++    ds.epoch=epoch;rng=np.random.default_rng(seed*10000+epoch);indices=np.concatenate([rng.choice(g,16667 if k<2 else 16666,replace=len(g)<16667) for k,g in enumerate(train_groups)]);rng.shuffle(indices);savej(RUN/'provenance'/(name+'_epoch'+str(epoch)+'_indices.json'),{'recorded_during_training':True,'seed':seed,'epoch':epoch,'rows':len(indices),'sha256':hashlib.sha256(np.asarray(indices,dtype='<i8').tobytes()).hexdigest()});model.train();losses=[];epoch_start=time.time()
+     for image,features,z,rows in loader(ds,indices,batch=128):
++     ledger.checkpoint()
+      optimizer.zero_grad(set_to_none=True);logits=model(image.cuda(non_blocking=True),features.cuda(non_blocking=True),group);loss=nn.functional.cross_entropy(logits,z.cuda(non_blocking=True));loss.backward();nn.utils.clip_grad_norm_(model.parameters(),1.);optimizer.step();losses.append(float(loss.detach()))
+-    scores,eval_sec=predict(model,ev,valid_idx,group);apval=macro_ap(d.loc[valid_idx],scores);rec={'epoch':epoch+1,'loss':float(np.mean(losses)),'checkpoint_macro_AP':apval,'seconds':time.time()-epoch_start,'n_training_examples':len(indices),'n_checkpoint_validation':len(valid_idx)};epochs.append(rec);print('EPOCH',name,json.dumps(rec),flush=True)
++    scores,eval_sec=predict(model,ev,valid_idx,group,ledger=ledger);apval=macro_ap(d.loc[valid_idx],scores);rec={'epoch':epoch+1,'loss':float(np.mean(losses)),'checkpoint_macro_AP':apval,'seconds':time.time()-epoch_start,'n_training_examples':len(indices),'n_checkpoint_validation':len(valid_idx)};epochs.append(rec);print('EPOCH',name,json.dumps(rec),flush=True)
+     if apval>best+1e-5:
+-     best=apval;wait=0;torch.save({'state_dict':model.state_dict(),'epoch':epoch+1,'seed':seed,'group':group,'n_features':A.shape[1],'best_checkpoint_macro_AP':best,'feature_sha256':manifest['feature_sha256'],'protocol_sha256':sha(RUN/'PROTOCOL.json')},path)
++     best=apval;wait=0;atomic_checkpoint(path,{'state_dict':model.state_dict(),'epoch':epoch+1,'seed':seed,'group':group,'n_features':A.shape[1],'best_checkpoint_macro_AP':best,'feature_sha256':manifest['feature_sha256'],'protocol_sha256':sha(RUN/'PROTOCOL.json')})
+     else:wait+=1
+     if wait>=3:break
+    if not path.exists():raise RuntimeError('No neural checkpoint before budget')
+-   b=torch.load(path,map_location='cpu');model.load_state_dict(b['state_dict']);model.cuda();scores,infer=predict(model,ev,development,group);np.save(RUN/'predictions'/(name+'_development.npy'),scores);ts,grid=thresholds(d.loc[dev],scores);pd.DataFrame(grid).to_csv(RUN/'results'/(name+'_development_threshold_grid.csv'),index=False)
++   b=torch.load(path,map_location='cpu');model.load_state_dict(b['state_dict']);model.cuda();scores,infer=predict(model,ev,development,group,ledger=ledger);atomic_npy(RUN/'predictions'/(name+'_development.npy'),scores);ts,grid=thresholds(d.loc[dev],scores);pd.DataFrame(grid).to_csv(RUN/'results'/(name+'_development_threshold_grid.csv'),index=False)
+    rec={'model':name,'family':'neural','group':group,'seed':seed,'epochs_run':len(epochs),'best_epoch':b['epoch'],'best_checkpoint_macro_AP':best,'development_macro_AP':macro_ap(d.loc[dev],scores),'thresholds':ts,'nominal_parameters':sum(p.numel() for p in model.parameters()),'active_parameters':active_parameters(model,group),'fit_and_development_seconds':time.time()-started,'development_inference_seconds':infer,'peak_GPU_allocated_bytes':torch.cuda.max_memory_allocated(),'process_peak_RSS_KiB':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'model_sha256':sha(path),'feature_sha256':manifest['feature_sha256'],'deployment_candidate':True,'checkpoint_validation_population':'fixed label-blind <=10000 per internal WSI; full internal set used for final thresholds and candidate comparison','no_external_selection':True}
+-   savej(done,rec);pd.DataFrame(epochs).to_csv(RUN/'results'/(name+'_epochs.csv'),index=False);models.append(rec);budget['consumed_seconds']+=time.time()-started;savej(budget_path,budget);print('NEURAL_DONE',json.dumps(rec),flush=True);del model,optimizer,ds,ev;torch.cuda.empty_cache()
++   savej(done,rec);pd.DataFrame(epochs).to_csv(RUN/'results'/(name+'_epochs.csv'),index=False);models.append(rec);ledger.finish('running');print('NEURAL_DONE',json.dumps(rec),flush=True);del model,optimizer,ds,ev;torch.cuda.empty_cache()
++ ledger.data['status']='completed';ledger.persist()
+  pd.DataFrame([{k:v for k,v in z.items() if not isinstance(v,(dict,list))} for z in models]).to_csv(RUN/'results/NEURAL_DEVELOPMENT.csv',index=False);savej(RUN/'models/NEURAL_COMPLETE.json',{'n_models':len(models),'models':[z['model'] for z in models],'seeds':[0,1,2],'budget':budget,'no_external_metrics_inspected':True,'code_sha256':sha(__file__)})
+-if __name__=='__main__':main()
++if __name__=='__main__':
++ try:main()
++ except BaseException as error:
++  if _LEDGER is not None:
++   _LEDGER.abort(error)
++   if isinstance(error,BudgetExhausted):savej(RUN/'models/NEURAL_BUDGET_REACHED.json',{'status':'partial_budget_exhausted','budget':_LEDGER.data})
++  raise
+--- original/stage3_evaluate.py
++++ correctness_001/stage3_evaluate.py
+@@ -7,6 +7,7 @@
+ from scipy.optimize import brentq
+ from sklearn.metrics import average_precision_score,roc_auc_score,brier_score_loss,precision_recall_curve
+ from experiment_common import *
++from execution_guards import native_threshold
+ GROUPS=['image','image_target','image_target_other','tabular_only','image_target_other_tabular']
+ 
+ def record_metrics(y,s,t,rank=None,probability=True):
+@@ -70,7 +71,7 @@
+  return table,risk_table
+ 
+ def calibration(d):
+- risk=risks(d);y=d.ground_truth_binary.to_numpy(int);test=d[d.split==TEST];indices=[];records=[];parameters=[];eps=np.finfo(np.float64).eps
++ risk=risks(d);y=d.ground_truth_binary.to_numpy(int);test=d[d.split==TEST];indices=[];records=[];parameters=[];dtype_audit=[];eps=np.finfo(np.float64).eps
+  for replicate in [101,102,103]:
+   reserved={};holdout=np.zeros(len(d),bool);holdout[test.index]=True
+   for uid,g in test.groupby('image_id',sort=True):
+@@ -78,15 +79,19 @@
+    for rank,i in enumerate(chosen,1):indices.append({'replicate':replicate,'image_id':uid,'row_id':int(i),'cell_id':int(d.loc[i,'cell_id']),'sampling_rank':rank,'used_for_evaluation':False,'label_used_for_sampling':False})
+   assert np.intersect1d(np.flatnonzero(holdout),np.concatenate(list(reserved.values()))).size==0
+   for name in [x for x in model_names() if x!='GMM']:
+-   meta=meta_for(name);s=np.load(RUN/'predictions'/(name+'_all.npy')).astype(np.float64);rawlogit=logit(np.clip(s,eps,1-eps));threshold=meta['thresholds']['dev_recall_90']
++   meta=meta_for(name);native=np.load(RUN/'predictions'/(name+'_all.npy'));s=native.astype(np.float64);rawlogit=logit(np.clip(s,eps,1-eps));original_threshold=meta['thresholds']['dev_recall_90'];threshold=native_threshold(original_threshold,native.dtype)
+    for budget in [0,20,50,100]:
+-    adjusted=s.copy()
++    adjusted=s.copy();unchanged=np.zeros(len(d),bool)
+     for uid,g in test.groupby('image_id',sort=True):
+      ix=g.index.to_numpy();cal=reserved[uid][:budget];fallback=budget>0 and len(np.unique(y[cal]))<2;b=0.
+      if budget and not fallback:
+       z=rawlogit[cal];yy=y[cal];b=float(brentq(lambda v:float(np.sum(expit(z+v)-yy))+v,-64.,64.))
+      if budget and not fallback:adjusted[ix]=expit(rawlogit[ix]+b)
++     else:unchanged[ix]=True
+      parameters.append({'replicate':replicate,'model':name,'image_id':uid,'budget':budget,'n_calibration_positive':int(y[cal].sum()) if budget else 0,'intercept':b,'one_class_fallback_to_global':fallback,'calibration_instances_excluded_from_all_comparisons':100})
++    check=holdout&unchanged
++    assert np.array_equal(adjusted[check]>threshold,native[check]>np.asarray(original_threshold,dtype=native.dtype))
++    dtype_audit.append({'model':name,'replicate':replicate,'budget':budget,'dtype':str(native.dtype),'original_threshold':original_threshold,'effective_native_threshold':threshold,'evaluation_n':int(holdout.sum()),'old_implementation_changed_decisions':int(np.sum((adjusted[holdout]>original_threshold)!=(adjusted[holdout]>threshold))),'unchanged_mapping_n':int(check.sum()),'old_unchanged_mapping_changed_decisions':int(np.sum((adjusted[check]>original_threshold)!=(adjusted[check]>threshold))),'native_mapping_exact':True})
+     for level,unit,ix in [('split',TEST,test.index.to_numpy())]+[('context',context,g.index.to_numpy()) for context,g in test.groupby('context',sort=True)]+[('image',uid,g.index.to_numpy()) for uid,g in test.groupby('image_id',sort=True)]:
+      ix=ix[holdout[ix]]
+      if not len(ix):continue
+@@ -97,6 +102,7 @@
+        if not len(jx):continue
+        rr=rec.copy();rr['stratum']=stratum;rr.update(record_metrics(y[jx],adjusted[jx],threshold));records.append(rr)
+    print('CALIBRATION_SIMULATION_DONE',replicate,name,flush=True)
++ pd.DataFrame(dtype_audit).to_csv(RUN/'results/CALIBRATION_NATIVE_THRESHOLD_AUDIT.csv',index=False)
+  pd.DataFrame(indices).to_csv(RUN/'results/CALIBRATION_RESERVED_INSTANCES.csv',index=False);pd.DataFrame(parameters).to_csv(RUN/'results/CALIBRATION_PARAMETERS.csv',index=False);cal=pd.DataFrame(records);cal.to_csv(RUN/'results/TARGET_LABEL_CALIBRATION_SIMULATION.csv',index=False)
+  savej(RUN/'results/CALIBRATION_COMPLETE.json',{'replicates':[101,102,103],'budgets_per_core':[20,50,100],'all_100_reserved_instances_excluded_from_every_budget_and_zero_budget_baseline':True,'fixed_full_external_main_unchanged':437480,'holdout_n_per_replicate':int((test.shape[0]-42*100)),'sampling_label_blind':True,'interpretation':'supervised within-core simulation, not zero-target-label generalization','rows':len(cal)})
+ 
+--- original/stage3_freeze_hgb_predict.py
++++ correctness_001/stage3_freeze_hgb_predict.py
+@@ -5,6 +5,7 @@
+ import numpy as np,pandas as pd
+ from experiment_common import *
+ from stage1_hgb import transform
++from execution_guards import signature_for,validate_score,save_score
+ GROUPS=['image','image_target','image_target_other','tabular_only','image_target_other_tabular']
+ def main():
+  assert (RUN/'models/HGB_COMPLETE.json').exists() and (RUN/'models/NEURAL_COMPLETE.json').exists()
+@@ -24,7 +25,11 @@
+  frozen=json.loads(selection.read_text());assert frozen['feature_sha256']==man['feature_sha256']
+  for name in ['H0','H1','H2','H3','H4','H5','H6']:
+   out=RUN/'predictions'/(name+'_all.npy')
+-  if out.exists():continue
+-  modelpath=RUN/'models'/(name+'.joblib');assert sha(modelpath)==frozen['model_file_sha256'][modelpath.name];b=joblib.load(modelpath);X=d.loc[test,b['features']].to_numpy(float);A=transform(X,b['preprocessing']);s=np.load(RUN/'predictions'/(name+'_development.npy'));started=time.time();s[test]=b['estimator'].predict_proba(A)[:,1];elapsed=time.time()-started;assert np.isfinite(s).all();np.save(out,s);savej(RUN/'predictions'/(name+'_external_complete.json'),{'rows':len(s),'external_rows':int(test.sum()),'inference_seconds':elapsed,'score_sha256':sha(out),'model_sha256':sha(modelpath),'selection_frozen_sha256':sha(selection)});print('HGB_EXTERNAL_SCORED',name,flush=True)
++  sig=signature_for(d,man,selection,name);metaout=RUN/'predictions'/(name+'_external_complete.json')
++  if out.exists():
++   valid,reason=validate_score(out,metaout,len(d),sig)
++   if valid:continue
++   raise RuntimeError('Existing score requires audit before replacement: '+name+' '+reason)
++  modelpath=RUN/'models'/(name+'.joblib');assert sha(modelpath)==frozen['model_file_sha256'][modelpath.name];b=joblib.load(modelpath);X=d.loc[test,b['features']].to_numpy(float);A=transform(X,b['preprocessing']);s=np.load(RUN/'predictions'/(name+'_development.npy'));started=time.time();s[test]=b['estimator'].predict_proba(A)[:,1];elapsed=time.time()-started;assert np.isfinite(s).all();save_score(out,metaout,s,sig,{'rows':len(s),'external_rows':int(test.sum()),'inference_seconds':elapsed,'score_sha256':sha(out),'model_sha256':sha(modelpath),'selection_frozen_sha256':sha(selection)});print('HGB_EXTERNAL_SCORED',name,flush=True)
+  savej(RUN/'predictions/HGB_EXTERNAL_COMPLETE.json',{'n_models':7,'selection_frozen_sha256':sha(selection)})
+ if __name__=='__main__':main()
+--- original/stage3_neural_predict.py
++++ correctness_001/stage3_neural_predict.py
+@@ -2,17 +2,29 @@
+ import json,time
+ import numpy as np,torch
+ from experiment_common import *
++from execution_guards import signature_for,validate_score,save_score,BudgetLedger
+ from stage2_neural import Network,Crops,predict,tabular_matrix,GROUPS,seed_all
+ 
++_LEDGER=None
+ def main():
+- seed_all(0);frozen=json.loads((RUN/'models/MODEL_SELECTION_FROZEN.json').read_text());d,man=load();assert man['feature_sha256']==frozen['feature_sha256'];train=(d.split==TRAIN).to_numpy();test=(d.split==TEST).to_numpy();y=d.ground_truth_binary.to_numpy(np.int64);A,prep=tabular_matrix(d,man['feature_sets']['H2'],train);assert prep==json.loads((RUN/'data/NEURAL_TABULAR_PREPROCESSOR.json').read_text());budget=json.loads((RUN/'logs/GPU_BUDGET.json').read_text());torch.set_num_threads(4)
++ global _LEDGER
++ seed_all(0);frozen=json.loads((RUN/'models/MODEL_SELECTION_FROZEN.json').read_text());d,man=load();assert man['feature_sha256']==frozen['feature_sha256'];train=(d.split==TRAIN).to_numpy();test=(d.split==TEST).to_numpy();y=d.ground_truth_binary.to_numpy(np.int64);A,prep=tabular_matrix(d,man['feature_sets']['H2'],train);assert prep==json.loads((RUN/'data/NEURAL_TABULAR_PREPROCESSOR.json').read_text());ledger=BudgetLedger(RUN/'logs/GPU_BUDGET.json');_LEDGER=ledger;budget=ledger.data;torch.set_num_threads(4)
+  for seed in [0,1,2]:
+   for group in GROUPS:
+    name='N_'+group+'_s'+str(seed);out=RUN/'predictions'/(name+'_all.npy')
+-   if out.exists():continue
++   sig=signature_for(d,man,RUN/'models/MODEL_SELECTION_FROZEN.json',name);metaout=RUN/'predictions'/(name+'_external_complete.json')
++   if out.exists():
++    valid,reason=validate_score(out,metaout,len(d),sig)
++    if valid:continue
++    raise RuntimeError('Existing score requires audit before replacement: '+name+' '+reason)
+    if budget['consumed_seconds']>=budget['hard_cap_seconds']:raise RuntimeError('Frozen GPU budget reached before complete external inference')
+-   path=RUN/'models'/(name+'.pt');assert sha(path)==frozen['model_file_sha256'][path.name];b=torch.load(path,map_location='cpu');model=Network(A.shape[1]).cuda();model.load_state_dict(b['state_dict']);ds=Crops(A,y,group);torch.cuda.reset_peak_memory_stats();part,elapsed=predict(model,ds,d.index[test].to_numpy(),group);scores=np.load(RUN/'predictions'/(name+'_development.npy'));scores[test]=part[test];assert np.isfinite(scores).all();np.save(out,scores);savej(RUN/'predictions'/(name+'_external_complete.json'),{'rows':len(scores),'external_rows':int(test.sum()),'inference_seconds':elapsed,'score_sha256':sha(out),'peak_GPU_allocated_bytes':torch.cuda.max_memory_allocated(),'model_sha256':sha(path)});budget['consumed_seconds']+=elapsed;savej(RUN/'logs/GPU_BUDGET.json',budget);print('NEURAL_EXTERNAL_SCORED',name,'seconds',elapsed,flush=True);del model,ds;torch.cuda.empty_cache()
++   path=RUN/'models'/(name+'.pt');assert sha(path)==frozen['model_file_sha256'][path.name];b=torch.load(path,map_location='cpu');model=Network(A.shape[1]).cuda();model.load_state_dict(b['state_dict']);ds=Crops(A,y,group);torch.cuda.reset_peak_memory_stats();ledger.begin(name+'_external');part,elapsed=predict(model,ds,d.index[test].to_numpy(),group,ledger=ledger);scores=np.load(RUN/'predictions'/(name+'_development.npy'));scores[test]=part[test];assert np.isfinite(scores).all();save_score(out,metaout,scores,sig,{'rows':len(scores),'external_rows':int(test.sum()),'inference_seconds':elapsed,'score_sha256':sha(out),'peak_GPU_allocated_bytes':torch.cuda.max_memory_allocated(),'model_sha256':sha(path)});ledger.finish('running');print('NEURAL_EXTERNAL_SCORED',name,'seconds',elapsed,flush=True);del model,ds;torch.cuda.empty_cache()
+  for group in GROUPS:
+-  name='ENS_'+group;s=np.mean(np.stack([np.load(RUN/'predictions'/('N_'+group+'_s'+str(seed)+'_all.npy')) for seed in [0,1,2]]),axis=0,dtype=np.float64);dev=np.load(RUN/'predictions'/(name+'_development.npy'));assert np.array_equal(s[~test],dev[~test]);np.save(RUN/'predictions'/(name+'_all.npy'),s)
++  name='ENS_'+group;s=np.mean(np.stack([np.load(RUN/'predictions'/('N_'+group+'_s'+str(seed)+'_all.npy')) for seed in [0,1,2]]),axis=0,dtype=np.float64);dev=np.load(RUN/'predictions'/(name+'_development.npy'));assert np.array_equal(s[~test],dev[~test]);save_score(RUN/'predictions'/(name+'_all.npy'),RUN/'predictions'/(name+'_external_complete.json'),s,signature_for(d,man,RUN/'models/MODEL_SELECTION_FROZEN.json',name))
++ ledger.data['status']='completed';ledger.persist()
+  savej(RUN/'predictions/NEURAL_EXTERNAL_COMPLETE.json',{'individual_models':15,'ensembles':5,'rows':len(d),'budget':budget,'all_finite':True,'selection_frozen_sha256':sha(RUN/'models/MODEL_SELECTION_FROZEN.json')})
+-if __name__=='__main__':main()
++if __name__=='__main__':
++ try:main()
++ except BaseException as error:
++  if _LEDGER is not None:_LEDGER.abort(error)
++  raise
+--- original/training_supervisor.py
++++ correctness_001/training_supervisor.py
+@@ -1,7 +1,8 @@
+ from pathlib import Path
+ import subprocess,time,json,traceback,os
++from execution_guards import atomic_json,wait_bounded,neural_completion_state
+ p=Path('/mnt/disk3/mIHC/mif_marker_positivity_20261022');r=p/'analyses/cd8_representation_targetaware_20261031_v1'
+-def write(name,d):(r/'logs'/name).write_text(json.dumps(d,indent=2))
++def write(name,d):atomic_json(r/'logs'/name,d)
+ try:
+  deadline=time.time()+7200
+  while not (r/'data/FEATURES_COMPLETE.json').exists():
+@@ -12,8 +13,14 @@
+  for name,python,args in steps:
+   write('PIPELINE_STAGE.json',{'stage':name,'updated':time.time()})
+   with (r/'logs'/(name+'.log')).open('a') as log:
+-   cmd=[str(python),'-u']+[str(r/x) if x.startswith('scripts/') else x for x in args];z=subprocess.Popen(cmd,cwd=str(r),stdout=log,stderr=subprocess.STDOUT)
+-   write(name+'_process.json',{'pid':z.pid,'command':cmd,'started':time.time()});rc=z.wait()
++   cmd=[str(python),'-u']+[str(r/x) if x.startswith('scripts/') else x for x in args];z=subprocess.Popen(cmd,cwd=str(r),stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
++   write(name+'_process.json',{'pid':z.pid,'command':cmd,'started':time.time()});limit=28800.
++   if name=='neural_training' and (r/'logs/GPU_BUDGET.json').exists():limit=max(0.,28800.-json.loads((r/'logs/GPU_BUDGET.json').read_text())['consumed_seconds'])
++   rc=wait_bounded(z,limit)
++  if name=='neural_training':
++   complete=json.loads((r/'models/NEURAL_COMPLETE.json').read_text()) if (r/'models/NEURAL_COMPLETE.json').exists() else None
++   state=neural_completion_state(rc,complete,(r/'models/NEURAL_BUDGET_REACHED.json').exists())
++   if state!='completed':write('PIPELINE_STAGE.json',{'stage':state,'updated':time.time()});raise RuntimeError(state)
+   if rc:raise RuntimeError(name+' exited '+str(rc))
+  write('TRAINING_PIPELINE_COMPLETE.json',{'completed':time.time(),'external_metrics_inspected':False})
+  write('PIPELINE_STAGE.json',{'stage':'training complete; ready for frozen selection and evaluation','updated':time.time()})

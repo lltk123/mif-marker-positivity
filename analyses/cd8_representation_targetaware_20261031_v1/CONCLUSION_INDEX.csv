@@ -1,0 +1,10 @@
+id,claim,csv,filter,columns
+C01,H0 external fixed-0.5 F1 remains strongest in this experiment,results/EXTERNAL_MAIN.csv,level=split; split=external_val_TMA_cores; threshold_mode=fixed_0.5,model; precision; recall; F1; AP
+C02,ENS is probability ensemble; seed means and sample SD are separate,reports/CONTROLLED_IMAGE_SEED_SUMMARY.csv,all rows; paired fixed seeds 0/1/2,group; threshold_mode; precision_mean; recall_mean; F1_mean; AP_mean
+C03,Joint weak-recall/contact-FPR target not met,reports/PAIRED_WEAK_RECALL_REFERENCE.csv,paired same-seed image-only; frozen internal R90,all fields
+C04,Composition stress flips H0/H1/H2 = 153/137/140 of 300,results/COMPOSITION_SUMMARY.csv,pool=lowest_70pct,model; n_targets; prediction_change_fraction
+C05,Calibration budgets share the held-out population,results/TARGET_LABEL_CALIBRATION_SIMULATION.csv,model=H1; level=split; stratum is empty (unstratified),budget_per_core; replicate; n_cells; F1; recall; Brier
+C06,Dtype repair changes zero real decisions,results/CALIBRATION_NATIVE_THRESHOLD_AUDIT.csv,all rows; sums across repeated instances are not unique-cell counts,old_implementation_changed_decisions; native_mapping_exact
+C07,Native score arrays remain unchanged,results/CORRECTNESS_PREDICTION_AUDIT.csv,all 27 rows,rows; four_keys_in_original_parquet_verified; predictions_identical; score_sha256
+C08,Cross-family complexity counts are not comparable,results/MODEL_COMPLEXITY_UNITS.csv,all rows,complexity_unit; cross_family_counts_comparable
+C09,Seed provenance reconstructed after training,results/POSTHOC_INITIALIZATION_HASHES.csv,all 15 rows,reconstructed_after_training; contemporaneous_record

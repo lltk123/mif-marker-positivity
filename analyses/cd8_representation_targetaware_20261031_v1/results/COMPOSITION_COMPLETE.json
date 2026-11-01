@@ -1,0 +1,10 @@
+{
+  "targets": 300,
+  "rows": 3600,
+  "seconds": 135.48497891426086,
+  "all_reference_checks_passed": true,
+  "all_target_pixels_unchanged": true,
+  "external_images_or_labels_used": false,
+  "interpretation": "diagnostic only; no retraining; not independent generalization performance",
+  "code_sha256": "897ace203a4377b01145ff3747b6c27182eece54bdab12bc94f63551bdcc0f30"
+}

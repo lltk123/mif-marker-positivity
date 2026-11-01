@@ -1,0 +1,10 @@
+split,context,n_labelled_cells,n_target_absent_in_crop,n_target_partially_visible,n_context_partly_unobserved,n_geometry_input_invalid,n_valid_whole_no_nonzero_signal,n_valid_reference_no_nonzero_signal,n_reference_below_20_observed_pixels,network_unobserved_context_encoding
+external_val_TMA_cores,TMA1_CD8,145701,0,0,422,3,88817,94917,7930,zero sentinel; valid support kept separately; not measured zero
+external_val_TMA_cores,TMA2_CD8,158379,0,0,516,2,75106,90251,8498,zero sentinel; valid support kept separately; not measured zero
+external_val_TMA_cores,TMA3_CD8,133400,0,0,390,0,32390,50274,10682,zero sentinel; valid support kept separately; not measured zero
+internal_val_WSIs,WSI1,59210,0,0,4,1,0,1,1427,zero sentinel; valid support kept separately; not measured zero
+internal_val_WSIs,WSI2,207925,0,0,0,3,0,0,1097,zero sentinel; valid support kept separately; not measured zero
+internal_val_WSIs,WSI3,271997,0,2,2,1,0,1,11785,zero sentinel; valid support kept separately; not measured zero
+training_WSIs,WSI1,40885,0,0,0,0,0,1,2624,zero sentinel; valid support kept separately; not measured zero
+training_WSIs,WSI2,42891,0,0,0,0,0,0,3370,zero sentinel; valid support kept separately; not measured zero
+training_WSIs,WSI3,17281,0,0,0,0,0,0,2561,zero sentinel; valid support kept separately; not measured zero

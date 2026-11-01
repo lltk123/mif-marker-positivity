@@ -1,0 +1,12 @@
+{
+  "individual_models": 15,
+  "ensembles": 5,
+  "rows": 1077669,
+  "budget": {
+    "consumed_seconds": 2740.781587123871,
+    "hard_cap_seconds": 28800.0,
+    "definition": "conservative wall time of neural fit, checkpoint validation and full development inference; not isolated GPU kernel time"
+  },
+  "all_finite": true,
+  "selection_frozen_sha256": "288f2444df40fc1c0d82fa0105d044cffda74cd15bc39d922a8a207d869327a3"
+}

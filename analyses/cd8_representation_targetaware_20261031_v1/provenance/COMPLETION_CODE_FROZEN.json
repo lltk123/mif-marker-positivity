@@ -1,0 +1,24 @@
+{
+  "time": 1793435036.3283472,
+  "external_model_selection_file_not_yet_created": true,
+  "sha256": {
+    "PROTOCOL.json": "79284785711830690b42d307b50591744dd244a34394ec931a1bb4580ec856d1",
+    "RESOURCE_ADDENDUM.json": "e5e1a664d48264d57d543779102a9274a67c1644aaf65b32bcfec7d3a47504eb",
+    "scripts/stage3_neural_predict.py": "033e135139f30b7a463c4c99426fe521b9c614a74c08c05da8f33eea86df8380",
+    "scripts/stage4_figures.py": "18c8eb08d3e4149f39587252aa57f40e5fab668529d08d1ed325e8cdff6c7f82",
+    "scripts/stage1_prepare.py": "22ebda8eb41864760d3da72a5f03061b3ee98e6bedd7616a6d7b5aaf71141c0b",
+    "scripts/experiment_common.py": "1e256d064272526aa9de38e24f268b2337fa736bac476aed403a2f7f222318be",
+    "scripts/stage1_composition.py": "897ace203a4377b01145ff3747b6c27182eece54bdab12bc94f63551bdcc0f30",
+    "scripts/stage5_validate_package.py": "710a21f2299f73fee3b8d62c0a558115c37458cb51d1083150ba10b60cb0f445",
+    "scripts/stage3_freeze_hgb_predict.py": "47bc99c983196dfd0ed1460c8d7f7567a565cfcb0d57115969bd742873eb1206",
+    "scripts/stage1_hgb.py": "e4472b3ac6ac9ce96a1ae88223cc0bc6c6f56d15386c8e49cb62697bf3e47cb8",
+    "scripts/stage3_evaluate.py": "8c1c9c3f892ffb13c97d6d8fb02b9a37b7ca711b2d0f5a2cc56727e9804a30eb",
+    "scripts/stage4_report.py": "52221c3c73b411a2c8bc7adf80cc38dd5a3f917f2945311b5cb633d8ec1e49b7",
+    "scripts/repaired_features.py": "e36ddef08dfa8366163018585e337ca370964a8ffc0d9e99ad9bb14352a9f0b4",
+    "scripts/stage4_review.py": "8e631bdb2dd5afb2a904e443b118dbe3f3db34997e7cbe22e212fbdf5cb36e73",
+    "scripts/training_supervisor.py": "e33eac8e82437a4a2b6bdb05100f7a7d90d71831012aaa367d31d99a460e7422",
+    "scripts/stage2_neural.py": "3ad699a012550c095cd3b4ca268be842173c5aa4309d717aa10c583283d30f18",
+    "scripts/completion_supervisor.py": "3bbd64fe80327b1fbe84ca71386db6a3d3c0f9fcbdf0cb1cc7b4650c912abfad",
+    "scripts/stage4_input_quality.py": "b8bb9ea55d0a02cc4da675cbfe8d6e921d853e5fa142a9fbfa6a7a24f6bd1aeb"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "models": [
+    "H0",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+  ],
+  "n_fits": 7,
+  "external_metrics_inspected": false,
+  "feature_sha256": "3c70dbf22c48ff4c245067f542a3e47e10bfef6cf121a92e6d18ccf6d616c9db",
+  "code_sha256": "e4472b3ac6ac9ce96a1ae88223cc0bc6c6f56d15386c8e49cb62697bf3e47cb8"
+}
