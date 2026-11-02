@@ -1,0 +1,7 @@
+{
+  "checks": 136,
+  "full_internal_n": 539132,
+  "max_AP_error": 7.771561172376096e-16,
+  "max_F1_error": 0.0,
+  "seconds_cpu_wall": 10.360371828079224
+}

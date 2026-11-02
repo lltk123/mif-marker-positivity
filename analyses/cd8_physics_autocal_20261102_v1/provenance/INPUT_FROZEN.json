@@ -1,0 +1,114 @@
+{
+  "all_transform_parameters": [
+    [
+      "gain_0.25",
+      {
+        "gain": 0.25
+      }
+    ],
+    [
+      "gain_0.5",
+      {
+        "gain": 0.5
+      }
+    ],
+    [
+      "gain_0.75",
+      {
+        "gain": 0.75
+      }
+    ],
+    [
+      "gain_1.5",
+      {
+        "gain": 1.5
+      }
+    ],
+    [
+      "gain_2.0",
+      {
+        "gain": 2.0
+      }
+    ],
+    [
+      "gain_4.0",
+      {
+        "gain": 4.0
+      }
+    ],
+    [
+      "gamma_0.7",
+      {
+        "gamma": 0.7
+      }
+    ],
+    [
+      "gamma_1.3",
+      {
+        "gamma": 1.3
+      }
+    ],
+    [
+      "zero_0.7",
+      {
+        "zero": 0.7
+      }
+    ],
+    [
+      "zero_0.85",
+      {
+        "zero": 0.85
+      }
+    ],
+    [
+      "zero_0.92",
+      {
+        "zero": 0.92
+      }
+    ],
+    [
+      "zero_0.95",
+      {
+        "zero": 0.95
+      }
+    ],
+    [
+      "zero_0.98",
+      {
+        "zero": 0.98
+      }
+    ],
+    [
+      "noise_low",
+      {
+        "eta": 0.002,
+        "sigma": 0.005
+      }
+    ],
+    [
+      "noise_high",
+      {
+        "eta": 0.01,
+        "sigma": 0.02
+      }
+    ],
+    [
+      "compound",
+      {
+        "gain": 0.4,
+        "sigma": 0.01,
+        "zero": 0.95
+      }
+    ]
+  ],
+  "base_protocol_sha256": "e08b86351726ddb4365a5137adc012726655cf1c2c8a17d6b10564906d46851c",
+  "feature_sha256": "3c70dbf22c48ff4c245067f542a3e47e10bfef6cf121a92e6d18ccf6d616c9db",
+  "keys_sha256": "82c1f08ec3d19c6f04ff0b53258fa55967d82812d74d45c72d7fb604db875d9e",
+  "new_protocol_sha256": "45780b17daf7e19cdc4039b6c19253f0bf886a11e2402cc698e4c93d9fea5f25",
+  "partial_support_rows": 6,
+  "stage0_units": [
+    "internal_val_WSIs/WSI1",
+    "internal_val_WSIs/WSI2",
+    "internal_val_WSIs/WSI3"
+  ]
+}

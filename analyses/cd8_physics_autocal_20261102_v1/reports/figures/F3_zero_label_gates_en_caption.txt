@@ -1,0 +1,1 @@
+3sourceWSIs; leave-one-source-out, all derived perturbations stay with source. Gate: cleanF1>=baseline; no condition AP loss>.003; all3seeds andENS mustpass. These are development results, not external validation.

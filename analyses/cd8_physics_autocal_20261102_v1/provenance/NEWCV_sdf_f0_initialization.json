@@ -1,0 +1,15 @@
+{
+  "fit_units": [
+    "training_WSIs/WSI2",
+    "training_WSIs/WSI3"
+  ],
+  "initial_hash": "3f55cc1eef38e9ad401d95d36a196ca34c523bb9f6c8cee1970bef0a80b5b581",
+  "neighbor_negative_cut_fit_only": 0.8621580197462305,
+  "nominal_parameters": 204386,
+  "parent": "CV_A_f0",
+  "parent_sha256": "94ab77aac7899add48433c65dabea10414f76448d8c2386203331e09c42d4602",
+  "recorded_before_optimizer_steps": true,
+  "seed": 0,
+  "variant": "sdf",
+  "weak_cut_fit_only": 0.1616021712582194
+}

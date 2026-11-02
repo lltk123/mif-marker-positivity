@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-02T10:20:02.176873+00:00",
+  "supersedes": "physics eligibility criterion only; initial plan retained",
+  "reason": "nonzero-count retention alone cannot detect noise-dominated or intensity-depleted views",
+  "data_driven_tuning": false,
+  "new_training_started": false,
+  "external_performance_inspected_for_this_change": false,
+  "eligibility": "targethaspositivepixels; retain>=50%positivepixelcount AND >=50%integratedtargetsignal AND target saturation<=2%; forsyntheticnoise require originaltargetRMS / knowninjectednoiseRMS>=3",
+  "noise_power": ".002*mean(originaltargetpixelintensity)+.005**2; surrogateonlynotphysicalSNR",
+  "failure_behavior": "clean-view CE only; no transformed-viewclassification or logitconsistency pressure",
+  "other_parameters_changed": false,
+  "original_core_sha256": "e8750be91c94353808f72b5ba16836fb34180ab4676048f4a4e1e1cf7bbe51d1",
+  "amended_core_sha256": "a5c52f29638b00e50861ac66c3bb2ebd8b41a0adc3430b7b142c1bda9088aef8",
+  "original_test_sha256": "9e4f82ea78bb1e62e515c4b139adf194b548204e062869e45a4ee3d03600612b",
+  "amended_test_sha256": "d82931138483f71b6db9bc56677bfb8d8aeea89e414e783dcf113762d9e7c54f",
+  "training_signature_includes_amendment_sha256": true
+}

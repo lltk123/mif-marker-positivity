@@ -1,0 +1,9 @@
+{
+  "authorized_finite_new_continuation_not_old_refit": true,
+  "plan_sha256": "21c62fdfcfa0f76bb8d59f859371e7c293dbc0810c400a29cad6e9bcb6c8362f",
+  "remaining_seconds": 24362.74048113823,
+  "requires_remaining_at_least": 7200,
+  "run": true,
+  "stage0_evidence_sensitivity": true,
+  "time": 1793616039.2422495
+}

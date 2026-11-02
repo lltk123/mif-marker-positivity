@@ -1,0 +1,13 @@
+# Publication scope and reproducibility
+
+This release publishes audited aggregate results, summary scientific figures, protocols, code and bounded conclusions. No training, full prediction or calibration was repeated for publication. Original experiment files are unchanged.
+
+Excluded: all55case pixels/raw crops/masks, case IDs and individual prediction comparisons, calibration-selected/reserved instance IDs, raw data, full per-cell scores, weights, caches, runtime logs/PIDs, private task attachments/Library identifiers, connection helpers, credentials and machine-specific absolute paths. Public PhenoBIC source/core names in aggregate CSVs identify dataset units, not patient identities.
+
+`VERSION_INDEX.csv` maps each copied artifact's original executed/delivered SHA256 to its publication SHA256. Text line endings are normalized to LF for Git. All 45 result CSVs preserve the original text apart from line endings; binary figures remain byte-identical. `original_sha256` records original bytes, `normalized_source_sha256` records the original with LF line endings, and `published_sha256` records the publication bytes. Numerical computation functions are preserved. Changes are limited to Python formatting, environment-configured project/run roots, bundled prior-module discovery, portable CJK font selection, stdout-only synthetic integration-test reporting, and repository-safe report links. The initial frozen protocol and two pretraining amendments remain separate; historical code hashes are not silently replaced with publication hashes.
+
+The preceding condition experiment is required for full reproduction. Exact immediate dependencies are included as `scripts/prior_runtime/condition_core.py`, `condition_evaluate.py` and `execution_guards.py`; their runtime paths are configured by `MIF_PROJECT_ROOT`, `MIF_CONDITION_ROOT` and `MIF_RUN_ROOT`. The original cache and weights are intentionally absent. Do not resume original completed artifacts with reformatted code hashes.
+
+Gate1 failed; Gate2 passed only by the mean of three reserved-pool repeats, with2/3individual passes; physics continuation failed the full internal gate and had no subsequent synthetic or external model evaluation. Model selection and thresholds were frozen before new external evaluation. The benchmark is previously exposed and exploratory.
+
+The original32checks and independent audits are historical records. Publication-time synthetic/data-free tests and boundary scans are reported in `PUBLICATION_VALIDATION.json`; no publication test performs model fitting. The55cases still require expert adjudication. Repository release is authorized separately from the historical run's no-upload/no-push restriction.

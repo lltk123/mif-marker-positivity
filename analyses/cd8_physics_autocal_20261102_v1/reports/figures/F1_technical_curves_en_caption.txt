@@ -1,0 +1,1 @@
+Three internal source WSIs, 539,132 cells per condition, three model seeds. Error bars: SD of seed metrics; orange: probability ensemble. Clean internal per-WSI 1% FPR thresholds remain frozen; perturbed FPR is not guaranteed. Actual zero fractions and denominators are in STAGE0_PIXEL_DENOMINATORS.csv. Normalized crop-level proxies, not reconstructed acquisition physics.

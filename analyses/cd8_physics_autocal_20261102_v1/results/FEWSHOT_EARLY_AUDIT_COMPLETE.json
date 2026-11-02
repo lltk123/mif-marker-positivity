@@ -1,0 +1,8 @@
+{
+  "active_selected_ids_match_frozen_rule": true,
+  "calibration_evaluation_disjoint": true,
+  "groups": 15,
+  "max_metric_absolute_error": 5.551115123125783e-16,
+  "performance_numbers_not_printed_for_other_branch_selection": true,
+  "seconds_cpu_wall": 60.68238854408264
+}

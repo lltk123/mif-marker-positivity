@@ -1,0 +1,48 @@
+{
+  "code_sha256": "b113258ceb5edab6ee75e5efb2a7505bad7128daffdb743c0470094e4eecd26d",
+  "decisions": {
+    "physics": {
+      "delta_AP_vs_control": 0.0020936887380489377,
+      "delta_F1_vs_control": 0.002461379029690051,
+      "mean_AP": 0.9691648032077582,
+      "mean_F1": 0.9056525143066724,
+      "passed": true,
+      "per_fold_delta_AP": {
+        "0": -0.000520460513743215,
+        "1": -0.0010308159019036811,
+        "2": 0.00783234262979371
+      }
+    },
+    "ranking": {
+      "delta_AP_vs_control": -0.003199718537892952,
+      "delta_F1_vs_control": -0.00655109837575496,
+      "mean_AP": 0.9638713959318164,
+      "mean_F1": 0.8966400369012275,
+      "passed": false,
+      "per_fold_delta_AP": {
+        "0": -0.010281256498862246,
+        "1": -0.0001147271872149469,
+        "2": 0.0007968280723983368
+      }
+    },
+    "sdf": {
+      "delta_AP_vs_control": -0.004719126858510318,
+      "delta_F1_vs_control": -0.009948843601272165,
+      "mean_AP": 0.962351987611199,
+      "mean_F1": 0.8932422916757102,
+      "passed": false,
+      "per_fold_delta_AP": {
+        "0": -0.005008947896000593,
+        "1": -0.0038657129638313137,
+        "2": -0.005282719715699047
+      }
+    }
+  },
+  "external_used": false,
+  "independent_patients_unknown": true,
+  "internal_used": false,
+  "plan_sha256": "21c62fdfcfa0f76bb8d59f859371e7c293dbc0810c400a29cad6e9bcb6c8362f",
+  "selected": "physics",
+  "source_WSI_folds": 3,
+  "time": 1793616381.5200474
+}

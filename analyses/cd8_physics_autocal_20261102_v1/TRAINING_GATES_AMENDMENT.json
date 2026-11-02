@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-02T10:33:21.371574+00:00",
+  "reason": "implementMDrequirementthatcleanandsyntheticdevelopmentgatesprecedeexternal; closemissinggateincontrollerbeforeanynewtraining",
+  "changes": [
+    "also require probabilityensemble cleanF1>=matchedcontrol andAP>=control-.003",
+    "after3predeclaredsyntheticconditions, require everyseedandENS AP>=same-condition matchedcontrol-.003; otherwise no external prediction"
+  ],
+  "unchanged": "trainingloss,optimizer,epochs,sampling,hyperparameters,originalstage0andzero-labelrules",
+  "external_performance_inspected_for_this_change": false,
+  "original_controller_sha256": "290d552c85309d93e5dec2cb3fc542f594b3ff33f8533ad9973e19369f9c3d62",
+  "amended_controller_sha256": "b113258ceb5edab6ee75e5efb2a7505bad7128daffdb743c0470094e4eecd26d",
+  "no_reselection_after_failure": true
+}

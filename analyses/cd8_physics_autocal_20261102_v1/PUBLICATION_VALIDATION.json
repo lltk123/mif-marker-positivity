@@ -1,0 +1,53 @@
+{
+  "utc": "2026-11-02T13:26:52.575636+00:00",
+  "original_experiment_tests": {
+    "inherited": 14,
+    "new": 17,
+    "integration": 1,
+    "status": "passed_at_original_execution"
+  },
+  "publication_code_AST": {
+    "files_checked": 21,
+    "scientific_functions_unchanged": true,
+    "only_function_exception": "mock integration test reports tostdout instead of rewriting historical result"
+  },
+  "summary_csvs": {
+    "count": 45,
+    "content_identical_to_audited_original": true,
+    "line_endings": "LF normalized; original and normalized-source hashes retained"
+  },
+  "publication_tests": {
+    "repository_boundary_tests": {
+      "count": 5,
+      "status": "passed"
+    },
+    "published_result_checks": {
+      "count": 5,
+      "status": "passed"
+    },
+    "full17synthetic_rerun": "blocked_before_tests_by_local_PyTorch_c10_DLL_WinError1114",
+    "mock_gate_rerun": "not_run_after_local_import_failure"
+  },
+  "remote_test_upload": {
+    "executed": false,
+    "status": "auto_review_denied_destination_not_in_GitHub_publication_scope",
+    "retried_or_bypassed": false
+  },
+  "privacy_scan": {
+    "sensitive_absolute_paths": 0,
+    "private_delivery_ids": 0,
+    "individual_cell_ID_columns": 0
+  },
+  "publication_guard": {
+    "status": "passed_staged",
+    "errors": 0
+  },
+  "training_prediction_calibration_repeated": false,
+  "report_integrity": {
+    "restored_from_original_with_publication_sanitization": true,
+    "languages": [
+      "ZH",
+      "EN"
+    ]
+  }
+}

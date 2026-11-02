@@ -1,0 +1,122 @@
+[
+  {
+    "epoch": 4,
+    "names": [
+      "NEWCV_control_f0",
+      "NEWCV_physics_f0",
+      "NEWCV_sdf_f0",
+      "NEWCV_ranking_f0"
+    ],
+    "same_parent_sha256": "94ab77aac7899add48433c65dabea10414f76448d8c2386203331e09c42d4602",
+    "same_sample_sha256": "783113a5afb858c9f360c1dd081d48ea7353cce5012a77bd5d944e631a9b6063"
+  },
+  {
+    "epoch": 5,
+    "names": [
+      "NEWCV_control_f0",
+      "NEWCV_physics_f0",
+      "NEWCV_sdf_f0",
+      "NEWCV_ranking_f0"
+    ],
+    "same_parent_sha256": "94ab77aac7899add48433c65dabea10414f76448d8c2386203331e09c42d4602",
+    "same_sample_sha256": "8158e62ac207d573af8d74000b7bd3347d6784fbc581d5af4ec6aff1b1d43a71"
+  },
+  {
+    "epoch": 4,
+    "names": [
+      "NEWCV_control_f1",
+      "NEWCV_physics_f1",
+      "NEWCV_sdf_f1",
+      "NEWCV_ranking_f1"
+    ],
+    "same_parent_sha256": "f9c512ec34b0dec4c5452224c5a4ec6d471cbedb965d9ccf315b0598bf4761a4",
+    "same_sample_sha256": "5b2f5e09b0abf36582a8ed61b943afbffb5c02cfdcaeacc07c917912acb3b23e"
+  },
+  {
+    "epoch": 5,
+    "names": [
+      "NEWCV_control_f1",
+      "NEWCV_physics_f1",
+      "NEWCV_sdf_f1",
+      "NEWCV_ranking_f1"
+    ],
+    "same_parent_sha256": "f9c512ec34b0dec4c5452224c5a4ec6d471cbedb965d9ccf315b0598bf4761a4",
+    "same_sample_sha256": "1402e7c6bd433394a17c0f3a61c09bb51240a964b30b0ef63625b712a28e1c8c"
+  },
+  {
+    "epoch": 4,
+    "names": [
+      "NEWCV_control_f2",
+      "NEWCV_physics_f2",
+      "NEWCV_sdf_f2",
+      "NEWCV_ranking_f2"
+    ],
+    "same_parent_sha256": "3e8c4e997b8da8f0e9ecf532a998489e804a86c0d157f363489f9afa9eff7424",
+    "same_sample_sha256": "c850bb51c4883597c17ca889ea327b64b158a6ac9b114668ff140bace37e53be"
+  },
+  {
+    "epoch": 5,
+    "names": [
+      "NEWCV_control_f2",
+      "NEWCV_physics_f2",
+      "NEWCV_sdf_f2",
+      "NEWCV_ranking_f2"
+    ],
+    "same_parent_sha256": "3e8c4e997b8da8f0e9ecf532a998489e804a86c0d157f363489f9afa9eff7424",
+    "same_sample_sha256": "a43dc685a598625b14855ffeaef9ee7b40af10beed93ddc8f0a40b52b88890ab"
+  },
+  {
+    "epoch": 6,
+    "names": [
+      "NEW_control_s0",
+      "NEW_physics_s0"
+    ],
+    "same_parent_sha256": "d273f1676b7e6bd619360cfce77628a534480bc04b98d8e90e2456138958b8c7",
+    "same_sample_sha256": "423f08728df43a151e6284943f705cd1ee289eccdd82897c0a587f39d82487b6"
+  },
+  {
+    "epoch": 7,
+    "names": [
+      "NEW_control_s0",
+      "NEW_physics_s0"
+    ],
+    "same_parent_sha256": "d273f1676b7e6bd619360cfce77628a534480bc04b98d8e90e2456138958b8c7",
+    "same_sample_sha256": "527eba6532a940aa5e0c148b3a38866f9bce87c6bed56ee6b501580604197000"
+  },
+  {
+    "epoch": 6,
+    "names": [
+      "NEW_control_s1",
+      "NEW_physics_s1"
+    ],
+    "same_parent_sha256": "664a227910575c54ea67c8918694c7454cd5b0a435631c08a3375a39aba3d2d6",
+    "same_sample_sha256": "61b31d7ec2063dc3fe2f517eb8e7575a1c8a62bfdd76ffc800b4ed4187f3a236"
+  },
+  {
+    "epoch": 7,
+    "names": [
+      "NEW_control_s1",
+      "NEW_physics_s1"
+    ],
+    "same_parent_sha256": "664a227910575c54ea67c8918694c7454cd5b0a435631c08a3375a39aba3d2d6",
+    "same_sample_sha256": "c312f22c7cfc34198ec195977abdbca0925ff3801d6b05869670e2fdb6839af0"
+  },
+  {
+    "epoch": 6,
+    "names": [
+      "NEW_control_s2",
+      "NEW_physics_s2"
+    ],
+    "same_parent_sha256": "7ac9b0f36b52f48373b9372f90cc9b5695700d206c89d3c49297434c8105c660",
+    "same_sample_sha256": "2d6b36bdced2acf00e8de444b034850785d1c84733b1201f8d9b996e0145e635"
+  },
+  {
+    "epoch": 7,
+    "names": [
+      "NEW_control_s2",
+      "NEW_physics_s2"
+    ],
+    "same_parent_sha256": "7ac9b0f36b52f48373b9372f90cc9b5695700d206c89d3c49297434c8105c660",
+    "same_sample_sha256": "78e223f6a26b3afdfa4ff10483a8ec1b4ef5e4778209baf11d70a41359dfb7eb"
+  }
+]

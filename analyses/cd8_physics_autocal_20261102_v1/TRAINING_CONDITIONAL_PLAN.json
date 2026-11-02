@@ -1,0 +1,84 @@
+{
+  "frozen_utc": "2026-11-02T09:15:56.564927+00:00",
+  "conditional": true,
+  "before_new_external_evaluation": true,
+  "trigger": "Stage0 full complete; inspect loss of ranking vs threshold sensitivity; zero-label development completed; remainingneuralbudget>=7200s. Do not launch before decision record.",
+  "finite_candidates": [
+    "matched_continuation_control",
+    "physics_consistency",
+    "SDF_contact_ring",
+    "weak_vs_neighbor_negative_ranking"
+  ],
+  "old_fits_repeated": false,
+  "warm_start": "reuse CV_A_f0/1/2 and final A_s0/1/2 weights; additional-training matched control required to attribute gains to new variable rather than extra optimizer steps",
+  "CV": {
+    "source_units": 3,
+    "folds": 3,
+    "seeds_per_fold": 1,
+    "additional_epochs": 2,
+    "sample_rows_per_epoch": 20000,
+    "epoch_numbers": [
+      4,
+      5
+    ],
+    "heldout": "complete heldout training WSI; threshold fixed0.5 for branch gate; no internal or external branch ranking",
+    "optimizer": "AdamW lr1e-4 weight_decay1e-4, batch128, gradclip1.0; fresh optimizer for allbranches",
+    "gate": "mean clean heldoutF1>=matchedcontrol; meanAP>=control-.003 and everyfoldAP>=control-.003; finite candidate no resweep",
+    "select": "highestmeanAP amongpassing; within.001 highestmeanF1 then physics,SDF,ranking; only1finalbranch"
+  },
+  "final": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "additional_epochs": 2,
+    "rows_per_epoch": 50000,
+    "epoch_numbers": [
+      6,
+      7
+    ],
+    "control_and_selected_only": true,
+    "threshold_rule": "eachmodel max across3internalWSI negative99th-percentile withstrict> and ties; fixed0.5 separate",
+    "internal_gate": "meanseedF1 atownfrozenFPR01>=control, allseedAP>=control-.003; no replacement candidate if fails",
+    "new_model_perturbation_audit": "fullinternal539132 x3seeds x3scenarios gain0.5,zero0.95,noise_high forcontrolandselected onlyifgatepassed; remainingbudgetcheckedbeforelaunch"
+  },
+  "physics": {
+    "inputs_unchanged": true,
+    "percell_choice": [
+      "gain0.75",
+      "gain1.5",
+      "noise_low",
+      "floor_to_trainingWSI_targetpixel_zero70%"
+    ],
+    "noise_eta": 0.002,
+    "noise_sigma": 0.005,
+    "floor_threshold": "trainingWSI labelledinstancepixelquantile0.7,unlabelledinput; noheldoutused",
+    "eligibility": "targethaspositivepixels AND >=50% originalpositivepixelcount remains AND resultingtarget saturation<=2%; allothercells cleanCEonly",
+    "loss": "0.5CEclean+0.5CEtransformed+0.1Huber(zclean-ztransformed) oneligible; cleanCE onineligible; Huberbeta1",
+    "no_invariance_claim_for_severe_loss": true
+  },
+  "SDF": {
+    "only_change": "replacebinarytargetmask bysigneddistance/12clipped[-1,1], appendnoncontactcandidateedgering4thchannel; originalintensityandneighborbinaryunchanged",
+    "distance": "edt(target)-1 inside, -edt(~target)outside; boundaryinside0; pixelunitsnotmicrometres",
+    "ring": "0<edt(target)<=3 and edt(~neighbor)>3; whennoneighbor distance treatedinfinite",
+    "not_guaranteed_uncontaminated": true,
+    "initialization": "copyold3channelconvweights; zeroinitialize4thchannel; allotherweightsidentical",
+    "nominal_parameters": 204386
+  },
+  "ranking": {
+    "loss": "CE +0.1mean(relu(1-(zweakpositive-zneighbornegative))**2) alleligiblewithinbatchpairs",
+    "weak": "targetnormalizedmean<=q25positiveamongfitWSIsonly",
+    "negative": "label0 andneighborareafraction>0 andrawneighbor-minus-targetedge>q75amongfitneighbornegative",
+    "sampling": "identicalWSIbalancedrandomindices; no extra oversampling",
+    "no_expert_truth_claim": true
+  },
+  "all_branches": {
+    "same_orientation_augmentation": true,
+    "same_seed_initialization_parent_weights": true,
+    "same_samplehash_recorded_beforeepoch": true,
+    "fit_onlytraininglabels": true,
+    "feature_preprocess_fitting": "none; geometry deterministic; lossstratafitonlyfitWSIs",
+    "budget": "shared28800secondactiveledgerincludesinference,training,failures; testsmokebeforetraining; noautomaticretries"
+  }
+}

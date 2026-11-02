@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "deltas": [
+      {
+        "delta_AP": 0.004203996924158515,
+        "delta_F1": -0.00294197401013252,
+        "seed": 0
+      },
+      {
+        "delta_AP": 0.003961139323751306,
+        "delta_F1": 0.001774052568301654,
+        "seed": 1
+      },
+      {
+        "delta_AP": 0.0023719117178823135,
+        "delta_F1": -0.004319169436795223,
+        "seed": 2
+      }
+    ],
+    "ensemble_deltas": {
+      "delta_AP": 0.00318728298140325,
+      "delta_F1": -0.003022874617087168
+    },
+    "final_fits": 6,
+    "gate_amendment_sha256": "bbccd4492a1d0f9e03a40e1a6730f78de86296e342b914d8cb764177765cc9d1",
+    "no_replacement_candidate_if_failed": true,
+    "passed": false,
+    "selected": "physics",
+    "time": 1793617066.9822536
+  },
+  "reason": "development_gate_failed"
+}

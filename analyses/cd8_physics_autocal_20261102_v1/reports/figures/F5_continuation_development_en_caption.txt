@@ -1,0 +1,1 @@
+Three held-out training source WSIs; each point one WSI, line mean; not independent patients. Two additional epochs from existingfoldweights, pairedsamples andupdatenumbers. External labels excluded fromselection.

@@ -1,0 +1,17 @@
+{
+  "budget": {
+    "active": null,
+    "consumed_seconds": 4437.259518861771,
+    "events": [],
+    "hard_cap_seconds": 28800.0,
+    "overrun_seconds": 0.0,
+    "status": "running"
+  },
+  "changed_scenarios": 16,
+  "clean_scores_reused": true,
+  "internal_cells": 539132,
+  "models_per_scenario": 3,
+  "n_metric_rows": 544,
+  "probability_ensembles": 16,
+  "proxy_scope": "normalized crop-level technical transforms, not physical acquisition reconstruction"
+}

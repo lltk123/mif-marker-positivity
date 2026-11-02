@@ -1,0 +1,10 @@
+{
+  "fit_units": [
+    "training_WSIs/WSI1",
+    "training_WSIs/WSI2",
+    "training_WSIs/WSI3"
+  ],
+  "indices_sha256": "c312f22c7cfc34198ec195977abdbca0925ff3801d6b05869670e2fdb6839af0",
+  "recorded_before_epoch": true,
+  "rows": 50000
+}

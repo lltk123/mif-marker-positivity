@@ -1,0 +1,50 @@
+[
+  {
+    "finite_loss": 0.026214731857180595,
+    "nominal_parameters": 204098,
+    "optimizer_steps": 0,
+    "shape": [
+      8,
+      3,
+      96,
+      96
+    ],
+    "variant": "control"
+  },
+  {
+    "finite_loss": 0.026214731857180595,
+    "nominal_parameters": 204098,
+    "optimizer_steps": 0,
+    "shape": [
+      8,
+      3,
+      96,
+      96
+    ],
+    "variant": "physics"
+  },
+  {
+    "finite_loss": 3.1285223960876465,
+    "nominal_parameters": 204386,
+    "optimizer_steps": 0,
+    "shape": [
+      8,
+      4,
+      96,
+      96
+    ],
+    "variant": "sdf"
+  },
+  {
+    "finite_loss": 0.026214731857180595,
+    "nominal_parameters": 204098,
+    "optimizer_steps": 0,
+    "shape": [
+      8,
+      3,
+      96,
+      96
+    ],
+    "variant": "ranking"
+  }
+]

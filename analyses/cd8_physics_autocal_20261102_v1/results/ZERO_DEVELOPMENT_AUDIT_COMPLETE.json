@@ -1,0 +1,8 @@
+{
+  "all_decisions_reproduced": true,
+  "max_absolute_error": 1.3322676295501878e-15,
+  "metric_groups": 204,
+  "no_refit": true,
+  "seconds_cpu_wall": 104.31740951538086,
+  "source_fold_checks": 12
+}

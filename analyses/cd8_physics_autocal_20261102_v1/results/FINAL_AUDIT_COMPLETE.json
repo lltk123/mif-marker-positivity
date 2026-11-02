@@ -1,0 +1,19 @@
+{
+  "Library_uploads": 0,
+  "active_sampling_uses_no_labels_for_selection": true,
+  "budget": {
+    "active": null,
+    "consumed_seconds": 5397.581406831741,
+    "events": [],
+    "hard_cap_seconds": 28800.0,
+    "overrun_seconds": 0.0,
+    "status": "completed"
+  },
+  "expert_adjudication": "pending",
+  "max_metric_absolute_error": 6.661338147750939e-16,
+  "metric_checks": 59,
+  "new_weight_count": 18,
+  "paired_sample_epoch_checks": 12,
+  "reserved_pool_isolation": true,
+  "zero_intercept_preserves_native_threshold_semantics": true
+}

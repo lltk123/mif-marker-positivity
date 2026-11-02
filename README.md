@@ -21,8 +21,11 @@
 | 校准后 Nimbus 预训练／微调 | 已完成官方 V1 新尺度推理和单独微调 | [Nimbus 重训练](analyses/cd8_nimbus_robust_20261030/ANALYSIS_REPORT.md) |
 | 本轮新旧性能对比（2026-10-31） | 已完成统一指标、逐芯比较及双语图表 | [综合报告](analyses/cd8_robust_comparison_20261030/ANALYSIS_REPORT.md) |
 | 表征修复、目标/邻域 mask 消融与统一评价 | 7 HGB + 5×3 神经组完成；correctness_001；联合目标未达成，人工复核待完成 | [三阶段实验](analyses/cd8_representation_targetaware_20261031_v1/ANALYSIS_REPORT.md) |
+| 技术扰动、零标签/主动校准与条件继续训练 | 全部计算终态；Gate1未过，Gate2均值通过但仅2/3重复通过；新训练未过内部门槛 | [最新测试结果](analyses/cd8_physics_autocal_20261102_v1/ANALYSIS_REPORT.md) |
 
-**最新完成（2026-10-31）：** 已完成逐图外层 P1/P99 校准、像素级特征重提、TabM A/B/C 各 3 种子训练与匹配 HGB、Nimbus 预训练推理和单独微调，以及全量评价。当前没有正在运行的 Nimbus 或 TabM 训练。新结果保存在独立目录，旧实验全部保留；Pan-M 继续封存，未读取其图像、标签、分布或预测。
+**最新完成（2026-11-02）：** [技术扰动与校准实验](analyses/cd8_physics_autocal_20261102_v1/ANALYSIS_REPORT.md)已审计完成。新模型后续合成复验与外部推理因内部门槛失败而未执行；55例专家判读仍待完成。本次仅发布汇总表、报告、科学图和复现代码，个体图像/数据不发布。
+
+**此前完成（2026-10-31）：** 已完成逐图外层 P1/P99 校准、像素级特征重提、TabM A/B/C 各 3 种子训练与匹配 HGB、Nimbus 预训练推理和单独微调，以及全量评价。当前没有正在运行的 Nimbus 或 TabM 训练。新结果保存在独立目录，旧实验全部保留；Pan-M 继续封存，未读取其图像、标签、分布或预测。
 
 阅读入口：[本轮综合报告](analyses/cd8_robust_comparison_20261030/ANALYSIS_REPORT.md) · [外部排序 CSV](analyses/cd8_robust_comparison_20261030/report_tables/RANK_external_val_TMA_cores.csv) · [新旧配对变化](analyses/cd8_robust_comparison_20261030/report_tables/EXTERNAL_PAIRED_CHANGES.csv) · [发布内容](docs/UPDATES_20261031.md)。
 
@@ -62,6 +65,10 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 输出一行一个原实例，包含数值特征、QC、显式 ID 与运行配置。默认不会覆盖已有输出。GMM、E1–E4、Nimbus 的批处理和微调命令分别保留在实验 README 中；这些完整流程依赖服务器上的数据、上游实现和缓存，克隆仓库本身不等于已具备全部输入。
 
 ## Results
+
+### 最新缺失项计算（2026-11-02）
+
+零标签空间校准在全量437,480外部细胞上F1=0.892868、AP=0.965876，AP未达到预设0.966，Gate1失败。主动20标签/core在每次433,280共同评价细胞上的三次均值F1=0.903875、弱观测信号召回=0.557923；仅2/3重复通过Gate2，不能与全量结果混算。技术一致性模型未过完整内部门槛，未运行后续新模型外部评价。来源、筛选条件和完整证据见[报告](analyses/cd8_physics_autocal_20261102_v1/ANALYSIS_REPORT.md)、[表格索引](analyses/cd8_physics_autocal_20261102_v1/TABLE_INDEX.csv)及[发布说明](docs/UPDATES_20261102.md)。
 
 ### 三阶段受控实验（2026-10-31；2026-11-01 发布）
 
@@ -113,7 +120,7 @@ python analyses/cd8_morphospatial_20261023/scripts/extract_single.py \
 
 TabM 行为三个固定随机种子的指标均值，标准差在源表中；没有按测试表现选择种子。来源：[results_overview.csv](docs/results_overview.csv)，历史模型名不含 `outerP1P99`；本表保持此前结果。该 CSV 追加了本轮结果，每行保留源 CSV 与筛选条件；完整报告另外给出查准率、查全率、混淆计数、逐图结果和门限开发方式。
 
-历史与本轮全部已列实验中，E2 的外部 F1 仍最高；Nimbus 首轮及本轮微调均没有超过各自预训练版本的外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
+上表历史固定 0.5 实验范围内，E2 的外部 F1 最高；Nimbus 首轮及本轮微调均没有超过各自预训练版本的外部总体 F1。模型监督条件不同：GMM 为无监督基线，HGB 使用 PhenoBIC 训练标签，Nimbus 继承作者监督预训练；Nimbus 内部验证还参与检查点和补充门限选择。结果是本任务的配对描述，不代表论文全部指标复现或无条件的跨域优越性。
 
 ![E1–E4 performance](analyses/cd8_e1_e4_stability_20261023/figures/01_performance_fixed_zh.png)
 

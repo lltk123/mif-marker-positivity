@@ -1,0 +1,14 @@
+{
+  "active_neural_wall_seconds": 5397.581406831741,
+  "cap_seconds": 28800.0,
+  "completed_training_record_seconds": 409.72605657577515,
+  "completed_inference_record_seconds": 4978.21168088913,
+  "smoke_and_accounting_remainder_seconds": 9.643669366836548,
+  "failed_events": [],
+  "failed_seconds": 0,
+  "failed_seconds_note": "zero only if no failure events; otherwise not separable without activity evidence",
+  "not_GPU_kernel_time": "conservative wall time during neural activities includes data loading, setup and writes",
+  "original_full_fits_or_full_predictions_repeated": false,
+  "limited_identity_pilot_cells_recomputed_per_seed": 1536,
+  "record_count": 90
+}

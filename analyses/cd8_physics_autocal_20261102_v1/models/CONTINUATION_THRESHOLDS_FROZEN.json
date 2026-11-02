@@ -1,0 +1,41 @@
+{
+  "external_used": false,
+  "max_per_internal_WSI_FPR": 0.01,
+  "operator": ">",
+  "records": {
+    "NEW_ENS_control": {
+      "dev_FPR01_each_WSI": 0.3262663781642914,
+      "fixed_0.5": 0.5
+    },
+    "NEW_ENS_physics": {
+      "dev_FPR01_each_WSI": 0.24587011337280273,
+      "fixed_0.5": 0.5
+    },
+    "NEW_control_s0": {
+      "dev_FPR01_each_WSI": 0.5243739485740662,
+      "fixed_0.5": 0.5
+    },
+    "NEW_control_s1": {
+      "dev_FPR01_each_WSI": 0.24539361894130707,
+      "fixed_0.5": 0.5
+    },
+    "NEW_control_s2": {
+      "dev_FPR01_each_WSI": 0.22793468832969666,
+      "fixed_0.5": 0.5
+    },
+    "NEW_physics_s0": {
+      "dev_FPR01_each_WSI": 0.35545530915260315,
+      "fixed_0.5": 0.5
+    },
+    "NEW_physics_s1": {
+      "dev_FPR01_each_WSI": 0.24730058014392853,
+      "fixed_0.5": 0.5
+    },
+    "NEW_physics_s2": {
+      "dev_FPR01_each_WSI": 0.15455113351345062,
+      "fixed_0.5": 0.5
+    }
+  },
+  "selection_sha256": "b31d0b2681daae4ab369a92e3f091595082053989b893e68baad54d2f5f57ac3",
+  "time": 1793617066.9142277
+}

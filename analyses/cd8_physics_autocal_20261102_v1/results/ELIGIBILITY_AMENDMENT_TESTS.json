@@ -1,0 +1,15 @@
+{
+  "time": 1793614811.8975675,
+  "before_any_newtraining": true,
+  "regression": [
+    {
+      "tests": 14,
+      "passed": true
+    },
+    {
+      "tests": 17,
+      "passed": true
+    }
+  ],
+  "amendment_sha256": "20ec5389d8c2e493cc4919745a1379172674cd9e5578f895355ca6d54a7931d5"
+}

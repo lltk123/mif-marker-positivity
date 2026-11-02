@@ -1,0 +1,9 @@
+claim_id,claim,tables,row_filter,metric_columns
+C01,Stage0all48complete;weakrecallcanfallwhileF1rises,T05,model=ENS_A;unit=pooled;threshold_mode=dev_FPR01_each_WSI;scenario=clean/zero_0.95,"n,F1,AP,weak_recall,FPR"
+C02,SpatialGate1failsAP;mixturealsofails,T01,model=ENS_A;method=spatial/mixture/reused_baseline;level=pooled;threshold_mode=dev_FPR01_each_WSI,"n,F1,AP,weak_recall,FPR"
+C03,Active20Gate2meanpasses2of3repeats,"T03,T04",strategy=active_boundary;budget=20,"replicate,n,F1,weak_recall,FPR,F1_mean,weak_recall_mean"
+C04,PhysicsselectedbytrainingWSIbutfailsfullinternalgate,"T06,T07",variant=physics/control;or model=NEW_ENS_physics/NEW_ENS_control;level=pooled;threshold_mode=dev_FPR01_each_WSI,"fold,F1,AP"
+C05,Ridgefailsdevelopmentandhasnoexternalapplication,T08,method=ridge;unit=pooled;threshold_mode=source_LOO_FPR01,"scenario,delta_F1,delta_AP"
+C06,Spatial27coreimprove14worse1tie,T09,model=ENS_A;method=spatial;threshold_mode=dev_FPR01_each_WSI,"core,delta_F1,delta_prevalence_absolute_error"
+C07,OnecoreFPRexceeds1percentinrepeat103,T10,strategy=active_boundary;budget=20;replicate=103;level=core,"unit,FPR"
+C08,Seedmetricmeansdifferfromprobabilityensemble,"T01,T02",level=pooled;threshold_mode=dev_FPR01_each_WSI,"model,family,F1,F1_mean,F1_std,AP,AP_mean,AP_std"

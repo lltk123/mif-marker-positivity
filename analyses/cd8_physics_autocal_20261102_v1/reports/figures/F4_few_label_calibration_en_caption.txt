@@ -1,0 +1,1 @@
+433,280 evaluation cells per repeat; 42 cores, 100 reserved and excluded per core; three pool repeats. Error bars: repeat SD, not patient uncertainty. Frozen three-seed probability ensemble. Random0/20/50/100 reused; random5/10 and active5/10/20 newlycomputed. Deterministic topK uses no inversepropensity weights; selection-bias assumptions remain.

@@ -1,0 +1,2018 @@
+[
+  {
+    "clean_threshold_from_fit_sources_only": 0.7264233827590942,
+    "fit_units": [
+      "internal_val_WSIs/WSI2",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI1",
+    "model": "A_s0",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.3422625958919525
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.015648312866687775
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.11006582528352737
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7554240822792053
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.8952403664588928
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9444559812545776
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02348136529326439
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.08036148548126221
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.03670944273471832
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.3378905951976776
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.7264233827590942
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.04343500733375549
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.3460288345813751
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.9285762310028076
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.96455317735672
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9755995869636536
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.04597519338130951
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.17931735515594482
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.06460794061422348
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.7248980402946472
+      }
+    ],
+    "ridge_coef": [
+      0.4210446105251053,
+      -0.029420617383230655,
+      -1.133605686445253
+    ],
+    "ridge_intercept": 0.6784539915546234,
+    "scaler_mean": [
+      0.1933297013863921,
+      0.1719479070882051,
+      0.10851118453281605
+    ],
+    "scaler_scale": [
+      0.2881672577405538,
+      0.10959814518595282,
+      0.141129909835538
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.7264233827590942,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI2",
+    "model": "A_s0",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.6627920866012573
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.024213582277297974
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.25489068031311035
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.9171500205993652
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9632396101951599
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9737133979797363
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02802581898868084
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.13574270904064178
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.03875819966197014
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.6623858213424683
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.7264233827590942
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.04343500733375549
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.3460288345813751
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.9285762310028076
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.96455317735672
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9755995869636536
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.04597519338130951
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.17931735515594482
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.06460794061422348
+      },
+      {
+        "clean_unit_threshold": 0.7264233827590942,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.7248980402946472
+      }
+    ],
+    "ridge_coef": [
+      0.22412247861367773,
+      -0.6093349238220398,
+      -1.0284286264190534
+    ],
+    "ridge_intercept": 0.9360370440115612,
+    "scaler_mean": [
+      0.1800820897333324,
+      0.24048102764967377,
+      0.12871469993034193
+    ],
+    "scaler_scale": [
+      0.297729856555677,
+      0.08516253065018961,
+      0.16762618483614425
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.6627920866012573,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI2"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI3",
+    "model": "A_s0",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.6627920866012573
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.024213582277297974
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.25489068031311035
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.9171500205993652
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9632396101951599
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9737133979797363
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02802581898868084
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.13574270904064178
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.03875819966197014
+      },
+      {
+        "clean_unit_threshold": 0.6627920866012573,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.6623858213424683
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.3422625958919525
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.015648312866687775
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.11006582528352737
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7554240822792053
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.8952403664588928
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9444559812545776
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02348136529326439
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.08036148548126221
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.03670944273471832
+      },
+      {
+        "clean_unit_threshold": 0.3422625958919525,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.3378905951976776
+      }
+    ],
+    "ridge_coef": [
+      0.4128742589389148,
+      -0.0503864295518909,
+      -1.1871065777020913
+    ],
+    "ridge_intercept": 0.6927123589398323,
+    "scaler_mean": [
+      0.18795795859768988,
+      0.15632466178587306,
+      0.11165427889397894
+    ],
+    "scaler_scale": [
+      0.2867737937452716,
+      0.0923241162387475,
+      0.1442037876468615
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.4108770489692688,
+    "fit_units": [
+      "internal_val_WSIs/WSI2",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI1",
+    "model": "A_s1",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.11673608422279358
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.01099994033575058
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.03790033236145973
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.4557461440563202
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7251258492469788
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8555091619491577
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.009011638350784779
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.01818990521132946
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.009731278754770756
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.11611593514680862
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4108770489692688
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.020595697686076164
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.11369635164737701
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8029094338417053
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9052641987800598
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9344596862792969
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.015950236469507217
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03940568491816521
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.016895584762096405
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.4095720946788788
+      }
+    ],
+    "ridge_coef": [
+      0.5387704927277095,
+      -0.04018007257582227,
+      -1.0735966157796872
+    ],
+    "ridge_intercept": 0.5194094165320436,
+    "scaler_mean": [
+      0.1933297013863921,
+      0.1719479070882051,
+      0.09864566992132971
+    ],
+    "scaler_scale": [
+      0.2881672577405538,
+      0.10959814518595282,
+      0.13686646192195695
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.4108770489692688,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI2",
+    "model": "A_s1",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.3665632903575897
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.019091691821813583
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.09712881594896317
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7909658551216125
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9040771126747131
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9334607124328613
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.015490414574742317
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03763522207736969
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.014386365190148354
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.3634266257286072
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4108770489692688
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.020595697686076164
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.11369635164737701
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8029094338417053
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9052641987800598
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9344596862792969
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.015950236469507217
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03940568491816521
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.016895584762096405
+      },
+      {
+        "clean_unit_threshold": 0.4108770489692688,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.4095720946788788
+      }
+    ],
+    "ridge_coef": [
+      0.32228373795098364,
+      -0.6402591636711137,
+      -0.9454433762965858
+    ],
+    "ridge_intercept": 0.765503188750798,
+    "scaler_mean": [
+      0.1800820897333324,
+      0.24048102764967377,
+      0.11397620413217288
+    ],
+    "scaler_scale": [
+      0.297729856555677,
+      0.08516253065018961,
+      0.15944024303018312
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.3665632903575897,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI2"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI3",
+    "model": "A_s1",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.3665632903575897
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.019091691821813583
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.09712881594896317
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7909658551216125
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9040771126747131
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9334607124328613
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.015490414574742317
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03763522207736969
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.014386365190148354
+      },
+      {
+        "clean_unit_threshold": 0.3665632903575897,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.3634266257286072
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.11673608422279358
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.01099994033575058
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.03790033236145973
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.4557461440563202
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7251258492469788
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8555091619491577
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.009011638350784779
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.01818990521132946
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.009731278754770756
+      },
+      {
+        "clean_unit_threshold": 0.11673608422279358,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.11611593514680862
+      }
+    ],
+    "ridge_coef": [
+      0.5106768422571633,
+      -0.08701465296234494,
+      -1.0980921379954938
+    ],
+    "ridge_intercept": 0.4750577418548235,
+    "scaler_mean": [
+      0.18795795859768988,
+      0.15632466178587306,
+      0.09873127967194692
+    ],
+    "scaler_scale": [
+      0.2867737937452716,
+      0.0923241162387475,
+      0.1315723287778329
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.35680902004241943,
+    "fit_units": [
+      "internal_val_WSIs/WSI2",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI1",
+    "model": "A_s2",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.10698956996202469
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.005060586612671614
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.028068259358406067
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.45612746477127075
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7267097234725952
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8705450892448425
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.005011378321796656
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.014364252798259258
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.00684033939614892
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.10702454298734665
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.35680902004241943
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.008670434355735779
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.08668189495801926
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8175328373908997
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9280048608779907
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9616833329200745
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.007927517406642437
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03228416666388512
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.01126504223793745
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.35687634348869324
+      }
+    ],
+    "ridge_coef": [
+      0.5252479495335256,
+      -0.13614347950501451,
+      -1.2205959239740132
+    ],
+    "ridge_intercept": 0.5722826150256721,
+    "scaler_mean": [
+      0.1933297013863921,
+      0.1719479070882051,
+      0.09485725636073326
+    ],
+    "scaler_scale": [
+      0.2881672577405538,
+      0.10959814518595282,
+      0.1305520694392171
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.35680902004241943,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI2",
+    "model": "A_s2",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.2952842116355896
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.006283384747803211
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.06583455950021744
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7821682095527649
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.906416654586792
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9468083381652832
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.005248937755823135
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.022781040519475937
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.006115862168371677
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.30102136731147766
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.35680902004241943
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.008670434355735779
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.08668189495801926
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8175328373908997
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9280048608779907
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9616833329200745
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.007927517406642437
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.03228416666388512
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.01126504223793745
+      },
+      {
+        "clean_unit_threshold": 0.35680902004241943,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.35687634348869324
+      }
+    ],
+    "ridge_coef": [
+      0.3043029905284939,
+      -0.7626261975277427,
+      -1.0953831924385269
+    ],
+    "ridge_intercept": 0.810045307334678,
+    "scaler_mean": [
+      0.1800820897333324,
+      0.24048102764967377,
+      0.10448046194095136
+    ],
+    "scaler_scale": [
+      0.297729856555677,
+      0.08516253065018961,
+      0.14956259319175316
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.2952842116355896,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI2"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI3",
+    "model": "A_s2",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.2952842116355896
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.006283384747803211
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.06583455950021744
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.7821682095527649
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.906416654586792
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9468083381652832
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.005248937755823135
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.022781040519475937
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.006115862168371677
+      },
+      {
+        "clean_unit_threshold": 0.2952842116355896,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.30102136731147766
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.10698956996202469
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.005060586612671614
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.028068259358406067
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.45612746477127075
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7267097234725952
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8705450892448425
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.005011378321796656
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.014364252798259258
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.00684033939614892
+      },
+      {
+        "clean_unit_threshold": 0.10698956996202469,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.10702454298734665
+      }
+    ],
+    "ridge_coef": [
+      0.5297679455615497,
+      -0.16576221047232545,
+      -1.2306988379322708
+    ],
+    "ridge_intercept": 0.6017952979122198,
+    "scaler_mean": [
+      0.18795795859768988,
+      0.15632466178587306,
+      0.09394207055556977
+    ],
+    "scaler_scale": [
+      0.2867737937452716,
+      0.0923241162387475,
+      0.1250625467132259
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.4828488528728485,
+    "fit_units": [
+      "internal_val_WSIs/WSI2",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI1",
+    "model": "ENS_A",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.19208864867687225
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.011206869967281818
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.06082706153392792
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.5445321798324585
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7695450782775879
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8805792927742004
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.012957070954144001
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.038712028414011
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.01818356104195118
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.19017721712589264
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4828488528728485
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.02397448569536209
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.18134474754333496
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8369903564453125
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9267292022705078
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.953508198261261
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02305997721850872
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.08506664633750916
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.031906869262456894
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.481746107339859
+      }
+    ],
+    "ridge_coef": [
+      0.4190606289951909,
+      -0.0987299553436519,
+      -1.078461492793918
+    ],
+    "ridge_intercept": 0.5449066862993871,
+    "scaler_mean": [
+      0.1933297013863921,
+      0.1719479070882051,
+      0.10651956571660644
+    ],
+    "scaler_scale": [
+      0.2881672577405538,
+      0.10959814518595282,
+      0.14147013821373938
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.4828488528728485,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI3"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI2",
+    "model": "ENS_A",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4411463737487793
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.018195537850260735
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.14077375829219818
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8170673251152039
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9186103940010071
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9470744132995605
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.016681985929608345
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.06645984947681427
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.02068009041249752
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.4322308301925659
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4828488528728485
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.02397448569536209
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.18134474754333496
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8369903564453125
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9267292022705078
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.953508198261261
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.02305997721850872
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.08506664633750916
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.031906869262456894
+      },
+      {
+        "clean_unit_threshold": 0.4828488528728485,
+        "fit_unit": "internal_val_WSIs/WSI3",
+        "n": 271997,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.481746107339859
+      }
+    ],
+    "ridge_coef": [
+      0.23017313047207866,
+      -0.6185104044200075,
+      -0.9845570189112574
+    ],
+    "ridge_intercept": 0.7361110223745334,
+    "scaler_mean": [
+      0.1800820897333324,
+      0.24048102764967377,
+      0.12288607666715919
+    ],
+    "scaler_scale": [
+      0.297729856555677,
+      0.08516253065018961,
+      0.16580260568110203
+    ]
+  },
+  {
+    "clean_threshold_from_fit_sources_only": 0.4411463737487793,
+    "fit_units": [
+      "internal_val_WSIs/WSI1",
+      "internal_val_WSIs/WSI2"
+    ],
+    "heldout_WSI": "internal_val_WSIs/WSI3",
+    "model": "ENS_A",
+    "no_derived_variant_of_heldout_in_fit": true,
+    "regression_fit": [
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.4411463737487793
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.018195537850260735
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.14077375829219818
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.8170673251152039
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.9186103940010071
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.9470744132995605
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.016681985929608345
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.06645984947681427
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.02068009041249752
+      },
+      {
+        "clean_unit_threshold": 0.4411463737487793,
+        "fit_unit": "internal_val_WSIs/WSI1",
+        "n": 59210,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.4322308301925659
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "clean",
+        "scenario_unit_threshold": 0.19208864867687225
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.5",
+        "scenario_unit_threshold": 0.011206869967281818
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_0.75",
+        "scenario_unit_threshold": 0.06082706153392792
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_1.5",
+        "scenario_unit_threshold": 0.5445321798324585
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gain_2.0",
+        "scenario_unit_threshold": 0.7695450782775879
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_0.7",
+        "scenario_unit_threshold": 0.8805792927742004
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "gamma_1.3",
+        "scenario_unit_threshold": 0.012957070954144001
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.7",
+        "scenario_unit_threshold": 0.038712028414011
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "zero_0.85",
+        "scenario_unit_threshold": 0.01818356104195118
+      },
+      {
+        "clean_unit_threshold": 0.19208864867687225,
+        "fit_unit": "internal_val_WSIs/WSI2",
+        "n": 207925,
+        "scenario": "noise_low",
+        "scenario_unit_threshold": 0.19017721712589264
+      }
+    ],
+    "ridge_coef": [
+      0.4210365458613361,
+      -0.11019202218982434,
+      -1.1057881748275178
+    ],
+    "ridge_intercept": 0.580117555515503,
+    "scaler_mean": [
+      0.18795795859768988,
+      0.15632466178587306,
+      0.10800099453838496
+    ],
+    "scaler_scale": [
+      0.2867737937452716,
+      0.0923241162387475,
+      0.14018519763864581
+    ]
+  }
+]

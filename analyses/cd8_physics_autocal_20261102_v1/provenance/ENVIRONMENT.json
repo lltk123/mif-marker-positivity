@@ -1,0 +1,10 @@
+{
+  "matplotlib": "3.11.2",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "platform": "Linux-5.13.0-30-generic-x86_64-with-glibc2.31",
+  "python": "3.11.13",
+  "scikit-learn": "1.5.2",
+  "scipy": "1.17.1",
+  "torch": "2.2.2+cu118"
+}

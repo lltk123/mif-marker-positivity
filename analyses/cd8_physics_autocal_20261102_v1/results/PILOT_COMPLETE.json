@@ -1,0 +1,44 @@
+{
+  "conservative_full_stage0_seconds": 12509.310032887459,
+  "crop_proxy_not_whole_slide_simulation": true,
+  "full_stage0_not_started": true,
+  "identity": [
+    {
+      "changed_decisions": 0,
+      "max_probability_difference": 0.0,
+      "seconds": 2.4663257598876953,
+      "seed": 0
+    },
+    {
+      "changed_decisions": 0,
+      "max_probability_difference": 0.0,
+      "seconds": 1.1664531230926514,
+      "seed": 1
+    },
+    {
+      "changed_decisions": 0,
+      "max_probability_difference": 0.0,
+      "seconds": 1.1415085792541504,
+      "seed": 2
+    }
+  ],
+  "remaining_seconds": 28783.94129896164,
+  "timing_probes": [
+    {
+      "n": 12000,
+      "scenario": "gain_1.5",
+      "seconds": 3.049436330795288
+    },
+    {
+      "n": 12000,
+      "scenario": "noise_high",
+      "seconds": 4.6405370235443115
+    },
+    {
+      "n": 12000,
+      "scenario": "zero_0.95",
+      "seconds": 2.999419689178467
+    }
+  ],
+  "within_budget_gate": true
+}

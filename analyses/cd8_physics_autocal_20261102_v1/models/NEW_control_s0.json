@@ -1,0 +1,17 @@
+{
+  "epochs": 2,
+  "initial_hash": "fb0a79fae02242b70b439f6b26fbb756f6c91014fb11711bf2fd93b67f5985a1",
+  "nominal_parameters": 204098,
+  "rows_per_epoch": 50000,
+  "seconds": 31.464723587036133,
+  "sha256": "35137d4d3824f5c75fd0243f39163f8de195a013dd326def198beed59550cbcf",
+  "signature": {
+    "continuation_plan_sha256": "21c62fdfcfa0f76bb8d59f859371e7c293dbc0810c400a29cad6e9bcb6c8362f",
+    "eligibility_amendment_sha256": "20ec5389d8c2e493cc4919745a1379172674cd9e5578f895355ca6d54a7931d5",
+    "fit_indices_sha256": "29801a581bfa701c26d9db1c251a1f9c940faae836b61df794cc2ed112ccd5fb",
+    "parent_checkpoint_sha256": "d273f1676b7e6bd619360cfce77628a534480bc04b98d8e90e2456138958b8c7",
+    "protocol_sha256": "45780b17daf7e19cdc4039b6c19253f0bf886a11e2402cc698e4c93d9fea5f25",
+    "training_code_sha256": "a5c52f29638b00e50861ac66c3bb2ebd8b41a0adc3430b7b142c1bda9088aef8",
+    "variant": "control"
+  }
+}

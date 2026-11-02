@@ -1,0 +1,8 @@
+{
+  "controller_sha256": "b113258ceb5edab6ee75e5efb2a7505bad7128daffdb743c0470094e4eecd26d",
+  "external_prediction_calls": 0,
+  "new_model_fits": 0,
+  "passed": true,
+  "synthetic_internal_predictions_mocked": 18,
+  "test_sha256": "3a335cb85abbc6cb533ecac2eea7b9faba568e6d7037004ab5370b8f2216a1a1"
+}

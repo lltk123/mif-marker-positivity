@@ -1,0 +1,16 @@
+replicate,strategy,budget,evaluation_n,excluded_n,no_selected_in_evaluation,native_fallback_decisions_exact
+101,random,5,433280,4200,True,True
+101,random,10,433280,4200,True,True
+101,active_boundary,5,433280,4200,True,True
+101,active_boundary,10,433280,4200,True,True
+101,active_boundary,20,433280,4200,True,True
+102,random,5,433280,4200,True,True
+102,random,10,433280,4200,True,True
+102,active_boundary,5,433280,4200,True,True
+102,active_boundary,10,433280,4200,True,True
+102,active_boundary,20,433280,4200,True,True
+103,random,5,433280,4200,True,True
+103,random,10,433280,4200,True,True
+103,active_boundary,5,433280,4200,True,True
+103,active_boundary,10,433280,4200,True,True
+103,active_boundary,20,433280,4200,True,True

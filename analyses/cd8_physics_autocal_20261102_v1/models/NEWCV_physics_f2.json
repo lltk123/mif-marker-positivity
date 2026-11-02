@@ -1,0 +1,17 @@
+{
+  "epochs": 2,
+  "initial_hash": "10b8e6c040212370e35e5c4a372f790629ec29eb993befc51d86907531e94ead",
+  "nominal_parameters": 204098,
+  "rows_per_epoch": 20000,
+  "seconds": 16.793546199798584,
+  "sha256": "8f73d36b21de9c4938eb9eaec1eed048453f3f37cb0037f58eeafce567496f57",
+  "signature": {
+    "continuation_plan_sha256": "21c62fdfcfa0f76bb8d59f859371e7c293dbc0810c400a29cad6e9bcb6c8362f",
+    "eligibility_amendment_sha256": "20ec5389d8c2e493cc4919745a1379172674cd9e5578f895355ca6d54a7931d5",
+    "fit_indices_sha256": "2a82aaaa843b4da1cec8973f3e61e7252d724aa769407c2620afc2b761ba2485",
+    "parent_checkpoint_sha256": "3e8c4e997b8da8f0e9ecf532a998489e804a86c0d157f363489f9afa9eff7424",
+    "protocol_sha256": "45780b17daf7e19cdc4039b6c19253f0bf886a11e2402cc698e4c93d9fea5f25",
+    "training_code_sha256": "a5c52f29638b00e50861ac66c3bb2ebd8b41a0adc3430b7b142c1bda9088aef8",
+    "variant": "physics"
+  }
+}

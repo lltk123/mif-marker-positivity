@@ -1,0 +1,92 @@
+{
+  "calibration_code_sha256": "67a3f243b7b9896ac04b1896f7fca1ce33ef6f59927d7b5b4bc27e6f529ad863",
+  "code_sha256": "74aa2cfe779fdb82e1a68997d57eb6850ec39e366a49d35b5641c42ee214db89",
+  "decisions": {
+    "mixture": {
+      "models": {
+        "A_s0": {
+          "passed": true,
+          "reasons": []
+        },
+        "A_s1": {
+          "passed": true,
+          "reasons": []
+        },
+        "A_s2": {
+          "passed": true,
+          "reasons": []
+        },
+        "ENS_A": {
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "passed_all3seeds_and_ENS": true
+    },
+    "ridge": {
+      "models": {
+        "A_s0": {
+          "passed": false,
+          "reasons": [
+            "clean_F1_degradation",
+            "gain_2.0:AP_loss_gt_.003",
+            "zero_0.98:AP_loss_gt_.003"
+          ]
+        },
+        "A_s1": {
+          "passed": false,
+          "reasons": [
+            "clean_F1_degradation",
+            "zero_0.98:AP_loss_gt_.003"
+          ]
+        },
+        "A_s2": {
+          "passed": false,
+          "reasons": [
+            "clean_F1_degradation",
+            "zero_0.98:AP_loss_gt_.003"
+          ]
+        },
+        "ENS_A": {
+          "passed": false,
+          "reasons": [
+            "clean_F1_degradation",
+            "zero_0.98:AP_loss_gt_.003"
+          ]
+        }
+      },
+      "passed_all3seeds_and_ENS": false
+    },
+    "spatial": {
+      "models": {
+        "A_s0": {
+          "passed": true,
+          "reasons": []
+        },
+        "A_s1": {
+          "passed": true,
+          "reasons": []
+        },
+        "A_s2": {
+          "passed": true,
+          "reasons": []
+        },
+        "ENS_A": {
+          "passed": true,
+          "reasons": []
+        }
+      },
+      "passed_all3seeds_and_ENS": true
+    }
+  },
+  "external_labels_used": false,
+  "frozen_before_external_adaptation": true,
+  "internal_is_development_not_untouched_validation": true,
+  "passed_methods": [
+    "spatial",
+    "mixture"
+  ],
+  "protocol_sha256": "45780b17daf7e19cdc4039b6c19253f0bf886a11e2402cc698e4c93d9fea5f25",
+  "seconds_cpu_wall": 683.4101300239563,
+  "time": 1793616035.0565453
+}

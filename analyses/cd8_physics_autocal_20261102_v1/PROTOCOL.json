@@ -1,0 +1,164 @@
+{
+  "run": "cd8_physics_autocal_20261102_v1",
+  "frozen_before_new_prediction_utc": "2026-11-02T09:06:11.376770+00:00",
+  "neural_budget_seconds": 28800,
+  "stage0": {
+    "unit": "3 internal WSIs",
+    "planned_full_cells": 539132,
+    "pilot_per_WSI": 512,
+    "label_blind_pilot_seed": 4401,
+    "models": [
+      "A_s0",
+      "A_s1",
+      "A_s2"
+    ],
+    "clean_scores": "reuse prior all.npy",
+    "gain": [
+      0.25,
+      0.5,
+      0.75,
+      1.5,
+      2.0,
+      4.0
+    ],
+    "gamma": [
+      0.7,
+      1.3
+    ],
+    "zero_target": [
+      0.7,
+      0.85,
+      0.92,
+      0.95,
+      0.98
+    ],
+    "noise": [
+      {
+        "eta": 0.002,
+        "sigma": 0.005
+      },
+      {
+        "eta": 0.01,
+        "sigma": 0.02
+      }
+    ],
+    "compound": {
+      "gain": 0.4,
+      "read_sigma": 0.01,
+      "zero_target": 0.95,
+      "order": "gain then read-noise then floor; final clipping[0,1]"
+    },
+    "intensity_units": "existing float32 fixed-[L,U] normalized crop x in[0,1]; sigma measured in units of U-L, eta in corresponding normalized intensity units",
+    "normalization_order": "published image -> existing fixed normalization/clipping -> synthetic transform; no adaptive renormalization after transform",
+    "scope": "crop-level proxy; overlapping crops may have independent deterministic noise, not whole-slide physical simulation",
+    "denominator": "finite valid pixels of labelled target instance masks; excludes padding and noninstance background; not all tissue pixels",
+    "zero_threshold": "perWSI full target-pixel quantile; ties and pre-existing zeros mean achieved fraction may exceed target; report actual fractions",
+    "boundary_validity": "reuse raw ROI valid support for rare partial-context crops; no noise added outside valid support",
+    "severe_stress_only": [
+      "gain0.25",
+      "gain4",
+      "zero0.92",
+      "zero0.95",
+      "zero0.98",
+      "noise_high",
+      "compound"
+    ],
+    "moderate_no_guaranteed_label_invariance": [
+      "gain0.5",
+      "gain0.75",
+      "gain1.5",
+      "gain2",
+      "gamma0.7",
+      "gamma1.3",
+      "zero0.7",
+      "zero0.85",
+      "noise_low"
+    ],
+    "timing_probe_per_WSI": 4000,
+    "timing_probe_scenarios": [
+      "gain_1.5",
+      "noise_high",
+      "zero_0.95"
+    ],
+    "runtime_gate": "conservative scaled timing estimate must leave at least25% of remaining8h for later stages; otherwise stop and report instead of silently subsampling",
+    "noise_interpretation": "Gaussian heteroscedastic shot-noise approximation plus Gaussian read noise; not calibrated photon counts or exact Poisson draw"
+  },
+  "zero_label": {
+    "candidates": [
+      "spatial_low_signal_quantile_alignment",
+      "nonzero_two_component_mixture_alignment",
+      "ridge_physical_proxy_intercept"
+    ],
+    "q_spatial": 0.95,
+    "shrink_kappa": 200,
+    "max_abs_logit_shift": 2,
+    "mixture_n_components": 2,
+    "mixture_reg_covar": 0.25,
+    "mixture_max_fit_rows": 20000,
+    "mixture_quantile": 0.99,
+    "ridge_alpha": 10,
+    "selection": "leave-one-internal-source-WSI-out, all perturbations grouped; no external selection",
+    "dev_gate": "no clean F1 degradation; AP loss no worse than.003; actual dev FPR reported, target1% not assumed",
+    "core_adaptation": "own unlabelled input only; full development fit may transfer global learned reference",
+    "spatial_candidate_definition": "within-unit target nonzero-rate<=own20th percentile and neighbor normalized mean<=own50th percentile, observed neighbor area>0; no biological-negative guarantee",
+    "spatial_min_candidates": 200,
+    "reference": "equal-weight median of eligible source-WSI candidate logit95th percentiles; candidate count shrinkage n/(n+200)",
+    "mixture_acceptance": "nonzero target;>=200 rows; converged; both weights>=.05; mean separation>=pooledSD; lower-mean component mean+2.326347874SD; any failed reference or own-unit fit=>identity",
+    "proxy_features": [
+      "mean per-cell target zero-pixel fraction",
+      "median/p95 of per-cell positive-pixel mean among nonzero cells",
+      "fraction logits in[-4,4]"
+    ],
+    "proxy_population": "labelled cohort treated as unlabelled; not all tissue instances; equal cell weights",
+    "ridge_fit": "each heldout internal WSI plus all its derived perturbations excluded from scaling/fitting; train clean and moderate scenarios on other2WSIs; target own-source clean vs perturbed negative99th-percentile logit difference; prediction clamp[-2,2]",
+    "development_gate": "for each3seed and ENS, clean pooledF1 not below baseline and any scenario pooledAP loss<=.003, no external evaluation if failed",
+    "external_evaluation": "only development-passed candidates; original frozen all-internal threshold; all42cores own-unit unlabelled summaries; no external reselection"
+  },
+  "active": {
+    "models": "frozen ENS_A; old comparisons retained",
+    "budgets": [
+      5,
+      10,
+      20
+    ],
+    "new_random_budgets": [
+      5,
+      10
+    ],
+    "reuse_random_budgets": [
+      20,
+      50,
+      100
+    ],
+    "replicates": [
+      101,
+      102,
+      103
+    ],
+    "reserved_per_core": 100,
+    "evaluation_cells": 433280,
+    "topK_rule": "closest native logit to frozen threshold, tie hash",
+    "estimator": "regularized intercept, b^2/2 penalty, one-class fallback toglobal, no importance weights",
+    "sampling_bias": "deterministic boundary-selection assumptions explicitly reported; no unjustified population-unbiased claim"
+  },
+  "gates_external": {
+    "Gate1": {
+      "F1": 0.892,
+      "AP": 0.966,
+      "weak_R": 0.48,
+      "FPR_max": 0.005
+    },
+    "Gate2_20": {
+      "F1": 0.902,
+      "weak_R": 0.54
+    },
+    "not_guaranteed": true
+  },
+  "restrictions": {
+    "PanM": false,
+    "old_training_repeated": false,
+    "old_outputs_overwritten": false,
+    "upload": false,
+    "gitpush": false
+  }
+}

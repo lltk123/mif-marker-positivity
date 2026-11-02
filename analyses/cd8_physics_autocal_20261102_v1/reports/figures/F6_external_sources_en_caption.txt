@@ -1,0 +1,1 @@
+All437,480 labelled cells, three sources and42cores. Development-passed branches only. Each model retains its own frozen internal per-WSI1%FPR operating point; the dotted line is not an external guarantee. TMA1/2 share samples; cores are not independent patients. Lines only join discrete sources for identification.

@@ -1,0 +1,14 @@
+{
+  "external_selected_models": false,
+  "methods": [
+    "spatial",
+    "mixture"
+  ],
+  "models": [
+    "A_s0",
+    "A_s1",
+    "A_s2",
+    "ENS_A"
+  ],
+  "seconds_cpu_wall": 108.78894376754761
+}
